@@ -1,0 +1,15 @@
+#segment-footer > .container {background-color: #888888;}
+      .navbar-inverse {background-color: #0066A8;}
+
+#segment-header > .container {
+      display: flex;
+}
+
+#segment-header > .container > #hl7-nav {
+      display:inline-block;
+}
+
+#segment-header > .container > #ig-status {
+      margin-left: 130px;
+}
+      

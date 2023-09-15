@@ -1,0 +1,67 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PatientAdultCheckExample",
+  "meta" : {
+    "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>陳加玲(OFFICIAL)</b> female, DoB: 1990-01-01 ( 全國的個人識別碼: A123456789\u00a0(use:\u00a0OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>Medical record number: 8862168\u00a0(use:\u00a0OFFICIAL)</li><li>HOI: 0123456789\u00a0(use:\u00a0OFFICIAL)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">(OFFICIAL)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 0911327999(HOME)</li><li>臺北市 (HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-org-hosp-example.html\">Organization/org-hosp-example</a></li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203",
+        "code" : "NNTWN"
+      }]
+    },
+    "system" : "http://www.moi.gov.tw/",
+    "value" : "A123456789"
+  },
+  {
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR"
+      }]
+    },
+    "system" : "https://www.tph.mohw.gov.tw/",
+    "value" : "8862168"
+  },
+  {
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "HOI"
+      }]
+    },
+    "system" : "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw",
+    "value" : "0123456789"
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "official",
+    "text" : "陳加玲"
+  },
+  {
+    "use" : "official"
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "0911327999",
+    "use" : "home"
+  }],
+  "gender" : "female",
+  "birthDate" : "1990-01-01",
+  "address" : [{
+    "use" : "home",
+    "type" : "both",
+    "city" : "臺北市"
+  }],
+  "managingOrganization" : {
+    "reference" : "Organization/org-hosp-example"
+  }
+}

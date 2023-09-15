@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://tstifhir.azurehealthcareapis.com/DiagnosticReport/DiagnosticReportAdultCheckExample> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DiagnosticReportAdultCheckExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw 06003C}\">尿蛋白</span> (<span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2022-08-01 17:00:14-0500</td></tr><tr><td>Reported</td><td>2022-08-02 17:00:14-0500</td></tr><tr><td>Identifiers:</td><td> 全國的個人識別碼: A123456789 (use: OFFICIAL) Medical record number: 8862168 (use: OFFICIAL) HOI: 0123456789 (use: OFFICIAL) Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</td></tr></table><p><b>Report Details</b></p><p>建議進一步檢查</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NNTWN" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://www.moi.gov.tw/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "A123456789" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://www.tph.mohw.gov.tw/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "8862168" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HOI" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0123456789" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LAB" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "06003C" ] ;
+       fhir:display [ fhir:v "尿蛋白" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/pat-example> ;
+     fhir:reference [ fhir:v "Patient/pat-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2022-08-02T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/organ-example> ;
+     fhir:reference [ fhir:v "Organization/organ-example" ]
+  ] ) ; # 
+  fhir:resultsInterpreter ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/organ-example> ;
+     fhir:reference [ fhir:v "Organization/organ-example" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "建議進一步檢查"] . # 
+
+# -------------------------------------------------------------------------------------
+

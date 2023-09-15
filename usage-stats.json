@@ -1,0 +1,146 @@
+{
+  "package": "tw.tsti.adultcheck",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [],
+  "profiles": {
+    "Bundle": [
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Bundle-adultcheck",
+        "title": "Bundle - AdultCheck"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck",
+        "title": "Composition - AdultCheck"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck",
+        "title": "Condition - AdultCheck"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck",
+        "title": "DiagnosticReport - AdultCheck"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck",
+        "title": "Encounter - AdultCheck"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck",
+        "title": "Observation BMI - AdultCheck"
+      },
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationDepression-adultcheck",
+        "title": "Observation Depression - AdultCheck"
+      },
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationHeight-adultcheck",
+        "title": "Observation Height - AdultCheck"
+      },
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck",
+        "title": "Observation Lab - AdultCheck"
+      },
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck",
+        "title": "Observation Life - AdultCheck"
+      },
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck",
+        "title": "Observation Pressure - AdultCheck"
+      },
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck",
+        "title": "Observation Waist - AdultCheck"
+      },
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck",
+        "title": "Observation Weight - AdultCheck"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck",
+        "title": "Patient - AdultCheck"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.rest.resource",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.searchParam",
+      "CapabilityStatement.rest.resource.supportedProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/person-age": [
+      "Patient"
+    ]
+  }
+}

@@ -1,0 +1,407 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Workflow Pattern","Mapping: SNOMED CT Concept Domain Binding","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: SNOMED CT Attribute Binding"
+"Condition","Condition","","","",0,*,"","","","null {[]} {[]}
+","有關病情、問題或診斷的詳細資訊","一個臨床病情、問題、診斷或其他事件、情況、或臨床概念，已上升到需要關注的程度。","","","","","","","","","",,,,,"",,,,"Condition",0,*,"","","Event","< 243796009 |Situation with explicit context| : 246090004 |Associated finding| = ( ( < 404684003 |Clinical finding| MINUS ( << 420134006 |Propensity to adverse reactions| OR << 473010000 |Hypersensitivity condition| OR << 79899007 |Drug interaction| OR << 69449002 |Drug action| OR << 441742003 |Evaluation finding| OR << 307824009 |Administrative status| OR << 385356007 |Tumor stage finding|)) OR < 272379006 |Event|)","PPR message","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN, code=ASSERTION, value<Diagnosis]"
+"Condition.id","Condition.id","","","",0,1,"","","Y","id {[]} {[]}
+","不重複的ID用以識別儲存在特定FHIR Server中的Condition紀錄，通常又稱為邏輯性ID。","resource的邏輯ID，在resource的URL中使用。一旦指定，這個值永遠不會改變。","一個resource使用新增操作（create operation）提交給伺服器時是此resource唯一沒有id的時刻","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+"Condition.meta","Condition.meta","","","",0,1,"","","Y","Meta {[]} {[]}
+","此Condition Resource的metadata","關於resource的metadata。這是由基礎建設維護的內容。對內容的改變可能並不總是與resource的版本改變相關。","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Condition.implicitRules","Condition.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
+","創建此內容所依據的一組規則","構建resource時遵循的一系列規則的參照，在處理內容時必須理解這些規則。通常這是IG定義特殊規則及其他profiles的參照。","宣告這套規則限制了內容只能被有限的貿易夥伴所理解。這從本質上限制了資料的長期有用性。然而，現有的健康生態體系高度分裂，還沒有準備好以普遍可計算的方式定義、收集和交換資料。只要有可能，實作者和（或）規範編寫者應該避免使用這個資料項目。通常，在使用時，此URL是對實作指引的參照，此指引將這些特殊規則與其他profiles、value sets等一起定義為其敘述的一部分。","","","","","","","","",,,,,"",,,,"Resource.implicitRules",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Condition.language","Condition.language","","","",0,1,"","","","code {[]} {[]}
+","用以表述Condition Resource內容的語言","編寫此resource的基礎語言","提供語言是為了支援索引和可存取性（通常，文字表述轉語音等服務使用此語言標籤）。html lanuage tag適用於此敘述。resource上的語言標籤可用於指定從resource中的資料所產成的其他表述之語言。不是所有的內容都必須使用此基礎語言。不應該假定Resource.language自動適用於敘述。如果指定語言，它也應該被指定在html中的div元素（關於xml:lang和html lang屬性之間的關係，見HTML5中的規則）。","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""zh-TW""/>","","",,"preferred","人類語言；鼓勵使用[CommonLanguages](http://hl7.org/fhir/R4/valueset-languages.html)代碼表中的代碼，但不強制一定要使用此代碼表，你也可使用其他代碼表的代碼或單純以文字表示。","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Condition.text","Condition.text","","narrative
+htmlxhtmldisplay","",0,1,"Y","","","Narrative {[]} {[]}
+","Condition Resource之內容摘要以供人閱讀","人可讀的敘述，包含resource的摘要，可用於向人表述resource的內容。敘述不需要對所有的結構化資料進行編碼，但需要包含足夠的細節使人在閱讀敘述時理解「臨床安全性」。resource定義可定義哪些內容應該在敘述中表示，以確保臨床安全。","內嵌（contained）的resource沒有敘述，非內嵌（contained）的resource則 **建議應該（SHOULD）** 有敘述。在某些情況下，resource可能只有文字表述，很少或沒有額外的離散資料（只要滿足所有minOccurs=1的資料項目）。這對於來自舊有系統的資料可能是必要的，在這些系統中，從 「文字表述區塊（text blob） 」獲取訊息，或者文字表述是額外的原始輸入或敘述，而編碼訊息是後來添加的。","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Act.text?"
+"Condition.contained","Condition.contained","","inline resources
+anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
+","內嵌的（contained）、行內的Resources","這些resource內嵌（contains）的resource不會另外存於任何FHIR伺服器，意即它們無法在任何FHIR伺服器中被找到，也無法有自己獨立的資料異動／交易（transaction）範圍。","內嵌（contained）的resource沒有敘述，非內嵌（contained）的resource則 **建議應該（SHOULD）** 有敘述。在某些情況下，resource可能只有文字表述，很少或沒有額外的離散資料（只要滿足所有minOccurs=1的資料項目）。這對於來自舊有系統的資料可能是必要的，在這些系統中，從 「文字表述區塊（text blob） 」獲取訊息，或者文字表述是額外的原始輸入或敘述，而編碼訊息是後來添加的。","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
+"Condition.extension","Condition.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.modifierExtension","Condition.modifierExtension","","","",0,*,"","Y","","Extension {[]} {[]}
+","此擴充的資料項目可能會完全修正或改變其他資料項目的意涵，需特別留意。","可以用來表示不屬於資料項目的基本定義的附加資訊，並且修改對它所內嵌（contained）的資料項目的理解和（或）對包含資料項目之後續使用的理解。通常，修飾用的資料項目提供否定或限定。為了使擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。處理resource的應用程式被要求檢查修飾用的擴充資料項目。  
+修飾用的擴充資料項目 **必須沒有（SHALL NOT）** 改變resource或DomainResource上任何資料項目的含義（包括不能改變modifierExtension本身的含義）。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","修飾用的資料項目擴充將不能安全地忽略的擴充與絕大多數可以安全地忽略的擴充明確區分開來。透過消除禁止實作者擴充存在的需求來促進可互操作性。更多訊息，請參見[修飾用的資料項目擴充之定義](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)。","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.identifier","Condition.identifier","","","",1,*,"Y","","Y","Identifier {[]} {[]}
+","此病情、問題或診斷的外部識別碼","由執行者或其他系統指定給此病情、問題或診斷的業務用識別碼，即使此resource作更新及在伺服器之間的傳遞，此識別碼仍保持不變。","這是一個業務識別碼，不是一個resource識別碼（詳見討論）。最好的做法是該識別碼只出現在單個resource實例上，但是業務實務有可能會規定可以在多個resource實例中具有相同識別碼—甚至可能具有不同的resource型例。例如：多個 「Patient（病人）」和 「Person（個人）」resource實例可能共用同一個社會保險號碼。","允許識別各參與系統所知的此病情、問題或診斷資訊，並在各伺服器之間保持一致的方式。","","","","","","","",,,,,"","value:type.coding.code}
+value:type.coding.system}","",,"open","Condition.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.identifier",".id","FiveWs.identifier"
+"Condition.identifier:hospitalNumber","Condition.identifier","hospitalNumber","","",0,1,"Y","","Y","Identifier {[]} {[]}
+","適用所屬機構之醫事機構代碼","適用於所屬機構之醫事機構代碼","這是一個業務識別碼，不是一個resource識別碼（詳見討論）。最好的做法是該識別碼只出現在單個resource實例上，但是業務實務有可能會規定可以在多個resource實例中具有相同識別碼—甚至可能具有不同的resource型例。例如：多個 「Patient（病人）」和 「Person（個人）」resource實例可能共用同一個社會保險號碼。","病人幾乎總是被指定一個特定的數值型的唯一識別碼（identifier）","","","","","","","",,,,,"",,,,"Condition.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.identifier",".id","FiveWs.identifier"
+"Condition.identifier:hospitalNumber.id","Condition.identifier.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.identifier:hospitalNumber.extension","Condition.identifier.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","擴充的資料項目","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.identifier:hospitalNumber.use","Condition.identifier.use","","","",0,1,"Y","Y","Y","code {[]} {[]}
+","usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）","這個唯一識別碼（identifier）的用途","應用程式可以假定一個識別碼是永久的，除非它明確說它是暫時的。","允許從一組識別碼中為特定的使用情境選擇適當的識別碼","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","如果知道，請說明此識別碼的目的；應填入[IdentifierUse](http://hl7.org/fhir/R4/valueset-identifier-use.html)代碼表中的其中一個代碼。","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A","Role.code or implied by context"
+"Condition.identifier:hospitalNumber.type","Condition.identifier.type","","","",1,1,"Y","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","身份識別碼（identifier）的型別說明","識別碼的代碼型別，用於決定特定目適用的識別碼。","這個資料項目只涉及識別碼的一般類別。它 **必須沒有（SHALL NOT）** 被用於與Identifier.system 1..1對應的代碼。一些識別碼可能由於常見的用法而屬於多個類別。在系統是已知的情況下，型別是不必要的，因為型別總是系統定義的一部分。然而，系統經常需要處理系統不為人知的識別碼。型別和系統之間不是1:1的關係，因為許多不同的系統有相同的型別。","允許使用者在不知道識別碼系統的情況下利用識別碼","","","","","","","",,"required","識別碼的型別，用於決定特定目的所適用的識別碼；應填入[臺灣識別碼類型值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。","https://twcore.mohw.gov.tw/ig/twcore/ValueSet/identifier-type-tw","",,,,"Identifier.type",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.identifier:hospitalNumber.type.id","Condition.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.identifier:hospitalNumber.type.extension","Condition.identifier.type.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","擴充的資料項目","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.identifier:hospitalNumber.type.coding","Condition.identifier.type.coding","","","",0,*,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
+","由專門術語系統（terminology system）定義的代碼","由專門術語系統（terminology system）所定義之代碼的參照","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，例如：SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許代碼系統中的替代編碼，以及翻譯到其他編碼系統。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
+"Condition.identifier:hospitalNumber.type.coding.id","Condition.identifier.type.coding.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.identifier:hospitalNumber.type.coding.extension","Condition.identifier.type.coding.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.identifier:hospitalNumber.type.coding.system","Condition.identifier.type.coding.system","","","",1,1,"Y","","Y","uri {[]} {[]}
+","專門術語系統（terminology system）的識別","定義代碼中符號意義的代碼系統識別","URI可以是一個OID（urn:oid:...）或一個UUID（urn:uuid:...）；OID和UUID **必須(SHALL)** 參照HL7 OID註冊中心；否則，URI應該來自HL7的FHIR定義的特殊URI列表，或者它應該參照一些明確建立的系统定義。","需要明確說明符號定義的來源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.3","./codeSystem"
+"Condition.identifier:hospitalNumber.type.coding.version","Condition.identifier.type.coding.version","","","",0,1,"","","Y","string {[]} {[]}
+","系統的版本—如果相關的話","選擇此代碼時使用的代碼系統版本；請注意，一個維護良好的代碼系統不需要版本報告，因為代碼的意義在不同系統版本中是一致的；然而，不能始終保證這點，當不能保證意義一致時， **必須(SHALL)** 將版本資訊也一併作交換。","如果專門術語沒有明確定義應該使用什麼字串來識別代碼系統的版本，建議使用版本正式發布的日期（用FHIR日期格式表示）作為版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.7","./codeSystemVersion"
+"Condition.identifier:hospitalNumber.type.coding.code","Condition.identifier.type.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
+","系統定義的語法之符號","系統定義的語法之符號；符號可能是一個預先定義的代碼，也可能是代碼系統定義的語法中的表達式（如後組合配對／後組合式）。","","需要參照系統中的一個特定代碼","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""HOI""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.1","./code"
+"Condition.identifier:hospitalNumber.type.coding.display","Condition.identifier.type.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+","由系統定義的表示法","遵循系統的規則以呈現代碼含義的表示法","","需要能為不了解此系統的讀者呈現可讀的代碼含義","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.2 - but note this is not well followed","CV.displayName"
+"Condition.identifier:hospitalNumber.type.coding.userSelected","Condition.identifier.type.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
+","此編碼是否由使用者直接選擇？","表明此編碼是由使用者直接選擇，例如：從可用項目（代碼或顯示名稱）的清單中選擇。","在一系列備選方案中，直接選擇的代碼是新翻譯最合適的起點；關於「直接選擇」的確切意義，存在模糊不清之處，可能需要貿易夥伴的同意，以更完整澄清此資料項目的使用及其後果。","已被確定為一個臨床安全準則—此確切的系統／代碼對(code pair)是被明確選擇的，而不是由系統根據一些規則或是程式語言處理判斷。","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Sometimes implied by being first","CD.codingRationale"
+"Condition.identifier:hospitalNumber.type.text","Condition.identifier.type.text","","","",0,1,"Y","","Y","string {[]} {[]}
+","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
+"Condition.identifier:hospitalNumber.system","Condition.identifier.system","","","",1,1,"Y","","Y","uri {[]} {[]}
+","身份識別碼（identifier）的命名空間（namespace）
+例如：醫事機構代碼='https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw'","建立值的命名空間－即一個描述一組值的唯一URL","Identifier.system總是區分大小寫","有許多識別碼的集合。為了進行兩個識別碼的對應，我們需要知道我們處理的是哪一組。系統指明了一個特定的唯一識別碼集。","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw""/>","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / EI-2-4","II.root or Role.id.root"
+"Condition.identifier:hospitalNumber.value","Condition.identifier.value","","","",1,1,"Y","","Y","string {[]} {[]}
+","唯一值。
+例如：所屬機構之醫事機構代碼為0123456789","識別碼中通常與使用者有關的部分，在系統情境內是唯一的。","如果此值是一個完整的URI，那麼此系統 **必須（SHALL）** 是urn:ietf:rfc:3986。此值的主要目的是為了可運算的對應。因此，為了比較的目的，它可能會被正規化（例如：去除不重要的空白、破折號等）。一個為人顯示的格式化的值可以使用[Rendered Value](http://hl7.org/fhir/R4/extension-rendered-value.html)擴充來傳達。除非對Identifier.system的了解使處理者確信不區分大小寫的處理是安全的，否則Identifier.value應被視為區分大小寫。","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.1 / EI.1","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"
+"Condition.identifier:hospitalNumber.period","Condition.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此身份識別碼（identifier）的使用效期","識別碼有效／曾經有效使用的時段或期間","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.7 + CX.8","Role.effectiveTime or implied by context"
+"Condition.identifier:hospitalNumber.assigner","Condition.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-hosp-twcore]]}
+","簽發identifier的機構（可以只是文字表述）","簽發／管理識別碼的機構","Identifier.assigner可以省略.reference資料項目，只包含一個.display資料項目，反映指定機構的名稱或其他文字表述資訊。","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
+"Condition.identifier:medicalrecordNumber","Condition.identifier","medicalrecordNumber","","",1,1,"Y","","Y","Identifier {[]} {[]}
+","適用該就醫紀錄之就診序號","適用於該就醫紀錄之就診序號","這是一個業務識別碼，不是一個resource識別碼（詳見討論）。最好的做法是該識別碼只出現在單個resource實例上，但是業務實務有可能會規定可以在多個resource實例中具有相同識別碼—甚至可能具有不同的resource型例。例如：多個 「Patient（病人）」和 「Person（個人）」resource實例可能共用同一個社會保險號碼。","病人幾乎總是被指定一個特定的數值型的唯一識別碼（identifier）","","","","","","","",,,,,"",,,,"Condition.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.identifier",".id","FiveWs.identifier"
+"Condition.identifier:medicalrecordNumber.id","Condition.identifier.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.identifier:medicalrecordNumber.extension","Condition.identifier.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","擴充的資料項目","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.identifier:medicalrecordNumber.use","Condition.identifier.use","","","",0,1,"Y","Y","Y","code {[]} {[]}
+","usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）","這個唯一識別碼（identifier）的用途","應用程式可以假定一個識別碼是永久的，除非它明確說它是暫時的。","允許從一組識別碼中為特定的使用情境選擇適當的識別碼","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","如果知道，請說明此識別碼的目的；應填入[IdentifierUse](http://hl7.org/fhir/R4/valueset-identifier-use.html)代碼表中的其中一個代碼。","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A","Role.code or implied by context"
+"Condition.identifier:medicalrecordNumber.type","Condition.identifier.type","","","",1,1,"Y","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","身份識別碼（identifier）的型別說明","識別碼的代碼型別，用於決定特定目適用的識別碼。","這個資料項目只涉及識別碼的一般類別。它 **必須沒有（SHALL NOT）** 被用於與Identifier.system 1..1對應的代碼。一些識別碼可能由於常見的用法而屬於多個類別。在系統是已知的情況下，型別是不必要的，因為型別總是系統定義的一部分。然而，系統經常需要處理系統不為人知的識別碼。型別和系統之間不是1:1的關係，因為許多不同的系統有相同的型別。","允許使用者在不知道識別碼系統的情況下利用識別碼","","","","","","","",,"required","識別碼的型別，用於決定特定目的所適用的識別碼；應填入[臺灣識別碼類型值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。","https://twcore.mohw.gov.tw/ig/twcore/ValueSet/identifier-type-tw","",,,,"Identifier.type",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.identifier:medicalrecordNumber.type.id","Condition.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.identifier:medicalrecordNumber.type.extension","Condition.identifier.type.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","擴充的資料項目","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.identifier:medicalrecordNumber.type.coding","Condition.identifier.type.coding","","","",0,*,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
+","由專門術語系統（terminology system）定義的代碼","由專門術語系統（terminology system）所定義之代碼的參照","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，例如：SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許代碼系統中的替代編碼，以及翻譯到其他編碼系統。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
+"Condition.identifier:medicalrecordNumber.type.coding.id","Condition.identifier.type.coding.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.identifier:medicalrecordNumber.type.coding.extension","Condition.identifier.type.coding.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.identifier:medicalrecordNumber.type.coding.system","Condition.identifier.type.coding.system","","","",1,1,"Y","","Y","uri {[]} {[]}
+","專門術語系統（terminology system）的識別","定義代碼中符號意義的代碼系統識別","URI可以是一個OID（urn:oid:...）或一個UUID（urn:uuid:...）；OID和UUID **必須(SHALL)** 參照HL7 OID註冊中心；否則，URI應該來自HL7的FHIR定義的特殊URI列表，或者它應該參照一些明確建立的系统定義。","需要明確說明符號定義的來源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.3","./codeSystem"
+"Condition.identifier:medicalrecordNumber.type.coding.version","Condition.identifier.type.coding.version","","","",0,1,"","","Y","string {[]} {[]}
+","系統的版本—如果相關的話","選擇此代碼時使用的代碼系統版本；請注意，一個維護良好的代碼系統不需要版本報告，因為代碼的意義在不同系統版本中是一致的；然而，不能始終保證這點，當不能保證意義一致時， **必須(SHALL)** 將版本資訊也一併作交換。","如果專門術語沒有明確定義應該使用什麼字串來識別代碼系統的版本，建議使用版本正式發布的日期（用FHIR日期格式表示）作為版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.7","./codeSystemVersion"
+"Condition.identifier:medicalrecordNumber.type.coding.code","Condition.identifier.type.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
+","系統定義的語法之符號","系統定義的語法之符號；符號可能是一個預先定義的代碼，也可能是代碼系統定義的語法中的表達式（如後組合配對／後組合式）。","","需要參照系統中的一個特定代碼","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""MRT""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.1","./code"
+"Condition.identifier:medicalrecordNumber.type.coding.display","Condition.identifier.type.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+","由系統定義的表示法","遵循系統的規則以呈現代碼含義的表示法","","需要能為不了解此系統的讀者呈現可讀的代碼含義","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.2 - but note this is not well followed","CV.displayName"
+"Condition.identifier:medicalrecordNumber.type.coding.userSelected","Condition.identifier.type.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
+","此編碼是否由使用者直接選擇？","表明此編碼是由使用者直接選擇，例如：從可用項目（代碼或顯示名稱）的清單中選擇。","在一系列備選方案中，直接選擇的代碼是新翻譯最合適的起點；關於「直接選擇」的確切意義，存在模糊不清之處，可能需要貿易夥伴的同意，以更完整澄清此資料項目的使用及其後果。","已被確定為一個臨床安全準則—此確切的系統／代碼對(code pair)是被明確選擇的，而不是由系統根據一些規則或是程式語言處理判斷。","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Sometimes implied by being first","CD.codingRationale"
+"Condition.identifier:medicalrecordNumber.type.text","Condition.identifier.type.text","","","",0,1,"Y","","Y","string {[]} {[]}
+","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
+"Condition.identifier:medicalrecordNumber.system","Condition.identifier.system","","","",1,1,"Y","","Y","uri {[]} {[]}
+","使用個醫院/機構院內代碼","建立值的命名空間－即一個描述一組值的唯一URL","Identifier.system總是區分大小寫","有許多識別碼的集合。為了進行兩個識別碼的對應，我們需要知道我們處理的是哪一組。系統指明了一個特定的唯一識別碼集。","","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / EI-2-4","II.root or Role.id.root"
+"Condition.identifier:medicalrecordNumber.value","Condition.identifier.value","","","",1,1,"Y","","Y","string {[]} {[]}
+","唯一值。
+例如：所屬機構之醫事機構代碼為0123456789","識別碼中通常與使用者有關的部分，在系統情境內是唯一的。","如果此值是一個完整的URI，那麼此系統 **必須（SHALL）** 是urn:ietf:rfc:3986。此值的主要目的是為了可運算的對應。因此，為了比較的目的，它可能會被正規化（例如：去除不重要的空白、破折號等）。一個為人顯示的格式化的值可以使用[Rendered Value](http://hl7.org/fhir/R4/extension-rendered-value.html)擴充來傳達。除非對Identifier.system的了解使處理者確信不區分大小寫的處理是安全的，否則Identifier.value應被視為區分大小寫。","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.1 / EI.1","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"
+"Condition.identifier:medicalrecordNumber.period","Condition.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此身份識別碼（identifier）的使用效期","識別碼有效／曾經有效使用的時段或期間","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.7 + CX.8","Role.effectiveTime or implied by context"
+"Condition.identifier:medicalrecordNumber.assigner","Condition.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-hosp-twcore]]}
+","簽發identifier的機構（可以只是文字表述）","簽發／管理識別碼的機構","Identifier.assigner可以省略.reference資料項目，只包含一個.display資料項目，反映指定機構的名稱或其他文字表述資訊。","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
+"Condition.clinicalStatus","Condition.clinicalStatus","","","",1,1,"Y","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","概念（Concept）— 參照一個專門術語或只是文字表述","此病情、問題或診斷的臨床狀態","data type是CodeableConcept，因為clinicalStatus涉及到一些臨床判斷，例如：可能需要比所需的FHIR值集更多的特殊性。例如：SNOMED編碼可能允許更多的特殊性。","","","","","","","","",,"required","病情、問題或診斷的臨床狀態；應填入[ConditionClinicalStatusCodes](http://hl7.org/fhir/R4/valueset-condition-clinical.html)代碼表中的其中一個代碼。","http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1","",,,,"Condition.clinicalStatus",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.clinicalStatus.id","Condition.clinicalStatus.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.clinicalStatus.extension","Condition.clinicalStatus.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","擴充的資料項目","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.clinicalStatus.coding","Condition.clinicalStatus.coding","","","",0,*,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
+","由專門術語系統（terminology system）定義的代碼","由專門術語系統（terminology system）所定義之代碼的參照","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，例如：SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許代碼系統中的替代編碼，以及翻譯到其他編碼系統。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
+"Condition.clinicalStatus.coding.id","Condition.clinicalStatus.coding.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.clinicalStatus.coding.extension","Condition.clinicalStatus.coding.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.clinicalStatus.coding.system","Condition.clinicalStatus.coding.system","","","",0,1,"Y","","Y","uri {[]} {[]}
+","專門術語系統（terminology system）的識別","定義代碼中符號意義的代碼系統識別","URI可以是一個OID（urn:oid:...）或一個UUID（urn:uuid:...）；OID和UUID **必須(SHALL)** 參照HL7 OID註冊中心；否則，URI應該來自HL7的FHIR定義的特殊URI列表，或者它應該參照一些明確建立的系统定義。","需要明確說明符號定義的來源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/condition-clinical""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.3","./codeSystem"
+"Condition.clinicalStatus.coding.version","Condition.clinicalStatus.coding.version","","","",0,1,"","","Y","string {[]} {[]}
+","系統的版本—如果相關的話","選擇此代碼時使用的代碼系統版本；請注意，一個維護良好的代碼系統不需要版本報告，因為代碼的意義在不同系統版本中是一致的；然而，不能始終保證這點，當不能保證意義一致時， **必須(SHALL)** 將版本資訊也一併作交換。","如果專門術語沒有明確定義應該使用什麼字串來識別代碼系統的版本，建議使用版本正式發布的日期（用FHIR日期格式表示）作為版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.7","./codeSystemVersion"
+"Condition.clinicalStatus.coding.code","Condition.clinicalStatus.coding.code","","","",0,1,"Y","","Y","code {[]} {[]}
+","系統定義的語法之符號","系統定義的語法之符號；符號可能是一個預先定義的代碼，也可能是代碼系統定義的語法中的表達式（如後組合配對／後組合式）。","","需要參照系統中的一個特定代碼","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""remission""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.1","./code"
+"Condition.clinicalStatus.coding.display","Condition.clinicalStatus.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+","由系統定義的表示法","遵循系統的規則以呈現代碼含義的表示法","","需要能為不了解此系統的讀者呈現可讀的代碼含義","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Remission""/>","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.2 - but note this is not well followed","CV.displayName"
+"Condition.clinicalStatus.coding.userSelected","Condition.clinicalStatus.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
+","此編碼是否由使用者直接選擇？","表明此編碼是由使用者直接選擇，例如：從可用項目（代碼或顯示名稱）的清單中選擇。","在一系列備選方案中，直接選擇的代碼是新翻譯最合適的起點；關於「直接選擇」的確切意義，存在模糊不清之處，可能需要貿易夥伴的同意，以更完整澄清此資料項目的使用及其後果。","已被確定為一個臨床安全準則—此確切的系統／代碼對(code pair)是被明確選擇的，而不是由系統根據一些規則或是程式語言處理判斷。","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Sometimes implied by being first","CD.codingRationale"
+"Condition.clinicalStatus.text","Condition.clinicalStatus.text","","","",0,1,"Y","","Y","string {[]} {[]}
+","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
+"Condition.verificationStatus","Condition.verificationStatus","","","",1,1,"Y","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","概念（Concept）— 參照一個專門術語或只是文字表述","支持此病情、問題或診斷的臨床狀態之驗證狀態","verificationStatus不是必須的。例如：當病人在急診室出現腹痛時，不可能出現驗證狀態。資料類型是CodeableConcept，因為verificationStatus涉及到一些臨床判斷，因此可能需要比所需的FHIR值集更多的特殊性。例如：SNOMED編碼可能允許更多的特殊性。","","","","","","","","",,"required","支持或拒絕病情、問題或診斷的臨床狀態的驗證狀態；應填入[ConditionVerificationStatus](http://hl7.org/fhir/R4/valueset-condition-ver-status.html)代碼表中的其中一個代碼。","http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1","",,,,"Condition.verificationStatus",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.verificationStatus.id","Condition.verificationStatus.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.verificationStatus.extension","Condition.verificationStatus.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","擴充的資料項目","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.verificationStatus.coding","Condition.verificationStatus.coding","","","",0,*,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
+","由專門術語系統（terminology system）定義的代碼","由專門術語系統（terminology system）所定義之代碼的參照","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，例如：SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許代碼系統中的替代編碼，以及翻譯到其他編碼系統。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
+"Condition.verificationStatus.coding.id","Condition.verificationStatus.coding.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.verificationStatus.coding.extension","Condition.verificationStatus.coding.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.verificationStatus.coding.system","Condition.verificationStatus.coding.system","","","",0,1,"Y","","Y","uri {[]} {[]}
+","專門術語系統（terminology system）的識別","定義代碼中符號意義的代碼系統識別","URI可以是一個OID（urn:oid:...）或一個UUID（urn:uuid:...）；OID和UUID **必須(SHALL)** 參照HL7 OID註冊中心；否則，URI應該來自HL7的FHIR定義的特殊URI列表，或者它應該參照一些明確建立的系统定義。","需要明確說明符號定義的來源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/condition-ver-status""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.3","./codeSystem"
+"Condition.verificationStatus.coding.version","Condition.verificationStatus.coding.version","","","",0,1,"","","Y","string {[]} {[]}
+","系統的版本—如果相關的話","選擇此代碼時使用的代碼系統版本；請注意，一個維護良好的代碼系統不需要版本報告，因為代碼的意義在不同系統版本中是一致的；然而，不能始終保證這點，當不能保證意義一致時， **必須(SHALL)** 將版本資訊也一併作交換。","如果專門術語沒有明確定義應該使用什麼字串來識別代碼系統的版本，建議使用版本正式發布的日期（用FHIR日期格式表示）作為版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.7","./codeSystemVersion"
+"Condition.verificationStatus.coding.code","Condition.verificationStatus.coding.code","","","",0,1,"Y","","Y","code {[]} {[]}
+","系統定義的語法之符號","系統定義的語法之符號；符號可能是一個預先定義的代碼，也可能是代碼系統定義的語法中的表達式（如後組合配對／後組合式）。","","需要參照系統中的一個特定代碼","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""confirmed""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.1","./code"
+"Condition.verificationStatus.coding.display","Condition.verificationStatus.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+","由系統定義的表示法","遵循系統的規則以呈現代碼含義的表示法","","需要能為不了解此系統的讀者呈現可讀的代碼含義","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Confirmed""/>","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.2 - but note this is not well followed","CV.displayName"
+"Condition.verificationStatus.coding.userSelected","Condition.verificationStatus.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
+","此編碼是否由使用者直接選擇？","表明此編碼是由使用者直接選擇，例如：從可用項目（代碼或顯示名稱）的清單中選擇。","在一系列備選方案中，直接選擇的代碼是新翻譯最合適的起點；關於「直接選擇」的確切意義，存在模糊不清之處，可能需要貿易夥伴的同意，以更完整澄清此資料項目的使用及其後果。","已被確定為一個臨床安全準則—此確切的系統／代碼對(code pair)是被明確選擇的，而不是由系統根據一些規則或是程式語言處理判斷。","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Sometimes implied by being first","CD.codingRationale"
+"Condition.verificationStatus.text","Condition.verificationStatus.text","","","",0,1,"Y","","Y","string {[]} {[]}
+","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
+"Condition.category","Condition.category","","","",1,1,"Y","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","概念（Concept）— 參照一個專門術語或只是文字表述","指定此病情、問題或診斷的類別","這種分類往往具有很強的情境性，在其他情境下可能顯得區分度不高，或沒有什麼用處。","","","","","","","","",,"extensible","指定病情、問題或診斷的類別；應填入[ConditionCategoryCodes](http://hl7.org/fhir/R4/valueset-condition-category.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。","http://hl7.org/fhir/ValueSet/condition-category","",,,,"Condition.category",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.category.id","Condition.category.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.category.extension","Condition.category.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","擴充的資料項目","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.category.coding","Condition.category.coding","","","",0,*,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
+","由專門術語系統（terminology system）定義的代碼","由專門術語系統（terminology system）所定義之代碼的參照","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，例如：SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許代碼系統中的替代編碼，以及翻譯到其他編碼系統。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
+"Condition.category.coding.id","Condition.category.coding.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.category.coding.extension","Condition.category.coding.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.category.coding.system","Condition.category.coding.system","","","",0,1,"Y","","Y","uri {[]} {[]}
+","專門術語系統（terminology system）的識別","定義代碼中符號意義的代碼系統識別","URI可以是一個OID（urn:oid:...）或一個UUID（urn:uuid:...）；OID和UUID **必須(SHALL)** 參照HL7 OID註冊中心；否則，URI應該來自HL7的FHIR定義的特殊URI列表，或者它應該參照一些明確建立的系统定義。","需要明確說明符號定義的來源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/ValueSet/condition-category""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.3","./codeSystem"
+"Condition.category.coding.version","Condition.category.coding.version","","","",0,1,"","","Y","string {[]} {[]}
+","系統的版本—如果相關的話","選擇此代碼時使用的代碼系統版本；請注意，一個維護良好的代碼系統不需要版本報告，因為代碼的意義在不同系統版本中是一致的；然而，不能始終保證這點，當不能保證意義一致時， **必須(SHALL)** 將版本資訊也一併作交換。","如果專門術語沒有明確定義應該使用什麼字串來識別代碼系統的版本，建議使用版本正式發布的日期（用FHIR日期格式表示）作為版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.7","./codeSystemVersion"
+"Condition.category.coding.code","Condition.category.coding.code","","","",0,1,"Y","","Y","code {[]} {[]}
+","系統定義的語法之符號","系統定義的語法之符號；符號可能是一個預先定義的代碼，也可能是代碼系統定義的語法中的表達式（如後組合配對／後組合式）。","","需要參照系統中的一個特定代碼","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""problem-list-item""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.1","./code"
+"Condition.category.coding.display","Condition.category.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+","由系統定義的表示法","遵循系統的規則以呈現代碼含義的表示法","","需要能為不了解此系統的讀者呈現可讀的代碼含義","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Problem List Item""/>","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.2 - but note this is not well followed","CV.displayName"
+"Condition.category.coding.userSelected","Condition.category.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
+","此編碼是否由使用者直接選擇？","表明此編碼是由使用者直接選擇，例如：從可用項目（代碼或顯示名稱）的清單中選擇。","在一系列備選方案中，直接選擇的代碼是新翻譯最合適的起點；關於「直接選擇」的確切意義，存在模糊不清之處，可能需要貿易夥伴的同意，以更完整澄清此資料項目的使用及其後果。","已被確定為一個臨床安全準則—此確切的系統／代碼對(code pair)是被明確選擇的，而不是由系統根據一些規則或是程式語言處理判斷。","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Sometimes implied by being first","CD.codingRationale"
+"Condition.category.text","Condition.category.text","","","",0,1,"Y","","Y","string {[]} {[]}
+","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
+"Condition.severity","Condition.severity","","","",0,1,"Y","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","病情、問題或診斷的主觀嚴重程度","臨床醫生對病情、問題或診斷嚴重程度的主觀評估","如有可能，最好用專門術語對嚴重程度進行編碼。","","","","","","","","",,"preferred","臨床醫生對病情、問題或診斷嚴重程度的主觀評價；鼓勵使用[Problem Severity - IPS](http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-condition-severity-uv-ips.html)代碼表中的代碼， 但不強制一定要使用此代碼表，你也可使用其他代碼表的代碼或單純以文字表示。","http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips","",,,,"Condition.severity",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.code","Condition.code","","type
+","",1,1,"Y","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","成人預防保健服務檢查單中疾病史的部分，例如高血壓、糖尿病等等","成人預防保健服務檢查單中疾病史的部分，例如高血壓、糖尿病等等","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","0..1，主要用於說明敘述性resource。","","","","","","","",,"example","病情、問題或診斷的識別；可參考[Condition/Problem/DiagnosisCodes](http://hl7.org/fhir/R4/valueset-condition-code.html)代碼表，但此代碼表只是針對這個欄位的一個可能值的示例，不預期也不鼓勵使用者一定要使用此代碼表的代碼。","http://hl7.org/fhir/ValueSet/condition-code","",,,,"Condition.code",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.code.id","Condition.code.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.code.extension","Condition.code.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何汙名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.code.coding","Condition.code.coding","","","",1,*,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
+","由專門術語系統（terminology system）定義的代碼","由專門術語系統（terminology system）所定義之代碼的參照。","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，如SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許使用者在不知道識別碼系統的情況下利用識別碼","","","","","","","",,,,,"","pattern:$this}
+","",,"open","CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
+"Condition.code.coding:icd10-cm-2021","Condition.code.coding","icd10-cm-2021","","",0,1,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
+","此為臺灣衛生福利部中央健康保險署維護之2021年中文版ICD-10-CM代碼，涵蓋範圍相對完整，可免費使用，可優先選用此代碼。","由專門術語系統（terminology system）所定義之代碼的參照。","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，如SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許使用者在不知道識別碼系統的情況下利用識別碼","","","","","","","",,"required","病情、問題或診斷的識別；應填入[臺灣2021年中文版ICD-10-CM值集](ValueSet-icd-10-cm-2021-tw.html)代碼表中的其中一個代碼。","https://twcore.mohw.gov.tw/ig/twcore/ValueSet/icd-10-cm-2021-tw","",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
+"Condition.code.coding:icd10-cm-2014","Condition.code.coding","icd10-cm-2014","","",0,1,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
+","此為臺灣衛生福利部中央健康保險署維護之2014年中文版ICD-10-CM代碼，涵蓋範圍相對完整，可免費使用，可優先選用此代碼。","由專門術語系統（terminology system）所定義之代碼的參照。","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，如SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許使用者在不知道識別碼系統的情況下利用識別碼","","","","","","","",,"required","病情、問題或診斷的識別；應填入[臺灣2014年中文版ICD-10-CM值集](ValueSet-icd-10-cm-2014-tw.html)代碼表中的其中一個代碼。","https://twcore.mohw.gov.tw/ig/twcore/ValueSet/icd-10-cm-2014-tw","",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
+"Condition.code.coding:absentOrUnknownProblem","Condition.code.coding","absentOrUnknownProblem","","",0,1,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
+","不存在的問題或未知問題的代碼","表示「absent problem」或「problems unknown」的代碼","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，如SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許使用者在不知道識別碼系統的情況下利用識別碼","","","","","","","",,"required","應填入[Absent or Unknown Problems - IPS](http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-absent-or-unknown-problems-uv-ips.html)代碼表中的其中一個代碼。","http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips","",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
+"Condition.code.coding:sct","Condition.code.coding","sct","","",1,1,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
+","由專門術語系統（terminology system）定義的代碼","由專門術語系統（terminology system）所定義之代碼的參照","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，例如：SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許使用者在不知道識別碼系統的情況下利用識別碼","","","","","","","",,"required","應填入[SNOMED CT診斷代碼值集](ValueSet-condition-code-sct-tw.html)代碼表中的其中一個代碼。","https://twcore.mohw.gov.tw/ig/twcore/ValueSet/condition-code-sct-tw","",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
+"Condition.code.coding:sct.id","Condition.code.coding.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.code.coding:sct.extension","Condition.code.coding.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.code.coding:sct.system","Condition.code.coding.system","","","",0,1,"Y","","Y","uri {[]} {[]}
+","專門術語系統（terminology system）的識別","定義代碼中符號意義的代碼系統識別","URI可以是一個OID（urn:oid:...）或一個UUID（urn:uuid:...）；OID和UUID **必須(SHALL)** 參照HL7 OID註冊中心；否則，URI應該來自HL7的FHIR定義的特殊URI列表，或者它應該參照一些明確建立的系统定義。","需要明確說明符號定義的來源","","","","","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.3","./codeSystem"
+"Condition.code.coding:sct.version","Condition.code.coding.version","","","",0,1,"","","Y","string {[]} {[]}
+","系統的版本—如果相關的話","選擇此代碼時使用的代碼系統版本；請注意，一個維護良好的代碼系統不需要版本報告，因為代碼的意義在不同系統版本中是一致的；然而，不能始終保證這點，當不能保證意義一致時， **必須(SHALL)** 將版本資訊也一併作交換。","如果專門術語沒有明確定義應該使用什麼字串來識別代碼系統的版本，建議使用版本正式發布的日期（用FHIR日期格式表示）作為版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.7","./codeSystemVersion"
+"Condition.code.coding:sct.code","Condition.code.coding.code","","","",0,1,"Y","","Y","code {[]} {[]}
+","系統定義的語法之符號","系統定義的語法之符號；符號可能是一個預先定義的代碼，也可能是代碼系統定義的語法中的表達式（如後組合配對／後組合式）。","","需要參照系統中的一個特定代碼","","","","","","","",,"required","","https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code","",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.1","./code"
+"Condition.code.coding:sct.display","Condition.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+","由系統定義的表示法","遵循系統的規則以呈現代碼含義的表示法","","需要能為不了解此系統的讀者呈現可讀的代碼含義","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.2 - but note this is not well followed","CV.displayName"
+"Condition.code.coding:sct.userSelected","Condition.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
+","此編碼是否由使用者直接選擇？","表明此編碼是由使用者直接選擇，例如：從可用項目（代碼或顯示名稱）的清單中選擇。","在一系列備選方案中，直接選擇的代碼是新翻譯最合適的起點；關於「直接選擇」的確切意義，存在模糊不清之處，可能需要貿易夥伴的同意，以更完整澄清此資料項目的使用及其後果。","已被確定為一個臨床安全準則—此確切的系統／代碼對(code pair)是被明確選擇的，而不是由系統根據一些規則或是程式語言處理判斷。","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Sometimes implied by being first","CD.codingRationale"
+"Condition.code.text","Condition.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
+","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
+"Condition.bodySite","Condition.bodySite","","","",0,*,"Y","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","如果相關請填寫解剖位置","此病情、問題或診斷表現出來的解剖位置","只有在Condition.code中找到的代碼未隱含此資料項目概念時才使用。如果使用案例（use-case）要求將BodySite作為一個單獨的resource來處理（例如：識別和追踪），那麼就使用標準的資料項目擴充方式來擴充bodySite。可以是一個摘要代碼，也可以是對一個非常精確位置定義的參照，或者兩者都是。","","","","","","","","",,"example","描述解剖位置的代碼。可包括側面；可參考[SNOMEDCTBodyStructures](http://hl7.org/fhir/R4/valueset-body-site.html)代碼表，但此代碼表只是針對這個欄位的一個可能值的示例，不預期也不鼓勵使用者一定要使用此代碼表的代碼。","http://hl7.org/fhir/ValueSet/body-site","",,,,"Condition.bodySite",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.subject","Condition.subject","","patient
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck]]}
+","擁有此疾病史的個案是誰","表示與此病情、問題或診斷紀錄相關的病人或實體集合（Group resource）","","實體集合（Group resource）通常用於獸醫或公共衛生的案例","","","","","","","",,,,,"",,,,"Condition.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.subject","PID-3",".participation[typeCode=SBJ].role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject"
+"Condition.encounter","Condition.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Encounter-twcore]]}
+","作為病情、問題或診斷紀錄的一部分的就醫（Encounter）紀錄","此病情、問題或診斷記載在哪次的「就醫（Encounter）」紀錄或者與此病情、問題或診斷紀錄密切相關的「就醫（Encounter）」紀錄","通常是此病情、問題或診斷發生的就醫事件，雖然有些活動可能在就醫結束之前或之後開始，但仍與就醫事件的情境有關。這筆紀錄表明與此病情、問題或診斷紀錄相關的就醫事件（Encounter）。「新的」診斷的情況下，反映病情、問題或診斷的持續/修訂資訊可能與首次就醫所知道的病情、問題或診斷不同。","","","","","","","","",,,,,"",,,,"Condition.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.context","PV1-19 (+PV1-54)",".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]","FiveWs.context"
+"Condition.onset[x]","Condition.onset[x]","","","",0,1,"Y","","Y","dateTime {[]} {[]}
+Age {[]} {[]}Period {[]} {[]}Range {[]} {[]}string {[]} {[]}","估計的或實際的日期、日期—時間或年齡。","醫師認為此病情、問題或診斷之推估或實際發生時間或日期時間等","onsetAge通常是指病人說明病情何時開始發生的年齡","","","","","","","","",,,,,"",,,,"Condition.onset[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.occurrence[x]","PRB-16",".effectiveTime.low or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""age at onset""].value","FiveWs.init"
+"Condition.abatement[x]","Condition.abatement[x]","","","",0,1,"Y","","","dateTime {[]} {[]}
+Age {[]} {[]}Period {[]} {[]}Range {[]} {[]}string {[]} {[]}","何時解決/緩解","病情、問題或診斷緩解或開始緩解的日期或估計日期。因為與「緩解（remissio）」或 「解決（resolution）」相關的許多過多含義—病情、問題或診斷不會真正解決，但它們可以緩解，所以稱為「緩解 （abatement）」，","解決（resolution）和緩解（remission）之間沒有明確的區別，因為在許多情況下，兩者的區別並不明顯。當病人說明病情、問題或診斷緩解的年齡時，一般使用onsetAge。如果沒有abatement這個資料項目，就不知道狀況是否已經解決或緩解；應用程式和使用者一般應假定病情、問題或診斷仍存在。當abatementString存在時，它意味著病情、問題或診斷已緩解。","","","","","","","","",,,,,"",,,,"Condition.abatement[x]",0,1,"con-4
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".effectiveTime.high or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""age at remission""].value or .inboundRelationship[typeCode=SUBJ]source[classCode=CONC, moodCode=EVN].status=completed","FiveWs.done[x]"
+"Condition.recordedDate","Condition.recordedDate","","","",0,1,"Y","","Y","dateTime {[]} {[]}
+","記錄的日期","recordedDate表述此Condition記錄何時於系統中建立，這通常是系統產生的日期。","","","","","","","","","",,,,,"",,,,"Condition.recordedDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","REL-11",".participation[typeCode=AUT].time","FiveWs.recorded"
+"Condition.recorder","Condition.recorder","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Practitioner-twcore], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Patient-twcore], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+","誰記錄此病情、問題或診斷","記錄病情、問題或診斷內容並對其內容負責的個人","","","","","","","","","",,,,,"",,,,"Condition.recorder",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".participation[typeCode=AUT].role","FiveWs.author"
+"Condition.asserter","Condition.asserter","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Practitioner-twcore], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Patient-twcore], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+","聲稱有此病情、問題或診斷的人","提出此病情、問題或診斷說明的人","","","","","","","","","",,,,,"",,,,"Condition.asserter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","REL-7.1 identifier + REL-7.12 type code",".participation[typeCode=INF].role","FiveWs.source"
+"Condition.stage","Condition.stage","","","",0,*,"","","","BackboneElement {[]} {[]}
+","分期（stage）／分級（grade），通常是正式的評估。","病情、問題或診斷的臨床分期或分級，可能包括正式的嚴重程度評估。","","","","","","","","","",,,,,"",,,,"Condition.stage",0,*,"","con-1:Stage SHALL have summary or assessment {summary.exists() or assessment.exists()}
+ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}","./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""stage/grade""]"
+"Condition.stage.id","Condition.stage.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.stage.extension","Condition.stage.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.stage.modifierExtension","Condition.stage.modifierExtension","","","",0,*,"","Y","Y","Extension {[]} {[]}
+","此擴充的資料項目可能會完全修正或改變其他資料項目的意涵，需特別留意。","可以用來表示不屬於資料項目的基本定義的附加資訊，並且修改對它所內嵌（contained）的資料項目的理解和（或）對包含資料項目之後續使用的理解。通常，修飾用的資料項目提供否定或限定。為了使擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。處理resource的應用程式被要求檢查修飾用的擴充資料項目。  
+修飾用的擴充資料項目 **必須沒有（SHALL NOT）** 改變resource或DomainResource上任何資料項目的含義（包括不能改變modifierExtension本身的含義）。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","修飾用的資料項目擴充將不能安全地忽略的擴充與絕大多數可以安全地忽略的擴充明確區分開來。透過消除禁止實作者擴充存在的需求來促進可互操作性。更多訊息，請參見[修飾用的資料項目擴充之定義](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)。","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.stage.summary","Condition.stage.summary","","","",0,1,"","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","簡單的摘要（特定疾病）。","對分期的簡單摘要，如「第3期」。針對特定疾病的分期測定。","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"example","描述病情、問題或診斷分期的代碼（例如：癌症分期）。可參考[ConditionStage](http://hl7.org/fhir/R4/valueset-condition-stage.html)代碼表，但此代碼表只是針對這個欄位的一個可能值的示例，不預期也不鼓勵使用者一定要使用此代碼表的代碼。","http://hl7.org/fhir/ValueSet/condition-stage","",,,,"Condition.stage.summary",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.stage.assessment","Condition.stage.assessment","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ClinicalImpression], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport], CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Observation-laboratoryResult-twcore], CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Observation-vitalSigns-twcore]]}
+","正式的評估記錄","分期評估所依據的證據之正式記錄","","","","","","","","","",,,,,"",,,,"Condition.stage.assessment",0,*,"con-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".self"
+"Condition.stage.type","Condition.stage.type","","","",0,1,"","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","分期的種類","分期的種類，如病理分期或臨床分期。","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"example","病情、問題或診斷分期種類的代碼（如臨床或病理）；可參考[ConditionStageType](http://hl7.org/fhir/R4/valueset-condition-stage-type.html)代碼表，但此代碼表只是針對這個欄位的一個可能值的示例，不預期也不鼓勵使用者一定要使用此代碼表的代碼。","http://hl7.org/fhir/ValueSet/condition-stage-type","",,,,"Condition.stage.type",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.evidence","Condition.evidence","","","",0,*,"","","","BackboneElement {[]} {[]}
+","支持的證據","作為病情、問題或診斷驗證狀態基礎的支持證據／臨床表現，如證實或反駁病情、問題或診斷的證據。","證據可以是一個簡單的編碼症狀／臨床表現的清單，或參考檢驗檢查或者正式評估，或者兩者都是。","","","","","","","","",,,,,"",,,,"Condition.evidence",0,*,"","con-2:evidence SHALL have code or details {code.exists() or detail.exists()}
+ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}",".outboundRelationship[typeCode=SPRT].target[classCode=OBS, moodCode=EVN]"
+"Condition.evidence.id","Condition.evidence.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可識別ID，以供資料項目間相互參照。","resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.evidence.extension","Condition.evidence.extension","","","",0,*,"","","","Extension {[]} {[]}
+","擴充的資料項目","可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.evidence.modifierExtension","Condition.evidence.modifierExtension","","","",0,*,"","Y","Y","Extension {[]} {[]}
+","此擴充的資料項目可能會完全修正或改變其他資料項目的意涵，需特別留意。","可以用來表示不屬於資料項目的基本定義的附加資訊，並且修改對它所內嵌（contained）的資料項目的理解和（或）對包含資料項目之後續使用的理解。通常，修飾用的資料項目提供否定或限定。為了使擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求 **必須（SHALL）** 滿足。處理resource的應用程式被要求檢查修飾用的擴充資料項目。  
+修飾用的擴充資料項目 **必須沒有（SHALL NOT）** 改變resource或DomainResource上任何資料項目的含義（包括不能改變modifierExtension本身的含義）。","無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。","修飾用的資料項目擴充將不能安全地忽略的擴充與絕大多數可以安全地忽略的擴充明確區分開來。透過消除禁止實作者擴充存在的需求來促進可互操作性。更多訊息，請參見[修飾用的資料項目擴充之定義](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)。","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.evidence.code","Condition.evidence.code","","","",0,*,"","","","CodeableConcept {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/CodeableConcept-tw]]} {[]}
+","表現／症狀","導致記錄此病情、問題或診斷的表現或症狀","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"example","病情、問題或診斷的表現或症狀之代碼；可參考[ManifestationAndSymptomCodes](http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html)代碼表，但此代碼表只是針對這個欄位的一個可能值的示例，不預期也不鼓勵使用者一定要使用此代碼表的代碼。","http://hl7.org/fhir/ValueSet/manifestation-or-symptom","",,,,"Condition.evidence.code",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CE/CNE/CWE","n/a","CD"
+"Condition.evidence.detail","Condition.evidence.detail","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
+","在其他地方找到的支持資訊","其他相關資訊的連接，包括病理報告。","","","","","","","","","",,,,,"",,,,"Condition.evidence.detail",0,*,"con-2
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".self","FiveWs.why[x]"
+"Condition.note","Condition.note","","","",0,*,"Y","","","Annotation {[]} {[]}
+","關於此Condition的附加資訊","關於此Condition的附加資訊。這是一個一般的註釋／意見紀錄，用於描述病情、問題或診斷、其診斷和預後。","","","","","","","","","",,,,,"",,,,"Condition.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.note","NTE child of PRB",".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""annotation""].value"

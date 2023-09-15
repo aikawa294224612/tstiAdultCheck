@@ -1,0 +1,642 @@
+{
+  "resourceType" : "Composition",
+  "id" : "CompositionAdultCheckExample",
+  "meta" : {
+    "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"CompositionAdultCheckExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;CompositionAdultCheckExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-adultcheck.html\">Composition - AdultCheck</a></p></div><p><b>identifier</b>: MRT: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: final</p><p><b>type</b>: General medicine Hospital Progress note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#100574-4)</span></p><p><b>encounter</b>: <a href=\"Encounter/encounter-example\">Encounter/encounter-example</a></p><p><b>date</b>: 2022-08-01 17:00:14-0500</p><p><b>author</b>: </p><ul><li><a href=\"Organization/organ-example1\">Organization/organ-example1</a></li><li><a href=\"Organization/organ-example2\">Organization/organ-example2</a></li></ul><p><b>title</b>: 成人健康檢查問卷</p></div>"
+  },
+  "identifier" : {
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203",
+        "code" : "MRT"
+      }]
+    },
+    "system" : "https://tsti.hospital.com",
+    "value" : "000120230721"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "100574-4",
+      "display" : "General medicine Hospital Progress note"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/pat-example"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example"
+  },
+  "date" : "2022-08-01T17:00:14-05:00",
+  "author" : [{
+    "reference" : "Organization/organ-example1"
+  },
+  {
+    "reference" : "Organization/organ-example2"
+  }],
+  "title" : "成人健康檢查問卷",
+  "section" : [{
+    "title" : "疾病史-高血壓",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "34117-2",
+        "display" : "History and physical note"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Condition/bp-example"
+    }]
+  },
+  {
+    "title" : "疾病史-糖尿病",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "34117-2",
+        "display" : "History and physical note"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Condition/db-example"
+    }]
+  },
+  {
+    "title" : "疾病史-高血脂症",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "34117-2",
+        "display" : "History and physical note"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Condition/bg-example"
+    }]
+  },
+  {
+    "title" : "疾病史-心臟病",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "34117-2",
+        "display" : "History and physical note"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Condition/cd-example"
+    }]
+  },
+  {
+    "title" : "疾病史-腦中風",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "34117-2",
+        "display" : "History and physical note"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Condition/sd-example"
+    }]
+  },
+  {
+    "title" : "疾病史-腎臟病",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "34117-2",
+        "display" : "History and physical note"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Condition/kd-example"
+    }]
+  },
+  {
+    "title" : "生理量測-身高",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/height-example"
+    }]
+  },
+  {
+    "title" : "生理量測-體重",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, weight, head circumference, oxygen saturation and BMI panel"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/weight-example"
+    }]
+  },
+  {
+    "title" : "生理量測-BMI",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, bmi, head circumference, oxygen saturation and BMI panel"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/bmi-example"
+    }]
+  },
+  {
+    "title" : "生理量測-血壓",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, bloodtype, head circumference, oxygen saturation and BMI panel"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/bloodtype-example"
+    }]
+  },
+  {
+    "title" : "生理量測-腰圍",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, waist, head circumference, oxygen saturation and BMI panel"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/waist-example"
+    }]
+  },
+  {
+    "title" : "Protein 尿蛋白",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-protein-example"
+    }]
+  },
+  {
+    "title" : "血糖",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-sugar-example"
+    }]
+  },
+  {
+    "title" : "膽固醇",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-cholesterol-example"
+    }]
+  },
+  {
+    "title" : "三酸甘油脂",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-triglycerides-example"
+    }]
+  },
+  {
+    "title" : "低密度脂蛋白膽固醇計算",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-low-example"
+    }]
+  },
+  {
+    "title" : "高密度膽固醇",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-high-example"
+    }]
+  },
+  {
+    "title" : "GOT",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-got-example"
+    }]
+  },
+  {
+    "title" : "GPT",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-gpt-example"
+    }]
+  },
+  {
+    "title" : "肌酸酐",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-creatinine-example"
+    }]
+  },
+  {
+    "title" : "腎絲球過濾率計算",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-glomerulus-example"
+    }]
+  },
+  {
+    "title" : "Ｂ型肝炎表面抗原",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-b-example"
+    }]
+  },
+  {
+    "title" : "Ｃ型肝炎病毒抗體",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Reference lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/lab-c-example"
+    }]
+  },
+  {
+    "title" : "憂鬱檢測",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "73832-8",
+        "display" : "Adult depression screening assessment"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/depress-example"
+    }]
+  },
+  {
+    "title" : "生活史-吸煙",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "35090-0",
+        "display" : "Patient history"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/history-smoke-example"
+    }]
+  },
+  {
+    "title" : "生活史-喝酒",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "35090-0",
+        "display" : "Patient history"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/history-liquor-example"
+    }]
+  },
+  {
+    "title" : "生活史-嚼檳榔",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "35090-0",
+        "display" : "Patient history"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/history-nut-example"
+    }]
+  },
+  {
+    "title" : "生活史-運動",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "35090-0",
+        "display" : "Patient history"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/history-exercise-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：戒煙",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/con-smoke-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：節酒",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/con-liquor-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：戒檳榔",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/con-nut-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：規律運動",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/con-exercise-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：維持正常體重",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/con-weight-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：健康飲食",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/con-diet-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：事故傷害預",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/con-accident-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：口腔保健",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/con-oral-example"
+    }]
+  },
+  {
+    "title" : "檢查過B、C型肝炎",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/check-bc-example"
+    }]
+  },
+  {
+    "title" : "血壓檢查結果與建議",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "50398-7",
+        "display" : "Narrative diagnostic report [Interpretation]"
+      }]
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/diag-bp-example"
+    }]
+  },
+  {
+    "title" : "血糖檢查結果判讀",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "50398-7",
+        "display" : "Narrative diagnostic report [Interpretation]"
+      }]
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/diag-sugar-example"
+    }]
+  },
+  {
+    "title" : "血脂肪檢查結果判讀",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "50398-7",
+        "display" : "Narrative diagnostic report [Interpretation]"
+      }]
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/diag-bg-example"
+    }]
+  },
+  {
+    "title" : "腎功能檢查結果判讀",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "50398-7",
+        "display" : "Narrative diagnostic report [Interpretation]"
+      }]
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/diag-kid-example"
+    }]
+  },
+  {
+    "title" : "肝功能檢查結果判讀",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "50398-7",
+        "display" : "Narrative diagnostic report [Interpretation]"
+      }]
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/diag-liver-example"
+    }]
+  },
+  {
+    "title" : "代謝症候群檢查結果與建議",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "50398-7",
+        "display" : "Narrative diagnostic report [Interpretation]"
+      }]
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/diag-metabolic-example"
+    }]
+  },
+  {
+    "title" : "B型肝炎檢查結果與建議",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "50398-7",
+        "display" : "Narrative diagnostic report [Interpretation]"
+      }]
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/diag-b-example"
+    }]
+  },
+  {
+    "title" : "C型肝炎檢查結果與建議",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "50398-7",
+        "display" : "Narrative diagnostic report [Interpretation]"
+      }]
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/diag-c-example"
+    }]
+  },
+  {
+    "title" : "憂鬱檢測結果與建議",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "50398-7",
+        "display" : "Narrative diagnostic report [Interpretation]"
+      }]
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/diag-depress-example"
+    }]
+  }]
+}

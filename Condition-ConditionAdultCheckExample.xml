@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="ConditionAdultCheckExample"/>
+  <meta>
+    <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="ConditionAdultCheckExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;ConditionAdultCheckExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Condition-adultcheck.html">Condition - AdultCheck</a></p></div><p><b>identifier</b>: 全國的個人識別碼: A123456789 (use: OFFICIAL), Medical record number: 8862168 (use: OFFICIAL), HOI: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>clinicalStatus</b>: remission <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#remission)</span></p><p><b>verificationStatus</b>: confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#confirmed)</span></p><p><b>category</b>: problem-list-item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#problem-list-item)</span></p><p><b>code</b>: H/O: hypertension <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#161501007)</span></p><p><b>subject</b>: <a href="Patient-pat-example.html">Patient/pat-example</a></p><p><b>recordedDate</b>: 2022-08-05 17:00:14-0500</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203"/>
+        <code value="NNTWN"/>
+      </coding>
+    </type>
+    <system value="http://www.moi.gov.tw/"/>
+    <value value="A123456789"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+      </coding>
+    </type>
+    <system value="https://www.tph.mohw.gov.tw/"/>
+    <value value="8862168"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="HOI"/>
+      </coding>
+    </type>
+    <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
+    <value value="0123456789"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MRT"/>
+      </coding>
+    </type>
+    <system value="https://tsti.hospital.com"/>
+    <value value="000120230721"/>
+  </identifier>
+  <clinicalStatus>
+    <coding>
+      <code value="remission"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <code value="problem-list-item"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <code value="161501007"/>
+      <display value="H/O: hypertension"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/pat-example"/>
+  </subject>
+  <recordedDate value="2022-08-05T17:00:14-05:00"/>
+</Condition>

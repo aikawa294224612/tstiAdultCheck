@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="adultcheck-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/161501007">161501007</a></td><td>H/O: hypertension</td></tr><tr><td><a href="http://snomed.info/id/161445009">161445009</a></td><td>H/O: diabetes mellitus</td></tr><tr><td><a href="http://snomed.info/id/3744001">3744001</a></td><td>Hyperlipoproteinemia</td></tr><tr><td><a href="http://snomed.info/id/275544003">275544003</a></td><td>H/O: heart disorder</td></tr><tr><td><a href="http://snomed.info/id/275527002">275527002</a></td><td>H/O: stroke</td></tr><tr><td><a href="http://snomed.info/id/275552000">275552000</a></td><td>H/O: kidney disease</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code"/>
+  <version value="0.1.0"/>
+  <name value="ValueSet-adultcheck-code"/>
+  <title value="成人預防保健疾病史代碼"/>
+  <status value="draft"/>
+  <date value="2023-09-15T11:03:31+08:00"/>
+  <publisher value="Polly Peng"/>
+  <contact>
+    <name value="Polly Peng"/>
+    <telecom>
+      <system value="email"/>
+      <value value="polly.peng@etatung.com"/>
+    </telecom>
+  </contact>
+  <description value="此EncounterAdultCheck Profile說明成人預防保健疾病史代碼"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="161501007"/>
+        <display value="H/O: hypertension"/>
+      </concept>
+      <concept>
+        <code value="161445009"/>
+        <display value="H/O: diabetes mellitus"/>
+      </concept>
+      <concept>
+        <code value="3744001"/>
+        <display value="Hyperlipoproteinemia"/>
+      </concept>
+      <concept>
+        <code value="275544003"/>
+        <display value="H/O: heart disorder"/>
+      </concept>
+      <concept>
+        <code value="275527002"/>
+        <display value="H/O: stroke"/>
+      </concept>
+      <concept>
+        <code value="275552000"/>
+        <display value="H/O: kidney disease"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

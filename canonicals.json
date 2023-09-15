@@ -1,0 +1,128 @@
+[
+  {
+    "id" : "ServerCapabilityStatement",
+    "type" : "CapabilityStatement",
+    "url" : "https://tstifhir.azurehealthcareapis.com/CapabilityStatement/ServerCapabilityStatement",
+    "version" : "0.1.0",
+    "name" : "成人預防保健實作指引(Adult Check IG)伺服器之能力聲明"
+  },
+  {
+    "id" : "tw.tsti.adultcheck",
+    "type" : "ImplementationGuide",
+    "url" : "https://tstifhir.azurehealthcareapis.com/ImplementationGuide/tw.tsti.adultcheck",
+    "version" : "0.1.0",
+    "name" : "AdultCheckIG"
+  },
+  {
+    "id" : "Bundle-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Bundle-adultcheck",
+    "version" : "0.1.0",
+    "name" : "BundleAdultCheck"
+  },
+  {
+    "id" : "Composition-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck",
+    "version" : "0.1.0",
+    "name" : "CompositionAdultCheck"
+  },
+  {
+    "id" : "Condition-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck",
+    "version" : "0.1.0",
+    "name" : "ConditionAdultCheck"
+  },
+  {
+    "id" : "DiagnosticReport-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck",
+    "version" : "0.1.0",
+    "name" : "DiagnosticReportAdultCheck"
+  },
+  {
+    "id" : "Encounter-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck",
+    "version" : "0.1.0",
+    "name" : "EncounterAdultCheck"
+  },
+  {
+    "id" : "ObservationBMI-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck",
+    "version" : "0.1.0",
+    "name" : "ObservationBMIAdultCheck"
+  },
+  {
+    "id" : "ObservationDepression-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationDepression-adultcheck",
+    "version" : "0.1.0",
+    "name" : "ObservationDepressionAdultCheck"
+  },
+  {
+    "id" : "ObservationHeight-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationHeight-adultcheck",
+    "version" : "0.1.0",
+    "name" : "ObservationHeightAdultCheck"
+  },
+  {
+    "id" : "ObservationLab-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck",
+    "version" : "0.1.0",
+    "name" : "ObservationLabAdultCheck"
+  },
+  {
+    "id" : "ObservationLife-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck",
+    "version" : "0.1.0",
+    "name" : "ObservationLifeAdultCheck"
+  },
+  {
+    "id" : "ObservationPressure-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck",
+    "version" : "0.1.0",
+    "name" : "ObservationPressureAdultCheck"
+  },
+  {
+    "id" : "ObservationWaist-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck",
+    "version" : "0.1.0",
+    "name" : "ObservationWaistAdultCheck"
+  },
+  {
+    "id" : "ObservationWeight-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck",
+    "version" : "0.1.0",
+    "name" : "ObservationWeightAdultCheck"
+  },
+  {
+    "id" : "Patient-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck",
+    "version" : "0.1.0",
+    "name" : "PatientAdultCheck"
+  },
+  {
+    "id" : "adultcheck-code",
+    "type" : "ValueSet",
+    "url" : "https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code",
+    "version" : "0.1.0",
+    "name" : "ValueSet-adultcheck-code"
+  },
+  {
+    "id" : "adultcheck-lifecode",
+    "type" : "ValueSet",
+    "url" : "https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-lifecode",
+    "version" : "0.1.0",
+    "name" : "ValueSet_adultcheck-lifecode"
+  }
+]

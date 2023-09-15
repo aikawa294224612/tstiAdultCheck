@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "adultcheck-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/161501007\">161501007</a></td><td>H/O: hypertension</td></tr><tr><td><a href=\"http://snomed.info/id/161445009\">161445009</a></td><td>H/O: diabetes mellitus</td></tr><tr><td><a href=\"http://snomed.info/id/3744001\">3744001</a></td><td>Hyperlipoproteinemia</td></tr><tr><td><a href=\"http://snomed.info/id/275544003\">275544003</a></td><td>H/O: heart disorder</td></tr><tr><td><a href=\"http://snomed.info/id/275527002\">275527002</a></td><td>H/O: stroke</td></tr><tr><td><a href=\"http://snomed.info/id/275552000\">275552000</a></td><td>H/O: kidney disease</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ValueSet-adultcheck-code"] ; # 
+  fhir:title [ fhir:v "成人預防保健疾病史代碼"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-09-15T11:03:31+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Polly Peng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Polly Peng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "polly.peng@etatung.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "此EncounterAdultCheck Profile說明成人預防保健疾病史代碼"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "161501007" ] ;
+         fhir:display [ fhir:v "H/O: hypertension" ]
+       ] [
+         fhir:code [ fhir:v "161445009" ] ;
+         fhir:display [ fhir:v "H/O: diabetes mellitus" ]
+       ] [
+         fhir:code [ fhir:v "3744001" ] ;
+         fhir:display [ fhir:v "Hyperlipoproteinemia" ]
+       ] [
+         fhir:code [ fhir:v "275544003" ] ;
+         fhir:display [ fhir:v "H/O: heart disorder" ]
+       ] [
+         fhir:code [ fhir:v "275527002" ] ;
+         fhir:display [ fhir:v "H/O: stroke" ]
+       ] [
+         fhir:code [ fhir:v "275552000" ] ;
+         fhir:display [ fhir:v "H/O: kidney disease" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

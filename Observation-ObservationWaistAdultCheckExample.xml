@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ObservationWaistAdultCheckExample"/>
+  <meta>
+    <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ObservationWaistAdultCheckExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ObservationWaistAdultCheckExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationWaist-adultcheck.html">Observation Waist - AdultCheck</a></p></div><p><b>identifier</b>: 全國的個人識別碼: A123456789 (use: OFFICIAL), Medical record number: 8862168 (use: OFFICIAL), HOI: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Waist Circumference by WHI <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#56117-5)</span></p><p><b>subject</b>: <a href="Patient-pat-example.html">Patient/pat-example</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization/organ-example">Organization/organ-example</a></p><p><b>value</b>: 30 inch<span style="background: LightGoldenRodYellow"> (Details: [not stated] code inches = 'inches')</span></p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203"/>
+        <code value="NNTWN"/>
+      </coding>
+    </type>
+    <system value="http://www.moi.gov.tw/"/>
+    <value value="A123456789"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+      </coding>
+    </type>
+    <system value="https://www.tph.mohw.gov.tw/"/>
+    <value value="8862168"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="HOI"/>
+      </coding>
+    </type>
+    <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
+    <value value="0123456789"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MRT"/>
+      </coding>
+    </type>
+    <system value="https://tsti.hospital.com"/>
+    <value value="000120230721"/>
+  </identifier>
+  <status value="preliminary"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="56117-5"/>
+      <display value="Waist Circumference by WHI"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/pat-example"/>
+  </subject>
+  <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+  <performer>
+    <reference value="Organization/organ-example"/>
+  </performer>
+  <valueQuantity>
+    <value value="30"/>
+    <unit value="inch"/>
+    <code value="inches"/>
+  </valueQuantity>
+</Observation>

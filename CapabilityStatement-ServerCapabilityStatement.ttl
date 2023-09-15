@@ -1,0 +1,582 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://tstifhir.azurehealthcareapis.com/CapabilityStatement/ServerCapabilityStatement> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ServerCapabilityStatement"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>成人預防保健實作指引(Adult Check IG)伺服器之能力聲明</h2><div><p>成人預防保健實作指引(Adult Check IG)伺服端(Server)之能力聲明</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>The TW Core Server <strong>SHALL</strong>:</p>\n<ol>\n<li>Support all profiles defined in this Implementation Guide..</li>\n<li>Implement the RESTful behavior according to the FHIR specification.</li>\n<li>Return the following response classes:\n<ul>\n<li>(Status 400): invalid parameter</li>\n<li>(Status 401/4xx): unauthorized request</li>\n<li>(Status 403): insufficient scope</li>\n<li>(Status 404): unknown resource</li>\n<li>(Status 410): deleted resource.</li>\n</ul>\n</li>\n<li>Support json source formats for all TW Core Server interactions.</li>\n<li>Identify the TW Core Server profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li>\n<li>Support the searchParameters on each profile  individually and in combination.\n1.Support forward and reverse chaining on all search parameters that specify the 'chain' property</li>\n</ol>\n<p>TW Core Server <strong>SHOULD</strong>:</p>\n<ol>\n<li>Support xml source formats for all TW Core Server interactions.</li>\n</ol>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"PATCH a new resource version (patch interaction)\">Patch</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"DELETE a resource (delete interaction)\">Delete</b></th></tr><tr><td>Patient</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/R4/shareablemeasure.html\">Shareable Measure</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Encounter</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Observation</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Observation</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Bundle</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/R4/shareablemeasure.html\">Shareable Measure</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://tstifhir.azurehealthcareapis.com/CapabilityStatement/ServerCapabilityStatement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "成人預防保健實作指引(Adult Check IG)伺服器之能力聲明"] ; # 
+  fhir:title [ fhir:v "此CapabilityStatement 說明成人預防保健伺服器能力聲明"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-07-25"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Polly Peng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Polly Peng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "polly.peng@etatung.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "成人預防保健實作指引(Adult Check IG)伺服端(Server)之能力聲明"] ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [ fhir:v "json"] ) ; # 
+  fhir:patchFormat ( [ fhir:v "application/json-patch+json"] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "server" ] ;
+     fhir:documentation [ fhir:v "The TW Core Server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide..\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n1. Support json source formats for all TW Core Server interactions.\n1. Identify the TW Core Server profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n1. Support the searchParameters on each profile  individually and in combination.\n1.Support forward and reverse chaining on all search parameters that specify the 'chain' property\n\n TW Core Server **SHOULD**:\n\n1. Support xml source formats for all TW Core Server interactions.\n" ] ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHALL" ]
+       ] ) ;
+       fhir:type [ fhir:v "Patient" ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/shareablemeasure"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/shareablemeasure> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] )
+       ] ) ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "vread" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "update" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "patch" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "delete" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_lastUpdated" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-lastUpdated>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Patient-identifier"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Patient-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHALL" ]
+       ] ) ;
+       fhir:type [ fhir:v "Encounter" ] ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "vread" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "update" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "patch" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "delete" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_lastUpdated" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-lastUpdated>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/clinical-identifier"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/clinical-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Encounter-subject"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Encounter-subject>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "service-provider" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Encounter-service-provider"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Encounter-service-provider>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHALL" ]
+       ] ) ;
+       fhir:type [ fhir:v "Observation" ] ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "vread" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "update" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "patch" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "delete" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_lastUpdated" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-lastUpdated>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/clinical-identifier"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/clinical-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Observation-subject"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Observation-subject>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "code" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/clinical-code"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/clinical-code>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "performer" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Observation-performer"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Observation-performer>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "date" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/clinical-date"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/clinical-date>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHALL" ]
+       ] ) ;
+       fhir:type [ fhir:v "Observation" ] ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "vread" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "update" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "patch" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "delete" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_lastUpdated" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-lastUpdated>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/clinical-identifier"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/clinical-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "code" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/clinical-code"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/clinical-code>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "performer" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/DiagnosticReport-performer"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/DiagnosticReport-performer>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "date" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/clinical-date"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/clinical-date>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHALL" ]
+       ] ) ;
+       fhir:type [ fhir:v "Bundle" ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/shareablemeasure"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/shareablemeasure> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] )
+       ] ) ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "vread" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "update" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "patch" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "delete" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_lastUpdated" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-lastUpdated>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Bundle-identifier"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Bundle-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-lifecode> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "adultcheck-lifecode"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/230056004\">230056004</a></td><td>Cigarette consumption</td></tr><tr><td><a href=\"http://snomed.info/id/160573003\">160573003</a></td><td>Alcohol intake</td></tr><tr><td><a href=\"http://snomed.info/id/227491007\">227491007</a></td><td>Betal nut</td></tr><tr><td><a href=\"http://snomed.info/id/128976003\">128976003</a></td><td>Exercise state</td></tr><tr><td><a href=\"http://snomed.info/id/225324006\">225324006</a></td><td>Advice on effects of smoking on health</td></tr><tr><td><a href=\"http://snomed.info/id/413473000\">413473000</a></td><td>Alcohol consumption counseling</td></tr><tr><td><a href=\"http://snomed.info/id/51011006\">51011006</a></td><td>Nutritional counseling for control of dental disease</td></tr><tr><td><a href=\"http://snomed.info/id/410289001\">410289001</a></td><td>Exercises education, guidance, and counseling</td></tr><tr><td><a href=\"http://snomed.info/id/388970003\">388970003</a></td><td>Weight maintenance consultation</td></tr><tr><td><a href=\"http://snomed.info/id/410293007\">410293007</a></td><td>Food education, guidance, and counseling</td></tr><tr><td><a href=\"http://snomed.info/id/409059003\">409059003</a></td><td>Safety education, guidance, and counseling</td></tr><tr><td><a href=\"http://snomed.info/id/410263001\">410263001</a></td><td>Medical/dental care education, guidance, and counseling</td></tr><tr><td><a href=\"http://snomed.info/id/444266007\">444266007</a></td><td>Measurement of Hepatitis B surface antibody and Hepatitis C antibody </td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-lifecode"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ValueSet_adultcheck-lifecode"] ; # 
+  fhir:title [ fhir:v "成人預防保健生活史代碼集值"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-09-15T11:03:31+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Polly Peng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Polly Peng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "polly.peng@etatung.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "此EncounterAdultCheck Profile說明成人預防保健生活史代碼集值"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "230056004" ] ;
+         fhir:display [ fhir:v "Cigarette consumption" ]
+       ] [
+         fhir:code [ fhir:v "160573003" ] ;
+         fhir:display [ fhir:v "Alcohol intake" ]
+       ] [
+         fhir:code [ fhir:v "227491007" ] ;
+         fhir:display [ fhir:v "Betal nut" ]
+       ] [
+         fhir:code [ fhir:v "128976003" ] ;
+         fhir:display [ fhir:v "Exercise state" ]
+       ] [
+         fhir:code [ fhir:v "225324006" ] ;
+         fhir:display [ fhir:v "Advice on effects of smoking on health" ]
+       ] [
+         fhir:code [ fhir:v "413473000" ] ;
+         fhir:display [ fhir:v "Alcohol consumption counseling" ]
+       ] [
+         fhir:code [ fhir:v "51011006" ] ;
+         fhir:display [ fhir:v "Nutritional counseling for control of dental disease" ]
+       ] [
+         fhir:code [ fhir:v "410289001" ] ;
+         fhir:display [ fhir:v "Exercises education, guidance, and counseling" ]
+       ] [
+         fhir:code [ fhir:v "388970003" ] ;
+         fhir:display [ fhir:v "Weight maintenance consultation" ]
+       ] [
+         fhir:code [ fhir:v "410293007" ] ;
+         fhir:display [ fhir:v "Food education, guidance, and counseling" ]
+       ] [
+         fhir:code [ fhir:v "409059003" ] ;
+         fhir:display [ fhir:v "Safety education, guidance, and counseling" ]
+       ] [
+         fhir:code [ fhir:v "410263001" ] ;
+         fhir:display [ fhir:v "Medical/dental care education, guidance, and counseling" ]
+       ] [
+         fhir:code [ fhir:v "444266007" ] ;
+         fhir:display [ fhir:v "Measurement of Hepatitis B surface antibody and Hepatitis C antibody " ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

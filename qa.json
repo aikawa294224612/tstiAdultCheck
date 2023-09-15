@@ -1,0 +1,12 @@
+{
+  "url" : "https://tstifhir.azurehealthcareapis.com/ImplementationGuide/tw.tsti.adultcheck",
+  "name" : "AdultCheckIG",
+  "package-id" : "tw.tsti.adultcheck",
+  "ig-ver" : "0.1.0",
+  "date" : "Fri, 15 Sep, 2023 11:03:31 +0800",
+  "errs" : 430,
+  "warnings" : 29,
+  "hints" : 108,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)"
+}

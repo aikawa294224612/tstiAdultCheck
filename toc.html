@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Table of Contents - 成人預防保健實作指引(Adult Check IG) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/myproject.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"0"}
+    h3,h4,h5,h6{--heading-prefix:"0.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a no-external="true" id="hl7-logo" href="index.html">
+      <img src="assets/images/logo-header.png" alt="TW" height="50"/>
+    </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">成人預防保健實作指引(Adult Check IG)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">首頁</a>
+  </li>
+  <li>
+    <a href="toc.html">目錄</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#2">Profiles和Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">專門術語</a>
+      </li>
+      <li>
+        <a href="artifacts.html#1">能力聲明</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">安全性</a>
+  </li>
+  <li>
+    <a href="examples.html">範例</a>
+  </li>
+  <li>
+    <a href="downloads.html">定義與範例檔下載</a>
+  </li>
+  <li>
+    <a href="history.html">歷程</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><b>Table of Contents</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">成人預防保健實作指引(Adult Check IG) - Local Development build (v0.1.0). See the <a href="https://tstifhir.azurehealthcareapis.com/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Table of Contents</h2>
+  
+  
+  
+    <!-- ?xml version="1.0" encoding="UTF-8"? --><div style="col-12"><table border="0" cellpadding="0" cellspacing="0" style="border:0px;font-size:11px;font-family:verdana;vertical-align:top;"><tbody><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="toc.html" title="Table of Contents">0 Table of Contents</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!&quot;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="index.html" title="首頁">1 首頁</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!#"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="profiles-and-extensions.html" title="Profiles and Extensions">2 Profiles and Extensions</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!$"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="capability-statements.html" title="Capability Statements">3 Capability Statements</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!%"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="search-parameters-and-operations.html" title="Search Parameters and Operations">4 Search Parameters and Operations</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!&amp;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="terminology.html" title="Terminology">5 Terminology</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!'"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="security.html" title="安全性">6 安全性</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!("><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="examples.html" title="範例">7 範例</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!)"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="downloads.html" title="定義與範例檔下載">8 定義與範例檔下載</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!*"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="history.html" title="歷程">9 歷程</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color:inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="artifacts.html" title="Artifacts Summary">10 Artifacts Summary</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+&quot;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="CapabilityStatement-ServerCapabilityStatement.html" title="此CapabilityStatement 說明成人預防保健伺服器能力聲明">10.1 此CapabilityStatement 說明成人預防保健伺服器能力聲明</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+#"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-Bundle-adultcheck.html" title="Bundle - AdultCheck">10.2 Bundle - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+$"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-Composition-adultcheck.html" title="Composition - AdultCheck">10.3 Composition - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+%"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-Condition-adultcheck.html" title="Condition - AdultCheck">10.4 Condition - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+&amp;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-DiagnosticReport-adultcheck.html" title="DiagnosticReport - AdultCheck">10.5 DiagnosticReport - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+'"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-Encounter-adultcheck.html" title="Encounter - AdultCheck">10.6 Encounter - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+("><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-ObservationBMI-adultcheck.html" title="Observation BMI - AdultCheck">10.7 Observation BMI - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+)"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-ObservationDepression-adultcheck.html" title="Observation Depression - AdultCheck">10.8 Observation Depression - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+*"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-ObservationHeight-adultcheck.html" title="Observation Height - AdultCheck">10.9 Observation Height - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!++"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-ObservationLab-adultcheck.html" title="Observation Lab - AdultCheck">10.10 Observation Lab - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+,"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-ObservationLife-adultcheck.html" title="Observation Life - AdultCheck">10.11 Observation Life - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+-"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-ObservationPressure-adultcheck.html" title="Observation Pressure - AdultCheck">10.12 Observation Pressure - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+."><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-ObservationWaist-adultcheck.html" title="Observation Waist - AdultCheck">10.13 Observation Waist - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+/"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-ObservationWeight-adultcheck.html" title="Observation Weight - AdultCheck">10.14 Observation Weight - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+0"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-Patient-adultcheck.html" title="Patient - AdultCheck">10.15 Patient - AdultCheck</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+1"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="ValueSet-adultcheck-lifecode.html" title="成人預防保健生活史代碼集值">10.16 成人預防保健生活史代碼集值</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+2"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="ValueSet-adultcheck-code.html" title="成人預防保健疾病史代碼">10.17 成人預防保健疾病史代碼</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+3"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Bundle-BundleAdultCheckExample.html" title="BundleAdultCheckExample">10.18 BundleAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+4"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Composition-CompositionAdultCheckExample.html" title="CompositionAdultCheckExample">10.19 CompositionAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+5"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Condition-ConditionAdultCheckExample.html" title="ConditionAdultCheckExample">10.20 ConditionAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+6"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="DiagnosticReport-DiagnosticReportAdultCheckExample.html" title="DiagnosticReportAdultCheckExample">10.21 DiagnosticReportAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+7"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Encounter-EncounterAdultCheckExample.html" title="EncounterAdultCheckExample">10.22 EncounterAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+8"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Observation-ObservationBMIAdultCheckExample.html" title="ObservationBMIAdultCheckExample">10.23 ObservationBMIAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+9"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Observation-ObservationDepressionAdultCheckExample.html" title="ObservationDepressionAdultCheckExample">10.24 ObservationDepressionAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+:"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Observation-ObservationHeightAdultCheckExample.html" title="ObservationHeightAdultCheckExample">10.25 ObservationHeightAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Observation-ObservationLabAdultCheckExample.html" title="ObservationLabAdultCheckExample">10.26 ObservationLabAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+&lt;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Observation-ObservationLifeAdultCheckExample.html" title="ObservationLifeAdultCheckExample">10.27 ObservationLifeAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+="><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Observation-ObservationPressureAdultCheckExample.html" title="ObservationPressureAdultCheckExample">10.28 ObservationPressureAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+&gt;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Observation-ObservationWaistAdultCheckExample.html" title="ObservationWaistAdultCheckExample">10.29 ObservationWaistAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+?"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Observation-ObservationWeightAdultCheckExample.html" title="ObservationWeightAdultCheckExample">10.30 ObservationWeightAdultCheckExample</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;" id="!+@"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Patient-PatientAdultCheckExample.html" title="PatientAdultCheckExample">10.31 PatientAdultCheckExample</a></td></tr></tbody></table></div>
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l645">​</a>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="polly.peng@etatung.com">Polly Peng</a>.  Package tw.tsti.adultcheck#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 15, 2023 11:03+0800">2023-09-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
