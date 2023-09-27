@@ -3,30 +3,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="ServerCapabilityStatement"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>成人預防保健實作指引(Adult Check IG)伺服器之能力聲明</h2><div><p>成人預防保健實作指引(Adult Check IG)伺服端(Server)之能力聲明</p>
-</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>The TW Core Server <strong>SHALL</strong>:</p>
-<ol>
-<li>Support all profiles defined in this Implementation Guide..</li>
-<li>Implement the RESTful behavior according to the FHIR specification.</li>
-<li>Return the following response classes:
-<ul>
-<li>(Status 400): invalid parameter</li>
-<li>(Status 401/4xx): unauthorized request</li>
-<li>(Status 403): insufficient scope</li>
-<li>(Status 404): unknown resource</li>
-<li>(Status 410): deleted resource.</li>
-</ul>
-</li>
-<li>Support json source formats for all TW Core Server interactions.</li>
-<li>Identify the TW Core Server profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li>
-<li>Support the searchParameters on each profile  individually and in combination.
-1.Support forward and reverse chaining on all search parameters that specify the 'chain' property</li>
-</ol>
-<p>TW Core Server <strong>SHOULD</strong>:</p>
-<ol>
-<li>Support xml source formats for all TW Core Server interactions.</li>
-</ol>
-</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET past versions of resources (vread interaction)">V-Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="PATCH a new resource version (patch interaction)">Patch</b></th><th><b title="POST a new resource (create interaction)">Create</b></th><th><b title="DELETE a resource (delete interaction)">Delete</b></th></tr><tr><td>Patient</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/R4/shareablemeasure.html">Shareable Measure</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Encounter</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Observation</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Observation</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Bundle</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/R4/shareablemeasure.html">Shareable Measure</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://tstifhir.azurehealthcareapis.com/CapabilityStatement/ServerCapabilityStatement"/>
   <version value="0.1.0"/>
@@ -34,12 +11,12 @@
   <title value="此CapabilityStatement 說明成人預防保健伺服器能力聲明"/>
   <status value="draft"/>
   <date value="2022-07-25"/>
-  <publisher value="Polly Peng"/>
+  <publisher value="大世科 tsti"/>
   <contact>
-    <name value="Polly Peng"/>
+    <name value="大世科 tsti"/>
     <telecom>
-      <system value="email"/>
-      <value value="polly.peng@etatung.com"/>
+      <system value="url"/>
+      <value value="https://www.etatung.com/"/>
     </telecom>
   </contact>
   <description value="成人預防保健實作指引(Adult Check IG)伺服端(Server)之能力聲明"/>
@@ -219,6 +196,102 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHALL"/>
       </extension>
+      <type value="Condition"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="patch"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="delete"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="subject"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-subject"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-code"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="recorded-date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-recorded-date"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
       <type value="Observation"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -323,7 +396,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHALL"/>
       </extension>
-      <type value="Observation"/>
+      <type value="DiagnosticReport"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>

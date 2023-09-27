@@ -1,0 +1,199 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://tstifhir.azurehealthcareapis.com/Composition/composition-example> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "composition-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-adultcheck.html\">Composition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>type</b>: General medicine Hospital Progress note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#100574-3)</span></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter/encounter-example</a></p><p><b>date</b>: 2022-08-01 17:00:14-0500</p><p><b>author</b>: <a href=\"Organization-org-hosp-example.html\">Organization/org-hosp-example</a> &quot;衛生福利部臺北醫院&quot;</p><p><b>title</b>: 成人健康檢查問卷</p></div>"
+  ] ; # 
+  fhir:identifier [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:100574-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100574-3" ] ;
+       fhir:display [ fhir:v "General medicine Hospital Progress note" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:date [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
+     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "成人健康檢查問卷"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "疾病史-高血壓" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:34117-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "34117-2" ] ;
+         fhir:display [ fhir:v "History and physical note" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Condition/condition-bp-example> ;
+       fhir:reference [ fhir:v "Condition/condition-bp-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "生理量測-身高" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:85353-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "85353-1" ] ;
+         fhir:display [ fhir:v "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-height-example> ;
+       fhir:reference [ fhir:v "Observation/observation-height-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "生理量測-體重" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:85353-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "85353-1" ] ;
+         fhir:display [ fhir:v "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-weight-example> ;
+       fhir:reference [ fhir:v "Observation/observation-weight-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "生理量測-BMI" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:85353-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "85353-1" ] ;
+         fhir:display [ fhir:v "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-bmi-example> ;
+       fhir:reference [ fhir:v "Observation/observation-bmi-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "生理量測-血壓" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:85353-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "85353-1" ] ;
+         fhir:display [ fhir:v "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-pressure-example> ;
+       fhir:reference [ fhir:v "Observation/observation-pressure-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "生理量測-腰圍" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:85353-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "85353-1" ] ;
+         fhir:display [ fhir:v "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-waist-example> ;
+       fhir:reference [ fhir:v "Observation/observation-waist-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "血糖" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:19146-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19146-0" ] ;
+         fhir:display [ fhir:v "Referral lab test results" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "憂鬱檢測" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:73832-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "73832-8" ] ;
+         fhir:display [ fhir:v "Adult depression screening assessment" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-depress-example> ;
+       fhir:reference [ fhir:v "Observation/observation-depress-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "生活史-吸煙" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:35090-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "35090-0" ] ;
+         fhir:display [ fhir:v "Patient history" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-smoke-example> ;
+       fhir:reference [ fhir:v "Observation/observation-smoke-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "腎功能檢查結果判讀" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:50398-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "50398-7" ] ;
+         fhir:display [ fhir:v "Narrative diagnostic report [Interpretation]" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/DiagnosticReport/diag-kidney-example> ;
+       fhir:reference [ fhir:v "DiagnosticReport/diag-kidney-example" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

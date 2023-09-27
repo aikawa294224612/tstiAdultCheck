@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="condition-bp-example"/>
+  <meta>
+    <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="condition-bp-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;condition-bp-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Condition-adultcheck.html">Condition - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>clinicalStatus</b>: Remission <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#remission)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: problem-list-item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#problem-list-item)</span></p><p><b>code</b>: H/O: hypertension <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#161501007)</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">Patient/patient-example</a> &quot;&quot;</p><p><b>recordedDate</b>: 2022-08-05 17:00:14-0500</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PRN"/>
+      </coding>
+    </type>
+    <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
+    <value value="0123456789"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MRT"/>
+      </coding>
+    </type>
+    <system value="https://tsti.hospital.com"/>
+    <value value="000120230721"/>
+  </identifier>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="remission"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <code value="problem-list-item"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <code value="161501007"/>
+      <display value="H/O: hypertension"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example"/>
+  </subject>
+  <recordedDate value="2022-08-05T17:00:14-05:00"/>
+</Condition>

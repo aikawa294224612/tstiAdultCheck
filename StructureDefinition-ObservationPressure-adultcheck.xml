@@ -3,43 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ObservationPressure-adultcheck"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation">Observation</a><a name="Observation"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-Observation-bloodPressure-twcore.html">TWCoreObservationBloodPressure</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">檢驗檢查，測量及簡單的判定。</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/> <a style="font-style: italic" href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier">Slices for identifier</a><a name="Observation.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red; font-style: italic" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic"/><span style="font-style: italic">1</span><span style="font-style: italic">..</span><span style="opacity: 0.5; font-style: italic">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5; font-style: italic">檢驗檢查的識別碼，通常為業務目的所使用的識別碼，例如：檢驗序號或單號。</span><br style="font-style: italic"/><span style="font-weight:bold; font-style: italic">Slice: </span><span style="font-style: italic">Unordered, Open by value:type.coding.code, value:type.coding.system</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber" title="Slice hospitalNumber: 適用於所屬機構之醫事機構代碼">identifier:hospitalNumber</a><a name="Observation.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">適用所屬機構之醫事機構代碼</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.id" title="resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。">id</a><a name="Observation.identifier.id"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">唯一可識別ID，以供資料項目間相互參照。</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.extension" title="擴充的資料項目">extension</a><a name="Observation.identifier.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">擴充的資料項目</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.use" title="這個唯一識別碼（identifier）的用途">use</a><a name="Observation.identifier.use"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-identifier-use.html">IdentifierUse</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): 如果知道，請說明此識別碼的目的；應填入<a href="http://hl7.org/fhir/R4/valueset-identifier-use.html">IdentifierUse</a>代碼表中的其中一個代碼。<br/><br/><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">official</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1351.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.type" title="識別碼的代碼型別，用於決定特定目適用的識別碼。">type</a><a name="Observation.identifier.type"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-CodeableConcept-tw.html" title="CodeableConcept">CodeableConceptTW</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">身份識別碼（identifier）的型別說明<br/><span style="font-weight:bold">Binding: </span><a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/ValueSet-identifier-type-tw.html">IdentifierType + 臺灣識別碼類型值集</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): 識別碼的型別，用於決定特定目的所適用的識別碼；應填入<a href="https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html">臺灣識別碼類型值集</a>代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。<br/><br/></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13510.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.type.id" title="resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。">id</a><a name="Observation.identifier.type.id"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">唯一可識別ID，以供資料項目間相互參照。</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13501.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.type.coding">coding</a><a name="Observation.identifier.type.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.type.coding.system">system</a><a name="Observation.identifier.type.coding.system"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">專門術語系統（terminology system）的識別</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.type.coding.code">code</a><a name="Observation.identifier.type.coding.code"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">系統定義的語法之符號</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">HOI</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.system" title="建立值的命名空間－即一個描述一組值的唯一URL">system</a><a name="Observation.identifier.system"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">身份識別碼（identifier）的命名空間（namespace）
-例如：醫事機構代碼='https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw'<br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.value" title="識別碼中通常與使用者有關的部分，在系統情境內是唯一的。">value</a><a name="Observation.identifier.value"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">唯一值。
-例如：所屬機構之醫事機構代碼為0123456789</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.period" title="識別碼有效／曾經有效使用的時段或期間">period</a><a name="Observation.identifier.period"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">此身份識別碼（identifier）的使用效期</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:hospitalNumber.assigner" title="簽發／管理識別碼的機構">assigner</a><a name="Observation.identifier.assigner"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-Organization-hosp-twcore.html">TW Core Organization Hospital Department</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">簽發identifier的機構（可以只是文字表述）</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber" title="Slice medicalrecordNumber: 適用於該就醫紀錄之就診序號">identifier:medicalrecordNumber</a><a name="Observation.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">適用該就醫紀錄之就診序號</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.id" title="resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。">id</a><a name="Observation.identifier.id"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">唯一可識別ID，以供資料項目間相互參照。</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.extension" title="擴充的資料項目">extension</a><a name="Observation.identifier.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">擴充的資料項目</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.use" title="這個唯一識別碼（identifier）的用途">use</a><a name="Observation.identifier.use"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-identifier-use.html">IdentifierUse</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): 如果知道，請說明此識別碼的目的；應填入<a href="http://hl7.org/fhir/R4/valueset-identifier-use.html">IdentifierUse</a>代碼表中的其中一個代碼。<br/><br/><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">official</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1251.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.type" title="識別碼的代碼型別，用於決定特定目適用的識別碼。">type</a><a name="Observation.identifier.type"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-CodeableConcept-tw.html" title="CodeableConcept">CodeableConceptTW</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">身份識別碼（identifier）的型別說明<br/><span style="font-weight:bold">Binding: </span><a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/ValueSet-identifier-type-tw.html">IdentifierType + 臺灣識別碼類型值集</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): 識別碼的型別，用於決定特定目的所適用的識別碼；應填入<a href="https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html">臺灣識別碼類型值集</a>代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。<br/><br/></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12510.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.type.id" title="resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。">id</a><a name="Observation.identifier.type.id"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">唯一可識別ID，以供資料項目間相互參照。</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12501.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.type.coding">coding</a><a name="Observation.identifier.type.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.type.coding.system">system</a><a name="Observation.identifier.type.coding.system"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">專門術語系統（terminology system）的識別</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.type.coding.code">code</a><a name="Observation.identifier.type.coding.code"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">系統定義的語法之符號</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">MRT</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.system" title="建立值的命名空間－即一個描述一組值的唯一URL">system</a><a name="Observation.identifier.system"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">使用個醫院/機構院內代碼</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.value" title="識別碼中通常與使用者有關的部分，在系統情境內是唯一的。">value</a><a name="Observation.identifier.value"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">唯一值。
-例如：所屬機構之醫事機構代碼為0123456789</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.period" title="識別碼有效／曾經有效使用的時段或期間">period</a><a name="Observation.identifier.period"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">此身份識別碼（identifier）的使用效期</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.identifier:medicalrecordNumber.assigner" title="簽發／管理識別碼的機構">assigner</a><a name="Observation.identifier.assigner"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-Organization-hosp-twcore.html">TW Core Organization Hospital Department</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">簽發identifier的機構（可以只是文字表述）</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.status">status</a><a name="Observation.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">registered ｜ preliminary ｜ final ｜ amended +</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">preliminary</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.subject">subject</a><a name="Observation.subject"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-Patient-adultcheck.html">Patient - AdultCheck</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">檢驗檢查有關的對象及（或）事物</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> <a style="font-style: italic" href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.effective[x]">Slices for effective[x]</a><a name="Observation.effective_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic"/><span style="opacity: 0.5; font-style: italic">1</span><span style="opacity: 0.5; font-style: italic">..</span><span style="opacity: 0.5; font-style: italic">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a><span style="opacity: 0.5; font-style: italic">, </span><a style="opacity: 0.5; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5; font-style: italic">檢驗檢查執行日期或時間區間</span><br style="font-style: italic"/><span style="font-weight:bold; font-style: italic">Slice: </span><span style="font-style: italic">Unordered, Open by type:$this</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.effective[x]:effectiveDateTime" title="Slice effectiveDateTime">effective[x]:effectiveDateTime</a><a name="Observation.effective_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">檢驗檢查執行日期或時間區間</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-ObservationPressure-adultcheck-definitions.html#Observation.performer">performer</a><a name="Observation.performer"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-Organization-hosp-twcore.html">TW Core Organization Hospital Department</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">委託代檢之醫事機構</td></tr>
-<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck"/>
   <version value="0.1.0"/>
@@ -47,12 +11,12 @@
   <title value="Observation Pressure - AdultCheck"/>
   <status value="active"/>
   <date value="2023-07-24T22:42:36+08:00"/>
-  <publisher value="Polly Peng"/>
+  <publisher value="大世科 tsti"/>
   <contact>
-    <name value="Polly Peng"/>
+    <name value="大世科 tsti"/>
     <telecom>
-      <system value="email"/>
-      <value value="polly.peng@etatung.com"/>
+      <system value="url"/>
+      <value value="https://www.etatung.com/"/>
     </telecom>
   </contact>
   <description value="此Observation Pressure AdultCheck Profile說明成人預防保健血壓紀錄"/>
@@ -315,7 +279,7 @@
           <valueBoolean value="true"/>
         </extension>
         <strength value="preferred"/>
-        <description value="人類語言；鼓勵使用[CommonLanguages](http://hl7.org/fhir/R4/valueset-languages.html)代碼表中的代碼，但不強制一定要使用此代碼表，你也可使用其他代碼表的代碼或單純以文字表示。"/>
+        <description value="人類語言；鼓勵使用[CommonLanguages](http://hl7.org/fhir/R4/valueset-languages.html)值集中的代碼，但不強制一定要使用此值集，你也可使用其他值集的代碼或單純以文字表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
       </binding>
     </element>
@@ -900,7 +864,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <patternUri value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203"/>
+      <patternUri value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -978,7 +942,7 @@
       <type>
         <code value="code"/>
       </type>
-      <patternCode value="HOI"/>
+      <patternCode value="PRN"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1691,7 +1655,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <patternUri value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203"/>
+      <patternUri value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2208,7 +2172,7 @@
           <valueString value="Status"/>
         </extension>
         <strength value="required"/>
-        <description value="檢驗檢查的狀態代碼；應填入[ObservationStatus](http://hl7.org/fhir/R4/valueset-observation-status.html)代碼表中的其中一個代碼。"/>
+        <description value="檢驗檢查的狀態代碼；應填入[ObservationStatus](http://hl7.org/fhir/R4/valueset-observation-status.html)值集中的其中一個代碼。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-status|4.0.1"/>
       </binding>
       <mapping>
@@ -2277,7 +2241,7 @@
           <valueString value="ObservationCategory"/>
         </extension>
         <strength value="preferred"/>
-        <description value="高層次的檢驗檢查分類；鼓勵使用[ObservationCategoryCodes](http://hl7.org/fhir/R4/valueset-observation-category.html)代碼表中的代碼， 但不強制一定要使用此代碼表，你也可使用其他代碼表的代碼或單純以文字表示。"/>
+        <description value="高層次的檢驗檢查分類；鼓勵使用[ObservationCategoryCodes](http://hl7.org/fhir/R4/valueset-observation-category.html)值集中的代碼，但不強制一定要使用此值集，你也可使用其他值集的代碼或單純以文字表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-category"/>
       </binding>
       <mapping>
@@ -2323,7 +2287,7 @@
           <valueString value="ObservationCategory"/>
         </extension>
         <strength value="preferred"/>
-        <description value="高層次的檢驗檢查分類；鼓勵使用[ObservationCategoryCodes](http://hl7.org/fhir/R4/valueset-observation-category.html)代碼表中的代碼， 但不強制一定要使用此代碼表，你也可使用其他代碼表的代碼或單純以文字表示。"/>
+        <description value="高層次的檢驗檢查分類；鼓勵使用[ObservationCategoryCodes](http://hl7.org/fhir/R4/valueset-observation-category.html)值集中的代碼，但不強制一定要使用此值集，你也可使用其他值集的代碼或單純以文字表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-category"/>
       </binding>
       <mapping>
@@ -2795,7 +2759,7 @@
       <isModifier value="false"/>
       <binding>
         <strength value="required"/>
-        <description value="應填入[生命體徵值集](ValueSet-vital-signs-tw.html)代碼表中的其中一個代碼。"/>
+        <description value="應填入[生命體徵值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-vital-signs-tw.html)值集中的其中一個代碼。"/>
         <valueSet value="https://twcore.mohw.gov.tw/ig/twcore/ValueSet/vital-signs-tw"/>
       </binding>
       <mapping>
@@ -3382,7 +3346,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <description value="用於記錄生命體徵的常用UCUM單元；應填入[VitalSignsUnits](http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="用於記錄生命體徵的常用UCUM單元；應填入[VitalSignsUnits](http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/ucum-vitals-common"/>
       </binding>
       <mapping>
@@ -3435,7 +3399,7 @@
           <valueString value="ObservationValueAbsentReason"/>
         </extension>
         <strength value="extensible"/>
-        <description value="代碼具體說明檢驗檢查結果缺少的原因；應填入[DataAbsentReason](http://hl7.org/fhir/R4/valueset-data-absent-reason.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="代碼具體說明檢驗檢查結果缺少的原因；應填入[DataAbsentReason](http://hl7.org/fhir/R4/valueset-data-absent-reason.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
       </binding>
       <mapping>
@@ -3488,7 +3452,7 @@
           <valueString value="ObservationInterpretation"/>
         </extension>
         <strength value="extensible"/>
-        <description value="代碼指明檢驗檢查結果的解釋；應填入[ObservationInterpretationCodes](http://hl7.org/fhir/R4/valueset-observation-interpretation.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="代碼指明檢驗檢查結果的解釋；應填入[ObservationInterpretationCodes](http://hl7.org/fhir/R4/valueset-observation-interpretation.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
       </binding>
       <mapping>
@@ -3574,7 +3538,7 @@
           <valueString value="BodySite"/>
         </extension>
         <strength value="example"/>
-        <description value="代碼說明解剖學位置，可能包含側邊；可參考[SNOMEDCTBodyStructures](http://hl7.org/fhir/R4/valueset-body-site.html)代碼表，但此代碼表只是針對這個欄位的一個可能值的示例，不預期也不鼓勵使用者一定要使用此代碼表的代碼。"/>
+        <description value="代碼說明解剖學位置，可能包含側邊；可參考[SNOMEDCTBodyStructures](http://hl7.org/fhir/R4/valueset-body-site.html)值集，但此值集只是針對這個欄位的一個可能值的範例，不預期也不鼓勵使用者一定要使用此值集的代碼。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
       </binding>
       <mapping>
@@ -3626,7 +3590,7 @@
           <valueString value="ObservationMethod"/>
         </extension>
         <strength value="example"/>
-        <description value="檢驗檢查的方法；可參考[ObservationMethods](http://hl7.org/fhir/R4/valueset-observation-methods.html)代碼表，但此代碼表只是針對這個欄位的一個可能值的示例，不預期也不鼓勵使用者一定要使用此代碼表的代碼。"/>
+        <description value="檢驗檢查的方法；可參考[ObservationMethods](http://hl7.org/fhir/R4/valueset-observation-methods.html)值集，但此值集只是針對這個欄位的一個可能值的範例，不預期也不鼓勵使用者一定要使用此值集的代碼。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-methods"/>
       </binding>
       <mapping>
@@ -3973,7 +3937,7 @@
           <valueString value="ObservationRangeMeaning"/>
         </extension>
         <strength value="preferred"/>
-        <description value="用以表述參考範圍值之含意的代碼；鼓勵使用[ObservationReferenceRangeMeaningCodes](http://hl7.org/fhir/R4/valueset-referencerange-meaning.html)代碼表中的代碼， 但不強制一定要使用此代碼表，你也可使用其他代碼表的代碼或單純以文字表示。"/>
+        <description value="用以表述參考範圍值之含意的代碼；鼓勵使用[ObservationReferenceRangeMeaningCodes](http://hl7.org/fhir/R4/valueset-referencerange-meaning.html)值集中的代碼，但不強制一定要使用此值集，你也可使用其他值集的代碼或單純以文字表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/referencerange-meaning"/>
       </binding>
       <mapping>
@@ -4362,7 +4326,7 @@
       <isModifier value="false"/>
       <binding>
         <strength value="required"/>
-        <description value="代碼指明檢驗檢查的名稱；可參考[生命體徵值集](ValueSet-vital-signs-tw.html)代碼表，但此代碼表只是針對這個欄位的一個可能值的示例，不預期也不鼓勵使用者一定要使用此代碼表的代碼。"/>
+        <description value="代碼指明檢驗檢查的名稱；可參考[生命體徵值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-vital-signs-tw.html)值集，但此值集只是針對這個欄位的一個可能值的範例，不預期也不鼓勵使用者一定要使用此值集的代碼。"/>
         <valueSet value="https://twcore.mohw.gov.tw/ig/twcore/ValueSet/vital-signs-tw"/>
       </binding>
       <mapping>
@@ -4442,7 +4406,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <description value="用於記錄生命體徵的常用UCUM單元。；應填入[VitalSignsUnits](http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="用於記錄生命體徵的常用UCUM單元。；應填入[VitalSignsUnits](http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/ucum-vitals-common"/>
       </binding>
       <mapping>
@@ -4495,7 +4459,7 @@
           <valueString value="ObservationValueAbsentReason"/>
         </extension>
         <strength value="extensible"/>
-        <description value="代碼指明為什麼結果（Observation.value[x]）缺少；應填入[DataAbsentReason](http://hl7.org/fhir/R4/valueset-data-absent-reason.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="代碼指明為什麼結果（Observation.value[x]）缺少；應填入[DataAbsentReason](http://hl7.org/fhir/R4/valueset-data-absent-reason.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
       </binding>
       <mapping>
@@ -4548,7 +4512,7 @@
           <valueString value="ObservationInterpretation"/>
         </extension>
         <strength value="extensible"/>
-        <description value="用以指明檢驗檢查的解釋之代碼。應填入[ObservationInterpretationCodes](http://hl7.org/fhir/R4/valueset-observation-interpretation.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="用以指明檢驗檢查的解釋之代碼。應填入[ObservationInterpretationCodes](http://hl7.org/fhir/R4/valueset-observation-interpretation.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
       </binding>
       <mapping>
@@ -4777,7 +4741,7 @@
       <isModifier value="false"/>
       <binding>
         <strength value="required"/>
-        <description value="代碼指明檢驗檢查的名稱；可參考[生命體徵值集](ValueSet-vital-signs-tw.html)代碼表，但此代碼表只是針對這個欄位的一個可能值的示例，不預期也不鼓勵使用者一定要使用此代碼表的代碼。"/>
+        <description value="代碼指明檢驗檢查的名稱；可參考[生命體徵值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-vital-signs-tw.html)值集，但此值集只是針對這個欄位的一個可能值的範例，不預期也不鼓勵使用者一定要使用此值集的代碼。"/>
         <valueSet value="https://twcore.mohw.gov.tw/ig/twcore/ValueSet/vital-signs-tw"/>
       </binding>
       <mapping>
@@ -4799,6 +4763,95 @@
     </element>
     <element id="Observation.component:Systolic.value[x]">
       <path value="Observation.component.value[x]"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="$this"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="組成之檢驗檢查的實際結果"/>
+      <definition value="如果資訊中帶有一個值（simple value）則其可作為檢驗檢查的結果。"/>
+      <comment value="一項檢驗檢查可能有一個值（如Apgar評分）和組成之檢驗檢查值（Apgar評分所來自多項檢驗檢查）。如果有一個值，這個資料項目的datatype應該由Observation.code決定。如果這個資料項目是編碼或者如果與Observation.code相關的type定義一個編碼值，那麼將使用只有文字表述的CodeableConcept來代替字串。若需要更多的說明，請參閱下面Notes小節。"/>
+      <requirements value="通常一項檢驗檢查就會有一個值，雖然若它有錯誤或者它代表一組檢驗檢查可能不會有值。"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.component.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <type>
+        <code value="integer"/>
+      </type>
+      <type>
+        <code value="Range"/>
+      </type>
+      <type>
+        <code value="Ratio"/>
+      </type>
+      <type>
+        <code value="SampledData"/>
+      </type>
+      <type>
+        <code value="time"/>
+      </type>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="Period"/>
+      </type>
+      <condition value="vs-3"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <description value="用於記錄生命體徵的常用UCUM單元。；應填入[VitalSignsUnits](http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/ucum-vitals-common"/>
+      </binding>
+      <mapping>
+        <identity value="sct-concept"/>
+        <map value="363714003 |Interprets| &lt; 441742003 |Evaluation finding|"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX.2, OBX.5, OBX.6"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="value"/>
+      </mapping>
+      <mapping>
+        <identity value="sct-attr"/>
+        <map value="363714003 |Interprets|"/>
+      </mapping>
+    </element>
+    <element id="Observation.component:Systolic.value[x]:valueQuantity">
+      <path value="Observation.component.value[x]"/>
+      <sliceName value="valueQuantity"/>
       <short value="組成之檢驗檢查的實際結果"/>
       <definition value="如果資訊中帶有一個值（simple value）則其可作為檢驗檢查的結果。"/>
       <comment value="一項檢驗檢查可能有一個值（如Apgar評分）和組成之檢驗檢查值（Apgar評分所來自多項檢驗檢查）。如果有一個值，這個資料項目的datatype應該由Observation.code決定。如果這個資料項目是編碼或者如果與Observation.code相關的type定義一個編碼值，那麼將使用只有文字表述的CodeableConcept來代替字串。若需要更多的說明，請參閱下面Notes小節。"/>
@@ -4827,7 +4880,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <description value="用於記錄生命體徵的常用UCUM單元。；應填入[VitalSignsUnits](http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="用於記錄生命體徵的常用UCUM單元。；應填入[VitalSignsUnits](http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/ucum-vitals-common"/>
       </binding>
       <mapping>
@@ -4847,7 +4900,7 @@
         <map value="363714003 |Interprets|"/>
       </mapping>
     </element>
-    <element id="Observation.component:Systolic.value[x].id">
+    <element id="Observation.component:Systolic.value[x]:valueQuantity.id">
       <path value="Observation.component.value[x].id"/>
       <representation value="xmlAttr"/>
       <short value="Unique id for inter-element referencing"/>
@@ -4872,7 +4925,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation.component:Systolic.value[x].extension">
+    <element id="Observation.component:Systolic.value[x]:valueQuantity.extension">
       <path value="Observation.component.value[x].extension"/>
       <slicing>
         <discriminator>
@@ -4920,7 +4973,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation.component:Systolic.value[x].value">
+    <element id="Observation.component:Systolic.value[x]:valueQuantity.value">
       <path value="Observation.component.value[x].value"/>
       <short value="Numerical value (with implicit precision)"/>
       <definition value="The value of the measured amount. The value includes an implicit precision in the presentation of the value."/>
@@ -4956,7 +5009,7 @@
         <map value="PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"/>
       </mapping>
     </element>
-    <element id="Observation.component:Systolic.value[x].comparator">
+    <element id="Observation.component:Systolic.value[x]:valueQuantity.comparator">
       <path value="Observation.component.value[x].comparator"/>
       <short value="&lt; | &lt;= | &gt;= | &gt; - how to understand the value"/>
       <definition value="How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is &quot;&lt;&quot; , then the real value is &lt; stated value."/>
@@ -5000,7 +5053,7 @@
         <map value="IVL properties"/>
       </mapping>
     </element>
-    <element id="Observation.component:Systolic.value[x].unit">
+    <element id="Observation.component:Systolic.value[x]:valueQuantity.unit">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true"/>
       </extension>
@@ -5038,7 +5091,7 @@
         <map value="PQ.unit"/>
       </mapping>
     </element>
-    <element id="Observation.component:Systolic.value[x].system">
+    <element id="Observation.component:Systolic.value[x]:valueQuantity.system">
       <path value="Observation.component.value[x].system"/>
       <short value="System that defines coded unit form"/>
       <definition value="The identification of the system that provides the coded form of the unit."/>
@@ -5075,7 +5128,7 @@
         <map value="CO.codeSystem, PQ.translation.codeSystem"/>
       </mapping>
     </element>
-    <element id="Observation.component:Systolic.value[x].code">
+    <element id="Observation.component:Systolic.value[x]:valueQuantity.code">
       <path value="Observation.component.value[x].code"/>
       <short value="Coded form of the unit"/>
       <definition value="A computer processable form of the unit in some unit representation system."/>
@@ -5145,7 +5198,7 @@
           <valueString value="ObservationValueAbsentReason"/>
         </extension>
         <strength value="extensible"/>
-        <description value="代碼指明為什麼結果（Observation.value[x]）缺少；應填入[DataAbsentReason](http://hl7.org/fhir/R4/valueset-data-absent-reason.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="代碼指明為什麼結果（Observation.value[x]）缺少；應填入[DataAbsentReason](http://hl7.org/fhir/R4/valueset-data-absent-reason.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
       </binding>
       <mapping>
@@ -5198,7 +5251,7 @@
           <valueString value="ObservationInterpretation"/>
         </extension>
         <strength value="extensible"/>
-        <description value="用以指明檢驗檢查的解釋之代碼。應填入[ObservationInterpretationCodes](http://hl7.org/fhir/R4/valueset-observation-interpretation.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="用以指明檢驗檢查的解釋之代碼。應填入[ObservationInterpretationCodes](http://hl7.org/fhir/R4/valueset-observation-interpretation.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
       </binding>
       <mapping>
@@ -5427,7 +5480,7 @@
       <isModifier value="false"/>
       <binding>
         <strength value="required"/>
-        <description value="代碼指明檢驗檢查的名稱；可參考[生命體徵值集](ValueSet-vital-signs-tw.html)代碼表，但此代碼表只是針對這個欄位的一個可能值的示例，不預期也不鼓勵使用者一定要使用此代碼表的代碼。"/>
+        <description value="代碼指明檢驗檢查的名稱；可參考[生命體徵值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-vital-signs-tw.html)值集，但此值集只是針對這個欄位的一個可能值的範例，不預期也不鼓勵使用者一定要使用此值集的代碼。"/>
         <valueSet value="https://twcore.mohw.gov.tw/ig/twcore/ValueSet/vital-signs-tw"/>
       </binding>
       <mapping>
@@ -5449,6 +5502,95 @@
     </element>
     <element id="Observation.component:Diastolic.value[x]">
       <path value="Observation.component.value[x]"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="$this"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="組成之檢驗檢查的實際結果"/>
+      <definition value="如果資訊中帶有一個值（simple value）則其可作為檢驗檢查的結果。"/>
+      <comment value="一項檢驗檢查可能有一個值（如Apgar評分）和組成之檢驗檢查值（Apgar評分所來自多項檢驗檢查）。如果有一個值，這個資料項目的datatype應該由Observation.code決定。如果這個資料項目是編碼或者如果與Observation.code相關的type定義一個編碼值，那麼將使用只有文字表述的CodeableConcept來代替字串。若需要更多的說明，請參閱下面Notes小節。"/>
+      <requirements value="通常一項檢驗檢查就會有一個值，雖然若它有錯誤或者它代表一組檢驗檢查可能不會有值。"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.component.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <type>
+        <code value="integer"/>
+      </type>
+      <type>
+        <code value="Range"/>
+      </type>
+      <type>
+        <code value="Ratio"/>
+      </type>
+      <type>
+        <code value="SampledData"/>
+      </type>
+      <type>
+        <code value="time"/>
+      </type>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="Period"/>
+      </type>
+      <condition value="vs-3"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <description value="用於記錄生命體徵的常用UCUM單元。；應填入[VitalSignsUnits](http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/ucum-vitals-common"/>
+      </binding>
+      <mapping>
+        <identity value="sct-concept"/>
+        <map value="363714003 |Interprets| &lt; 441742003 |Evaluation finding|"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX.2, OBX.5, OBX.6"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="value"/>
+      </mapping>
+      <mapping>
+        <identity value="sct-attr"/>
+        <map value="363714003 |Interprets|"/>
+      </mapping>
+    </element>
+    <element id="Observation.component:Diastolic.value[x]:valueQuantity">
+      <path value="Observation.component.value[x]"/>
+      <sliceName value="valueQuantity"/>
       <short value="組成之檢驗檢查的實際結果"/>
       <definition value="如果資訊中帶有一個值（simple value）則其可作為檢驗檢查的結果。"/>
       <comment value="一項檢驗檢查可能有一個值（如Apgar評分）和組成之檢驗檢查值（Apgar評分所來自多項檢驗檢查）。如果有一個值，這個資料項目的datatype應該由Observation.code決定。如果這個資料項目是編碼或者如果與Observation.code相關的type定義一個編碼值，那麼將使用只有文字表述的CodeableConcept來代替字串。若需要更多的說明，請參閱下面Notes小節。"/>
@@ -5477,7 +5619,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <description value="用於記錄生命體徵的常用UCUM單元。；應填入[VitalSignsUnits](http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="用於記錄生命體徵的常用UCUM單元。；應填入[VitalSignsUnits](http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/ucum-vitals-common"/>
       </binding>
       <mapping>
@@ -5497,7 +5639,7 @@
         <map value="363714003 |Interprets|"/>
       </mapping>
     </element>
-    <element id="Observation.component:Diastolic.value[x].id">
+    <element id="Observation.component:Diastolic.value[x]:valueQuantity.id">
       <path value="Observation.component.value[x].id"/>
       <representation value="xmlAttr"/>
       <short value="Unique id for inter-element referencing"/>
@@ -5522,7 +5664,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation.component:Diastolic.value[x].extension">
+    <element id="Observation.component:Diastolic.value[x]:valueQuantity.extension">
       <path value="Observation.component.value[x].extension"/>
       <slicing>
         <discriminator>
@@ -5570,7 +5712,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation.component:Diastolic.value[x].value">
+    <element id="Observation.component:Diastolic.value[x]:valueQuantity.value">
       <path value="Observation.component.value[x].value"/>
       <short value="Numerical value (with implicit precision)"/>
       <definition value="The value of the measured amount. The value includes an implicit precision in the presentation of the value."/>
@@ -5606,7 +5748,7 @@
         <map value="PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"/>
       </mapping>
     </element>
-    <element id="Observation.component:Diastolic.value[x].comparator">
+    <element id="Observation.component:Diastolic.value[x]:valueQuantity.comparator">
       <path value="Observation.component.value[x].comparator"/>
       <short value="&lt; | &lt;= | &gt;= | &gt; - how to understand the value"/>
       <definition value="How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is &quot;&lt;&quot; , then the real value is &lt; stated value."/>
@@ -5650,7 +5792,7 @@
         <map value="IVL properties"/>
       </mapping>
     </element>
-    <element id="Observation.component:Diastolic.value[x].unit">
+    <element id="Observation.component:Diastolic.value[x]:valueQuantity.unit">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true"/>
       </extension>
@@ -5688,7 +5830,7 @@
         <map value="PQ.unit"/>
       </mapping>
     </element>
-    <element id="Observation.component:Diastolic.value[x].system">
+    <element id="Observation.component:Diastolic.value[x]:valueQuantity.system">
       <path value="Observation.component.value[x].system"/>
       <short value="System that defines coded unit form"/>
       <definition value="The identification of the system that provides the coded form of the unit."/>
@@ -5725,7 +5867,7 @@
         <map value="CO.codeSystem, PQ.translation.codeSystem"/>
       </mapping>
     </element>
-    <element id="Observation.component:Diastolic.value[x].code">
+    <element id="Observation.component:Diastolic.value[x]:valueQuantity.code">
       <path value="Observation.component.value[x].code"/>
       <short value="Coded form of the unit"/>
       <definition value="A computer processable form of the unit in some unit representation system."/>
@@ -5795,7 +5937,7 @@
           <valueString value="ObservationValueAbsentReason"/>
         </extension>
         <strength value="extensible"/>
-        <description value="代碼指明為什麼結果（Observation.value[x]）缺少；應填入[DataAbsentReason](http://hl7.org/fhir/R4/valueset-data-absent-reason.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="代碼指明為什麼結果（Observation.value[x]）缺少；應填入[DataAbsentReason](http://hl7.org/fhir/R4/valueset-data-absent-reason.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
       </binding>
       <mapping>
@@ -5848,7 +5990,7 @@
           <valueString value="ObservationInterpretation"/>
         </extension>
         <strength value="extensible"/>
-        <description value="用以指明檢驗檢查的解釋之代碼。應填入[ObservationInterpretationCodes](http://hl7.org/fhir/R4/valueset-observation-interpretation.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。"/>
+        <description value="用以指明檢驗檢查的解釋之代碼。應填入[ObservationInterpretationCodes](http://hl7.org/fhir/R4/valueset-observation-interpretation.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
       </binding>
       <mapping>
@@ -5903,9 +6045,6 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Observation">
-      <path value="Observation"/>
-    </element>
     <element id="Observation.identifier">
       <path value="Observation.identifier"/>
       <slicing>
@@ -5984,12 +6123,12 @@
     <element id="Observation.identifier:hospitalNumber.type.coding.system">
       <path value="Observation.identifier.type.coding.system"/>
       <min value="1"/>
-      <patternUri value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203"/>
+      <patternUri value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
     </element>
     <element id="Observation.identifier:hospitalNumber.type.coding.code">
       <path value="Observation.identifier.type.coding.code"/>
       <min value="1"/>
-      <patternCode value="HOI"/>
+      <patternCode value="PRN"/>
     </element>
     <element id="Observation.identifier:hospitalNumber.system">
       <path value="Observation.identifier.system"/>
@@ -6086,7 +6225,7 @@
     <element id="Observation.identifier:medicalrecordNumber.type.coding.system">
       <path value="Observation.identifier.type.coding.system"/>
       <min value="1"/>
-      <patternUri value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203"/>
+      <patternUri value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
     </element>
     <element id="Observation.identifier:medicalrecordNumber.type.coding.code">
       <path value="Observation.identifier.type.coding.code"/>

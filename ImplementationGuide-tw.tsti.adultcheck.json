@@ -3,23 +3,23 @@
   "id" : "tw.tsti.adultcheck",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AdultCheckIG</h2><p>The official URL for this implementation guide is: </p><pre>https://tstifhir.azurehealthcareapis.com/ImplementationGuide/tw.tsti.adultcheck</pre><div><p>成人預防保健實作指引(Adult Check IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..<em>、1..1或1..</em>）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://tstifhir.azurehealthcareapis.com/ImplementationGuide/tw.tsti.adultcheck",
   "version" : "0.1.0",
   "name" : "AdultCheckIG",
   "title" : "成人預防保健實作指引(Adult Check IG)",
   "status" : "active",
-  "date" : "2023-09-15T11:03:31+08:00",
-  "publisher" : "Polly Peng",
+  "date" : "2023-09-27T18:07:47+08:00",
+  "publisher" : "大世科 tsti",
   "contact" : [{
-    "name" : "Polly Peng",
+    "name" : "大世科 tsti",
     "telecom" : [{
-      "system" : "email",
-      "value" : "polly.peng@etatung.com"
+      "system" : "url",
+      "value" : "https://www.etatung.com/"
     }]
   }],
-  "description" : "成人預防保健實作指引(Adult Check IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。",
+  "description" : "成人預防保健實作指引(Adult Check IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)0.1.1版本之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。",
   "packageId" : "tw.tsti.adultcheck",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
@@ -47,7 +47,7 @@
     "id" : "tw_gov_mohw_twcore",
     "uri" : "https://twcore.mohw.gov.tw/ig/twcore/ImplementationGuide/tw.gov.mohw.twcore",
     "packageId" : "tw.gov.mohw.twcore",
-    "version" : "0.1.0"
+    "version" : "0.1.1"
   }],
   "definition" : {
     "extension" : [{
@@ -252,6 +252,17 @@
       "extension" : [{
         "url" : "code",
         "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
       },
       {
         "url" : "value",
@@ -530,6 +541,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "active-tables"
       },
       {
@@ -600,9 +622,9 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/BundleAdultCheckExample"
+        "reference" : "Bundle/bundle-example"
       },
-      "name" : "BundleAdultCheckExample",
+      "name" : "bundle-example",
       "description" : "成人預防保健服務檢查單資料範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Bundle-adultcheck"
     },
@@ -624,9 +646,9 @@
         "valueString" : "Composition"
       }],
       "reference" : {
-        "reference" : "Composition/CompositionAdultCheckExample"
+        "reference" : "Composition/composition-example"
       },
-      "name" : "CompositionAdultCheckExample",
+      "name" : "composition-example",
       "description" : "成人預防保健服務檢查單資料範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck"
     },
@@ -648,11 +670,35 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/ConditionAdultCheckExample"
+        "reference" : "Condition/condition-bp-example"
       },
-      "name" : "ConditionAdultCheckExample",
-      "description" : "成人預防保健疾病史範例",
+      "name" : "condition-bp-example",
+      "description" : "成人預防保健疾病史-高血壓範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/condition-db-example"
+      },
+      "name" : "condition-db-example",
+      "description" : "成人預防保健疾病史-糖尿病範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/diag-kidney-example"
+      },
+      "name" : "diag-kidney-example",
+      "description" : "腎功能檢查結果判讀範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"
     },
     {
       "extension" : [{
@@ -665,18 +711,6 @@
       "name" : "DiagnosticReport - AdultCheck",
       "description" : "此DiagnosticReport AdultCheck Profile說明成人預防保健檢查結果與建議資訊",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DiagnosticReport"
-      }],
-      "reference" : {
-        "reference" : "DiagnosticReport/DiagnosticReportAdultCheckExample"
-      },
-      "name" : "DiagnosticReportAdultCheckExample",
-      "description" : "腎功能檢查結果判讀範例",
-      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"
     },
     {
       "extension" : [{
@@ -696,9 +730,9 @@
         "valueString" : "Encounter"
       }],
       "reference" : {
-        "reference" : "Encounter/EncounterAdultCheckExample"
+        "reference" : "Encounter/encounter-example"
       },
-      "name" : "EncounterAdultCheckExample",
+      "name" : "encounter-example",
       "description" : "成人預防保健兩階段檢查紀錄範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck"
     },
@@ -804,9 +838,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ObservationBMIAdultCheckExample"
+        "reference" : "Observation/observation-bmi-example"
       },
-      "name" : "ObservationBMIAdultCheckExample",
+      "name" : "observation-bmi-example",
       "description" : "成人預防保健BMI紀錄範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck"
     },
@@ -816,9 +850,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ObservationDepressionAdultCheckExample"
+        "reference" : "Observation/observation-depress-example"
       },
-      "name" : "ObservationDepressionAdultCheckExample",
+      "name" : "observation-depress-example",
       "description" : "成人預防保健憂鬱檢測範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationDepression-adultcheck"
     },
@@ -828,9 +862,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ObservationHeightAdultCheckExample"
+        "reference" : "Observation/observation-height-example"
       },
-      "name" : "ObservationHeightAdultCheckExample",
+      "name" : "observation-height-example",
       "description" : "成人預防保健身高紀錄範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationHeight-adultcheck"
     },
@@ -840,9 +874,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ObservationLabAdultCheckExample"
+        "reference" : "Observation/observation-lab-example"
       },
-      "name" : "ObservationLabAdultCheckExample",
+      "name" : "observation-lab-example",
       "description" : "成人預防保健檢驗資訊範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
     },
@@ -852,21 +886,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ObservationLifeAdultCheckExample"
+        "reference" : "Observation/observation-pressure-example"
       },
-      "name" : "ObservationLifeAdultCheckExample",
-      "description" : "成人預防保健生活史項目範例",
-      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ObservationPressureAdultCheckExample"
-      },
-      "name" : "ObservationPressureAdultCheckExample",
+      "name" : "observation-pressure-example",
       "description" : "成人預防保健血壓紀錄範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck"
     },
@@ -876,9 +898,21 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ObservationWaistAdultCheckExample"
+        "reference" : "Observation/observation-smoke-example"
       },
-      "name" : "ObservationWaistAdultCheckExample",
+      "name" : "observation-smoke-example",
+      "description" : "成人預防保健生活史項目範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-waist-example"
+      },
+      "name" : "observation-waist-example",
       "description" : "成人預防保健腰圍紀錄範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck"
     },
@@ -888,11 +922,22 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ObservationWeightAdultCheckExample"
+        "reference" : "Observation/observation-weight-example"
       },
-      "name" : "ObservationWeightAdultCheckExample",
+      "name" : "observation-weight-example",
       "description" : "成人預防保健體重紀錄範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/org-hosp-example"
+      },
+      "name" : "org-hosp-example",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -912,11 +957,22 @@
         "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Patient/PatientAdultCheckExample"
+        "reference" : "Patient/patient-example"
       },
-      "name" : "PatientAdultCheckExample",
+      "name" : "patient-example",
       "description" : "成人預防保健病患基本資料範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/practitioner-example"
+      },
+      "name" : "practitioner-example",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

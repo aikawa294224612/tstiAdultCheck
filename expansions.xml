@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="6abbff56-9ba0-45e5-908f-03e8b0380cb6"/>
+  <id value="2121da4c-5a29-47be-828f-2f11174e2871"/>
   <meta>
-    <lastUpdated value="2023-09-15T11:03:31.501+08:00"/>
+    <lastUpdated value="2023-09-27T18:07:47.686+08:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -92,17 +92,17 @@
         <name value="ValueSet-adultcheck-code"/>
         <title value="成人預防保健疾病史代碼"/>
         <status value="draft"/>
-        <date value="2023-09-15T11:03:31+08:00"/>
+        <date value="2023-09-27T18:07:47+08:00"/>
         <expansion>
-          <identifier value="urn:uuid:90ce2980-8945-4a45-af5a-1093daa2bb23"/>
-          <timestamp value="2023-09-15T11:13:50+08:00"/>
+          <identifier value="urn:uuid:6a40a7aa-c597-442f-98dd-dd380d680f8a"/>
+          <timestamp value="2023-09-27T18:09:28+08:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
+            <name value="used-valueset"/>
             <valueUri value="null"/>
           </parameter>
           <parameter>
@@ -297,17 +297,17 @@
         <name value="ValueSet_adultcheck-lifecode"/>
         <title value="成人預防保健生活史代碼集值"/>
         <status value="active"/>
-        <date value="2023-09-15T11:03:31+08:00"/>
+        <date value="2023-09-27T18:07:47+08:00"/>
         <expansion>
-          <identifier value="urn:uuid:25cdd4a9-0930-471b-9cec-8037ef6dce05"/>
-          <timestamp value="2023-09-15T11:13:51+08:00"/>
+          <identifier value="urn:uuid:ed606340-6fbe-4a96-9f7d-35413288ad5e"/>
+          <timestamp value="2023-09-27T18:09:28+08:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
+            <name value="used-valueset"/>
             <valueUri value="null"/>
           </parameter>
           <parameter>

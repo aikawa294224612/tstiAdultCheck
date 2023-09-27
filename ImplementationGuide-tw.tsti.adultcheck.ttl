@@ -10,23 +10,23 @@
   fhir:id [ fhir:v "tw.tsti.adultcheck"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AdultCheckIG</h2><p>The official URL for this implementation guide is: </p><pre>https://tstifhir.azurehealthcareapis.com/ImplementationGuide/tw.tsti.adultcheck</pre><div><p>成人預防保健實作指引(Adult Check IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..<em>、1..1或1..</em>）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://tstifhir.azurehealthcareapis.com/ImplementationGuide/tw.tsti.adultcheck"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "AdultCheckIG"] ; # 
   fhir:title [ fhir:v "成人預防保健實作指引(Adult Check IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-09-15T11:03:31+08:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Polly Peng"] ; # 
+  fhir:date [ fhir:v "2023-09-27T18:07:47+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "大世科 tsti"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Polly Peng" ] ;
+     fhir:name [ fhir:v "大世科 tsti" ] ;
      fhir:telecom ( [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "polly.peng@etatung.com" ]
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.etatung.com/" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "成人預防保健實作指引(Adult Check IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。"] ; # 
+  fhir:description [ fhir:v "成人預防保健實作指引(Adult Check IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)0.1.1版本之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。"] ; # 
   fhir:packageId [ fhir:v "tw.tsti.adultcheck"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -61,7 +61,7 @@
        fhir:link <https://twcore.mohw.gov.tw/ig/twcore/ImplementationGuide/tw.gov.mohw.twcore>
      ] ;
      fhir:packageId [ fhir:v "tw.gov.mohw.twcore" ] ;
-     fhir:version [ fhir:v "0.1.0" ]
+     fhir:version [ fhir:v "0.1.1" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -230,6 +230,15 @@
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true" ]
@@ -457,6 +466,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "active-tables" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -518,10 +536,10 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Bundle/BundleAdultCheckExample> ;
-         fhir:reference [ fhir:v "Bundle/BundleAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Bundle/bundle-example> ;
+         fhir:reference [ fhir:v "Bundle/bundle-example" ]
        ] ;
-       fhir:name [ fhir:v "BundleAdultCheckExample" ] ;
+       fhir:name [ fhir:v "bundle-example" ] ;
        fhir:description [ fhir:v "成人預防保健服務檢查單資料範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Bundle-adultcheck"^^xsd:anyURI ;
@@ -545,10 +563,10 @@
          fhir:value [ fhir:v "Composition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Composition/CompositionAdultCheckExample> ;
-         fhir:reference [ fhir:v "Composition/CompositionAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Composition/composition-example> ;
+         fhir:reference [ fhir:v "Composition/composition-example" ]
        ] ;
-       fhir:name [ fhir:v "CompositionAdultCheckExample" ] ;
+       fhir:name [ fhir:v "composition-example" ] ;
        fhir:description [ fhir:v "成人預防保健服務檢查單資料範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck"^^xsd:anyURI ;
@@ -572,14 +590,44 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Condition/ConditionAdultCheckExample> ;
-         fhir:reference [ fhir:v "Condition/ConditionAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Condition/condition-bp-example> ;
+         fhir:reference [ fhir:v "Condition/condition-bp-example" ]
        ] ;
-       fhir:name [ fhir:v "ConditionAdultCheckExample" ] ;
-       fhir:description [ fhir:v "成人預防保健疾病史範例" ] ;
+       fhir:name [ fhir:v "condition-bp-example" ] ;
+       fhir:description [ fhir:v "成人預防保健疾病史-高血壓範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"^^xsd:anyURI ;
          fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Condition/condition-db-example> ;
+         fhir:reference [ fhir:v "Condition/condition-db-example" ]
+       ] ;
+       fhir:name [ fhir:v "condition-db-example" ] ;
+       fhir:description [ fhir:v "成人預防保健疾病史-糖尿病範例" ] ;
+       fhir:example [
+         fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"^^xsd:anyURI ;
+         fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DiagnosticReport" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://tstifhir.azurehealthcareapis.com/DiagnosticReport/diag-kidney-example> ;
+         fhir:reference [ fhir:v "DiagnosticReport/diag-kidney-example" ]
+       ] ;
+       fhir:name [ fhir:v "diag-kidney-example" ] ;
+       fhir:description [ fhir:v "腎功能檢查結果判讀範例" ] ;
+       fhir:example [
+         fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"^^xsd:anyURI ;
+         fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck>
        ]
      ] [
        fhir:extension ( [
@@ -593,21 +641,6 @@
        fhir:name [ fhir:v "DiagnosticReport - AdultCheck" ] ;
        fhir:description [ fhir:v "此DiagnosticReport AdultCheck Profile說明成人預防保健檢查結果與建議資訊" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "DiagnosticReport" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/DiagnosticReport/DiagnosticReportAdultCheckExample> ;
-         fhir:reference [ fhir:v "DiagnosticReport/DiagnosticReportAdultCheckExample" ]
-       ] ;
-       fhir:name [ fhir:v "DiagnosticReportAdultCheckExample" ] ;
-       fhir:description [ fhir:v "腎功能檢查結果判讀範例" ] ;
-       fhir:example [
-         fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"^^xsd:anyURI ;
-         fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck>
-       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -626,10 +659,10 @@
          fhir:value [ fhir:v "Encounter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Encounter/EncounterAdultCheckExample> ;
-         fhir:reference [ fhir:v "Encounter/EncounterAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Encounter/encounter-example> ;
+         fhir:reference [ fhir:v "Encounter/encounter-example" ]
        ] ;
-       fhir:name [ fhir:v "EncounterAdultCheckExample" ] ;
+       fhir:name [ fhir:v "encounter-example" ] ;
        fhir:description [ fhir:v "成人預防保健兩階段檢查紀錄範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck"^^xsd:anyURI ;
@@ -737,10 +770,10 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/ObservationBMIAdultCheckExample> ;
-         fhir:reference [ fhir:v "Observation/ObservationBMIAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-bmi-example> ;
+         fhir:reference [ fhir:v "Observation/observation-bmi-example" ]
        ] ;
-       fhir:name [ fhir:v "ObservationBMIAdultCheckExample" ] ;
+       fhir:name [ fhir:v "observation-bmi-example" ] ;
        fhir:description [ fhir:v "成人預防保健BMI紀錄範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck"^^xsd:anyURI ;
@@ -752,10 +785,10 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/ObservationDepressionAdultCheckExample> ;
-         fhir:reference [ fhir:v "Observation/ObservationDepressionAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-depress-example> ;
+         fhir:reference [ fhir:v "Observation/observation-depress-example" ]
        ] ;
-       fhir:name [ fhir:v "ObservationDepressionAdultCheckExample" ] ;
+       fhir:name [ fhir:v "observation-depress-example" ] ;
        fhir:description [ fhir:v "成人預防保健憂鬱檢測範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationDepression-adultcheck"^^xsd:anyURI ;
@@ -767,10 +800,10 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/ObservationHeightAdultCheckExample> ;
-         fhir:reference [ fhir:v "Observation/ObservationHeightAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-height-example> ;
+         fhir:reference [ fhir:v "Observation/observation-height-example" ]
        ] ;
-       fhir:name [ fhir:v "ObservationHeightAdultCheckExample" ] ;
+       fhir:name [ fhir:v "observation-height-example" ] ;
        fhir:description [ fhir:v "成人預防保健身高紀錄範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationHeight-adultcheck"^^xsd:anyURI ;
@@ -782,10 +815,10 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/ObservationLabAdultCheckExample> ;
-         fhir:reference [ fhir:v "Observation/ObservationLabAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-example> ;
+         fhir:reference [ fhir:v "Observation/observation-lab-example" ]
        ] ;
-       fhir:name [ fhir:v "ObservationLabAdultCheckExample" ] ;
+       fhir:name [ fhir:v "observation-lab-example" ] ;
        fhir:description [ fhir:v "成人預防保健檢驗資訊範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
@@ -797,25 +830,10 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/ObservationLifeAdultCheckExample> ;
-         fhir:reference [ fhir:v "Observation/ObservationLifeAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-pressure-example> ;
+         fhir:reference [ fhir:v "Observation/observation-pressure-example" ]
        ] ;
-       fhir:name [ fhir:v "ObservationLifeAdultCheckExample" ] ;
-       fhir:description [ fhir:v "成人預防保健生活史項目範例" ] ;
-       fhir:example [
-         fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"^^xsd:anyURI ;
-         fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/ObservationPressureAdultCheckExample> ;
-         fhir:reference [ fhir:v "Observation/ObservationPressureAdultCheckExample" ]
-       ] ;
-       fhir:name [ fhir:v "ObservationPressureAdultCheckExample" ] ;
+       fhir:name [ fhir:v "observation-pressure-example" ] ;
        fhir:description [ fhir:v "成人預防保健血壓紀錄範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck"^^xsd:anyURI ;
@@ -827,10 +845,25 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/ObservationWaistAdultCheckExample> ;
-         fhir:reference [ fhir:v "Observation/ObservationWaistAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-smoke-example> ;
+         fhir:reference [ fhir:v "Observation/observation-smoke-example" ]
        ] ;
-       fhir:name [ fhir:v "ObservationWaistAdultCheckExample" ] ;
+       fhir:name [ fhir:v "observation-smoke-example" ] ;
+       fhir:description [ fhir:v "成人預防保健生活史項目範例" ] ;
+       fhir:example [
+         fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"^^xsd:anyURI ;
+         fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-waist-example> ;
+         fhir:reference [ fhir:v "Observation/observation-waist-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-waist-example" ] ;
        fhir:description [ fhir:v "成人預防保健腰圍紀錄範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck"^^xsd:anyURI ;
@@ -842,15 +875,26 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/ObservationWeightAdultCheckExample> ;
-         fhir:reference [ fhir:v "Observation/ObservationWeightAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-weight-example> ;
+         fhir:reference [ fhir:v "Observation/observation-weight-example" ]
        ] ;
-       fhir:name [ fhir:v "ObservationWeightAdultCheckExample" ] ;
+       fhir:name [ fhir:v "observation-weight-example" ] ;
        fhir:description [ fhir:v "成人預防保健體重紀錄範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck"^^xsd:anyURI ;
          fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
+         fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+       ] ;
+       fhir:name [ fhir:v "org-hosp-example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -869,15 +913,26 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/PatientAdultCheckExample> ;
-         fhir:reference [ fhir:v "Patient/PatientAdultCheckExample" ]
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+         fhir:reference [ fhir:v "Patient/patient-example" ]
        ] ;
-       fhir:name [ fhir:v "PatientAdultCheckExample" ] ;
+       fhir:name [ fhir:v "patient-example" ] ;
        fhir:description [ fhir:v "成人預防保健病患基本資料範例" ] ;
        fhir:example [
          fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck"^^xsd:anyURI ;
          fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://tstifhir.azurehealthcareapis.com/Practitioner/practitioner-example> ;
+         fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
+       ] ;
+       fhir:name [ fhir:v "practitioner-example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

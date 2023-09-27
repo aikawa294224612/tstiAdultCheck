@@ -14,7 +14,6 @@
     <sch:rule context="f:Composition">
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
-      <sch:assert test="count(f:author) &gt;= 2">author: minimum cardinality of 'author' is 2</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

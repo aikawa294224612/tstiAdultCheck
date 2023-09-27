@@ -1,0 +1,171 @@
+{
+  "resourceType" : "Composition",
+  "id" : "composition-example",
+  "meta" : {
+    "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-adultcheck.html\">Composition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: final</p><p><b>type</b>: General medicine Hospital Progress note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#100574-3)</span></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter/encounter-example</a></p><p><b>date</b>: 2022-08-01 17:00:14-0500</p><p><b>author</b>: <a href=\"Organization-org-hosp-example.html\">Organization/org-hosp-example</a> &quot;衛生福利部臺北醫院&quot;</p><p><b>title</b>: 成人健康檢查問卷</p></div>"
+  },
+  "identifier" : {
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MRT"
+      }]
+    },
+    "system" : "https://tsti.hospital.com",
+    "value" : "000120230721"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "100574-3",
+      "display" : "General medicine Hospital Progress note"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example"
+  },
+  "date" : "2022-08-01T17:00:14-05:00",
+  "author" : [{
+    "reference" : "Organization/org-hosp-example"
+  }],
+  "title" : "成人健康檢查問卷",
+  "section" : [{
+    "title" : "疾病史-高血壓",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "34117-2",
+        "display" : "History and physical note"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Condition/condition-bp-example"
+    }]
+  },
+  {
+    "title" : "生理量測-身高",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-height-example"
+    }]
+  },
+  {
+    "title" : "生理量測-體重",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-weight-example"
+    }]
+  },
+  {
+    "title" : "生理量測-BMI",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-bmi-example"
+    }]
+  },
+  {
+    "title" : "生理量測-血壓",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-pressure-example"
+    }]
+  },
+  {
+    "title" : "生理量測-腰圍",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-waist-example"
+    }]
+  },
+  {
+    "title" : "血糖",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19146-0",
+        "display" : "Referral lab test results"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-lab-example"
+    }]
+  },
+  {
+    "title" : "憂鬱檢測",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "73832-8",
+        "display" : "Adult depression screening assessment"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-depress-example"
+    }]
+  },
+  {
+    "title" : "生活史-吸煙",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "35090-0",
+        "display" : "Patient history"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-smoke-example"
+    }]
+  },
+  {
+    "title" : "腎功能檢查結果判讀",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "50398-7",
+        "display" : "Narrative diagnostic report [Interpretation]"
+      }]
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/diag-kidney-example"
+    }]
+  }]
+}

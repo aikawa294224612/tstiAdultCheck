@@ -10,20 +10,20 @@
   fhir:id [ fhir:v "adultcheck-code"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/161501007\">161501007</a></td><td>H/O: hypertension</td></tr><tr><td><a href=\"http://snomed.info/id/161445009\">161445009</a></td><td>H/O: diabetes mellitus</td></tr><tr><td><a href=\"http://snomed.info/id/3744001\">3744001</a></td><td>Hyperlipoproteinemia</td></tr><tr><td><a href=\"http://snomed.info/id/275544003\">275544003</a></td><td>H/O: heart disorder</td></tr><tr><td><a href=\"http://snomed.info/id/275527002\">275527002</a></td><td>H/O: stroke</td></tr><tr><td><a href=\"http://snomed.info/id/275552000\">275552000</a></td><td>H/O: kidney disease</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ValueSet-adultcheck-code"] ; # 
   fhir:title [ fhir:v "成人預防保健疾病史代碼"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-15T11:03:31+08:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Polly Peng"] ; # 
+  fhir:date [ fhir:v "2023-09-27T18:07:47+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "大世科 tsti"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Polly Peng" ] ;
+     fhir:name [ fhir:v "大世科 tsti" ] ;
      fhir:telecom ( [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "polly.peng@etatung.com" ]
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.etatung.com/" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "此EncounterAdultCheck Profile說明成人預防保健疾病史代碼"] ; # 

@@ -3,7 +3,7 @@
   "id" : "Patient-adultcheck",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient\">Patient</a><a name=\"Patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-Patient-twcore.html\">TWCorePatient</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">接受健康照護服務的個人或動物之資訊</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier\">identifier</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">病人的身份識別碼（identifier），通常為業務目的所使用的識別碼，例如病歷號。</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:idCardNumber\" title=\"Slice idCardNumber\">identifier:idCardNumber</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">適用身分證字號</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:medicalRecord\" title=\"Slice medicalRecord\">identifier:medicalRecord</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">適用病歷號</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber\" title=\"Slice hospitalNumber: 適用於所屬機構之醫事機構代碼\">identifier:hospitalNumber</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">適用所屬機構之醫事機構代碼</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck150.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.id\" title=\"resource中資料項目的唯一ID（用於內部參照）。這可以是任何不含空格的字串。\">id</a><a name=\"Patient.identifier.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">唯一可識別ID，以供資料項目間相互參照。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck150.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.extension\" title=\"擴充的資料項目\">extension</a><a name=\"Patient.identifier.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">擴充的資料項目</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck150.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.use\" title=\"這個唯一識別碼（identifier）的用途\">use</a><a name=\"Patient.identifier.use\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-identifier-use.html\">IdentifierUse</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>): 如果知道，請說明此識別碼的目的；應填入<a href=\"http://hl7.org/fhir/R4/valueset-identifier-use.html\">IdentifierUse</a>代碼表中的其中一個代碼。<br/><br/><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">official</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck151.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.type\" title=\"識別碼的代碼型別，用於決定特定目適用的識別碼。\">type</a><a name=\"Patient.identifier.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-CodeableConcept-tw.html\" title=\"CodeableConcept\">CodeableConceptTW</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">身份識別碼（identifier）的型別說明<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.0/ValueSet-identifier-type-tw.html\">IdentifierType + 臺灣識別碼類型值集</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>): 識別碼的型別，用於決定特定目的所適用的識別碼；應填入<a href=\"https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html\">臺灣識別碼類型值集</a>代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1510.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.type.id\" title=\"resource中資料項目的唯一ID（用於內部參照），這可以是任何不含空格的字串。\">id</a><a name=\"Patient.identifier.type.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">唯一可識別ID，以供資料項目間相互參照。</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1501.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.type.coding\">coding</a><a name=\"Patient.identifier.type.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.type.coding.system\">system</a><a name=\"Patient.identifier.type.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">專門術語系統（terminology system）的識別</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.type.coding.code\">code</a><a name=\"Patient.identifier.type.coding.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">系統定義的語法之符號</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">HOI</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck150.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.system\" title=\"建立值的命名空間－即一個描述一組值的唯一URL\">system</a><a name=\"Patient.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">身份識別碼（identifier）的命名空間（namespace）\r\n例如：醫事機構代碼='https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw'<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck150.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.value\" title=\"識別碼中通常與使用者有關的部分，在系統情境內是唯一的。\">value</a><a name=\"Patient.identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">唯一值。\r\n例如：所屬機構之醫事機構代碼為0123456789</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck150.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.period\" title=\"識別碼有效／曾經有效使用的時段或期間\">period</a><a name=\"Patient.identifier.period\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">此身份識別碼（identifier）的使用效期</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.identifier:hospitalNumber.assigner\" title=\"簽發／管理識別碼的機構\">assigner</a><a name=\"Patient.identifier.assigner\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-Organization-twcore.html\">TW Core Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">簽發identifier的機構（可以只是文字表述）</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.name\">name</a><a name=\"Patient.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#HumanName\">HumanName</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">病人的姓名</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.name:official\" title=\"Slice official\">name:official</a><a name=\"Patient.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#HumanName\">HumanName</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">個案姓名</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.telecom\">telecom</a><a name=\"Patient.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#ContactPoint\">ContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">病人的聯絡資訊（例如：電話、電子郵件等）</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.telecom.system\">system</a><a name=\"Patient.telecom.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">phone | fax | email | pager | url | sms | other</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">phone</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.telecom.use\">use</a><a name=\"Patient.telecom.use\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">home | work | temp | old | mobile－此聯絡方式的用途</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">home</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.address\" title=\"個案戶籍\">address</a><a name=\"Patient.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-Address-twcore.html\" title=\"Address\">TWCoreAddress</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">個案戶籍\r\npat-cnt-2or3-char：如果有國家名，則必須（SHALL）從ISO Country Alpha-2（http://hl7.org/fhir/valueset/iso3166-1-2）找出相對代碼作呈現。 如果未在ISO Country Alpha-2 中找到此一國家的代碼，則可能可以（MAY）從ISO Country Alpha-3（http://hl7.org/fhir/valueset/iso3166-1-3）找出相對代碼作呈現。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Patient-adultcheck-definitions.html#Patient.managingOrganization\">managingOrganization</a><a name=\"Patient.managingOrganization\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.0/StructureDefinition-Organization-twcore.html\">TW Core Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">此紀錄的保管機構</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck",
   "version" : "0.1.0",
@@ -11,12 +11,12 @@
   "title" : "Patient - AdultCheck",
   "status" : "active",
   "date" : "2023-07-21T22:42:36+08:00",
-  "publisher" : "Polly Peng",
+  "publisher" : "大世科 tsti",
   "contact" : [{
-    "name" : "Polly Peng",
+    "name" : "大世科 tsti",
     "telecom" : [{
-      "system" : "email",
-      "value" : "polly.peng@etatung.com"
+      "system" : "url",
+      "value" : "https://www.etatung.com/"
     }]
   }],
   "description" : "此PatientAdultCheck Profile說明成人預防保健病患基本資料",
@@ -249,7 +249,7 @@
           "valueBoolean" : true
         }],
         "strength" : "preferred",
-        "description" : "人類語言；鼓勵使用[CommonLanguages](http://hl7.org/fhir/R4/valueset-languages.html)代碼表中的代碼，但不強制一定要使用此代碼表，你也可使用其他代碼表的代碼或單純以文字表示。",
+        "description" : "人類語言；鼓勵使用[CommonLanguages](http://hl7.org/fhir/R4/valueset-languages.html)值集中的代碼，但不強制一定要使用此值集，你也可使用其他值集的代碼或單純以文字表示。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
       }
     },
@@ -362,7 +362,7 @@
       "path" : "Patient.extension",
       "sliceName" : "age",
       "short" : "年齡",
-      "definition" : "年齡",
+      "definition" : "年齡  \n- 2023/8/25異動說明： \n相較於單純以integer Data Type 使用「數值」呈現年齡，改以Age Data Type包含「數值」及「單位」的呈現，其語意更為精確及使用上較具彈性。",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -671,7 +671,7 @@
           "valueString" : "IdentifierUse"
         }],
         "strength" : "required",
-        "description" : "如果知道，請說明此識別碼的目的；應填入[IdentifierUse](http://hl7.org/fhir/R4/valueset-identifier-use.html)代碼表中的其中一個代碼。",
+        "description" : "如果知道，請說明此識別碼的目的；應填入[IdentifierUse](http://hl7.org/fhir/R4/valueset-identifier-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
       },
       "mapping" : [{
@@ -714,7 +714,7 @@
       "isModifier" : false,
       "binding" : {
         "strength" : "required",
-        "description" : "識別碼的型別，用於決定特定目的所適用的識別碼；應填入[臺灣識別碼類型值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。",
+        "description" : "識別碼的型別，用於決定特定目的所適用的識別碼；應填入[臺灣識別碼類型值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。",
         "valueSet" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/identifier-type-tw"
       },
       "mapping" : [{
@@ -936,7 +936,7 @@
       "type" : [{
         "code" : "uri"
       }],
-      "patternUri" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203",
+      "patternUri" : "http://terminology.hl7.org/CodeSystem/v2-0203",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -1016,7 +1016,7 @@
       "type" : [{
         "code" : "code"
       }],
-      "patternCode" : "NNTWN",
+      "patternCode" : "NNxxx",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -1040,6 +1040,135 @@
         "identity" : "orim",
         "map" : "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
       }]
+    },
+    {
+      "id" : "Patient.identifier:idCardNumber.type.coding.code.id",
+      "path" : "Patient.identifier.type.coding.code.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Patient.identifier:idCardNumber.type.coding.code.extension",
+      "path" : "Patient.identifier.type.coding.code.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Patient.identifier:idCardNumber.type.coding.code.extension:identifier-suffix",
+      "path" : "Patient.identifier.type.coding.code.extension",
+      "sliceName" : "identifier-suffix",
+      "short" : "識別碼後綴詞",
+      "definition" : "識別碼後綴詞",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/identifier-suffix"]
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false
+    },
+    {
+      "id" : "Patient.identifier:idCardNumber.type.coding.code.value",
+      "path" : "Patient.identifier.type.coding.code.value",
+      "representation" : ["xmlAttr"],
+      "short" : "Primitive value for code",
+      "definition" : "Primitive value for code",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "string.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/regex",
+          "valueString" : "[^\\s]+(\\s[^\\s]+)*"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
     },
     {
       "id" : "Patient.identifier:idCardNumber.type.coding.display",
@@ -1488,7 +1617,7 @@
           "valueString" : "IdentifierUse"
         }],
         "strength" : "required",
-        "description" : "如果知道，請說明此識別碼的目的；應填入[IdentifierUse](http://hl7.org/fhir/R4/valueset-identifier-use.html)代碼表中的其中一個代碼。",
+        "description" : "如果知道，請說明此識別碼的目的；應填入[IdentifierUse](http://hl7.org/fhir/R4/valueset-identifier-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
       },
       "mapping" : [{
@@ -1531,7 +1660,7 @@
       "isModifier" : false,
       "binding" : {
         "strength" : "required",
-        "description" : "識別碼的型別，用於決定特定目的所適用的識別碼；應填入[臺灣識別碼類型值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。",
+        "description" : "識別碼的型別，用於決定特定目的所適用的識別碼；應填入[臺灣識別碼類型值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。",
         "valueSet" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/identifier-type-tw"
       },
       "mapping" : [{
@@ -2305,7 +2434,7 @@
           "valueString" : "IdentifierUse"
         }],
         "strength" : "required",
-        "description" : "如果知道，請說明此識別碼的目的；應填入[IdentifierUse](http://hl7.org/fhir/R4/valueset-identifier-use.html)代碼表中的其中一個代碼。",
+        "description" : "如果知道，請說明此識別碼的目的；應填入[IdentifierUse](http://hl7.org/fhir/R4/valueset-identifier-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
       },
       "mapping" : [{
@@ -2348,7 +2477,7 @@
       "isModifier" : false,
       "binding" : {
         "strength" : "required",
-        "description" : "識別碼的型別，用於決定特定目的所適用的識別碼；應填入[臺灣識別碼類型值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。",
+        "description" : "識別碼的型別，用於決定特定目的所適用的識別碼；應填入[臺灣識別碼類型值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。",
         "valueSet" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/identifier-type-tw"
       },
       "mapping" : [{
@@ -3122,7 +3251,7 @@
           "valueString" : "IdentifierUse"
         }],
         "strength" : "required",
-        "description" : "如果知道，請說明此識別碼的目的；應填入[IdentifierUse](http://hl7.org/fhir/R4/valueset-identifier-use.html)代碼表中的其中一個代碼。",
+        "description" : "如果知道，請說明此識別碼的目的；應填入[IdentifierUse](http://hl7.org/fhir/R4/valueset-identifier-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
       },
       "mapping" : [{
@@ -3165,7 +3294,7 @@
       "isModifier" : false,
       "binding" : {
         "strength" : "required",
-        "description" : "識別碼的型別，用於決定特定目的所適用的識別碼；應填入[臺灣識別碼類型值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html)代碼表中適合的代碼，確定無適合的代碼才可以使用其他代碼中的代碼來表示。",
+        "description" : "識別碼的型別，用於決定特定目的所適用的識別碼；應填入[臺灣識別碼類型值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-identifier-type-tw.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。",
         "valueSet" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/identifier-type-tw"
       },
       "mapping" : [{
@@ -4203,7 +4332,7 @@
       "type" : [{
         "code" : "uri"
       }],
-      "patternUri" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203",
+      "patternUri" : "http://terminology.hl7.org/CodeSystem/v2-0203",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -4283,7 +4412,7 @@
       "type" : [{
         "code" : "code"
       }],
-      "patternCode" : "HOI",
+      "patternCode" : "PRN",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -4662,7 +4791,7 @@
       "definition" : "個人名字",
       "comment" : "一位病人可能有多個姓名，有不同的用途或適用期。對於動物來說，這個姓名是一個「HumanName」，它是人類指定和使用的，具有相同的模式。",
       "requirements" : "需要能夠追踪病人的多個姓名。例如：正式姓名及配偶姓名。 **必須（SHALL）** 總是提供姓名的完整拼法。",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "base" : {
         "path" : "Patient.name",
@@ -4699,11 +4828,11 @@
       "id" : "Patient.name:official",
       "path" : "Patient.name",
       "sliceName" : "official",
-      "short" : "個案姓名",
+      "short" : "病人的護照姓名",
       "definition" : "個人名字",
       "comment" : "一位病人可能有多個姓名，有不同的用途或適用期。對於動物來說，這個姓名是一個「HumanName」，它是人類指定和使用的，具有相同的模式。",
       "requirements" : "需要能夠追踪病人的多個姓名。例如：正式姓名及配偶姓名。 **必須（SHALL）** 總是提供姓名的完整拼法。",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "base" : {
         "path" : "Patient.name",
@@ -4850,7 +4979,7 @@
           "valueString" : "NameUse"
         }],
         "strength" : "required",
-        "description" : "人名的使用情況；應填入[NameUse](http://hl7.org/fhir/R4/valueset-name-use.html)代碼表中的其中一個代碼。",
+        "description" : "人名的使用情況；應填入[NameUse](http://hl7.org/fhir/R4/valueset-name-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
       },
       "mapping" : [{
@@ -4927,7 +5056,7 @@
       }],
       "example" : [{
         "label" : "General",
-        "valueString" : "Chan"
+        "valueString" : "Chen"
       }],
       "condition" : ["tw-core-1"],
       "constraint" : [{
@@ -5270,7 +5399,7 @@
           "valueString" : "NameUse"
         }],
         "strength" : "required",
-        "description" : "人名的使用情況；應填入[NameUse](http://hl7.org/fhir/R4/valueset-name-use.html)代碼表中的其中一個代碼。",
+        "description" : "人名的使用情況；應填入[NameUse](http://hl7.org/fhir/R4/valueset-name-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
       },
       "mapping" : [{
@@ -5682,7 +5811,7 @@
           "valueString" : "NameUse"
         }],
         "strength" : "required",
-        "description" : "人名的使用情況；應填入[NameUse](http://hl7.org/fhir/R4/valueset-name-use.html)代碼表中的其中一個代碼。",
+        "description" : "人名的使用情況；應填入[NameUse](http://hl7.org/fhir/R4/valueset-name-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
       },
       "mapping" : [{
@@ -6077,7 +6206,7 @@
           "valueString" : "NameUse"
         }],
         "strength" : "required",
-        "description" : "人名的使用情況；應填入[NameUse](http://hl7.org/fhir/R4/valueset-name-use.html)代碼表中的其中一個代碼。",
+        "description" : "人名的使用情況；應填入[NameUse](http://hl7.org/fhir/R4/valueset-name-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
       },
       "mapping" : [{
@@ -6469,7 +6598,7 @@
           "valueString" : "ContactPointSystem"
         }],
         "strength" : "required",
-        "description" : "應填入[ContactPointSystem](http://hl7.org/fhir/R4/valueset-contact-point-system.html)代碼表中的其中一個代碼。",
+        "description" : "應填入[ContactPointSystem](http://hl7.org/fhir/R4/valueset-contact-point-system.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
       },
       "mapping" : [{
@@ -6562,7 +6691,7 @@
           "valueString" : "ContactPointUse"
         }],
         "strength" : "required",
-        "description" : "應填入[ContactPointUse](http://hl7.org/fhir/R4/valueset-contact-point-use.html)代碼表中的其中一個代碼。",
+        "description" : "應填入[ContactPointUse](http://hl7.org/fhir/R4/valueset-contact-point-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"
       },
       "mapping" : [{
@@ -6690,7 +6819,7 @@
           "valueBoolean" : true
         }],
         "strength" : "required",
-        "description" : "病人性別；應填入[AdministrativeGender](http://hl7.org/fhir/R4/valueset-administrative-gender.html)代碼表中的其中一個代碼。",
+        "description" : "病人性別；應填入[AdministrativeGender](http://hl7.org/fhir/R4/valueset-administrative-gender.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1"
       },
       "mapping" : [{
@@ -6871,9 +7000,17 @@
       "mustSupport" : true,
       "isModifier" : false,
       "binding" : {
-        "strength" : "required",
-        "description" : "病人的婚姻狀態；應填入[臺灣婚姻狀態值集](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-marital-status-tw.html)代碼表中的其中一個代碼。",
-        "valueSet" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/marital-status-tw"
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "MaritalStatus"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+          "valueBoolean" : true
+        }],
+        "strength" : "extensible",
+        "description" : "病人的婚姻狀態；應填入[Marital Status Codes](http://hl7.org/fhir/R4/valueset-marital-status.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/marital-status"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -7152,7 +7289,7 @@
       "isModifier" : false,
       "binding" : {
         "strength" : "required",
-        "description" : "應填入[PatientRelationshipType](http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html)代碼表中的其中一個代碼。",
+        "description" : "應填入[PatientRelationshipType](http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
       },
       "mapping" : [{
@@ -7316,7 +7453,7 @@
           "valueString" : "NameUse"
         }],
         "strength" : "required",
-        "description" : "人名的使用情況；應填入[NameUse](http://hl7.org/fhir/R4/valueset-name-use.html)代碼表中的其中一個代碼。",
+        "description" : "人名的使用情況；應填入[NameUse](http://hl7.org/fhir/R4/valueset-name-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
       },
       "mapping" : [{
@@ -7337,7 +7474,7 @@
       "path" : "Patient.contact.name.text",
       "short" : "完整的中文姓名",
       "definition" : "完整姓名的文字表述。由於世界各地的文化差異，取得資料的系統可能不知道如何正確地呈現姓名；此外，不是所有的名字部分都呈現予姓或名。因此，我們強烈建議創建者透過這個資料項目提供姓名的顯示文字。",
-      "comment" : "可以同時提供文字表述（text）和部分（part）。更新姓名的應用程式\u3000**必須（SHALL）**\u3000確保當test和lpart都存在時，text中不包含part中沒有的內容。",
+      "comment" : "可以同時提供文字表述（text）和部分（part）。更新姓名的應用程式  **必須（SHALL）**  確保當test和lpart都存在時，text中不包含part中沒有的內容。",
       "requirements" : "一個可呈現的、未編碼的形式。",
       "min" : 0,
       "max" : "1",
@@ -7646,7 +7783,7 @@
         "rules" : "open"
       },
       "short" : "擴充的資料項目",
-      "definition" : "可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求\u3000**必須（SHALL）**\u3000滿足。",
+      "definition" : "可用於表示不屬於此資料項目基本定義的附加資訊。為了擴充的使用安全和可管理，對擴充的定義和使用有一套嚴格的管理。儘管任何實作者都可以定義一個擴充，但作為擴充定義的一部分，有一套要求  **必須（SHALL）**  滿足。",
       "comment" : "無論使用或定義擴充的機構或管轄區，任何應用程式、專案或標準使用擴充都不背負任何污名（stigma）。使用擴充是允許FHIR規範為每個人保留一個核心的簡易性。",
       "min" : 0,
       "max" : "*",
@@ -7710,7 +7847,7 @@
           "valueString" : "ContactPointSystem"
         }],
         "strength" : "required",
-        "description" : "應填入[ContactPointSystem](http://hl7.org/fhir/R4/valueset-contact-point-system.html)代碼表中的其中一個代碼。",
+        "description" : "應填入[ContactPointSystem](http://hl7.org/fhir/R4/valueset-contact-point-system.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
       },
       "mapping" : [{
@@ -7802,7 +7939,7 @@
           "valueString" : "ContactPointUse"
         }],
         "strength" : "required",
-        "description" : "應填入[ContactPointUse](http://hl7.org/fhir/R4/valueset-contact-point-use.html)代碼表中的其中一個代碼。",
+        "description" : "應填入[ContactPointUse](http://hl7.org/fhir/R4/valueset-contact-point-use.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"
       },
       "mapping" : [{
@@ -7972,7 +8109,7 @@
           "valueBoolean" : true
         }],
         "strength" : "required",
-        "description" : "聯絡人的性別；應填入[AdministrativeGender](http://hl7.org/fhir/R4/valueset-administrative-gender.html)代碼表中的其中一個代碼。",
+        "description" : "聯絡人的性別；應填入[AdministrativeGender](http://hl7.org/fhir/R4/valueset-administrative-gender.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1"
       },
       "mapping" : [{
@@ -8244,7 +8381,7 @@
           "valueBoolean" : true
         }],
         "strength" : "preferred",
-        "description" : "應填入[CommonLanguages](http://hl7.org/fhir/R4/valueset-languages.html)代碼表中的其中一個代碼。",
+        "description" : "應填入[CommonLanguages](http://hl7.org/fhir/R4/valueset-languages.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
       },
       "mapping" : [{
@@ -8594,7 +8731,7 @@
           "valueString" : "LinkType"
         }],
         "strength" : "required",
-        "description" : "連結的型別；應填入[LinkType](http://hl7.org/fhir/R4/valueset-link-type.html)代碼表中的其中一個代碼。",
+        "description" : "連結的型別；應填入[LinkType](http://hl7.org/fhir/R4/valueset-link-type.html)值集中的其中一個代碼。",
         "valueSet" : "http://hl7.org/fhir/ValueSet/link-type|4.0.1"
       },
       "mapping" : [{
@@ -8609,10 +8746,6 @@
   },
   "differential" : {
     "element" : [{
-      "id" : "Patient",
-      "path" : "Patient"
-    },
-    {
       "id" : "Patient.identifier",
       "path" : "Patient.identifier",
       "min" : 2
@@ -8698,13 +8831,13 @@
       "id" : "Patient.identifier:hospitalNumber.type.coding.system",
       "path" : "Patient.identifier.type.coding.system",
       "min" : 1,
-      "patternUri" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203"
+      "patternUri" : "http://terminology.hl7.org/CodeSystem/v2-0203"
     },
     {
       "id" : "Patient.identifier:hospitalNumber.type.coding.code",
       "path" : "Patient.identifier.type.coding.code",
       "min" : 1,
-      "patternCode" : "HOI"
+      "patternCode" : "PRN"
     },
     {
       "id" : "Patient.identifier:hospitalNumber.system",
@@ -8744,18 +8877,6 @@
       }]
     },
     {
-      "id" : "Patient.name",
-      "path" : "Patient.name",
-      "min" : 1
-    },
-    {
-      "id" : "Patient.name:official",
-      "path" : "Patient.name",
-      "sliceName" : "official",
-      "short" : "個案姓名",
-      "min" : 1
-    },
-    {
       "id" : "Patient.telecom",
       "path" : "Patient.telecom",
       "min" : 1
@@ -8776,6 +8897,23 @@
       "short" : "個案戶籍\r\npat-cnt-2or3-char：如果有國家名，則必須（SHALL）從ISO Country Alpha-2（http://hl7.org/fhir/valueset/iso3166-1-2）找出相對代碼作呈現。 如果未在ISO Country Alpha-2 中找到此一國家的代碼，則可能可以（MAY）從ISO Country Alpha-3（http://hl7.org/fhir/valueset/iso3166-1-3）找出相對代碼作呈現。",
       "definition" : "個案戶籍",
       "min" : 1
+    },
+    {
+      "id" : "Patient.maritalStatus",
+      "path" : "Patient.maritalStatus",
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "MaritalStatus"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+          "valueBoolean" : true
+        }],
+        "strength" : "extensible",
+        "description" : "病人的婚姻狀態；應填入[Marital Status Codes](http://hl7.org/fhir/R4/valueset-marital-status.html)值集中適合的代碼，確定無適合的代碼才可以使用其他值集的代碼來表示。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/marital-status"
+      }
     },
     {
       "id" : "Patient.managingOrganization",
