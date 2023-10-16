@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"org-hosp-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;org-hosp-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/StructureDefinition-Organization-hosp-twcore.html\">TW Core Organization Hospital Department</a></p></div><p><b>identifier</b>: Provider number: 0131060029 (use: OFFICIAL)</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-organization-type.html\">Organization type</a>#prov)</span></p><p><b>name</b>: 衛生福利部臺北醫院</p><p><b>telecom</b>: ph: 0222765566</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"org-hosp-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;org-hosp-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/StructureDefinition-Organization-hosp-twcore.html\">TW Core Organization Hospital Department</a></p></div><p><b>identifier</b>: Provider number: 1145010010 (use: OFFICIAL)</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-organization-type.html\">Organization type</a>#prov)</span></p><p><b>name</b>: 佛教慈濟醫療財團法人花蓮慈濟醫院</p><p><b>telecom</b>: ph: 038561825</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
@@ -27,7 +27,7 @@
        ] )
      ] ;
      fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0131060029" ]
+     fhir:value [ fhir:v "1145010010" ]
   ] ) ; # 
   fhir:type ( [
      fhir:coding ( [
@@ -35,10 +35,10 @@
        fhir:code [ fhir:v "prov" ]
      ] )
   ] ) ; # 
-  fhir:name [ fhir:v "衛生福利部臺北醫院"] ; # 
+  fhir:name [ fhir:v "佛教慈濟醫療財團法人花蓮慈濟醫院"] ; # 
   fhir:telecom ( [
      fhir:system [ fhir:v "phone" ] ;
-     fhir:value [ fhir:v "0222765566" ]
+     fhir:value [ fhir:v "038561825" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

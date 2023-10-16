@@ -6,19 +6,8 @@
     <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="encounter-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;encounter-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Encounter-adultcheck.html">Encounter - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: finished</p><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-01 17:00:14-0500 --&gt; (ongoing)</p></blockquote><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-05 17:00:14-0500 --&gt; (ongoing)</p></blockquote><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>serviceType</b>: 成人預防保健 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#562 &quot;Test Message&quot;)</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">Patient/patient-example</a> &quot;&quot;</p><p><b>serviceProvider</b>: <a href="Organization-org-hosp-example.html">Organization/org-hosp-example</a> &quot;衛生福利部臺北醫院&quot;</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="encounter-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;encounter-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Encounter-adultcheck.html">Encounter - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: finished</p><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-01 17:00:14-0500 --&gt; (ongoing)</p></blockquote><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-05 17:00:14-0500 --&gt; (ongoing)</p></blockquote><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>serviceType</b>: 成人預防保健 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#562 &quot;Test Message&quot;)</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">Patient/patient-example</a> &quot;&quot;</p><p><b>serviceProvider</b>: <a href="Organization-org-hosp-example.html">Organization/org-hosp-example</a> &quot;佛教慈濟醫療財團法人花蓮慈濟醫院&quot;</p></div>
   </text>
-  <identifier>
-    <use value="official"/>
-    <type>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="PRN"/>
-      </coding>
-    </type>
-    <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-    <value value="0123456789"/>
-  </identifier>
   <identifier>
     <use value="official"/>
     <type>

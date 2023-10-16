@@ -967,7 +967,7 @@
      ] [
        fhir:id [ fhir:v "Bundle.identifier.system" ] ;
        fhir:path [ fhir:v "Bundle.identifier.system" ] ;
-       fhir:short [ fhir:v "使用個醫院/機構院內代碼" ] ;
+       fhir:short [ fhir:v "就診序號發號者/機構/單位" ] ;
        fhir:definition [ fhir:v "建立值的命名空間－即一個描述一組值的唯一URL" ] ;
        fhir:comment [ fhir:v "Identifier.system總是區分大小寫" ] ;
        fhir:requirements [ fhir:v "有許多識別碼的集合。為了進行兩個識別碼的對應，我們需要知道我們處理的是哪一組。系統指明了一個特定的唯一識別碼集。" ] ;
@@ -1012,7 +1012,7 @@
      ] [
        fhir:id [ fhir:v "Bundle.identifier.value" ] ;
        fhir:path [ fhir:v "Bundle.identifier.value" ] ;
-       fhir:short [ fhir:v "唯一值。\r\n例如：所屬機構之醫事機構代碼為0123456789" ] ;
+       fhir:short [ fhir:v "唯一值。\r\n例如：就診序號為0123456789" ] ;
        fhir:definition [ fhir:v "識別碼中通常與使用者有關的部分，在系統情境內是唯一的。" ] ;
        fhir:comment [ fhir:v "如果此值是一個完整的URI，那麼此系統 **必須（SHALL）** 是urn:ietf:rfc:3986。此值的主要目的是為了可運算的對應。因此，為了比較的目的，它可能會被正規化（例如：去除不重要的空白、破折號等）。一個為人顯示的格式化的值可以使用[Rendered Value](http://hl7.org/fhir/R4/extension-rendered-value.html)擴充來傳達。除非對Identifier.system的了解使處理者確信不區分大小寫的處理是安全的，否則Identifier.value應被視為區分大小寫。" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
@@ -1654,7 +1654,7 @@
        fhir:short [ fhir:v "URI for resource (Absolute URL server address or URI for UUID/OID)" ] ;
        fhir:definition [ fhir:v "The Absolute URL for the resource.  The fullUrl SHALL NOT disagree with the id in the resource - i.e. if the fullUrl is not a urn:uuid, the URL shall be version-independent URL consistent with the Resource.id. The fullUrl is a version independent reference to the resource. The fullUrl element SHALL have a value except that: \n* fullUrl can be empty on a POST (although it does not need to when specifying a temporary id for reference in the bundle)\n* Results from operations might involve resources that are not identified." ] ;
        fhir:comment [ fhir:v "fullUrl might not be [unique in the context of a resource](http://hl7.org/fhir/R4/bundle.html#bundle-unique). Note that since [FHIR resources do not need to be served through the FHIR API](http://hl7.org/fhir/R4/references.html), the fullURL might be a URN or an absolute URL that does not end with the logical id of the resource (Resource.id). However, but if the fullUrl does look like a RESTful server URL (e.g. meets the [regex](http://hl7.org/fhir/R4/references.html#regex), then the 'id' portion of the fullUrl SHALL end with the Resource.id.\n\nNote that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL)." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Bundle.entry.fullUrl" ] ;
@@ -1675,6 +1675,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -10543,7 +10544,7 @@
        fhir:short [ fhir:v "Entry in the bundle - will have a resource or information" ] ;
        fhir:definition [ fhir:v "An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only)." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
+       fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Bundle.entry" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -10774,8 +10775,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Observation"^^xsd:anyURI ] ;
          fhir:profile ( [
-           fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"^^xsd:anyURI ;
-           fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck>
+           fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"^^xsd:anyURI ;
+           fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -18772,7 +18773,7 @@
      ] [
        fhir:id [ fhir:v "Bundle.identifier.system" ] ;
        fhir:path [ fhir:v "Bundle.identifier.system" ] ;
-       fhir:short [ fhir:v "使用個醫院/機構院內代碼" ] ;
+       fhir:short [ fhir:v "就診序號發號者/機構/單位" ] ;
        fhir:definition [ fhir:v "建立值的命名空間－即一個描述一組值的唯一URL" ] ;
        fhir:comment [ fhir:v "Identifier.system總是區分大小寫" ] ;
        fhir:requirements [ fhir:v "有許多識別碼的集合。為了進行兩個識別碼的對應，我們需要知道我們處理的是哪一組。系統指明了一個特定的唯一識別碼集。" ] ;
@@ -18781,7 +18782,7 @@
      ] [
        fhir:id [ fhir:v "Bundle.identifier.value" ] ;
        fhir:path [ fhir:v "Bundle.identifier.value" ] ;
-       fhir:short [ fhir:v "唯一值。\r\n例如：所屬機構之醫事機構代碼為0123456789" ] ;
+       fhir:short [ fhir:v "唯一值。\r\n例如：就診序號為0123456789" ] ;
        fhir:definition [ fhir:v "識別碼中通常與使用者有關的部分，在系統情境內是唯一的。" ] ;
        fhir:comment [ fhir:v "如果此值是一個完整的URI，那麼此系統 **必須（SHALL）** 是urn:ietf:rfc:3986。此值的主要目的是為了可運算的對應。因此，為了比較的目的，它可能會被正規化（例如：去除不重要的空白、破折號等）。一個為人顯示的格式化的值可以使用[Rendered Value](http://hl7.org/fhir/R4/extension-rendered-value.html)擴充來傳達。除非對Identifier.system的了解使處理者確信不區分大小寫的處理是安全的，否則Identifier.value應被視為區分大小寫。" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
@@ -18826,6 +18827,11 @@
          fhir:rules [ fhir:v "open" ]
        ] ;
        fhir:min [ fhir:v "3"^^xsd:nonNegativeInteger ] ;
+       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "Bundle.entry.fullUrl" ] ;
+       fhir:path [ fhir:v "Bundle.entry.fullUrl" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Bundle.entry:composition" ] ;
@@ -18958,7 +18964,7 @@
        fhir:path [ fhir:v "Bundle.entry" ] ;
        fhir:sliceName [ fhir:v "observationSocial" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ]
+       fhir:max [ fhir:v "*" ]
      ] [
        fhir:id [ fhir:v "Bundle.entry:observationSocial.resource" ] ;
        fhir:path [ fhir:v "Bundle.entry.resource" ] ;
@@ -18966,8 +18972,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Observation"^^xsd:anyURI ] ;
          fhir:profile ( [
-           fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"^^xsd:anyURI ;
-           fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck>
+           fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"^^xsd:anyURI ;
+           fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck>
          ] )
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]

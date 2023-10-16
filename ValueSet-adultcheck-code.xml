@@ -8,9 +8,9 @@
   <url value="https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code"/>
   <version value="0.1.0"/>
   <name value="ValueSet-adultcheck-code"/>
-  <title value="成人預防保健疾病史代碼"/>
+  <title value="成人預防保健疾病史代碼集值"/>
   <status value="draft"/>
-  <date value="2023-09-27T18:07:47+08:00"/>
+  <date value="2023-10-16T14:04:58+08:00"/>
   <publisher value="大世科 tsti"/>
   <contact>
     <name value="大世科 tsti"/>

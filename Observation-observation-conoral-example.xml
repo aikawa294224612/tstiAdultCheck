@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-conoral-example"/>
+  <meta>
+    <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-conoral-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-conoral-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationSocial-adultcheck.html">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 健康諮詢：口腔保健 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#410263001)</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">Patient/patient-example</a> &quot;&quot;</p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MRT"/>
+      </coding>
+    </type>
+    <system value="https://tsti.hospital.com"/>
+    <value value="000120230721"/>
+  </identifier>
+  <status value="preliminary"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social History"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="410263001"/>
+    </coding>
+    <text value="健康諮詢：口腔保健"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example"/>
+  </subject>
+  <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+  <performer>
+    <reference value="Organization/org-test-example"/>
+  </performer>
+  <valueString value="否"/>
+</Observation>

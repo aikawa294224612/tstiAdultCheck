@@ -1988,7 +1988,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="成人健康檢查問卷"/>
+      <patternString value="成人預防保健服務檢查單"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3605,7 +3605,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="疾病史-高血壓"/>
+      <patternString value="疾病史：高血壓"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -4588,7 +4588,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="疾病史-糖尿病"/>
+      <patternString value="疾病史：糖尿病"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -5571,7 +5571,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="疾病史-高血脂症"/>
+      <patternString value="疾病史：高血脂症"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -6554,7 +6554,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="疾病史-心臟病"/>
+      <patternString value="疾病史：心臟病"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -7537,7 +7537,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="疾病史-腦中風"/>
+      <patternString value="疾病史：腦中風"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -8520,7 +8520,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="疾病史-腎臟病"/>
+      <patternString value="疾病史：腎臟病"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -14418,7 +14418,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="Protein 尿蛋白"/>
+      <patternString value="尿液蛋白質"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -16384,7 +16384,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="膽固醇"/>
+      <patternString value="總膽固醇"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -19333,7 +19333,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="高密度膽固醇"/>
+      <patternString value="高密度脂蛋白膽固醇"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -23265,7 +23265,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="腎絲球過濾率計算"/>
+      <patternString value="腎絲球過濾率（eGFR）計算"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -24248,7 +24248,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="Ｂ型肝炎表面抗原"/>
+      <patternString value="B 型肝炎表面抗原（HBsAg）"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -25231,7 +25231,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="Ｃ型肝炎病毒抗體"/>
+      <patternString value="C 型肝炎抗體（Anti-HCV）"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -37027,7 +37027,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="健康諮詢：事故傷害預"/>
+      <patternString value="健康諮詢：事故傷害預防"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -38993,7 +38993,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="檢查過B、C型肝炎"/>
+      <patternString value="曾於成人預防保健服時接受過 B、C 型肝炎檢查"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -48799,7 +48799,7 @@
       <path value="Composition.title"/>
       <short value="問卷標題"/>
       <definition value="問卷標題"/>
-      <patternString value="成人健康檢查問卷"/>
+      <patternString value="成人預防保健服務檢查單"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section">
@@ -48824,7 +48824,7 @@
     <element id="Composition.section:condition-bp.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="疾病史-高血壓"/>
+      <patternString value="疾病史：高血壓"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:condition-bp.code.coding.system">
@@ -48849,7 +48849,7 @@
     <element id="Composition.section:condition-db.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="疾病史-糖尿病"/>
+      <patternString value="疾病史：糖尿病"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:condition-db.code.coding.system">
@@ -48874,7 +48874,7 @@
     <element id="Composition.section:condition-bg.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="疾病史-高血脂症"/>
+      <patternString value="疾病史：高血脂症"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:condition-bg.code.coding.system">
@@ -48899,7 +48899,7 @@
     <element id="Composition.section:condition-cd.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="疾病史-心臟病"/>
+      <patternString value="疾病史：心臟病"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:condition-cd.code.coding.system">
@@ -48924,7 +48924,7 @@
     <element id="Composition.section:condition-sd.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="疾病史-腦中風"/>
+      <patternString value="疾病史：腦中風"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:condition-sd.code.coding.system">
@@ -48949,7 +48949,7 @@
     <element id="Composition.section:condition-kd.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="疾病史-腎臟病"/>
+      <patternString value="疾病史：腎臟病"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:condition-kd.code.coding.system">
@@ -49099,7 +49099,7 @@
     <element id="Composition.section:lab-protein.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="Protein 尿蛋白"/>
+      <patternString value="尿液蛋白質"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:lab-protein.code.coding.system">
@@ -49149,7 +49149,7 @@
     <element id="Composition.section:lab-cholesterol.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="膽固醇"/>
+      <patternString value="總膽固醇"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:lab-cholesterol.code.coding.system">
@@ -49224,7 +49224,7 @@
     <element id="Composition.section:lab-high.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="高密度膽固醇"/>
+      <patternString value="高密度脂蛋白膽固醇"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:lab-high.code.coding.system">
@@ -49324,7 +49324,7 @@
     <element id="Composition.section:lab-glomerulus.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="腎絲球過濾率計算"/>
+      <patternString value="腎絲球過濾率（eGFR）計算"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:lab-glomerulus.code.coding.system">
@@ -49349,7 +49349,7 @@
     <element id="Composition.section:lab-b.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="Ｂ型肝炎表面抗原"/>
+      <patternString value="B 型肝炎表面抗原（HBsAg）"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:lab-b.code.coding.system">
@@ -49374,7 +49374,7 @@
     <element id="Composition.section:lab-c.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="Ｃ型肝炎病毒抗體"/>
+      <patternString value="C 型肝炎抗體（Anti-HCV）"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:lab-c.code.coding.system">
@@ -49674,7 +49674,7 @@
     <element id="Composition.section:con-accident.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="健康諮詢：事故傷害預"/>
+      <patternString value="健康諮詢：事故傷害預防"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:con-accident.code.coding.system">
@@ -49724,7 +49724,7 @@
     <element id="Composition.section:check-bc.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <patternString value="檢查過B、C型肝炎"/>
+      <patternString value="曾於成人預防保健服時接受過 B、C 型肝炎檢查"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.section:check-bc.code.coding.system">

@@ -52,12 +52,12 @@
         "title": "Observation Lab - AdultCheck"
       },
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck",
-        "title": "Observation Life - AdultCheck"
-      },
-      {
         "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck",
         "title": "Observation Pressure - AdultCheck"
+      },
+      {
+        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck",
+        "title": "Observation Social - AdultCheck"
       },
       {
         "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck",

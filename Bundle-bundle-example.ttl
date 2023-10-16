@@ -45,14 +45,44 @@
      fhir:fullUrl [ fhir:v "urn:uuid:e6f46b8b-6683-41c2-ab94-48017c8055b0"^^xsd:anyURI ] ;
      fhir:resource ( <urn:uuid:e6f46b8b-6683-41c2-ab94-48017c8055b0> )
   ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:0012825c-8918-453e-85e6-e64eac0b367c"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:0012825c-8918-453e-85e6-e64eac0b367c> )
+  ] [
      fhir:fullUrl [ fhir:v "urn:uuid:60f0995e-79f0-4490-9374-d7c8ee4c4268"^^xsd:anyURI ] ;
      fhir:resource ( <urn:uuid:60f0995e-79f0-4490-9374-d7c8ee4c4268> )
   ] [
-     fhir:fullUrl [ fhir:v "urn:uuid:ae8f1033-c524-409a-afed-0dc8e85e7c5a"^^xsd:anyURI ] ;
-     fhir:resource ( <urn:uuid:ae8f1033-c524-409a-afed-0dc8e85e7c5a> )
+     fhir:fullUrl [ fhir:v "urn:uuid:ae8f1033-c524-409a-afed-0d12e85e7c5a"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:ae8f1033-c524-409a-afed-0d12e85e7c5a> )
   ] [
-     fhir:fullUrl [ fhir:v "urn:uuid:0055f405-10c5-4c1c-81ad-bb8ab59774d9"^^xsd:anyURI ] ;
-     fhir:resource ( <urn:uuid:0055f405-10c5-4c1c-81ad-bb8ab59774d9> )
+     fhir:fullUrl [ fhir:v "urn:uuid:ae8f1033-c524-409a-afed-0dc2285e7c5a"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:ae8f1033-c524-409a-afed-0dc2285e7c5a> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:dfc17f3f-bd3c-4c2a-9f7b-89151e1f8dca"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:dfc17f3f-bd3c-4c2a-9f7b-89151e1f8dca> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:6b274268-ef43-41a7-96b4-d941ba4a237a"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:6b274268-ef43-41a7-96b4-d941ba4a237a> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:3d74a3f9-e0b0-49b6-91c0-8e03652c8ac7"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:3d74a3f9-e0b0-49b6-91c0-8e03652c8ac7> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:a5e272f1-08cc-4f50-b2d5-727c86e9c88a"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:a5e272f1-08cc-4f50-b2d5-727c86e9c88a> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:6e0f146e-7534-4f62-9a4b-5bb1df37b6b2"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:6e0f146e-7534-4f62-9a4b-5bb1df37b6b2> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:977165f6-6c01-4ac9-bdb4-962aa03e7724"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:977165f6-6c01-4ac9-bdb4-962aa03e7724> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:43a8d27e-b0c3-4f6f-9b1c-d287c32e7e4d"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:43a8d27e-b0c3-4f6f-9b1c-d287c32e7e4d> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:52f072cd-e1e3-4d27-ae71-2f63cde635cc"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:52f072cd-e1e3-4d27-ae71-2f63cde635cc> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:6fb9e6e6-1264-413f-8a1c-39f57295f5ed"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:6fb9e6e6-1264-413f-8a1c-39f57295f5ed> )
   ] [
      fhir:fullUrl [ fhir:v "urn:uuid:a363ec96-f199-4739-a677-aee8422b4ee9"^^xsd:anyURI ] ;
      fhir:resource ( <urn:uuid:a363ec96-f199-4739-a677-aee8422b4ee9> )
@@ -83,7 +113,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-adultcheck.html\">Composition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>type</b>: General medicine Hospital Progress note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#100574-3)</span></p><p><b>encounter</b>: <a href=\"#Encounter_encounter-example\">See above (Encounter/encounter-example)</a></p><p><b>date</b>: 2022-08-01 17:00:14-0500</p><p><b>author</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><p><b>title</b>: 成人健康檢查問卷</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-adultcheck.html\">Composition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>type</b>: General medicine Hospital Progress note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#100574-3)</span></p><p><b>encounter</b>: <a href=\"#Encounter_encounter-example\">See above (Encounter/encounter-example)</a></p><p><b>date</b>: 2022-08-01 17:00:14-0500</p><p><b>author</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><p><b>title</b>: 成人預防保健服務檢查單</p></div>"
   ] ; # 
   fhir:identifier [
      fhir:use [ fhir:v "official" ] ;
@@ -118,9 +148,9 @@
      fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
      fhir:reference [ fhir:v "Organization/org-hosp-example" ]
   ] ) ; # 
-  fhir:title [ fhir:v "成人健康檢查問卷"] ; # 
+  fhir:title [ fhir:v "成人預防保健服務檢查單"] ; # 
   fhir:section ( [
-     fhir:title [ fhir:v "疾病史-高血壓" ] ;
+     fhir:title [ fhir:v "疾病史：高血壓" ] ;
      fhir:code [
        fhir:coding ( [
          a loinc:34117-2 ;
@@ -132,6 +162,20 @@
      fhir:entry ( [
        fhir:link <https://tstifhir.azurehealthcareapis.com/Condition/condition-bp-example> ;
        fhir:reference [ fhir:v "Condition/condition-bp-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "疾病史：糖尿病" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:34117-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "34117-2" ] ;
+         fhir:display [ fhir:v "History and physical note" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Condition/condition-db-example> ;
+       fhir:reference [ fhir:v "Condition/condition-db-example" ]
      ] )
   ] [
      fhir:title [ fhir:v "生理量測-身高" ] ;
@@ -162,20 +206,6 @@
        fhir:reference [ fhir:v "Observation/observation-weight-example" ]
      ] )
   ] [
-     fhir:title [ fhir:v "生理量測-BMI" ] ;
-     fhir:code [
-       fhir:coding ( [
-         a loinc:85353-1 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "85353-1" ] ;
-         fhir:display [ fhir:v "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel" ]
-       ] )
-     ] ;
-     fhir:entry ( [
-       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-bmi-example> ;
-       fhir:reference [ fhir:v "Observation/observation-bmi-example" ]
-     ] )
-  ] [
      fhir:title [ fhir:v "生理量測-血壓" ] ;
      fhir:code [
        fhir:coding ( [
@@ -204,6 +234,34 @@
        fhir:reference [ fhir:v "Observation/observation-waist-example" ]
      ] )
   ] [
+     fhir:title [ fhir:v "生理量測-BMI" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:85353-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "85353-1" ] ;
+         fhir:display [ fhir:v "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-bmi-example> ;
+       fhir:reference [ fhir:v "Observation/observation-bmi-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "尿液蛋白質" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:19146-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19146-0" ] ;
+         fhir:display [ fhir:v "Referral lab test results" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-protein-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-protein-example" ]
+     ] )
+  ] [
      fhir:title [ fhir:v "血糖" ] ;
      fhir:code [
        fhir:coding ( [
@@ -214,8 +272,120 @@
        ] )
      ] ;
      fhir:entry ( [
-       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-example> ;
-       fhir:reference [ fhir:v "Observation/observation-lab-example" ]
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-sugar-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-sugar-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "總膽固醇" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:19146-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19146-0" ] ;
+         fhir:display [ fhir:v "Referral lab test results" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-tcholestero-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-tcholestero-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "三酸甘油脂" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:19146-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19146-0" ] ;
+         fhir:display [ fhir:v "Referral lab test results" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-triglycerides-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-triglycerides-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "低密度脂蛋白膽固醇計算" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:19146-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19146-0" ] ;
+         fhir:display [ fhir:v "Referral lab test results" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-lowcholestero-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-lowcholestero-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "高密度脂蛋白膽固醇" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:19146-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19146-0" ] ;
+         fhir:display [ fhir:v "Referral lab test results" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-highcholestero-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-highcholestero-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "GOT" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:19146-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19146-0" ] ;
+         fhir:display [ fhir:v "Referral lab test results" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-gpt-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-gpt-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "腎絲球過濾率（eGFR）計算" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:19146-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19146-0" ] ;
+         fhir:display [ fhir:v "Referral lab test results" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-creatinine-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-creatinine-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "B 型肝炎表面抗原（HBsAg）" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:19146-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19146-0" ] ;
+         fhir:display [ fhir:v "Referral lab test results" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-b-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-b-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "C 型肝炎抗體（Anti-HCV）" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:19146-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19146-0" ] ;
+         fhir:display [ fhir:v "Referral lab test results" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-lab-c-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-c-example" ]
      ] )
   ] [
      fhir:title [ fhir:v "憂鬱檢測" ] ;
@@ -230,20 +400,6 @@
      fhir:entry ( [
        fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-depress-example> ;
        fhir:reference [ fhir:v "Observation/observation-depress-example" ]
-     ] )
-  ] [
-     fhir:title [ fhir:v "生活史-吸煙" ] ;
-     fhir:code [
-       fhir:coding ( [
-         a loinc:35090-0 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "35090-0" ] ;
-         fhir:display [ fhir:v "Patient history" ]
-       ] )
-     ] ;
-     fhir:entry ( [
-       fhir:link <https://tstifhir.azurehealthcareapis.com/Observation/observation-smoke-example> ;
-       fhir:reference [ fhir:v "Observation/observation-smoke-example" ]
      ] )
   ] [
      fhir:title [ fhir:v "腎功能檢查結果判讀" ] ;
@@ -271,7 +427,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-adultcheck.html\">Patient - AdultCheck</a></p></div><p><b>identifier</b>: National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code: A123456789 (use: OFFICIAL), Medical record number: 8862168 (use: OFFICIAL), Provider number: 0123456789 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: 陳加玲(OFFICIAL)</p><p><b>telecom</b>: ph: 0911327999(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1990-01-01</p><p><b>address</b>: 臺北市 (HOME)</p><p><b>managingOrganization</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-adultcheck.html\">Patient - AdultCheck</a></p></div><p><b>identifier</b>: National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code: A123456789 (use: OFFICIAL), Medical record number: 8862168 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: 陳加玲(OFFICIAL)</p><p><b>telecom</b>: ph: 0911327999(MOBILE)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1990-01-01</p><p><b>address</b>: 臺北市 (HOME)</p><p><b>managingOrganization</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
@@ -308,16 +464,6 @@
      ] ;
      fhir:system [ fhir:v "https://www.tph.mohw.gov.tw/"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "8862168" ]
-  ] [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
   ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:name ( [
@@ -327,7 +473,7 @@
   fhir:telecom ( [
      fhir:system [ fhir:v "phone" ] ;
      fhir:value [ fhir:v "0911327999" ] ;
-     fhir:use [ fhir:v "home" ]
+     fhir:use [ fhir:v "mobile" ]
   ] ) ; # 
   fhir:gender [ fhir:v "female"] ; # 
   fhir:birthDate [ fhir:v "1990-01-01"^^xsd:date] ; # 
@@ -351,7 +497,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"org-hosp-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;org-hosp-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/StructureDefinition-Organization-hosp-twcore.html\">TW Core Organization Hospital Department</a></p></div><p><b>identifier</b>: Provider number: 0131060029 (use: OFFICIAL)</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-organization-type.html\">Organization type</a>#prov)</span></p><p><b>name</b>: 衛生福利部臺北醫院</p><p><b>telecom</b>: ph: 0222765566</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"org-hosp-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;org-hosp-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/StructureDefinition-Organization-hosp-twcore.html\">TW Core Organization Hospital Department</a></p></div><p><b>identifier</b>: Provider number: 1145010010 (use: OFFICIAL)</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-organization-type.html\">Organization type</a>#prov)</span></p><p><b>name</b>: 佛教慈濟醫療財團法人花蓮慈濟醫院</p><p><b>telecom</b>: ph: 038561825</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
@@ -362,7 +508,7 @@
        ] )
      ] ;
      fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0131060029" ]
+     fhir:value [ fhir:v "1145010010" ]
   ] ) ; # 
   fhir:type ( [
      fhir:coding ( [
@@ -370,10 +516,10 @@
        fhir:code [ fhir:v "prov" ]
      ] )
   ] ) ; # 
-  fhir:name [ fhir:v "衛生福利部臺北醫院"] ; # 
+  fhir:name [ fhir:v "佛教慈濟醫療財團法人花蓮慈濟醫院"] ; # 
   fhir:telecom ( [
      fhir:system [ fhir:v "phone" ] ;
-     fhir:value [ fhir:v "0222765566" ]
+     fhir:value [ fhir:v "038561825" ]
   ] ) . # 
 
 <urn:uuid:0f9d081e-34b8-45a4-b98c-46b74c94f26d> a fhir:Encounter ;
@@ -386,19 +532,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"encounter-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;encounter-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter-adultcheck.html\">Encounter - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: finished</p><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-01 17:00:14-0500 --&gt; (ongoing)</p></blockquote><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-05 17:00:14-0500 --&gt; (ongoing)</p></blockquote><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>serviceType</b>: 成人預防保健 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#562 &quot;Test Message&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>serviceProvider</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"encounter-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;encounter-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter-adultcheck.html\">Encounter - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: finished</p><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-01 17:00:14-0500 --&gt; (ongoing)</p></blockquote><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-05 17:00:14-0500 --&gt; (ongoing)</p></blockquote><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>serviceType</b>: 成人預防保健 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#562 &quot;Test Message&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>serviceProvider</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -450,19 +586,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"condition-bp-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;condition-bp-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-adultcheck.html\">Condition - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>clinicalStatus</b>: Remission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#remission)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: problem-list-item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#problem-list-item)</span></p><p><b>code</b>: H/O: hypertension <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#161501007)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>recordedDate</b>: 2022-08-05 17:00:14-0500</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"condition-bp-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;condition-bp-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-adultcheck.html\">Condition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>clinicalStatus</b>: Remission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#remission)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: problem-list-item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#problem-list-item)</span></p><p><b>code</b>: H/O: hypertension <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#161501007)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>recordedDate</b>: 2022-08-05 17:00:14-0500</p></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -502,6 +628,61 @@
   ] ; # 
   fhir:recordedDate [ fhir:v "2022-08-05T17:00:14-05:00"^^xsd:dateTime] . # 
 
+<urn:uuid:0012825c-8918-453e-85e6-e64eac0b367c> a fhir:Condition ;
+  fhir:id [ fhir:v "condition-db-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"condition-db-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;condition-db-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-adultcheck.html\">Condition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>clinicalStatus</b>: Remission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#remission)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: H/O: diabetes mellitus <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#161445009)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>recordedDate</b>: 2022-08-05 17:00:14-0500</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "remission" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:161445009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "161445009" ] ;
+       fhir:display [ fhir:v "H/O: diabetes mellitus" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2022-08-05T17:00:14-05:00"^^xsd:dateTime] . # 
+
 <urn:uuid:60f0995e-79f0-4490-9374-d7c8ee4c4268> a fhir:Observation ;
   fhir:id [ fhir:v "observation-depress-example"] ; # 
   fhir:meta [
@@ -512,19 +693,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-depress-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-depress-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationDepression-adultcheck.html\">Observation Depression - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Exam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: Beck Depression Inventory II [BDI] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#89210-9)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: 憂鬱檢測：第一題 感覺情緒低落沮喪 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#66446005 &quot;Depressed mood&quot;)</span></p><p><b>value</b>: 是</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 憂鬱檢測：第二題做事情失去興趣 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#713566001 &quot;Lack of interest&quot;)</span></p><p><b>value</b>: 否</p></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-depress-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-depress-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationDepression-adultcheck.html\">Observation Depression - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Exam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: Beck Depression Inventory II [BDI] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#89210-9)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><blockquote><p><b>component</b></p><p><b>code</b>: 憂鬱檢測：第一題 感覺情緒低落沮喪 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#66446005 &quot;Depressed mood&quot;)</span></p><p><b>value</b>: 是</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 憂鬱檢測：第二題做事情失去興趣 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#713566001 &quot;Lack of interest&quot;)</span></p><p><b>value</b>: 否</p></blockquote></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -557,8 +728,8 @@
   ] ; # 
   fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
-     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
   ] ) ; # 
   fhir:component ( [
      fhir:code [
@@ -584,8 +755,8 @@
      fhir:value [ fhir:v "否" ]
   ] ) . # 
 
-<urn:uuid:ae8f1033-c524-409a-afed-0dc8e85e7c5a> a fhir:Observation ;
-  fhir:id [ fhir:v "observation-lab-example"] ; # 
+<urn:uuid:ae8f1033-c524-409a-afed-0d12e85e7c5a> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-protein-example"] ; # 
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
@@ -594,19 +765,65 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血液及體液葡萄糖 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09005C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 15 mg/dl<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg/dl = 'mg/dl')</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>80 mg/dl<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg/dl = 'mg/dl')</span></td><td>120 mg/dl<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg/dl = 'mg/dl')</span></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-protein-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-protein-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 尿蛋白 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#06003C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 58 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>30 mg/dl</td><td>300 mg/dl</td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
          fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
+         fhir:code [ fhir:v "MRT" ]
        ] )
      ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "06003C" ] ;
+       fhir:display [ fhir:v "尿蛋白" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "58"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mg/dl" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "300"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:ae8f1033-c524-409a-afed-0dc2285e7c5a> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-sugar-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-sugar-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-sugar-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血液及體液葡萄糖 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09005C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 15 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>80 mg/dl</td><td>120 mg/dl</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -631,54 +848,38 @@
   ] ; # 
   fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
-     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "15"^^xsd:decimal ] ;
-     fhir:unit [ fhir:v "mg/dl" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-     fhir:code [ fhir:v "mg/dl" ]
+     fhir:unit [ fhir:v "mg/dl" ]
   ] ; # 
   fhir:referenceRange ( [
      fhir:low [
        fhir:value [ fhir:v "80"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "mg/dl" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "mg/dl" ]
+       fhir:unit [ fhir:v "mg/dl" ]
      ] ;
      fhir:high [
        fhir:value [ fhir:v "120"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "mg/dl" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "mg/dl" ]
+       fhir:unit [ fhir:v "mg/dl" ]
      ]
   ] ) . # 
 
-<urn:uuid:0055f405-10c5-4c1c-81ad-bb8ab59774d9> a fhir:Observation ;
-  fhir:id [ fhir:v "observation-smoke-example"] ; # 
+<urn:uuid:dfc17f3f-bd3c-4c2a-9f7b-89151e1f8dca> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-tcholestero-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"^^xsd:anyURI ;
-       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck>
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-smoke-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-smoke-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLife-adultcheck.html\">Observation Life - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 吸煙 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#230056004 &quot;Cigarette consumption&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 朋友敬菸或應酬才吸菸</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-tcholestero-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-tcholestero-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 總膽固醇 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09001C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 309 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>120 mg/dl</td><td>200 mg/dl</td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -690,21 +891,12 @@
      fhir:value [ fhir:v "000120230721" ]
   ] ) ; # 
   fhir:status [ fhir:v "preliminary"] ; # 
-  fhir:category ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "social-history" ] ;
-       fhir:display [ fhir:v "Social History" ]
-     ] )
-  ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       a sct:230056004 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "230056004" ] ;
-       fhir:display [ fhir:v "Cigarette consumption" ]
-     ] ) ;
-     fhir:text [ fhir:v "吸煙" ]
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "09001C" ] ;
+       fhir:display [ fhir:v "總膽固醇" ]
+     ] )
   ] ; # 
   fhir:subject [
      fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
@@ -712,10 +904,444 @@
   ] ; # 
   fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
-     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
   ] ) ; # 
-  fhir:value [ fhir:v "朋友敬菸或應酬才吸菸"] . # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "309"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mg/dl" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "120"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "200"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:6b274268-ef43-41a7-96b4-d941ba4a237a> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-triglycerides-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-triglycerides-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-triglycerides-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 三酸甘油脂 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09004C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 80 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>40 mg/dl</td><td>149 mg/dl</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "09004C" ] ;
+       fhir:display [ fhir:v "三酸甘油脂" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "80"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mg/dl" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "40"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "149"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:3d74a3f9-e0b0-49b6-91c0-8e03652c8ac7> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-lowcholestero-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-lowcholestero-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-lowcholestero-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 低密度脂蛋白-膽固醇 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09044C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 100 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg/dl</td><td>130 mg/dl</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "09044C" ] ;
+       fhir:display [ fhir:v "低密度脂蛋白-膽固醇" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mg/dl" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "130"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:a5e272f1-08cc-4f50-b2d5-727c86e9c88a> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-highcholestero-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-highcholestero-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-highcholestero-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 高密度脂蛋白-膽固醇 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09043C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 80 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg/dl</td><td>130 mg/dl</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "09043C" ] ;
+       fhir:display [ fhir:v "高密度脂蛋白-膽固醇" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "80"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mg/dl" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "130"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:6e0f146e-7534-4f62-9a4b-5bb1df37b6b2> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-got-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-got-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-got-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血清麩胺酸苯醋酸轉氨基脢 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09025C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 10 IU/l</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>10 IU/l</td><td>40 IU/l</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "09025C" ] ;
+       fhir:display [ fhir:v "血清麩胺酸苯醋酸轉氨基脢" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "IU/l" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "IU/l" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "40"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "IU/l" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:977165f6-6c01-4ac9-bdb4-962aa03e7724> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-gpt-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-gpt-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-gpt-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血清麩胺酸丙酮酸轉氨基脢 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09026C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 10 IU/l</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>10 IU/l</td><td>40 IU/l</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "09026C" ] ;
+       fhir:display [ fhir:v "血清麩胺酸丙酮酸轉氨基脢" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "IU/l" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "IU/l" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "40"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "IU/l" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:43a8d27e-b0c3-4f6f-9b1c-d287c32e7e4d> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-creatinine-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-creatinine-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-creatinine-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 肌酸酐、血 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09015C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 0.6 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>0.6 mg/dl</td><td>1.4 mg/dl</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "09015C" ] ;
+       fhir:display [ fhir:v "肌酸酐、血" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0.6"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mg/dl" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "0.6"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "1.4"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dl" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:52f072cd-e1e3-4d27-ae71-2f63cde635cc> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-b-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-b-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-b-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: B型肝炎表面抗原 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#14030C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 陰性</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "14030C" ] ;
+       fhir:display [ fhir:v "B型肝炎表面抗原" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "陰性"] . # 
+
+<urn:uuid:6fb9e6e6-1264-413f-8a1c-39f57295f5ed> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-c-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"^^xsd:anyURI ;
+       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-c-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-c-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: C型肝炎病毒抗體檢查 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#14051C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 陰性</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MRT" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "14051C" ] ;
+       fhir:display [ fhir:v "C型肝炎病毒抗體檢查" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "陰性"] . # 
 
 <urn:uuid:a363ec96-f199-4739-a677-aee8422b4ee9> a fhir:Observation ;
   fhir:id [ fhir:v "observation-height-example"] ; # 
@@ -727,19 +1353,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-height-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-height-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHeight-adultcheck.html\">Observation Height - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 8302-2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 160 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cm = 'cm')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-height-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-height-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHeight-adultcheck.html\">Observation Height - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 8302-2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 160 cm</p></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -770,15 +1386,13 @@
   ] ; # 
   fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
-     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "160"^^xsd:decimal ] ;
-     fhir:unit [ fhir:v "cm" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-     fhir:code [ fhir:v "cm" ]
+     fhir:unit [ fhir:v "cm" ]
   ] . # 
 
 <urn:uuid:2ffea95e-cfa0-4d54-bc70-78a0c1e437f8> a fhir:Observation ;
@@ -791,19 +1405,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-weight-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-weight-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationWeight-adultcheck.html\">Observation Weight - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 29463-7 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 50 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-weight-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-weight-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationWeight-adultcheck.html\">Observation Weight - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 29463-7 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 50 kg</p></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -834,15 +1438,13 @@
   ] ; # 
   fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
-     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "50"^^xsd:decimal ] ;
-     fhir:unit [ fhir:v "kg" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-     fhir:code [ fhir:v "kg" ]
+     fhir:unit [ fhir:v "kg" ]
   ] . # 
 
 <urn:uuid:05a41a1e-7f87-4fec-90a3-b7f674ebaf73> a fhir:Observation ;
@@ -855,19 +1457,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-waist-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-waist-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationWaist-adultcheck.html\">Observation Waist - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#vital-signs)</span></p><p><b>code</b>: 56117-5 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#56117-5)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 30 inch<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [in_i] = '[in_i]')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-waist-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-waist-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationWaist-adultcheck.html\">Observation Waist - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#vital-signs)</span></p><p><b>code</b>: 56117-5 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#56117-5)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 30 inch</p></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -898,15 +1490,13 @@
   ] ; # 
   fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
-     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "30"^^xsd:decimal ] ;
-     fhir:unit [ fhir:v "inch" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-     fhir:code [ fhir:v "[in_i]" ]
+     fhir:unit [ fhir:v "inch" ]
   ] . # 
 
 <urn:uuid:38ae699f-da77-43cf-ad27-799cedc884e4> a fhir:Observation ;
@@ -919,19 +1509,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-bmi-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-bmi-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationBMI-adultcheck.html\">Observation BMI - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 39156-5 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#39156-5)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 18 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-bmi-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-bmi-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationBMI-adultcheck.html\">Observation BMI - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 39156-5 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#39156-5)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 18 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -962,8 +1542,8 @@
   ] ; # 
   fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
-     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
@@ -983,19 +1563,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-pressure-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-pressure-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationPressure-adultcheck.html\">Observation Pressure - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 85354-9 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85354-9)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: 8462-4 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4)</span></p><p><b>value</b>: 110 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 8480-6 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></p><p><b>value</b>: 56 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-pressure-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-pressure-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationPressure-adultcheck.html\">Observation Pressure - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 85354-9 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85354-9)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: 8462-4 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4)</span></p><p><b>value</b>: 110 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 8480-6 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></p><p><b>value</b>: 56 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -1071,19 +1641,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DiagnosticReport</b><a name=\"diag-kidney-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DiagnosticReport &quot;diag-kidney-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReport-adultcheck.html\">DiagnosticReport - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0074.html\">diagnosticServiceSectionId</a>#LAB)</span></p><p><b>code</b>: 尿蛋白 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#06003C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022年8月3日 上午6:00:14</p><p><b>performer</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><p><b>resultsInterpreter</b>: <a href=\"#Organization_org-hosp-example\">See above (Organization/org-hosp-example)</a></p><p><b>conclusion</b>: 建議進一步檢查</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DiagnosticReport</b><a name=\"diag-kidney-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DiagnosticReport &quot;diag-kidney-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReport-adultcheck.html\">DiagnosticReport - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0074.html\">diagnosticServiceSectionId</a>#LAB)</span></p><p><b>code</b>: 尿蛋白 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#06003C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022年8月3日 上午6:00:14</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>resultsInterpreter</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>conclusion</b>: 建議進一步檢查</p></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -1116,12 +1676,12 @@
   fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:issued [ fhir:v "2022-08-02T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
-     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
   ] ) ; # 
   fhir:resultsInterpreter ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
-     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
   ] ) ; # 
   fhir:conclusion [ fhir:v "建議進一步檢查"] . # 
 

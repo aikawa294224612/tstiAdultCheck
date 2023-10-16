@@ -2116,7 +2116,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "成人健康檢查問卷" ] ;
+       fhir:pattern [ fhir:v "成人預防保健服務檢查單" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -3889,7 +3889,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "疾病史-高血壓" ] ;
+       fhir:pattern [ fhir:v "疾病史：高血壓" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -4958,7 +4958,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "疾病史-糖尿病" ] ;
+       fhir:pattern [ fhir:v "疾病史：糖尿病" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -6027,7 +6027,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "疾病史-高血脂症" ] ;
+       fhir:pattern [ fhir:v "疾病史：高血脂症" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -7096,7 +7096,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "疾病史-心臟病" ] ;
+       fhir:pattern [ fhir:v "疾病史：心臟病" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -8165,7 +8165,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "疾病史-腦中風" ] ;
+       fhir:pattern [ fhir:v "疾病史：腦中風" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -9234,7 +9234,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "疾病史-腎臟病" ] ;
+       fhir:pattern [ fhir:v "疾病史：腎臟病" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -15648,7 +15648,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "Protein 尿蛋白" ] ;
+       fhir:pattern [ fhir:v "尿液蛋白質" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -17786,7 +17786,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "膽固醇" ] ;
+       fhir:pattern [ fhir:v "總膽固醇" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -20993,7 +20993,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "高密度膽固醇" ] ;
+       fhir:pattern [ fhir:v "高密度脂蛋白膽固醇" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -25269,7 +25269,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "腎絲球過濾率計算" ] ;
+       fhir:pattern [ fhir:v "腎絲球過濾率（eGFR）計算" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -26338,7 +26338,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "Ｂ型肝炎表面抗原" ] ;
+       fhir:pattern [ fhir:v "B 型肝炎表面抗原（HBsAg）" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -27407,7 +27407,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "Ｃ型肝炎病毒抗體" ] ;
+       fhir:pattern [ fhir:v "C 型肝炎抗體（Anti-HCV）" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -40235,7 +40235,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "健康諮詢：事故傷害預" ] ;
+       fhir:pattern [ fhir:v "健康諮詢：事故傷害預防" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -42373,7 +42373,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "檢查過B、C型肝炎" ] ;
+       fhir:pattern [ fhir:v "曾於成人預防保健服時接受過 B、C 型肝炎檢查" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -53046,7 +53046,7 @@
        fhir:path [ fhir:v "Composition.title" ] ;
        fhir:short [ fhir:v "問卷標題" ] ;
        fhir:definition [ fhir:v "問卷標題" ] ;
-       fhir:pattern [ fhir:v "成人健康檢查問卷" ] ;
+       fhir:pattern [ fhir:v "成人預防保健服務檢查單" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section" ] ;
@@ -53071,7 +53071,7 @@
        fhir:id [ fhir:v "Composition.section:condition-bp.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "疾病史-高血壓" ] ;
+       fhir:pattern [ fhir:v "疾病史：高血壓" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:condition-bp.code.coding.system" ] ;
@@ -53096,7 +53096,7 @@
        fhir:id [ fhir:v "Composition.section:condition-db.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "疾病史-糖尿病" ] ;
+       fhir:pattern [ fhir:v "疾病史：糖尿病" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:condition-db.code.coding.system" ] ;
@@ -53121,7 +53121,7 @@
        fhir:id [ fhir:v "Composition.section:condition-bg.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "疾病史-高血脂症" ] ;
+       fhir:pattern [ fhir:v "疾病史：高血脂症" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:condition-bg.code.coding.system" ] ;
@@ -53146,7 +53146,7 @@
        fhir:id [ fhir:v "Composition.section:condition-cd.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "疾病史-心臟病" ] ;
+       fhir:pattern [ fhir:v "疾病史：心臟病" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:condition-cd.code.coding.system" ] ;
@@ -53171,7 +53171,7 @@
        fhir:id [ fhir:v "Composition.section:condition-sd.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "疾病史-腦中風" ] ;
+       fhir:pattern [ fhir:v "疾病史：腦中風" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:condition-sd.code.coding.system" ] ;
@@ -53196,7 +53196,7 @@
        fhir:id [ fhir:v "Composition.section:condition-kd.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "疾病史-腎臟病" ] ;
+       fhir:pattern [ fhir:v "疾病史：腎臟病" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:condition-kd.code.coding.system" ] ;
@@ -53346,7 +53346,7 @@
        fhir:id [ fhir:v "Composition.section:lab-protein.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "Protein 尿蛋白" ] ;
+       fhir:pattern [ fhir:v "尿液蛋白質" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:lab-protein.code.coding.system" ] ;
@@ -53396,7 +53396,7 @@
        fhir:id [ fhir:v "Composition.section:lab-cholesterol.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "膽固醇" ] ;
+       fhir:pattern [ fhir:v "總膽固醇" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:lab-cholesterol.code.coding.system" ] ;
@@ -53471,7 +53471,7 @@
        fhir:id [ fhir:v "Composition.section:lab-high.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "高密度膽固醇" ] ;
+       fhir:pattern [ fhir:v "高密度脂蛋白膽固醇" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:lab-high.code.coding.system" ] ;
@@ -53571,7 +53571,7 @@
        fhir:id [ fhir:v "Composition.section:lab-glomerulus.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "腎絲球過濾率計算" ] ;
+       fhir:pattern [ fhir:v "腎絲球過濾率（eGFR）計算" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:lab-glomerulus.code.coding.system" ] ;
@@ -53596,7 +53596,7 @@
        fhir:id [ fhir:v "Composition.section:lab-b.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "Ｂ型肝炎表面抗原" ] ;
+       fhir:pattern [ fhir:v "B 型肝炎表面抗原（HBsAg）" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:lab-b.code.coding.system" ] ;
@@ -53621,7 +53621,7 @@
        fhir:id [ fhir:v "Composition.section:lab-c.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "Ｃ型肝炎病毒抗體" ] ;
+       fhir:pattern [ fhir:v "C 型肝炎抗體（Anti-HCV）" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:lab-c.code.coding.system" ] ;
@@ -53921,7 +53921,7 @@
        fhir:id [ fhir:v "Composition.section:con-accident.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "健康諮詢：事故傷害預" ] ;
+       fhir:pattern [ fhir:v "健康諮詢：事故傷害預防" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:con-accident.code.coding.system" ] ;
@@ -53971,7 +53971,7 @@
        fhir:id [ fhir:v "Composition.section:check-bc.title" ] ;
        fhir:path [ fhir:v "Composition.section.title" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:pattern [ fhir:v "檢查過B、C型肝炎" ] ;
+       fhir:pattern [ fhir:v "曾於成人預防保健服時接受過 B、C 型肝炎檢查" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Composition.section:check-bc.code.coding.system" ] ;

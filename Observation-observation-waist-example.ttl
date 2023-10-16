@@ -17,19 +17,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-waist-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-waist-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationWaist-adultcheck.html\">Observation Waist - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#vital-signs)</span></p><p><b>code</b>: 56117-5 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#56117-5)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">Patient/patient-example</a> &quot;&quot;</p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-hosp-example.html\">Organization/org-hosp-example</a> &quot;衛生福利部臺北醫院&quot;</p><p><b>value</b>: 30 inch<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [in_i] = '[in_i]')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-waist-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-waist-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationWaist-adultcheck.html\">Observation Waist - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#vital-signs)</span></p><p><b>code</b>: 56117-5 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#56117-5)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">Patient/patient-example</a> &quot;&quot;</p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 30 inch</p></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
-  ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -60,15 +50,13 @@
   ] ; # 
   fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-hosp-example> ;
-     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
+     fhir:reference [ fhir:v "Organization/org-test-example" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "30"^^xsd:decimal ] ;
-     fhir:unit [ fhir:v "inch" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-     fhir:code [ fhir:v "[in_i]" ]
+     fhir:unit [ fhir:v "inch" ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

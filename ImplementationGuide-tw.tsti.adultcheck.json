@@ -10,7 +10,7 @@
   "name" : "AdultCheckIG",
   "title" : "成人預防保健實作指引(Adult Check IG)",
   "status" : "active",
-  "date" : "2023-09-27T18:07:47+08:00",
+  "date" : "2023-10-16T14:04:58+08:00",
   "publisher" : "大世科 tsti",
   "contact" : [{
     "name" : "大世科 tsti",
@@ -790,10 +790,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ObservationLife-adultcheck"
+        "reference" : "StructureDefinition/ObservationPressure-adultcheck"
       },
-      "name" : "Observation Life - AdultCheck",
-      "description" : "此Observation Life AdultCheck Profile說明成人預防保健生活史紀錄",
+      "name" : "Observation Pressure - AdultCheck",
+      "description" : "此Observation Pressure AdultCheck Profile說明成人預防保健血壓紀錄",
       "exampleBoolean" : false
     },
     {
@@ -802,10 +802,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ObservationPressure-adultcheck"
+        "reference" : "StructureDefinition/ObservationSocial-adultcheck"
       },
-      "name" : "Observation Pressure - AdultCheck",
-      "description" : "此Observation Pressure AdultCheck Profile說明成人預防保健血壓紀錄",
+      "name" : "Observation Social - AdultCheck",
+      "description" : "此Observation Social AdultCheck Profile說明成人預防保健生活史紀錄",
       "exampleBoolean" : false
     },
     {
@@ -838,11 +838,131 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/observation-alcohol-example"
+      },
+      "name" : "observation-alcohol-example",
+      "description" : "成人預防保健生活史項目-喝酒範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/observation-bmi-example"
       },
       "name" : "observation-bmi-example",
       "description" : "成人預防保健BMI紀錄範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-checkbc-example"
+      },
+      "name" : "observation-checkbc-example",
+      "description" : "成人預防保健生活史項目-接受過 B、C 型肝炎檢查範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-conaccident-example"
+      },
+      "name" : "observation-conaccident-example",
+      "description" : "成人預防保健生活史項目-事故傷害諮詢範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-condiet-example"
+      },
+      "name" : "observation-condiet-example",
+      "description" : "成人預防保健生活史項目-健康飲食諮詢範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-conexercise-example"
+      },
+      "name" : "observation-conexercise-example",
+      "description" : "成人預防保健生活史項目-戒檳榔諮詢範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-conliquor-example"
+      },
+      "name" : "observation-conliquor-example",
+      "description" : "成人預防保健生活史項目-節酒諮詢範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-connut-example"
+      },
+      "name" : "observation-connut-example",
+      "description" : "成人預防保健生活史項目-戒檳榔諮詢範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-conoral-example"
+      },
+      "name" : "observation-conoral-example",
+      "description" : "成人預防保健生活史項目-口腔保健諮詢範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-consmoke-example"
+      },
+      "name" : "observation-consmoke-example",
+      "description" : "成人預防保健生活史項目-戒菸諮詢範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-conweight-example"
+      },
+      "name" : "observation-conweight-example",
+      "description" : "成人預防保健生活史項目-維持正常體重諮詢範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
     },
     {
       "extension" : [{
@@ -862,6 +982,18 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/observation-exercise-example"
+      },
+      "name" : "observation-exercise-example",
+      "description" : "成人預防保健生活史項目-運動範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/observation-height-example"
       },
       "name" : "observation-height-example",
@@ -874,11 +1006,143 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/observation-lab-example"
+        "reference" : "Observation/observation-lab-b-example"
       },
-      "name" : "observation-lab-example",
-      "description" : "成人預防保健檢驗資訊範例",
+      "name" : "observation-lab-b-example",
+      "description" : "成人預防保健檢驗資訊範例-B型肝炎表面抗原",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-lab-c-example"
+      },
+      "name" : "observation-lab-c-example",
+      "description" : "成人預防保健檢驗資訊範例-C 型肝炎抗體",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-lab-creatinine-example"
+      },
+      "name" : "observation-lab-creatinine-example",
+      "description" : "成人預防保健檢驗資訊範例-肌酸酐",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-lab-got-example"
+      },
+      "name" : "observation-lab-got-example",
+      "description" : "成人預防保健檢驗資訊範例-GOT",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-lab-gpt-example"
+      },
+      "name" : "observation-lab-gpt-example",
+      "description" : "成人預防保健檢驗資訊範例-GPT",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-lab-highcholestero-example"
+      },
+      "name" : "observation-lab-highcholestero-example",
+      "description" : "成人預防保健檢驗資訊範例-低密度脂蛋白-膽固醇",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-lab-lowcholestero-example"
+      },
+      "name" : "observation-lab-lowcholestero-example",
+      "description" : "成人預防保健檢驗資訊範例-低密度脂蛋白-膽固醇",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-lab-protein-example"
+      },
+      "name" : "observation-lab-protein-example",
+      "description" : "成人預防保健檢驗資訊範例-尿蛋白",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-lab-sugar-example"
+      },
+      "name" : "observation-lab-sugar-example",
+      "description" : "成人預防保健檢驗資訊範例-血糖",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-lab-tcholestero-example"
+      },
+      "name" : "observation-lab-tcholestero-example",
+      "description" : "成人預防保健檢驗資訊範例-總膽固醇",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-lab-triglycerides-example"
+      },
+      "name" : "observation-lab-triglycerides-example",
+      "description" : "成人預防保健檢驗資訊範例-三酸甘油脂",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-nut-example"
+      },
+      "name" : "observation-nut-example",
+      "description" : "成人預防保健生活史項目-嚼檳榔範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
     },
     {
       "extension" : [{
@@ -901,8 +1165,8 @@
         "reference" : "Observation/observation-smoke-example"
       },
       "name" : "observation-smoke-example",
-      "description" : "成人預防保健生活史項目範例",
-      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"
+      "description" : "成人預防保健生活史項目-吸菸範例",
+      "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"
     },
     {
       "extension" : [{
@@ -937,6 +1201,19 @@
         "reference" : "Organization/org-hosp-example"
       },
       "name" : "org-hosp-example",
+      "description" : "醫事機構範例",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/org-test-example"
+      },
+      "name" : "org-test-example",
+      "description" : "委託代檢醫事檢驗機構範例",
       "exampleBoolean" : true
     },
     {
@@ -960,19 +1237,8 @@
         "reference" : "Patient/patient-example"
       },
       "name" : "patient-example",
-      "description" : "成人預防保健病患基本資料範例",
+      "description" : "成人預防保健受檢民眾基本資料範例",
       "exampleCanonical" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/practitioner-example"
-      },
-      "name" : "practitioner-example",
-      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -994,7 +1260,7 @@
       "reference" : {
         "reference" : "ValueSet/adultcheck-code"
       },
-      "name" : "成人預防保健疾病史代碼",
+      "name" : "成人預防保健疾病史代碼集值",
       "description" : "此EncounterAdultCheck Profile說明成人預防保健疾病史代碼",
       "exampleBoolean" : false
     },

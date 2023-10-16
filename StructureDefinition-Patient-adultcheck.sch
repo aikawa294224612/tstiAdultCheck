@@ -14,8 +14,6 @@
     <sch:rule context="f:Patient">
       <sch:assert test="count(f:extension[@url = 'https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/person-age']) &lt;= 1">extension with URL = 'https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/person-age': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/patient-nationality']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/patient-nationality': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:telecom) &gt;= 1">telecom: minimum cardinality of 'telecom' is 1</sch:assert>
-      <sch:assert test="count(f:address) &gt;= 1">address: minimum cardinality of 'address' is 1</sch:assert>
       <sch:assert test="count(f:managingOrganization) &gt;= 1">managingOrganization: minimum cardinality of 'managingOrganization' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

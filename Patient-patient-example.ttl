@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>陳加玲(OFFICIAL)</b> female, DoB: 1990-01-01 ( National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code: A123456789 (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>Medical record number: 8862168 (use: OFFICIAL)</li><li>Provider number: 0123456789 (use: OFFICIAL)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 0911327999(HOME)</li><li>臺北市 (HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-org-hosp-example.html\">Organization/org-hosp-example</a> &quot;衛生福利部臺北醫院&quot;</li></ul></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>陳加玲(OFFICIAL)</b> female, DoB: 1990-01-01 ( National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code: A123456789 (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">Medical record number: 8862168 (use: OFFICIAL)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 0911327999(MOBILE)</li><li>臺北市 (HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-org-hosp-example.html\">Organization/org-hosp-example</a> &quot;佛教慈濟醫療財團法人花蓮慈濟醫院&quot;</li></ul></td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
@@ -53,16 +53,6 @@
      ] ;
      fhir:system [ fhir:v "https://www.tph.mohw.gov.tw/"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "8862168" ]
-  ] [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PRN" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0123456789" ]
   ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:name ( [
@@ -72,7 +62,7 @@
   fhir:telecom ( [
      fhir:system [ fhir:v "phone" ] ;
      fhir:value [ fhir:v "0911327999" ] ;
-     fhir:use [ fhir:v "home" ]
+     fhir:use [ fhir:v "mobile" ]
   ] ) ; # 
   fhir:gender [ fhir:v "female"] ; # 
   fhir:birthDate [ fhir:v "1990-01-01"^^xsd:date] ; # 

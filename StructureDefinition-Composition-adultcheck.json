@@ -2055,7 +2055,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "成人健康檢查問卷",
+      "patternString" : "成人預防保健服務檢查單",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -3728,7 +3728,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "疾病史-高血壓",
+      "patternString" : "疾病史：高血壓",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -4746,7 +4746,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "疾病史-糖尿病",
+      "patternString" : "疾病史：糖尿病",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -5764,7 +5764,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "疾病史-高血脂症",
+      "patternString" : "疾病史：高血脂症",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -6782,7 +6782,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "疾病史-心臟病",
+      "patternString" : "疾病史：心臟病",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -7800,7 +7800,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "疾病史-腦中風",
+      "patternString" : "疾病史：腦中風",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -8818,7 +8818,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "疾病史-腎臟病",
+      "patternString" : "疾病史：腎臟病",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -14926,7 +14926,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "Protein 尿蛋白",
+      "patternString" : "尿液蛋白質",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -16962,7 +16962,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "膽固醇",
+      "patternString" : "總膽固醇",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -20016,7 +20016,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "高密度膽固醇",
+      "patternString" : "高密度脂蛋白膽固醇",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -24088,7 +24088,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "腎絲球過濾率計算",
+      "patternString" : "腎絲球過濾率（eGFR）計算",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -25106,7 +25106,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "Ｂ型肝炎表面抗原",
+      "patternString" : "B 型肝炎表面抗原（HBsAg）",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -26124,7 +26124,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "Ｃ型肝炎病毒抗體",
+      "patternString" : "C 型肝炎抗體（Anti-HCV）",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -38340,7 +38340,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "健康諮詢：事故傷害預",
+      "patternString" : "健康諮詢：事故傷害預防",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -40376,7 +40376,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "檢查過B、C型肝炎",
+      "patternString" : "曾於成人預防保健服時接受過 B、C 型肝炎檢查",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -50548,7 +50548,7 @@
       "path" : "Composition.title",
       "short" : "問卷標題",
       "definition" : "問卷標題",
-      "patternString" : "成人健康檢查問卷",
+      "patternString" : "成人預防保健服務檢查單",
       "mustSupport" : true
     },
     {
@@ -50576,7 +50576,7 @@
       "id" : "Composition.section:condition-bp.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "疾病史-高血壓",
+      "patternString" : "疾病史：高血壓",
       "mustSupport" : true
     },
     {
@@ -50606,7 +50606,7 @@
       "id" : "Composition.section:condition-db.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "疾病史-糖尿病",
+      "patternString" : "疾病史：糖尿病",
       "mustSupport" : true
     },
     {
@@ -50636,7 +50636,7 @@
       "id" : "Composition.section:condition-bg.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "疾病史-高血脂症",
+      "patternString" : "疾病史：高血脂症",
       "mustSupport" : true
     },
     {
@@ -50666,7 +50666,7 @@
       "id" : "Composition.section:condition-cd.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "疾病史-心臟病",
+      "patternString" : "疾病史：心臟病",
       "mustSupport" : true
     },
     {
@@ -50696,7 +50696,7 @@
       "id" : "Composition.section:condition-sd.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "疾病史-腦中風",
+      "patternString" : "疾病史：腦中風",
       "mustSupport" : true
     },
     {
@@ -50726,7 +50726,7 @@
       "id" : "Composition.section:condition-kd.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "疾病史-腎臟病",
+      "patternString" : "疾病史：腎臟病",
       "mustSupport" : true
     },
     {
@@ -50906,7 +50906,7 @@
       "id" : "Composition.section:lab-protein.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "Protein 尿蛋白",
+      "patternString" : "尿液蛋白質",
       "mustSupport" : true
     },
     {
@@ -50966,7 +50966,7 @@
       "id" : "Composition.section:lab-cholesterol.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "膽固醇",
+      "patternString" : "總膽固醇",
       "mustSupport" : true
     },
     {
@@ -51056,7 +51056,7 @@
       "id" : "Composition.section:lab-high.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "高密度膽固醇",
+      "patternString" : "高密度脂蛋白膽固醇",
       "mustSupport" : true
     },
     {
@@ -51176,7 +51176,7 @@
       "id" : "Composition.section:lab-glomerulus.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "腎絲球過濾率計算",
+      "patternString" : "腎絲球過濾率（eGFR）計算",
       "mustSupport" : true
     },
     {
@@ -51206,7 +51206,7 @@
       "id" : "Composition.section:lab-b.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "Ｂ型肝炎表面抗原",
+      "patternString" : "B 型肝炎表面抗原（HBsAg）",
       "mustSupport" : true
     },
     {
@@ -51236,7 +51236,7 @@
       "id" : "Composition.section:lab-c.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "Ｃ型肝炎病毒抗體",
+      "patternString" : "C 型肝炎抗體（Anti-HCV）",
       "mustSupport" : true
     },
     {
@@ -51596,7 +51596,7 @@
       "id" : "Composition.section:con-accident.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "健康諮詢：事故傷害預",
+      "patternString" : "健康諮詢：事故傷害預防",
       "mustSupport" : true
     },
     {
@@ -51656,7 +51656,7 @@
       "id" : "Composition.section:check-bc.title",
       "path" : "Composition.section.title",
       "min" : 1,
-      "patternString" : "檢查過B、C型肝炎",
+      "patternString" : "曾於成人預防保健服時接受過 B、C 型肝炎檢查",
       "mustSupport" : true
     },
     {

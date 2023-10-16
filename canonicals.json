@@ -77,18 +77,18 @@
     "name" : "ObservationLabAdultCheck"
   },
   {
-    "id" : "ObservationLife-adultcheck",
-    "type" : "StructureDefinition",
-    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck",
-    "version" : "0.1.0",
-    "name" : "ObservationLifeAdultCheck"
-  },
-  {
     "id" : "ObservationPressure-adultcheck",
     "type" : "StructureDefinition",
     "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck",
     "version" : "0.1.0",
     "name" : "ObservationPressureAdultCheck"
+  },
+  {
+    "id" : "ObservationSocial-adultcheck",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck",
+    "version" : "0.1.0",
+    "name" : "ObservationSocialAdultCheck"
   },
   {
     "id" : "ObservationWaist-adultcheck",

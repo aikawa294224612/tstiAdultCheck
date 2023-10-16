@@ -10,7 +10,7 @@
   <name value="AdultCheckIG"/>
   <title value="成人預防保健實作指引(Adult Check IG)"/>
   <status value="active"/>
-  <date value="2023-09-27T18:07:47+08:00"/>
+  <date value="2023-10-16T14:04:58+08:00"/>
   <publisher value="大世科 tsti"/>
   <contact>
     <name value="大世科 tsti"/>
@@ -618,10 +618,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ObservationLife-adultcheck"/>
+        <reference value="StructureDefinition/ObservationPressure-adultcheck"/>
       </reference>
-      <name value="Observation Life - AdultCheck"/>
-      <description value="此Observation Life AdultCheck Profile說明成人預防保健生活史紀錄"/>
+      <name value="Observation Pressure - AdultCheck"/>
+      <description value="此Observation Pressure AdultCheck Profile說明成人預防保健血壓紀錄"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -629,10 +629,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ObservationPressure-adultcheck"/>
+        <reference value="StructureDefinition/ObservationSocial-adultcheck"/>
       </reference>
-      <name value="Observation Pressure - AdultCheck"/>
-      <description value="此Observation Pressure AdultCheck Profile說明成人預防保健血壓紀錄"/>
+      <name value="Observation Social - AdultCheck"/>
+      <description value="此Observation Social AdultCheck Profile說明成人預防保健生活史紀錄"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -662,11 +662,121 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/observation-alcohol-example"/>
+      </reference>
+      <name value="observation-alcohol-example"/>
+      <description value="成人預防保健生活史項目-喝酒範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/observation-bmi-example"/>
       </reference>
       <name value="observation-bmi-example"/>
       <description value="成人預防保健BMI紀錄範例"/>
       <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-checkbc-example"/>
+      </reference>
+      <name value="observation-checkbc-example"/>
+      <description value="成人預防保健生活史項目-接受過 B、C 型肝炎檢查範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-conaccident-example"/>
+      </reference>
+      <name value="observation-conaccident-example"/>
+      <description value="成人預防保健生活史項目-事故傷害諮詢範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-condiet-example"/>
+      </reference>
+      <name value="observation-condiet-example"/>
+      <description value="成人預防保健生活史項目-健康飲食諮詢範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-conexercise-example"/>
+      </reference>
+      <name value="observation-conexercise-example"/>
+      <description value="成人預防保健生活史項目-戒檳榔諮詢範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-conliquor-example"/>
+      </reference>
+      <name value="observation-conliquor-example"/>
+      <description value="成人預防保健生活史項目-節酒諮詢範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-connut-example"/>
+      </reference>
+      <name value="observation-connut-example"/>
+      <description value="成人預防保健生活史項目-戒檳榔諮詢範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-conoral-example"/>
+      </reference>
+      <name value="observation-conoral-example"/>
+      <description value="成人預防保健生活史項目-口腔保健諮詢範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-consmoke-example"/>
+      </reference>
+      <name value="observation-consmoke-example"/>
+      <description value="成人預防保健生活史項目-戒菸諮詢範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-conweight-example"/>
+      </reference>
+      <name value="observation-conweight-example"/>
+      <description value="成人預防保健生活史項目-維持正常體重諮詢範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -684,6 +794,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/observation-exercise-example"/>
+      </reference>
+      <name value="observation-exercise-example"/>
+      <description value="成人預防保健生活史項目-運動範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/observation-height-example"/>
       </reference>
       <name value="observation-height-example"/>
@@ -695,11 +816,132 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/observation-lab-example"/>
+        <reference value="Observation/observation-lab-b-example"/>
       </reference>
-      <name value="observation-lab-example"/>
-      <description value="成人預防保健檢驗資訊範例"/>
+      <name value="observation-lab-b-example"/>
+      <description value="成人預防保健檢驗資訊範例-B型肝炎表面抗原"/>
       <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-c-example"/>
+      </reference>
+      <name value="observation-lab-c-example"/>
+      <description value="成人預防保健檢驗資訊範例-C 型肝炎抗體"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-creatinine-example"/>
+      </reference>
+      <name value="observation-lab-creatinine-example"/>
+      <description value="成人預防保健檢驗資訊範例-肌酸酐"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-got-example"/>
+      </reference>
+      <name value="observation-lab-got-example"/>
+      <description value="成人預防保健檢驗資訊範例-GOT"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-gpt-example"/>
+      </reference>
+      <name value="observation-lab-gpt-example"/>
+      <description value="成人預防保健檢驗資訊範例-GPT"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-highcholestero-example"/>
+      </reference>
+      <name value="observation-lab-highcholestero-example"/>
+      <description value="成人預防保健檢驗資訊範例-低密度脂蛋白-膽固醇"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-lowcholestero-example"/>
+      </reference>
+      <name value="observation-lab-lowcholestero-example"/>
+      <description value="成人預防保健檢驗資訊範例-低密度脂蛋白-膽固醇"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-protein-example"/>
+      </reference>
+      <name value="observation-lab-protein-example"/>
+      <description value="成人預防保健檢驗資訊範例-尿蛋白"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-sugar-example"/>
+      </reference>
+      <name value="observation-lab-sugar-example"/>
+      <description value="成人預防保健檢驗資訊範例-血糖"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-tcholestero-example"/>
+      </reference>
+      <name value="observation-lab-tcholestero-example"/>
+      <description value="成人預防保健檢驗資訊範例-總膽固醇"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-triglycerides-example"/>
+      </reference>
+      <name value="observation-lab-triglycerides-example"/>
+      <description value="成人預防保健檢驗資訊範例-三酸甘油脂"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-nut-example"/>
+      </reference>
+      <name value="observation-nut-example"/>
+      <description value="成人預防保健生活史項目-嚼檳榔範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -720,8 +962,8 @@
         <reference value="Observation/observation-smoke-example"/>
       </reference>
       <name value="observation-smoke-example"/>
-      <description value="成人預防保健生活史項目範例"/>
-      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"/>
+      <description value="成人預防保健生活史項目-吸菸範例"/>
+      <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -753,6 +995,18 @@
         <reference value="Organization/org-hosp-example"/>
       </reference>
       <name value="org-hosp-example"/>
+      <description value="醫事機構範例"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/org-test-example"/>
+      </reference>
+      <name value="org-test-example"/>
+      <description value="委託代檢醫事檢驗機構範例"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -774,18 +1028,8 @@
         <reference value="Patient/patient-example"/>
       </reference>
       <name value="patient-example"/>
-      <description value="成人預防保健病患基本資料範例"/>
+      <description value="成人預防保健受檢民眾基本資料範例"/>
       <exampleCanonical value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/practitioner-example"/>
-      </reference>
-      <name value="practitioner-example"/>
-      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -805,7 +1049,7 @@
       <reference>
         <reference value="ValueSet/adultcheck-code"/>
       </reference>
-      <name value="成人預防保健疾病史代碼"/>
+      <name value="成人預防保健疾病史代碼集值"/>
       <description value="此EncounterAdultCheck Profile說明成人預防保健疾病史代碼"/>
       <exampleBoolean value="false"/>
     </resource>

@@ -27,7 +27,7 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="composition-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;composition-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-adultcheck.html">Composition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>type</b>: General medicine Hospital Progress note <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#100574-3)</span></p><p><b>encounter</b>: <a href="#Encounter_encounter-example">See above (Encounter/encounter-example)</a></p><p><b>date</b>: 2022-08-01 17:00:14-0500</p><p><b>author</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><p><b>title</b>: 成人健康檢查問卷</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="composition-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;composition-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-adultcheck.html">Composition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>type</b>: General medicine Hospital Progress note <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#100574-3)</span></p><p><b>encounter</b>: <a href="#Encounter_encounter-example">See above (Encounter/encounter-example)</a></p><p><b>date</b>: 2022-08-01 17:00:14-0500</p><p><b>author</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><p><b>title</b>: 成人預防保健服務檢查單</p></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -58,9 +58,9 @@
         <author>
           <reference value="Organization/org-hosp-example"/>
         </author>
-        <title value="成人健康檢查問卷"/>
+        <title value="成人預防保健服務檢查單"/>
         <section>
-          <title value="疾病史-高血壓"/>
+          <title value="疾病史：高血壓"/>
           <code>
             <coding>
               <system value="http://loinc.org"/>
@@ -70,6 +70,19 @@
           </code>
           <entry>
             <reference value="Condition/condition-bp-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="疾病史：糖尿病"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="34117-2"/>
+              <display value="History and physical note"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Condition/condition-db-example"/>
           </entry>
         </section>
         <section>
@@ -99,19 +112,6 @@
           </entry>
         </section>
         <section>
-          <title value="生理量測-BMI"/>
-          <code>
-            <coding>
-              <system value="http://loinc.org"/>
-              <code value="85353-1"/>
-              <display value="Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"/>
-            </coding>
-          </code>
-          <entry>
-            <reference value="Observation/observation-bmi-example"/>
-          </entry>
-        </section>
-        <section>
           <title value="生理量測-血壓"/>
           <code>
             <coding>
@@ -138,6 +138,32 @@
           </entry>
         </section>
         <section>
+          <title value="生理量測-BMI"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="85353-1"/>
+              <display value="Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-bmi-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="尿液蛋白質"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="19146-0"/>
+              <display value="Referral lab test results"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-lab-protein-example"/>
+          </entry>
+        </section>
+        <section>
           <title value="血糖"/>
           <code>
             <coding>
@@ -147,7 +173,111 @@
             </coding>
           </code>
           <entry>
-            <reference value="Observation/observation-lab-example"/>
+            <reference value="Observation/observation-lab-sugar-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="總膽固醇"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="19146-0"/>
+              <display value="Referral lab test results"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-lab-tcholestero-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="三酸甘油脂"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="19146-0"/>
+              <display value="Referral lab test results"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-lab-triglycerides-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="低密度脂蛋白膽固醇計算"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="19146-0"/>
+              <display value="Referral lab test results"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-lab-lowcholestero-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="高密度脂蛋白膽固醇"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="19146-0"/>
+              <display value="Referral lab test results"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-lab-highcholestero-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="GOT"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="19146-0"/>
+              <display value="Referral lab test results"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-lab-gpt-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="腎絲球過濾率（eGFR）計算"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="19146-0"/>
+              <display value="Referral lab test results"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-lab-creatinine-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="B 型肝炎表面抗原（HBsAg）"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="19146-0"/>
+              <display value="Referral lab test results"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-lab-b-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="C 型肝炎抗體（Anti-HCV）"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="19146-0"/>
+              <display value="Referral lab test results"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-lab-c-example"/>
           </entry>
         </section>
         <section>
@@ -161,19 +291,6 @@
           </code>
           <entry>
             <reference value="Observation/observation-depress-example"/>
-          </entry>
-        </section>
-        <section>
-          <title value="生活史-吸煙"/>
-          <code>
-            <coding>
-              <system value="http://loinc.org"/>
-              <code value="35090-0"/>
-              <display value="Patient history"/>
-            </coding>
-          </code>
-          <entry>
-            <reference value="Observation/observation-smoke-example"/>
           </entry>
         </section>
         <section>
@@ -201,7 +318,7 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="patient-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;patient-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Patient-adultcheck.html">Patient - AdultCheck</a></p></div><p><b>identifier</b>: National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code: A123456789 (use: OFFICIAL), Medical record number: 8862168 (use: OFFICIAL), Provider number: 0123456789 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: 陳加玲(OFFICIAL)</p><p><b>telecom</b>: ph: 0911327999(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1990-01-01</p><p><b>address</b>: 臺北市 (HOME)</p><p><b>managingOrganization</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="patient-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;patient-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Patient-adultcheck.html">Patient - AdultCheck</a></p></div><p><b>identifier</b>: National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code: A123456789 (use: OFFICIAL), Medical record number: 8862168 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: 陳加玲(OFFICIAL)</p><p><b>telecom</b>: ph: 0911327999(MOBILE)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1990-01-01</p><p><b>address</b>: 臺北市 (HOME)</p><p><b>managingOrganization</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -234,17 +351,6 @@
           <system value="https://www.tph.mohw.gov.tw/"/>
           <value value="8862168"/>
         </identifier>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <active value="true"/>
         <name>
           <use value="official"/>
@@ -253,7 +359,7 @@
         <telecom>
           <system value="phone"/>
           <value value="0911327999"/>
-          <use value="home"/>
+          <use value="mobile"/>
         </telecom>
         <gender value="female"/>
         <birthDate value="1990-01-01"/>
@@ -277,7 +383,7 @@
           <profile value="https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-hosp-twcore"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="org-hosp-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;org-hosp-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/StructureDefinition-Organization-hosp-twcore.html">TW Core Organization Hospital Department</a></p></div><p><b>identifier</b>: Provider number: 0131060029 (use: OFFICIAL)</p><p><b>type</b>: Healthcare Provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-organization-type.html">Organization type</a>#prov)</span></p><p><b>name</b>: 衛生福利部臺北醫院</p><p><b>telecom</b>: ph: 0222765566</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="org-hosp-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;org-hosp-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/StructureDefinition-Organization-hosp-twcore.html">TW Core Organization Hospital Department</a></p></div><p><b>identifier</b>: Provider number: 1145010010 (use: OFFICIAL)</p><p><b>type</b>: Healthcare Provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-organization-type.html">Organization type</a>#prov)</span></p><p><b>name</b>: 佛教慈濟醫療財團法人花蓮慈濟醫院</p><p><b>telecom</b>: ph: 038561825</p></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -288,7 +394,7 @@
             </coding>
           </type>
           <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/organization-identifier-tw"/>
-          <value value="0131060029"/>
+          <value value="1145010010"/>
         </identifier>
         <type>
           <coding>
@@ -296,10 +402,10 @@
             <code value="prov"/>
           </coding>
         </type>
-        <name value="衛生福利部臺北醫院"/>
+        <name value="佛教慈濟醫療財團法人花蓮慈濟醫院"/>
         <telecom>
           <system value="phone"/>
-          <value value="0222765566"/>
+          <value value="038561825"/>
         </telecom>
       </Organization>
     </resource>
@@ -313,19 +419,8 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="encounter-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;encounter-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Encounter-adultcheck.html">Encounter - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: finished</p><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-01 17:00:14-0500 --&gt; (ongoing)</p></blockquote><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-05 17:00:14-0500 --&gt; (ongoing)</p></blockquote><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>serviceType</b>: 成人預防保健 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#562 &quot;Test Message&quot;)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>serviceProvider</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="encounter-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;encounter-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Encounter-adultcheck.html">Encounter - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: finished</p><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-01 17:00:14-0500 --&gt; (ongoing)</p></blockquote><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: 2022-08-05 17:00:14-0500 --&gt; (ongoing)</p></blockquote><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>serviceType</b>: 成人預防保健 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#562 &quot;Test Message&quot;)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>serviceProvider</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p></div>
         </text>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <identifier>
           <use value="official"/>
           <type>
@@ -378,19 +473,8 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="condition-bp-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;condition-bp-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Condition-adultcheck.html">Condition - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>clinicalStatus</b>: Remission <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#remission)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: problem-list-item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#problem-list-item)</span></p><p><b>code</b>: H/O: hypertension <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#161501007)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>recordedDate</b>: 2022-08-05 17:00:14-0500</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="condition-bp-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;condition-bp-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Condition-adultcheck.html">Condition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>clinicalStatus</b>: Remission <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#remission)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: problem-list-item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#problem-list-item)</span></p><p><b>code</b>: H/O: hypertension <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#161501007)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>recordedDate</b>: 2022-08-05 17:00:14-0500</p></div>
         </text>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <identifier>
           <use value="official"/>
           <type>
@@ -433,6 +517,60 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="urn:uuid:0012825c-8918-453e-85e6-e64eac0b367c"/>
+    <resource>
+      <Condition>
+        <id value="condition-db-example"/>
+        <meta>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="condition-db-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;condition-db-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Condition-adultcheck.html">Condition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>clinicalStatus</b>: Remission <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#remission)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Problem List Item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: H/O: diabetes mellitus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#161445009)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>recordedDate</b>: 2022-08-05 17:00:14-0500</p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MRT"/>
+            </coding>
+          </type>
+          <system value="https://tsti.hospital.com"/>
+          <value value="000120230721"/>
+        </identifier>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="remission"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="161445009"/>
+            <display value="H/O: diabetes mellitus"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <recordedDate value="2022-08-05T17:00:14-05:00"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="urn:uuid:60f0995e-79f0-4490-9374-d7c8ee4c4268"/>
     <resource>
       <Observation>
@@ -441,19 +579,8 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationDepression-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-depress-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-depress-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationDepression-adultcheck.html">Observation Depression - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Exam <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: Beck Depression Inventory II [BDI] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#89210-9)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: 憂鬱檢測：第一題 感覺情緒低落沮喪 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#66446005 &quot;Depressed mood&quot;)</span></p><p><b>value</b>: 是</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 憂鬱檢測：第二題做事情失去興趣 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#713566001 &quot;Lack of interest&quot;)</span></p><p><b>value</b>: 否</p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-depress-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-depress-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationDepression-adultcheck.html">Observation Depression - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Exam <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: Beck Depression Inventory II [BDI] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#89210-9)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><blockquote><p><b>component</b></p><p><b>code</b>: 憂鬱檢測：第一題 感覺情緒低落沮喪 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#66446005 &quot;Depressed mood&quot;)</span></p><p><b>value</b>: 是</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 憂鬱檢測：第二題做事情失去興趣 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#713566001 &quot;Lack of interest&quot;)</span></p><p><b>value</b>: 否</p></blockquote></div>
         </text>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <identifier>
           <use value="official"/>
           <type>
@@ -485,7 +612,7 @@
         </subject>
         <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
         <performer>
-          <reference value="Organization/org-hosp-example"/>
+          <reference value="Organization/org-test-example"/>
         </performer>
         <component>
           <code>
@@ -513,27 +640,70 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:ae8f1033-c524-409a-afed-0dc8e85e7c5a"/>
+    <fullUrl value="urn:uuid:ae8f1033-c524-409a-afed-0d12e85e7c5a"/>
     <resource>
       <Observation>
-        <id value="observation-lab-example"/>
+        <id value="observation-lab-protein-example"/>
         <meta>
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血液及體液葡萄糖 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#09005C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 15 mg/dl<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg/dl = 'mg/dl')</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>80 mg/dl<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg/dl = 'mg/dl')</span></td><td>120 mg/dl<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg/dl = 'mg/dl')</span></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-protein-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-protein-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 尿蛋白 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#06003C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 58 mg/dl</p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>30 mg/dl</td><td>300 mg/dl</td></tr></table></div>
         </text>
         <identifier>
           <use value="official"/>
           <type>
             <coding>
               <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
+              <code value="MRT"/>
             </coding>
           </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
+          <system value="https://tsti.hospital.com"/>
+          <value value="000120230721"/>
         </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"/>
+            <code value="06003C"/>
+            <display value="尿蛋白"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <performer>
+          <reference value="Organization/org-test-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="58"/>
+          <unit value="mg/dl"/>
+        </valueQuantity>
+        <referenceRange>
+          <low>
+            <value value="30"/>
+            <unit value="mg/dl"/>
+          </low>
+          <high>
+            <value value="300"/>
+            <unit value="mg/dl"/>
+          </high>
+        </referenceRange>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ae8f1033-c524-409a-afed-0dc2285e7c5a"/>
+    <resource>
+      <Observation>
+        <id value="observation-lab-sugar-example"/>
+        <meta>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-sugar-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-sugar-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血液及體液葡萄糖 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#09005C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 15 mg/dl</p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>80 mg/dl</td><td>120 mg/dl</td></tr></table></div>
+        </text>
         <identifier>
           <use value="official"/>
           <type>
@@ -558,53 +728,36 @@
         </subject>
         <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
         <performer>
-          <reference value="Organization/org-hosp-example"/>
+          <reference value="Organization/org-test-example"/>
         </performer>
         <valueQuantity>
           <value value="15"/>
           <unit value="mg/dl"/>
-          <system value="http://unitsofmeasure.org"/>
-          <code value="mg/dl"/>
         </valueQuantity>
         <referenceRange>
           <low>
             <value value="80"/>
             <unit value="mg/dl"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="mg/dl"/>
           </low>
           <high>
             <value value="120"/>
             <unit value="mg/dl"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="mg/dl"/>
           </high>
         </referenceRange>
       </Observation>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:0055f405-10c5-4c1c-81ad-bb8ab59774d9"/>
+    <fullUrl value="urn:uuid:dfc17f3f-bd3c-4c2a-9f7b-89151e1f8dca"/>
     <resource>
       <Observation>
-        <id value="observation-smoke-example"/>
+        <id value="observation-lab-tcholestero-example"/>
         <meta>
-          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"/>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-smoke-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-smoke-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLife-adultcheck.html">Observation Life - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 吸煙 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#230056004 &quot;Cigarette consumption&quot;)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 朋友敬菸或應酬才吸菸</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-tcholestero-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-tcholestero-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 總膽固醇 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#09001C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 309 mg/dl</p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>120 mg/dl</td><td>200 mg/dl</td></tr></table></div>
         </text>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <identifier>
           <use value="official"/>
           <type>
@@ -617,29 +770,440 @@
           <value value="000120230721"/>
         </identifier>
         <status value="preliminary"/>
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="social-history"/>
-            <display value="Social History"/>
-          </coding>
-        </category>
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="230056004"/>
-            <display value="Cigarette consumption"/>
+            <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"/>
+            <code value="09001C"/>
+            <display value="總膽固醇"/>
           </coding>
-          <text value="吸煙"/>
         </code>
         <subject>
           <reference value="Patient/patient-example"/>
         </subject>
         <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
         <performer>
-          <reference value="Organization/org-hosp-example"/>
+          <reference value="Organization/org-test-example"/>
         </performer>
-        <valueString value="朋友敬菸或應酬才吸菸"/>
+        <valueQuantity>
+          <value value="309"/>
+          <unit value="mg/dl"/>
+        </valueQuantity>
+        <referenceRange>
+          <low>
+            <value value="120"/>
+            <unit value="mg/dl"/>
+          </low>
+          <high>
+            <value value="200"/>
+            <unit value="mg/dl"/>
+          </high>
+        </referenceRange>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:6b274268-ef43-41a7-96b4-d941ba4a237a"/>
+    <resource>
+      <Observation>
+        <id value="observation-lab-triglycerides-example"/>
+        <meta>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-triglycerides-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-triglycerides-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 三酸甘油脂 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#09004C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 80 mg/dl</p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>40 mg/dl</td><td>149 mg/dl</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MRT"/>
+            </coding>
+          </type>
+          <system value="https://tsti.hospital.com"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"/>
+            <code value="09004C"/>
+            <display value="三酸甘油脂"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <performer>
+          <reference value="Organization/org-test-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="80"/>
+          <unit value="mg/dl"/>
+        </valueQuantity>
+        <referenceRange>
+          <low>
+            <value value="40"/>
+            <unit value="mg/dl"/>
+          </low>
+          <high>
+            <value value="149"/>
+            <unit value="mg/dl"/>
+          </high>
+        </referenceRange>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3d74a3f9-e0b0-49b6-91c0-8e03652c8ac7"/>
+    <resource>
+      <Observation>
+        <id value="observation-lab-lowcholestero-example"/>
+        <meta>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-lowcholestero-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-lowcholestero-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 低密度脂蛋白-膽固醇 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#09044C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 100 mg/dl</p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>50 mg/dl</td><td>130 mg/dl</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MRT"/>
+            </coding>
+          </type>
+          <system value="https://tsti.hospital.com"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"/>
+            <code value="09044C"/>
+            <display value="低密度脂蛋白-膽固醇"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <performer>
+          <reference value="Organization/org-test-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="100"/>
+          <unit value="mg/dl"/>
+        </valueQuantity>
+        <referenceRange>
+          <low>
+            <value value="50"/>
+            <unit value="mg/dl"/>
+          </low>
+          <high>
+            <value value="130"/>
+            <unit value="mg/dl"/>
+          </high>
+        </referenceRange>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a5e272f1-08cc-4f50-b2d5-727c86e9c88a"/>
+    <resource>
+      <Observation>
+        <id value="observation-lab-highcholestero-example"/>
+        <meta>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-highcholestero-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-highcholestero-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 高密度脂蛋白-膽固醇 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#09043C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 80 mg/dl</p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>50 mg/dl</td><td>130 mg/dl</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MRT"/>
+            </coding>
+          </type>
+          <system value="https://tsti.hospital.com"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"/>
+            <code value="09043C"/>
+            <display value="高密度脂蛋白-膽固醇"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <performer>
+          <reference value="Organization/org-test-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="80"/>
+          <unit value="mg/dl"/>
+        </valueQuantity>
+        <referenceRange>
+          <low>
+            <value value="50"/>
+            <unit value="mg/dl"/>
+          </low>
+          <high>
+            <value value="130"/>
+            <unit value="mg/dl"/>
+          </high>
+        </referenceRange>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:6e0f146e-7534-4f62-9a4b-5bb1df37b6b2"/>
+    <resource>
+      <Observation>
+        <id value="observation-lab-got-example"/>
+        <meta>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-got-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-got-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血清麩胺酸苯醋酸轉氨基脢 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#09025C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 10 IU/l</p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>10 IU/l</td><td>40 IU/l</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MRT"/>
+            </coding>
+          </type>
+          <system value="https://tsti.hospital.com"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"/>
+            <code value="09025C"/>
+            <display value="血清麩胺酸苯醋酸轉氨基脢"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <performer>
+          <reference value="Organization/org-test-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="10"/>
+          <unit value="IU/l"/>
+        </valueQuantity>
+        <referenceRange>
+          <low>
+            <value value="10"/>
+            <unit value="IU/l"/>
+          </low>
+          <high>
+            <value value="40"/>
+            <unit value="IU/l"/>
+          </high>
+        </referenceRange>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:977165f6-6c01-4ac9-bdb4-962aa03e7724"/>
+    <resource>
+      <Observation>
+        <id value="observation-lab-gpt-example"/>
+        <meta>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-gpt-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-gpt-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血清麩胺酸丙酮酸轉氨基脢 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#09026C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 10 IU/l</p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>10 IU/l</td><td>40 IU/l</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MRT"/>
+            </coding>
+          </type>
+          <system value="https://tsti.hospital.com"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"/>
+            <code value="09026C"/>
+            <display value="血清麩胺酸丙酮酸轉氨基脢"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <performer>
+          <reference value="Organization/org-test-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="10"/>
+          <unit value="IU/l"/>
+        </valueQuantity>
+        <referenceRange>
+          <low>
+            <value value="10"/>
+            <unit value="IU/l"/>
+          </low>
+          <high>
+            <value value="40"/>
+            <unit value="IU/l"/>
+          </high>
+        </referenceRange>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:43a8d27e-b0c3-4f6f-9b1c-d287c32e7e4d"/>
+    <resource>
+      <Observation>
+        <id value="observation-lab-creatinine-example"/>
+        <meta>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-creatinine-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-creatinine-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 肌酸酐、血 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#09015C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 0.6 mg/dl</p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>0.6 mg/dl</td><td>1.4 mg/dl</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MRT"/>
+            </coding>
+          </type>
+          <system value="https://tsti.hospital.com"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"/>
+            <code value="09015C"/>
+            <display value="肌酸酐、血"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <performer>
+          <reference value="Organization/org-test-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="0.6"/>
+          <unit value="mg/dl"/>
+        </valueQuantity>
+        <referenceRange>
+          <low>
+            <value value="0.6"/>
+            <unit value="mg/dl"/>
+          </low>
+          <high>
+            <value value="1.4"/>
+            <unit value="mg/dl"/>
+          </high>
+        </referenceRange>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:52f072cd-e1e3-4d27-ae71-2f63cde635cc"/>
+    <resource>
+      <Observation>
+        <id value="observation-lab-b-example"/>
+        <meta>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-b-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-b-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: B型肝炎表面抗原 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#14030C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 陰性</p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MRT"/>
+            </coding>
+          </type>
+          <system value="https://tsti.hospital.com"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"/>
+            <code value="14030C"/>
+            <display value="B型肝炎表面抗原"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <performer>
+          <reference value="Organization/org-test-example"/>
+        </performer>
+        <valueString value="陰性"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:6fb9e6e6-1264-413f-8a1c-39f57295f5ed"/>
+    <resource>
+      <Observation>
+        <id value="observation-lab-c-example"/>
+        <meta>
+          <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-lab-c-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-lab-c-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-adultcheck.html">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: C型肝炎病毒抗體檢查 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#14051C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 陰性</p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MRT"/>
+            </coding>
+          </type>
+          <system value="https://tsti.hospital.com"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"/>
+            <code value="14051C"/>
+            <display value="C型肝炎病毒抗體檢查"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <performer>
+          <reference value="Organization/org-test-example"/>
+        </performer>
+        <valueString value="陰性"/>
       </Observation>
     </resource>
   </entry>
@@ -652,19 +1216,8 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationHeight-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-height-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-height-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHeight-adultcheck.html">Observation Height - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 8302-2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 160 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM code cm = 'cm')</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-height-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-height-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHeight-adultcheck.html">Observation Height - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 8302-2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 160 cm</p></div>
         </text>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <identifier>
           <use value="official"/>
           <type>
@@ -694,13 +1247,11 @@
         </subject>
         <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
         <performer>
-          <reference value="Organization/org-hosp-example"/>
+          <reference value="Organization/org-test-example"/>
         </performer>
         <valueQuantity>
           <value value="160"/>
           <unit value="cm"/>
-          <system value="http://unitsofmeasure.org"/>
-          <code value="cm"/>
         </valueQuantity>
       </Observation>
     </resource>
@@ -714,19 +1265,8 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-weight-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-weight-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationWeight-adultcheck.html">Observation Weight - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 29463-7 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 50 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg = 'kg')</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-weight-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-weight-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationWeight-adultcheck.html">Observation Weight - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 29463-7 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 50 kg</p></div>
         </text>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <identifier>
           <use value="official"/>
           <type>
@@ -756,13 +1296,11 @@
         </subject>
         <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
         <performer>
-          <reference value="Organization/org-hosp-example"/>
+          <reference value="Organization/org-test-example"/>
         </performer>
         <valueQuantity>
           <value value="50"/>
           <unit value="kg"/>
-          <system value="http://unitsofmeasure.org"/>
-          <code value="kg"/>
         </valueQuantity>
       </Observation>
     </resource>
@@ -776,19 +1314,8 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-waist-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-waist-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationWaist-adultcheck.html">Observation Waist - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#vital-signs)</span></p><p><b>code</b>: 56117-5 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#56117-5)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 30 inch<span style="background: LightGoldenRodYellow"> (Details: UCUM code [in_i] = '[in_i]')</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-waist-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-waist-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationWaist-adultcheck.html">Observation Waist - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#vital-signs)</span></p><p><b>code</b>: 56117-5 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#56117-5)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 30 inch</p></div>
         </text>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <identifier>
           <use value="official"/>
           <type>
@@ -818,13 +1345,11 @@
         </subject>
         <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
         <performer>
-          <reference value="Organization/org-hosp-example"/>
+          <reference value="Organization/org-test-example"/>
         </performer>
         <valueQuantity>
           <value value="30"/>
           <unit value="inch"/>
-          <system value="http://unitsofmeasure.org"/>
-          <code value="[in_i]"/>
         </valueQuantity>
       </Observation>
     </resource>
@@ -838,19 +1363,8 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-bmi-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-bmi-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationBMI-adultcheck.html">Observation BMI - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 39156-5 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#39156-5)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><p><b>value</b>: 18 kg/m2<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-bmi-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-bmi-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationBMI-adultcheck.html">Observation BMI - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 39156-5 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#39156-5)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 18 kg/m2<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>
         </text>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <identifier>
           <use value="official"/>
           <type>
@@ -880,7 +1394,7 @@
         </subject>
         <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
         <performer>
-          <reference value="Organization/org-hosp-example"/>
+          <reference value="Organization/org-test-example"/>
         </performer>
         <valueQuantity>
           <value value="18"/>
@@ -900,19 +1414,8 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-pressure-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-pressure-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationPressure-adultcheck.html">Observation Pressure - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 85354-9 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#85354-9)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: 8462-4 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8462-4)</span></p><p><b>value</b>: 110 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 8480-6 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8480-6)</span></p><p><b>value</b>: 56 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-pressure-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-pressure-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationPressure-adultcheck.html">Observation Pressure - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 85354-9 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#85354-9)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: 8462-4 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8462-4)</span></p><p><b>value</b>: 110 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 8480-6 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8480-6)</span></p><p><b>value</b>: 56 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>
         </text>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <identifier>
           <use value="official"/>
           <type>
@@ -984,19 +1487,8 @@
           <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DiagnosticReport</b><a name="diag-kidney-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DiagnosticReport &quot;diag-kidney-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DiagnosticReport-adultcheck.html">DiagnosticReport - AdultCheck</a></p></div><p><b>identifier</b>: Provider number: 0123456789 (use: OFFICIAL), Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0074.html">diagnosticServiceSectionId</a>#LAB)</span></p><p><b>code</b>: 尿蛋白 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#06003C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022年8月3日 上午6:00:14</p><p><b>performer</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><p><b>resultsInterpreter</b>: <a href="#Organization_org-hosp-example">See above (Organization/org-hosp-example)</a></p><p><b>conclusion</b>: 建議進一步檢查</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DiagnosticReport</b><a name="diag-kidney-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DiagnosticReport &quot;diag-kidney-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DiagnosticReport-adultcheck.html">DiagnosticReport - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0074.html">diagnosticServiceSectionId</a>#LAB)</span></p><p><b>code</b>: 尿蛋白 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html">臺灣醫療服務給付項目</a>#06003C)</span></p><p><b>subject</b>: <a href="#Patient_patient-example">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022年8月3日 上午6:00:14</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>resultsInterpreter</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>conclusion</b>: 建議進一步檢查</p></div>
         </text>
-        <identifier>
-          <use value="official"/>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PRN"/>
-            </coding>
-          </type>
-          <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-          <value value="0123456789"/>
-        </identifier>
         <identifier>
           <use value="official"/>
           <type>
@@ -1029,10 +1521,10 @@
         <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
         <issued value="2022-08-02T17:00:14-05:00"/>
         <performer>
-          <reference value="Organization/org-hosp-example"/>
+          <reference value="Organization/org-test-example"/>
         </performer>
         <resultsInterpreter>
-          <reference value="Organization/org-hosp-example"/>
+          <reference value="Organization/org-test-example"/>
         </resultsInterpreter>
         <conclusion value="建議進一步檢查"/>
       </DiagnosticReport>

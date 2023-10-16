@@ -15,9 +15,9 @@
   fhir:url [ fhir:v "https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ValueSet-adultcheck-code"] ; # 
-  fhir:title [ fhir:v "成人預防保健疾病史代碼"] ; # 
+  fhir:title [ fhir:v "成人預防保健疾病史代碼集值"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-27T18:07:47+08:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-16T14:04:58+08:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "大世科 tsti"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "大世科 tsti" ] ;

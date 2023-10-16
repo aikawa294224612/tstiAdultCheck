@@ -6,7 +6,7 @@
     <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="composition-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;composition-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-adultcheck.html">Composition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>type</b>: General medicine Hospital Progress note <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#100574-3)</span></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter/encounter-example</a></p><p><b>date</b>: 2022-08-01 17:00:14-0500</p><p><b>author</b>: <a href="Organization-org-hosp-example.html">Organization/org-hosp-example</a> &quot;衛生福利部臺北醫院&quot;</p><p><b>title</b>: 成人健康檢查問卷</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="composition-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;composition-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-adultcheck.html">Composition - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>type</b>: General medicine Hospital Progress note <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#100574-3)</span></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter/encounter-example</a></p><p><b>date</b>: 2022-08-01 17:00:14-0500</p><p><b>author</b>: <a href="Organization-org-hosp-example.html">Organization/org-hosp-example</a> &quot;佛教慈濟醫療財團法人花蓮慈濟醫院&quot;</p><p><b>title</b>: 成人預防保健服務檢查單</p></div>
   </text>
   <identifier>
     <use value="official"/>
@@ -37,9 +37,9 @@
   <author>
     <reference value="Organization/org-hosp-example"/>
   </author>
-  <title value="成人健康檢查問卷"/>
+  <title value="成人預防保健服務檢查單"/>
   <section>
-    <title value="疾病史-高血壓"/>
+    <title value="疾病史：高血壓"/>
     <code>
       <coding>
         <system value="http://loinc.org"/>
@@ -49,6 +49,19 @@
     </code>
     <entry>
       <reference value="Condition/condition-bp-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="疾病史：糖尿病"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="34117-2"/>
+        <display value="History and physical note"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Condition/condition-db-example"/>
     </entry>
   </section>
   <section>
@@ -78,19 +91,6 @@
     </entry>
   </section>
   <section>
-    <title value="生理量測-BMI"/>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <code value="85353-1"/>
-        <display value="Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"/>
-      </coding>
-    </code>
-    <entry>
-      <reference value="Observation/observation-bmi-example"/>
-    </entry>
-  </section>
-  <section>
     <title value="生理量測-血壓"/>
     <code>
       <coding>
@@ -117,6 +117,32 @@
     </entry>
   </section>
   <section>
+    <title value="生理量測-BMI"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="85353-1"/>
+        <display value="Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-bmi-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="尿液蛋白質"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19146-0"/>
+        <display value="Referral lab test results"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-lab-protein-example"/>
+    </entry>
+  </section>
+  <section>
     <title value="血糖"/>
     <code>
       <coding>
@@ -126,7 +152,111 @@
       </coding>
     </code>
     <entry>
-      <reference value="Observation/observation-lab-example"/>
+      <reference value="Observation/observation-lab-sugar-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="總膽固醇"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19146-0"/>
+        <display value="Referral lab test results"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-lab-tcholestero-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="三酸甘油脂"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19146-0"/>
+        <display value="Referral lab test results"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-lab-triglycerides-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="低密度脂蛋白膽固醇計算"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19146-0"/>
+        <display value="Referral lab test results"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-lab-lowcholestero-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="高密度脂蛋白膽固醇"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19146-0"/>
+        <display value="Referral lab test results"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-lab-highcholestero-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="GOT"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19146-0"/>
+        <display value="Referral lab test results"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-lab-gpt-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="腎絲球過濾率（eGFR）計算"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19146-0"/>
+        <display value="Referral lab test results"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-lab-creatinine-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="B 型肝炎表面抗原（HBsAg）"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19146-0"/>
+        <display value="Referral lab test results"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-lab-b-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="C 型肝炎抗體（Anti-HCV）"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19146-0"/>
+        <display value="Referral lab test results"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-lab-c-example"/>
     </entry>
   </section>
   <section>
@@ -140,19 +270,6 @@
     </code>
     <entry>
       <reference value="Observation/observation-depress-example"/>
-    </entry>
-  </section>
-  <section>
-    <title value="生活史-吸煙"/>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <code value="35090-0"/>
-        <display value="Patient history"/>
-      </coding>
-    </code>
-    <entry>
-      <reference value="Observation/observation-smoke-example"/>
     </entry>
   </section>
   <section>

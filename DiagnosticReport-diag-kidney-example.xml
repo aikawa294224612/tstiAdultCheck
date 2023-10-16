@@ -6,19 +6,8 @@
     <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw 06003C}">尿蛋白</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td><b>陳加玲(OFFICIAL)</b> female, DoB: 1990-01-01 ( National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code: A123456789 (use: OFFICIAL))</td></tr><tr><td>When For</td><td>2022-08-01 17:00:14-0500</td></tr><tr><td>Reported</td><td>2022-08-02 17:00:14-0500</td></tr><tr><td>Identifiers:</td><td> Provider number: 0123456789 (use: OFFICIAL) Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</td></tr></table><p><b>Report Details</b></p><p>建議進一步檢查</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw 06003C}">尿蛋白</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td><b>陳加玲(OFFICIAL)</b> female, DoB: 1990-01-01 ( National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code: A123456789 (use: OFFICIAL))</td></tr><tr><td>When For</td><td>2022-08-01 17:00:14-0500</td></tr><tr><td>Reported</td><td>2022-08-02 17:00:14-0500</td></tr><tr><td>Identifier:</td><td> Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</td></tr></table><p><b>Report Details</b></p><p>建議進一步檢查</p></div>
   </text>
-  <identifier>
-    <use value="official"/>
-    <type>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="PRN"/>
-      </coding>
-    </type>
-    <system value="https://twcore.mohw.gov.tw/tsfhir/CodeSystem/organization-identifier-tw"/>
-    <value value="0123456789"/>
-  </identifier>
   <identifier>
     <use value="official"/>
     <type>
@@ -51,10 +40,10 @@
   <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
   <issued value="2022-08-02T17:00:14-05:00"/>
   <performer>
-    <reference value="Organization/org-hosp-example"/>
+    <reference value="Organization/org-test-example"/>
   </performer>
   <resultsInterpreter>
-    <reference value="Organization/org-hosp-example"/>
+    <reference value="Organization/org-test-example"/>
   </resultsInterpreter>
   <conclusion value="建議進一步檢查"/>
 </DiagnosticReport>

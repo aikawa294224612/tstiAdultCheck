@@ -915,7 +915,7 @@
     {
       "id" : "Bundle.identifier.system",
       "path" : "Bundle.identifier.system",
-      "short" : "使用個醫院/機構院內代碼",
+      "short" : "就診序號發號者/機構/單位",
       "definition" : "建立值的命名空間－即一個描述一組值的唯一URL",
       "comment" : "Identifier.system總是區分大小寫",
       "requirements" : "有許多識別碼的集合。為了進行兩個識別碼的對應，我們需要知道我們處理的是哪一組。系統指明了一個特定的唯一識別碼集。",
@@ -960,7 +960,7 @@
     {
       "id" : "Bundle.identifier.value",
       "path" : "Bundle.identifier.value",
-      "short" : "唯一值。\r\n例如：所屬機構之醫事機構代碼為0123456789",
+      "short" : "唯一值。\r\n例如：就診序號為0123456789",
       "definition" : "識別碼中通常與使用者有關的部分，在系統情境內是唯一的。",
       "comment" : "如果此值是一個完整的URI，那麼此系統 **必須（SHALL）** 是urn:ietf:rfc:3986。此值的主要目的是為了可運算的對應。因此，為了比較的目的，它可能會被正規化（例如：去除不重要的空白、破折號等）。一個為人顯示的格式化的值可以使用[Rendered Value](http://hl7.org/fhir/R4/extension-rendered-value.html)擴充來傳達。除非對Identifier.system的了解使處理者確信不區分大小寫的處理是安全的，否則Identifier.value應被視為區分大小寫。",
       "min" : 1,
@@ -1569,7 +1569,7 @@
       "short" : "URI for resource (Absolute URL server address or URI for UUID/OID)",
       "definition" : "The Absolute URL for the resource.  The fullUrl SHALL NOT disagree with the id in the resource - i.e. if the fullUrl is not a urn:uuid, the URL shall be version-independent URL consistent with the Resource.id. The fullUrl is a version independent reference to the resource. The fullUrl element SHALL have a value except that: \n* fullUrl can be empty on a POST (although it does not need to when specifying a temporary id for reference in the bundle)\n* Results from operations might involve resources that are not identified.",
       "comment" : "fullUrl might not be [unique in the context of a resource](http://hl7.org/fhir/R4/bundle.html#bundle-unique). Note that since [FHIR resources do not need to be served through the FHIR API](http://hl7.org/fhir/R4/references.html), the fullURL might be a URN or an absolute URL that does not end with the logical id of the resource (Resource.id). However, but if the fullUrl does look like a RESTful server URL (e.g. meets the [regex](http://hl7.org/fhir/R4/references.html#regex), then the 'id' portion of the fullUrl SHALL end with the Resource.id.\n\nNote that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "base" : {
         "path" : "Bundle.entry.fullUrl",
@@ -1587,6 +1587,7 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true
     },
@@ -9913,7 +9914,7 @@
       "short" : "Entry in the bundle - will have a resource or information",
       "definition" : "An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).",
       "min" : 0,
-      "max" : "1",
+      "max" : "*",
       "base" : {
         "path" : "Bundle.entry",
         "min" : 0,
@@ -10132,7 +10133,7 @@
       },
       "type" : [{
         "code" : "Observation",
-        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"]
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
       }],
       "constraint" : [{
         "key" : "dom-2",
@@ -17646,7 +17647,7 @@
     {
       "id" : "Bundle.identifier.system",
       "path" : "Bundle.identifier.system",
-      "short" : "使用個醫院/機構院內代碼",
+      "short" : "就診序號發號者/機構/單位",
       "definition" : "建立值的命名空間－即一個描述一組值的唯一URL",
       "comment" : "Identifier.system總是區分大小寫",
       "requirements" : "有許多識別碼的集合。為了進行兩個識別碼的對應，我們需要知道我們處理的是哪一組。系統指明了一個特定的唯一識別碼集。",
@@ -17656,7 +17657,7 @@
     {
       "id" : "Bundle.identifier.value",
       "path" : "Bundle.identifier.value",
-      "short" : "唯一值。\r\n例如：所屬機構之醫事機構代碼為0123456789",
+      "short" : "唯一值。\r\n例如：就診序號為0123456789",
       "definition" : "識別碼中通常與使用者有關的部分，在系統情境內是唯一的。",
       "comment" : "如果此值是一個完整的URI，那麼此系統 **必須（SHALL）** 是urn:ietf:rfc:3986。此值的主要目的是為了可運算的對應。因此，為了比較的目的，它可能會被正規化（例如：去除不重要的空白、破折號等）。一個為人顯示的格式化的值可以使用[Rendered Value](http://hl7.org/fhir/R4/extension-rendered-value.html)擴充來傳達。除非對Identifier.system的了解使處理者確信不區分大小寫的處理是安全的，否則Identifier.value應被視為區分大小寫。",
       "min" : 1,
@@ -17703,6 +17704,12 @@
         "rules" : "open"
       },
       "min" : 3,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Bundle.entry.fullUrl",
+      "path" : "Bundle.entry.fullUrl",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -17829,7 +17836,7 @@
       "path" : "Bundle.entry",
       "sliceName" : "observationSocial",
       "min" : 0,
-      "max" : "1"
+      "max" : "*"
     },
     {
       "id" : "Bundle.entry:observationSocial.resource",
@@ -17837,7 +17844,7 @@
       "min" : 1,
       "type" : [{
         "code" : "Observation",
-        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLife-adultcheck"]
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
       }],
       "mustSupport" : true
     },
