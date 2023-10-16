@@ -10,7 +10,7 @@
   <name value="AdultCheckIG"/>
   <title value="成人預防保健實作指引(Adult Check IG)"/>
   <status value="active"/>
-  <date value="2023-10-16T14:04:58+08:00"/>
+  <date value="2023-10-16T16:31:57+08:00"/>
   <publisher value="大世科 tsti"/>
   <contact>
     <name value="大世科 tsti"/>
@@ -1033,6 +1033,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AdultCheckModel"/>
+      </reference>
+      <name value="成人預防保健(AdultCheck)之資料模型"/>
+      <description value="成人預防保健(AdultCheck)之資料模型"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1085,6 +1096,14 @@
         </extension>
         <nameUrl value="profiles-and-extensions.html"/>
         <title value="Profiles and Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="logical-model.html"/>
+        </extension>
+        <nameUrl value="logical-model.html"/>
+        <title value="Logical Model"/>
         <generation value="markdown"/>
       </page>
       <page>

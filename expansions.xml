@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="6960ebc1-ae35-436c-9a95-b22230a0457c"/>
+  <id value="78d0f157-7b0c-47e3-957e-2b2c195b652f"/>
   <meta>
-    <lastUpdated value="2023-10-16T14:04:58.200+08:00"/>
+    <lastUpdated value="2023-10-16T16:31:57.470+08:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -92,10 +92,10 @@
         <name value="ValueSet-adultcheck-code"/>
         <title value="成人預防保健疾病史代碼集值"/>
         <status value="draft"/>
-        <date value="2023-10-16T14:04:58+08:00"/>
+        <date value="2023-10-16T16:31:57+08:00"/>
         <expansion>
-          <identifier value="urn:uuid:bb96fcbb-e85b-4ba3-ad5c-54ff9b96cbbe"/>
-          <timestamp value="2023-10-16T14:07:11+08:00"/>
+          <identifier value="urn:uuid:9a1800b6-26c6-4c0e-9077-11927c233414"/>
+          <timestamp value="2023-10-16T16:33:53+08:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -297,10 +297,10 @@
         <name value="ValueSet_adultcheck-lifecode"/>
         <title value="成人預防保健生活史代碼集值"/>
         <status value="active"/>
-        <date value="2023-10-16T14:04:58+08:00"/>
+        <date value="2023-10-16T16:31:57+08:00"/>
         <expansion>
-          <identifier value="urn:uuid:be81fedd-c05e-4b57-9bf7-81af70599022"/>
-          <timestamp value="2023-10-16T14:07:12+08:00"/>
+          <identifier value="urn:uuid:74a545fd-da51-479a-8b96-21192dee36f5"/>
+          <timestamp value="2023-10-16T16:33:53+08:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>

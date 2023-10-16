@@ -14,6 +14,13 @@
     "name" : "AdultCheckIG"
   },
   {
+    "id" : "AdultCheckModel",
+    "type" : "StructureDefinition",
+    "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/AdultCheckModel",
+    "version" : "0.1.0",
+    "name" : "AdultCheckModel"
+  },
+  {
     "id" : "Bundle-adultcheck",
     "type" : "StructureDefinition",
     "url" : "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Bundle-adultcheck",

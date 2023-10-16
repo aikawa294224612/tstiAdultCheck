@@ -3,7 +3,7 @@
 
 err = 0, warn = 118, info = 8
 IG Publisher Version: 1.4.8 Out of date - current version is 1.4.15
-Generated Mon Oct 16 14:09:13 CST 2023. FHIR version 4.0.1 for tw.tsti.adultcheck#0.1.0 (canonical = https://tstifhir.azurehealthcareapis.com)
+Generated Mon Oct 16 16:35:52 CST 2023. FHIR version 4.0.1 for tw.tsti.adultcheck#0.1.0 (canonical = https://tstifhir.azurehealthcareapis.com)
  Build Errors : 0 / 4 / 0
  C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\Bundle-bundle-example : 0 / 103 / 76
  C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\CapabilityStatement-ServerCapabilityStatement : 0 / 1 / 1
@@ -46,6 +46,7 @@ Generated Mon Oct 16 14:09:13 CST 2023. FHIR version 4.0.1 for tw.tsti.adultchec
  C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\Organization-org-hosp-example : 0 / 0 / 1
  C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\Organization-org-test-example : 0 / 0 / 1
  C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\Patient-patient-example : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\StructureDefinition-AdultCheckModel : 0 / 0 / 1
  C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\StructureDefinition-Bundle-adultcheck : 0 / 0 / 1
  C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\StructureDefinition-Composition-adultcheck : 0 / 0 / 1
  C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\StructureDefinition-Condition-adultcheck : 0 / 0 / 1
@@ -224,6 +225,7 @@ WARNING: Observation/observation-waist-example: Observation.category[0].coding[0
 == fsh-generated\resources\Organization-org-hosp-example.json ==
 == fsh-generated\resources\Organization-org-test-example.json ==
 == fsh-generated\resources\Patient-patient-example.json ==
+== fsh-generated\resources\StructureDefinition-AdultCheckModel.json ==
 == fsh-generated\resources\StructureDefinition-Bundle-adultcheck.json ==
 == fsh-generated\resources\StructureDefinition-Composition-adultcheck.json ==
 == fsh-generated\resources\StructureDefinition-Condition-adultcheck.json ==
