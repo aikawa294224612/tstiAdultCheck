@@ -1,8 +1,8 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping","Mapping: AdultCheck IG"
 "AdultCheckModel","AdultCheckModel","","","",0,*,"","","","null {[]} {[]}
-","成人預防保健(AdultCheck)之資料模型","成人預防保健(AdultCheck)之資料模型","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","成人預防保健(AdultCheck)之資料模型","成人預防保健(AdultCheck)之資料模型","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","BundleAdultCheck"
 "AdultCheckModel.caseNo","AdultCheckModel.caseNo","","","",1,1,"","","","Identifier {[]} {[]}
-","就醫序號","就醫序號","","","","","","","","","",,,,,"",,,,"AdultCheckModel.caseNo",1,1,"",""
+","就醫序號","就醫序號","","","","","","","","","",,,,,"",,,,"AdultCheckModel.caseNo",1,1,"","","identifier"
 "AdultCheckModel.patient","AdultCheckModel.patient","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","受檢民眾基本資料","成人預防保健受檢民眾基本資料","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -20,19 +20,19 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "AdultCheckModel.patient.identifier","AdultCheckModel.patient.identifier","","","",1,1,"","","","Identifier {[]} {[]}
-","身分證字號","身分證字號","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.identifier",1,1,"",""
+","身分證字號","身分證字號","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.identifier",1,1,"","","entry:patient.identifier:idCardNumber"
 "AdultCheckModel.patient.patientNo","AdultCheckModel.patient.patientNo","","","",1,1,"","","","Identifier {[]} {[]}
-","病歷號碼","病歷號碼","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.patientNo",1,1,"",""
+","病歷號碼","病歷號碼","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.patientNo",1,1,"","","entry:patient.identifier:medicalRecordNumber"
 "AdultCheckModel.patient.name","AdultCheckModel.patient.name","","","",1,1,"","","","HumanName {[]} {[]}
-","姓名","病人之合法姓名","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.name",1,1,"",""
+","姓名","病人之合法姓名","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.name",1,1,"","","entry:patient.name:officialName"
 "AdultCheckModel.patient.gender","AdultCheckModel.patient.gender","","","",1,1,"","","","code {[]} {[]}
-","性別","性別","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.gender",1,1,"",""
+","性別","性別","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.gender",1,1,"","","entry:patient.gender:gender"
 "AdultCheckModel.patient.birthDate","AdultCheckModel.patient.birthDate","","","",1,1,"","","","dateTime {[]} {[]}
-","出生日期","出生日期","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.birthDate",1,1,"",""
+","出生日期","出生日期","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.birthDate",1,1,"","","entry:patient.birthDate:birthdate"
 "AdultCheckModel.patient.telecom","AdultCheckModel.patient.telecom","","","",0,1,"","","","ContactPoint {[]} {[]}
-","電話","電話","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.telecom",0,1,"",""
+","電話","電話","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.telecom",0,1,"","","entry:patient.telecom:phone"
 "AdultCheckModel.patient.city","AdultCheckModel.patient.city","","","",0,1,"","","","string {[]} {[]}
-","戶籍地","居住地址(戶籍地)","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.city",0,1,"",""
+","戶籍地","居住地址(戶籍地)","","","","","","","","","",,,,,"",,,,"AdultCheckModel.patient.city",0,1,"","","entry:patient.address.city"
 "AdultCheckModel.organization","AdultCheckModel.organization","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","醫事機構","醫事機構&委託代檢醫事機構","","","","","","","","","",,,,,"",,,,"AdultCheckModel.organization",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -50,15 +50,15 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "AdultCheckModel.organization.identifier","AdultCheckModel.organization.identifier","","","",1,1,"","","","Identifier {[]} {[]}
-","醫事機構代碼","醫事機構代碼","","","","","","","","","",,,,,"",,,,"AdultCheckModel.organization.identifier",1,1,"",""
+","醫事機構代碼","醫事機構代碼","","","","","","","","","",,,,,"",,,,"AdultCheckModel.organization.identifier",1,1,"","","entry:organization.identifier"
 "AdultCheckModel.firstCheckDate","AdultCheckModel.firstCheckDate","","","",0,1,"","","","dateTime {[]} {[]}
-","第一階段檢查日期","第一階段檢查日期","","","","","","","","","",,,,,"",,,,"AdultCheckModel.firstCheckDate",0,1,"",""
+","第一階段檢查日期","第一階段檢查日期","","","","","","","","","",,,,,"",,,,"AdultCheckModel.firstCheckDate",0,1,"","","entry:encounter.statusHistory.period"
 "AdultCheckModel.secondCheckDate","AdultCheckModel.secondCheckDate","","","",0,1,"","","","dateTime {[]} {[]}
-","第二階段檢查日期","第二階段檢查日期","","","","","","","","","",,,,,"",,,,"AdultCheckModel.secondCheckDate",0,1,"",""
+","第二階段檢查日期","第二階段檢查日期","","","","","","","","","",,,,,"",,,,"AdultCheckModel.secondCheckDate",0,1,"","","entry:encounter.statusHistory.period"
 "AdultCheckModel.checkResultUploadDate","AdultCheckModel.checkResultUploadDate","","","",0,1,"","","","dateTime {[]} {[]}
-","檢查結果上傳日期","檢查結果上傳日期","","","","","","","","","",,,,,"",,,,"AdultCheckModel.checkResultUploadDate",0,1,"",""
+","檢查結果上傳日期","檢查結果上傳日期","","","","","","","","","",,,,,"",,,,"AdultCheckModel.checkResultUploadDate",0,1,"","","entry:observationLab.effectiveDateTime"
 "AdultCheckModel.hepatitisBC","AdultCheckModel.hepatitisBC","","","",0,1,"","","","string {[]} {[]}
-","檢查過B、C型肝炎","檢查過B、C型肝炎","","","","","","","","","",,,,,"",,,,"AdultCheckModel.hepatitisBC",0,1,"",""
+","檢查過B、C型肝炎","檢查過B、C型肝炎","","","","","","","","","",,,,,"",,,,"AdultCheckModel.hepatitisBC",0,1,"","","entry:observationSocial.code"
 "AdultCheckModel.history","AdultCheckModel.history","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","疾病史","疾病史","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -76,17 +76,17 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "AdultCheckModel.history.hypertension","AdultCheckModel.history.hypertension","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","高血壓","疾病史:高血壓","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.hypertension",0,1,"",""
+","高血壓","疾病史:高血壓","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.hypertension",0,1,"","","entry:condition.code"
 "AdultCheckModel.history.diabetes","AdultCheckModel.history.diabetes","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","糖尿病","疾病史:糖尿病","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.diabetes",0,1,"",""
+","糖尿病","疾病史:糖尿病","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.diabetes",0,1,"","","entry:condition.code"
 "AdultCheckModel.history.hyperlipidemia","AdultCheckModel.history.hyperlipidemia","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","高血脂症","疾病史:高血脂症","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.hyperlipidemia",0,1,"",""
+","高血脂症","疾病史:高血脂症","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.hyperlipidemia",0,1,"","","entry:condition.code"
 "AdultCheckModel.history.cvd","AdultCheckModel.history.cvd","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","心臟病","疾病史:心臟病","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.cvd",0,1,"",""
+","心臟病","疾病史:心臟病","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.cvd",0,1,"","","entry:condition.code"
 "AdultCheckModel.history.stroke","AdultCheckModel.history.stroke","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","腦中風","疾病史:腦中風","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.stroke",0,1,"",""
+","腦中風","疾病史:腦中風","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.stroke",0,1,"","","entry:condition.code"
 "AdultCheckModel.history.kidneyDisease","AdultCheckModel.history.kidneyDisease","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","腎臟病","疾病史:腎臟病","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.kidneyDisease",0,1,"",""
+","腎臟病","疾病史:腎臟病","","","","","","","","","",,,,,"",,,,"AdultCheckModel.history.kidneyDisease",0,1,"","","entry:condition.code"
 "AdultCheckModel.life","AdultCheckModel.life","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","生活史","生活史","","","","","","","","","",,,,,"",,,,"AdultCheckModel.life",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -103,14 +103,14 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"AdultCheckModel.life.cigarette","AdultCheckModel.life.cigarette","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","吸菸","生活史:吸菸","","","","","","","","","",,,,,"",,,,"AdultCheckModel.life.cigarette",0,1,"",""
-"AdultCheckModel.life.alcoholicDrink","AdultCheckModel.life.alcoholicDrink","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","喝酒","生活史:喝酒","","","","","","","","","",,,,,"",,,,"AdultCheckModel.life.alcoholicDrink",0,1,"",""
-"AdultCheckModel.life.nuts","AdultCheckModel.life.nuts","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","嚼檳榔","生活史:嚼檳榔","","","","","","","","","",,,,,"",,,,"AdultCheckModel.life.nuts",0,1,"",""
-"AdultCheckModel.life.exercise","AdultCheckModel.life.exercise","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","運動","生活史:運動","","","","","","","","","",,,,,"",,,,"AdultCheckModel.life.exercise",0,1,"",""
+"AdultCheckModel.life.cigarette","AdultCheckModel.life.cigarette","","","",0,1,"","","","string {[]} {[]}
+","吸菸","生活史:吸菸","","","","","","","","","",,,,,"",,,,"AdultCheckModel.life.cigarette",0,1,"","","entry:observationSocial.valueString"
+"AdultCheckModel.life.alcoholicDrink","AdultCheckModel.life.alcoholicDrink","","","",0,1,"","","","string {[]} {[]}
+","喝酒","生活史:喝酒","","","","","","","","","",,,,,"",,,,"AdultCheckModel.life.alcoholicDrink",0,1,"","","entry:observationSocial.valueString"
+"AdultCheckModel.life.nuts","AdultCheckModel.life.nuts","","","",0,1,"","","","string {[]} {[]}
+","嚼檳榔","生活史:嚼檳榔","","","","","","","","","",,,,,"",,,,"AdultCheckModel.life.nuts",0,1,"","","entry:observationSocial.valueString"
+"AdultCheckModel.life.exercise","AdultCheckModel.life.exercise","","","",0,1,"","","","string {[]} {[]}
+","運動","生活史:運動","","","","","","","","","",,,,,"",,,,"AdultCheckModel.life.exercise",0,1,"","","entry:observationSocial.valueString"
 "AdultCheckModel.depress","AdultCheckModel.depress","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","憂鬱檢測","憂鬱檢測","","","","","","","","","",,,,,"",,,,"AdultCheckModel.depress",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -128,9 +128,9 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "AdultCheckModel.depress.feelingdepressed","AdultCheckModel.depress.feelingdepressed","","","",0,1,"","","","string {[]} {[]}
-","憂鬱檢測：感覺情緒低落沮喪","憂鬱檢測：第一題 感覺情緒低落沮喪","","","","","","","","","",,,,,"",,,,"AdultCheckModel.depress.feelingdepressed",0,1,"",""
+","憂鬱檢測：感覺情緒低落沮喪","憂鬱檢測：第一題 感覺情緒低落沮喪","","","","","","","","","",,,,,"",,,,"AdultCheckModel.depress.feelingdepressed",0,1,"","","entry:observationDepress.component.valueString"
 "AdultCheckModel.depress.loseinterest","AdultCheckModel.depress.loseinterest","","","",0,1,"","","","string {[]} {[]}
-","憂鬱檢測：做事情失去興趣","憂鬱檢測：第二題做事情失去興趣","","","","","","","","","",,,,,"",,,,"AdultCheckModel.depress.loseinterest",0,1,"",""
+","憂鬱檢測：做事情失去興趣","憂鬱檢測：第二題做事情失去興趣","","","","","","","","","",,,,,"",,,,"AdultCheckModel.depress.loseinterest",0,1,"","","entry:observationDepress.component.valueString"
 "AdultCheckModel.vitalSign","AdultCheckModel.vitalSign","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","生理量測數值","生理量測數值","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -148,17 +148,17 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "AdultCheckModel.vitalSign.height","AdultCheckModel.vitalSign.height","","","",0,1,"","","","Quantity {[]} {[]}
-","身高","身高","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.height",0,1,"",""
+","身高","身高","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.height",0,1,"","","entry:observationHeight.valueQuantity"
 "AdultCheckModel.vitalSign.weight","AdultCheckModel.vitalSign.weight","","","",0,1,"","","","Quantity {[]} {[]}
-","體重","體重","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.weight",0,1,"",""
+","體重","體重","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.weight",0,1,"","","entry:observationWeight.valueQuantity"
 "AdultCheckModel.vitalSign.sbp","AdultCheckModel.vitalSign.sbp","","","",0,1,"","","","Quantity {[]} {[]}
-","血壓 -- 收縮壓","收縮壓","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.sbp",0,1,"",""
+","血壓 -- 收縮壓","收縮壓","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.sbp",0,1,"","","entry:observationPressure.component.valueQuantity"
 "AdultCheckModel.vitalSign.dbp","AdultCheckModel.vitalSign.dbp","","","",0,1,"","","","Quantity {[]} {[]}
-","血壓 -- 舒張壓","舒張壓","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.dbp",0,1,"",""
+","血壓 -- 舒張壓","舒張壓","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.dbp",0,1,"","","entry:observationPressure.component.valueQuantity"
 "AdultCheckModel.vitalSign.waistline","AdultCheckModel.vitalSign.waistline","","","",0,1,"","","","Quantity {[]} {[]}
-","腰圍","腰圍","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.waistline",0,1,"",""
+","腰圍","腰圍","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.waistline",0,1,"","","entry:observationWaist.valueQuantity"
 "AdultCheckModel.vitalSign.bmi","AdultCheckModel.vitalSign.bmi","","","",0,1,"","","","Quantity {[]} {[]}
-","BMI","BMI","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.bmi",0,1,"",""
+","BMI","BMI","","","","","","","","","",,,,,"",,,,"AdultCheckModel.vitalSign.bmi",0,1,"","","entry:observationBMI.valueQuantity"
 "AdultCheckModel.lab","AdultCheckModel.lab","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","檢驗檢查數值","檢驗檢查數值","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -176,29 +176,29 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "AdultCheckModel.lab.urineProtein","AdultCheckModel.lab.urineProtein","","","",0,1,"","","","Quantity {[]} {[]}
-","Protein 尿蛋白","Protein 尿蛋白","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.urineProtein",0,1,"",""
+","Protein 尿蛋白","Protein 尿蛋白","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.urineProtein",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.lab.glucose","AdultCheckModel.lab.glucose","","","",0,1,"","","","Quantity {[]} {[]}
-","血糖","血糖","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.glucose",0,1,"",""
+","血糖","血糖","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.glucose",0,1,"","","entry:lobservationLab.valueQuantity"
 "AdultCheckModel.lab.cholesterol","AdultCheckModel.lab.cholesterol","","","",0,1,"","","","Quantity {[]} {[]}
-","膽固醇","膽固醇","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.cholesterol",0,1,"",""
+","膽固醇","膽固醇","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.cholesterol",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.lab.triglyceride","AdultCheckModel.lab.triglyceride","","","",0,1,"","","","Quantity {[]} {[]}
-","三酸甘油脂","三酸甘油脂","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.triglyceride",0,1,"",""
+","三酸甘油脂","三酸甘油脂","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.triglyceride",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.lab.ldl","AdultCheckModel.lab.ldl","","","",0,1,"","","","Quantity {[]} {[]}
-","低密度脂蛋白膽固醇計算","低密度脂蛋白膽固醇計算","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.ldl",0,1,"",""
+","低密度脂蛋白膽固醇計算","低密度脂蛋白膽固醇計算","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.ldl",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.lab.hdl","AdultCheckModel.lab.hdl","","","",0,1,"","","","Quantity {[]} {[]}
-","高密度膽固醇","高密度膽固醇","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.hdl",0,1,"",""
+","高密度膽固醇","高密度膽固醇","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.hdl",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.lab.got","AdultCheckModel.lab.got","","","",0,1,"","","","Quantity {[]} {[]}
-","ＧＯＴ","ＧＯＴ","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.got",0,1,"",""
+","ＧＯＴ","ＧＯＴ","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.got",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.lab.gpt","AdultCheckModel.lab.gpt","","","",0,1,"","","","Quantity {[]} {[]}
-","ＧＰＴ","ＧＰＴ","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.gpt",0,1,"",""
+","ＧＰＴ","ＧＰＴ","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.gpt",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.lab.creatinine","AdultCheckModel.lab.creatinine","","","",0,1,"","","","Quantity {[]} {[]}
-","肌酸酐","肌酸酐","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.creatinine",0,1,"",""
+","肌酸酐","肌酸酐","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.creatinine",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.lab.egfr","AdultCheckModel.lab.egfr","","","",0,1,"","","","Quantity {[]} {[]}
-","腎絲球過濾率計算","腎絲球過濾率計算","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.egfr",0,1,"",""
+","腎絲球過濾率計算","腎絲球過濾率計算","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.egfr",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.lab.hbsag","AdultCheckModel.lab.hbsag","","","",0,1,"","","","Quantity {[]} {[]}
-","Ｂ型肝炎表面抗原","Ｂ型肝炎表面抗原","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.hbsag",0,1,"",""
+","Ｂ型肝炎表面抗原","Ｂ型肝炎表面抗原","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.hbsag",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.lab.antiHCV","AdultCheckModel.lab.antiHCV","","","",0,1,"","","","Quantity {[]} {[]}
-","Ｃ型肝炎病毒抗體","Ｃ型肝炎病毒抗體","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.antiHCV",0,1,"",""
+","Ｃ型肝炎病毒抗體","Ｃ型肝炎病毒抗體","","","","","","","","","",,,,,"",,,,"AdultCheckModel.lab.antiHCV",0,1,"","","entry:observationLab.valueQuantity"
 "AdultCheckModel.counseling","AdultCheckModel.counseling","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","健康諮詢","健康諮詢","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -216,21 +216,21 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "AdultCheckModel.counseling.smoking","AdultCheckModel.counseling.smoking","","","",0,1,"","","","string {[]} {[]}
-","健康諮詢：戒煙","健康諮詢：戒煙","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.smoking",0,1,"",""
+","健康諮詢：戒煙","健康諮詢：戒煙","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.smoking",0,1,"","","entry:observationSocial.valueString"
 "AdultCheckModel.counseling.alcoholic","AdultCheckModel.counseling.alcoholic","","","",0,1,"","","","string {[]} {[]}
-","健康諮詢：節酒","健康諮詢：節酒","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.alcoholic",0,1,"",""
+","健康諮詢：節酒","健康諮詢：節酒","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.alcoholic",0,1,"","","entry:observationSocial.valueString"
 "AdultCheckModel.counseling.nuts","AdultCheckModel.counseling.nuts","","","",0,1,"","","","string {[]} {[]}
-","健康諮詢：戒檳榔","健康諮詢：戒檳榔","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.nuts",0,1,"",""
+","健康諮詢：戒檳榔","健康諮詢：戒檳榔","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.nuts",0,1,"","","entry:observationSocial.valueString"
 "AdultCheckModel.counseling.exercise","AdultCheckModel.counseling.exercise","","","",0,1,"","","","string {[]} {[]}
-","健康諮詢：規律運動","健康諮詢：規律運動","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.exercise",0,1,"",""
+","健康諮詢：規律運動","健康諮詢：規律運動","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.exercise",0,1,"","","entry:observationSocial.valueString"
 "AdultCheckModel.counseling.weight","AdultCheckModel.counseling.weight","","","",0,1,"","","","string {[]} {[]}
-","健康諮詢：維持正常體重","健康諮詢：維持正常體重","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.weight",0,1,"",""
+","健康諮詢：維持正常體重","健康諮詢：維持正常體重","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.weight",0,1,"","","entry:observationSocial.valueString"
 "AdultCheckModel.counseling.food","AdultCheckModel.counseling.food","","","",0,1,"","","","string {[]} {[]}
-","健康諮詢：健康飲食","健康諮詢：健康飲食","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.food",0,1,"",""
+","健康諮詢：健康飲食","健康諮詢：健康飲食","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.food",0,1,"","","entry:observationSocial.valueString"
 "AdultCheckModel.counseling.accident","AdultCheckModel.counseling.accident","","","",0,1,"","","","string {[]} {[]}
-","健康諮詢：事故傷害預防","健康諮詢：事故傷害預防","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.accident",0,1,"",""
+","健康諮詢：事故傷害預防","健康諮詢：事故傷害預防","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.accident",0,1,"","","entry:observationSocial.valueString"
 "AdultCheckModel.counseling.oral","AdultCheckModel.counseling.oral","","","",0,1,"","","","string {[]} {[]}
-","健康諮詢：口腔保健","健康諮詢：口腔保健","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.oral",0,1,"",""
+","健康諮詢：口腔保健","健康諮詢：口腔保健","","","","","","","","","",,,,,"",,,,"AdultCheckModel.counseling.oral",0,1,"","","entry:observationSocial.valueString"
 "AdultCheckModel.result","AdultCheckModel.result","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","檢查結果與建議","檢查結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -248,20 +248,20 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "AdultCheckModel.result.bloodPressure","AdultCheckModel.result.bloodPressure","","","",0,1,"","","","string {[]} {[]}
-","血壓檢查結果與建議","血壓檢查結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.bloodPressure",0,1,"",""
+","血壓檢查結果與建議","血壓檢查結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.bloodPressure",0,1,"","","entry:disgnostic.conclusion"
 "AdultCheckModel.result.bloodGlucose","AdultCheckModel.result.bloodGlucose","","","",0,1,"","","","string {[]} {[]}
-","血糖檢查結果判讀","血糖檢查結果判讀","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.bloodGlucose",0,1,"",""
+","血糖檢查結果判讀","血糖檢查結果判讀","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.bloodGlucose",0,1,"","","entry:disgnostic.conclusion"
 "AdultCheckModel.result.bloodLipids","AdultCheckModel.result.bloodLipids","","","",0,1,"","","","string {[]} {[]}
-","血脂肪檢查結果判讀","血脂肪檢查結果判讀","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.bloodLipids",0,1,"",""
+","血脂肪檢查結果判讀","血脂肪檢查結果判讀","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.bloodLipids",0,1,"","","entry:disgnostic.conclusion"
 "AdultCheckModel.result.kidneyFunction","AdultCheckModel.result.kidneyFunction","","","",0,1,"","","","string {[]} {[]}
-","腎功能檢查結果判讀","腎功能檢查結果判讀","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.kidneyFunction",0,1,"",""
+","腎功能檢查結果判讀","腎功能檢查結果判讀","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.kidneyFunction",0,1,"","","entry:disgnostic.conclusion"
 "AdultCheckModel.result.liverFunction","AdultCheckModel.result.liverFunction","","","",0,1,"","","","string {[]} {[]}
-","肝功能檢查結果判讀","肝功能檢查結果判讀","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.liverFunction",0,1,"",""
+","肝功能檢查結果判讀","肝功能檢查結果判讀","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.liverFunction",0,1,"","","entry:disgnostic.conclusion"
 "AdultCheckModel.result.metabolicSyndrome","AdultCheckModel.result.metabolicSyndrome","","","",0,1,"","","","string {[]} {[]}
-","代謝症候群檢查結果與建議","代謝症候群檢查結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.metabolicSyndrome",0,1,"",""
+","代謝症候群檢查結果與建議","代謝症候群檢查結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.metabolicSyndrome",0,1,"","","entry:disgnostic.conclusion"
 "AdultCheckModel.result.hepatitisB","AdultCheckModel.result.hepatitisB","","","",0,1,"","","","string {[]} {[]}
-","B型肝炎檢查結果與建議","B型肝炎檢查結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.hepatitisB",0,1,"",""
+","B型肝炎檢查結果與建議","B型肝炎檢查結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.hepatitisB",0,1,"","","entry:disgnostic.conclusion"
 "AdultCheckModel.result.hepatitisC","AdultCheckModel.result.hepatitisC","","","",0,1,"","","","string {[]} {[]}
-","C型肝炎檢查結果與建議","C型肝炎檢查結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.hepatitisC",0,1,"",""
+","C型肝炎檢查結果與建議","C型肝炎檢查結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.hepatitisC",0,1,"","","entry:disgnostic.conclusion"
 "AdultCheckModel.result.depression","AdultCheckModel.result.depression","","","",0,1,"","","","string {[]} {[]}
-","憂鬱檢測結果與建議","憂鬱檢測結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.depression",0,1,"",""
+","憂鬱檢測結果與建議","憂鬱檢測結果與建議","","","","","","","","","",,,,,"",,,,"AdultCheckModel.result.depression",0,1,"","","entry:disgnostic.conclusion"

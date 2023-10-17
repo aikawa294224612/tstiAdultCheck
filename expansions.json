@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "78d0f157-7b0c-47e3-957e-2b2c195b652f",
+  "id" : "db05e1e5-84ea-4439-bec8-3f8dbb6a694f",
   "meta" : {
-    "lastUpdated" : "2023-10-16T16:31:57.470+08:00"
+    "lastUpdated" : "2023-10-17T10:22:38.262+08:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "name" : "ValueSet-adultcheck-code",
       "title" : "成人預防保健疾病史代碼集值",
       "status" : "draft",
-      "date" : "2023-10-16T16:31:57+08:00",
+      "date" : "2023-10-17T10:22:38+08:00",
       "expansion" : {
-        "identifier" : "urn:uuid:9a1800b6-26c6-4c0e-9077-11927c233414",
-        "timestamp" : "2023-10-16T16:33:53+08:00",
+        "identifier" : "urn:uuid:171620c4-abf3-41b3-a373-ec364279eae2",
+        "timestamp" : "2023-10-17T10:25:01+08:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -86,10 +86,10 @@
       "name" : "ValueSet_adultcheck-lifecode",
       "title" : "成人預防保健生活史代碼集值",
       "status" : "active",
-      "date" : "2023-10-16T16:31:57+08:00",
+      "date" : "2023-10-17T10:22:38+08:00",
       "expansion" : {
-        "identifier" : "urn:uuid:74a545fd-da51-479a-8b96-21192dee36f5",
-        "timestamp" : "2023-10-16T16:33:53+08:00",
+        "identifier" : "urn:uuid:04a71e11-4b4c-4341-9829-33d83a072067",
+        "timestamp" : "2023-10-17T10:25:01+08:00",
         "total" : 13,
         "parameter" : [{
           "name" : "excludeNested",

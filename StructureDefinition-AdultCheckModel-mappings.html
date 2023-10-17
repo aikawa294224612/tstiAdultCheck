@@ -221,7 +221,7 @@
         
           Active
           
-            as of 2023-10-16
+            as of 2023-10-17
           
         
       </td>
@@ -277,6 +277,79 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
 </table>
+<a name="AdultCheck"> </a><h3>Mappings for AdultCheck IG (https://www.tstiadultcheckig.com/)</h3><table class="grid">
+ <tr><td colspan="3"><b>AdultCheckModel</b></td></tr>
+ <tr><td>AdultCheckModel</td><td>BundleAdultCheck</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;caseNo</td><td>identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>entry:patient.identifier:idCardNumber</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;patientNo</td><td>entry:patient.identifier:medicalRecordNumber</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>entry:patient.name:officialName</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gender</td><td>entry:patient.gender:gender</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;birthDate</td><td>entry:patient.birthDate:birthdate</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;telecom</td><td>entry:patient.telecom:phone</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;city</td><td>entry:patient.address.city</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;organization</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>entry:organization.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;firstCheckDate</td><td>entry:encounter.statusHistory.period</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;secondCheckDate</td><td>entry:encounter.statusHistory.period</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;checkResultUploadDate</td><td>entry:observationLab.effectiveDateTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;hepatitisBC</td><td>entry:observationSocial.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;history</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hypertension</td><td>entry:condition.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diabetes</td><td>entry:condition.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hyperlipidemia</td><td>entry:condition.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cvd</td><td>entry:condition.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stroke</td><td>entry:condition.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kidneyDisease</td><td>entry:condition.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;life</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cigarette</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alcoholicDrink</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nuts</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exercise</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;depress</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;feelingdepressed</td><td>entry:observationDepress.component.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loseinterest</td><td>entry:observationDepress.component.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;vitalSign</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height</td><td>entry:observationHeight.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weight</td><td>entry:observationWeight.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sbp</td><td>entry:observationPressure.component.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dbp</td><td>entry:observationPressure.component.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;waistline</td><td>entry:observationWaist.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bmi</td><td>entry:observationBMI.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;lab</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;urineProtein</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;glucose</td><td>entry:lobservationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cholesterol</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;triglyceride</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ldl</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hdl</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;got</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gpt</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creatinine</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;egfr</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hbsag</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;antiHCV</td><td>entry:observationLab.valueQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;counseling</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;smoking</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alcoholic</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nuts</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exercise</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weight</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;food</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;accident</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oral</td><td>entry:observationSocial.valueString</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;result</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bloodPressure</td><td>entry:disgnostic.conclusion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bloodGlucose</td><td>entry:disgnostic.conclusion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bloodLipids</td><td>entry:disgnostic.conclusion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kidneyFunction</td><td>entry:disgnostic.conclusion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;liverFunction</td><td>entry:disgnostic.conclusion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;metabolicSyndrome</td><td>entry:disgnostic.conclusion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hepatitisB</td><td>entry:disgnostic.conclusion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hepatitisC</td><td>entry:disgnostic.conclusion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;depression</td><td>entry:disgnostic.conclusion</td> </tr>
+</table>
 
 
   <!-- insert notes if present -->
@@ -330,7 +403,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.etatung.com/">大世科 tsti</a>.  Package tw.tsti.adultcheck#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 16, 2023 16:31+0800">2023-10-16</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.etatung.com/">大世科 tsti</a>.  Package tw.tsti.adultcheck#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 17, 2023 10:22+0800">2023-10-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

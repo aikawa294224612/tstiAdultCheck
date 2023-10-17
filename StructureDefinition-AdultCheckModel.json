@@ -10,7 +10,7 @@
   "name" : "AdultCheckModel",
   "title" : "成人預防保健(AdultCheck)之資料模型",
   "status" : "active",
-  "date" : "2023-10-16T16:31:57+08:00",
+  "date" : "2023-10-17T10:22:38+08:00",
   "publisher" : "大世科 tsti",
   "contact" : [{
     "name" : "大世科 tsti",
@@ -25,6 +25,11 @@
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
     "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "AdultCheck",
+    "uri" : "https://www.tstiadultcheckig.com/",
+    "name" : "AdultCheck IG"
   }],
   "kind" : "logical",
   "abstract" : false,
@@ -44,7 +49,11 @@
         "min" : 0,
         "max" : "*"
       },
-      "isModifier" : false
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "BundleAdultCheck"
+      }]
     },
     {
       "id" : "AdultCheckModel.caseNo",
@@ -60,6 +69,10 @@
       },
       "type" : [{
         "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "identifier"
       }]
     },
     {
@@ -220,6 +233,10 @@
       },
       "type" : [{
         "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.identifier:idCardNumber"
       }]
     },
     {
@@ -236,6 +253,10 @@
       },
       "type" : [{
         "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.identifier:medicalRecordNumber"
       }]
     },
     {
@@ -252,6 +273,10 @@
       },
       "type" : [{
         "code" : "HumanName"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.name:officialName"
       }]
     },
     {
@@ -268,6 +293,10 @@
       },
       "type" : [{
         "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.gender:gender"
       }]
     },
     {
@@ -284,6 +313,10 @@
       },
       "type" : [{
         "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.birthDate:birthdate"
       }]
     },
     {
@@ -300,6 +333,10 @@
       },
       "type" : [{
         "code" : "ContactPoint"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.telecom:phone"
       }]
     },
     {
@@ -316,6 +353,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.address.city"
       }]
     },
     {
@@ -476,6 +517,10 @@
       },
       "type" : [{
         "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:organization.identifier"
       }]
     },
     {
@@ -492,6 +537,10 @@
       },
       "type" : [{
         "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:encounter.statusHistory.period"
       }]
     },
     {
@@ -508,6 +557,10 @@
       },
       "type" : [{
         "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:encounter.statusHistory.period"
       }]
     },
     {
@@ -524,6 +577,10 @@
       },
       "type" : [{
         "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.effectiveDateTime"
       }]
     },
     {
@@ -540,6 +597,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.code"
       }]
     },
     {
@@ -700,6 +761,10 @@
       },
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -716,6 +781,10 @@
       },
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -732,6 +801,10 @@
       },
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -748,6 +821,10 @@
       },
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -764,6 +841,10 @@
       },
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -780,6 +861,10 @@
       },
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -939,7 +1024,11 @@
         "max" : "1"
       },
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -955,7 +1044,11 @@
         "max" : "1"
       },
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -971,7 +1064,11 @@
         "max" : "1"
       },
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -987,7 +1084,11 @@
         "max" : "1"
       },
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -1148,6 +1249,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationDepress.component.valueString"
       }]
     },
     {
@@ -1164,6 +1269,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationDepress.component.valueString"
       }]
     },
     {
@@ -1324,6 +1433,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationHeight.valueQuantity"
       }]
     },
     {
@@ -1340,6 +1453,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationWeight.valueQuantity"
       }]
     },
     {
@@ -1356,6 +1473,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationPressure.component.valueQuantity"
       }]
     },
     {
@@ -1372,6 +1493,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationPressure.component.valueQuantity"
       }]
     },
     {
@@ -1388,6 +1513,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationWaist.valueQuantity"
       }]
     },
     {
@@ -1404,6 +1533,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationBMI.valueQuantity"
       }]
     },
     {
@@ -1564,6 +1697,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1580,6 +1717,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:lobservationLab.valueQuantity"
       }]
     },
     {
@@ -1596,6 +1737,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1612,6 +1757,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1628,6 +1777,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1644,6 +1797,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1660,6 +1817,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1676,6 +1837,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1692,6 +1857,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1708,6 +1877,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1724,6 +1897,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1740,6 +1917,10 @@
       },
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -1900,6 +2081,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -1916,6 +2101,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -1932,6 +2121,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -1948,6 +2141,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -1964,6 +2161,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -1980,6 +2181,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -1996,6 +2201,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2012,6 +2221,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2172,6 +2385,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -2188,6 +2405,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -2204,6 +2425,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -2220,6 +2445,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -2236,6 +2465,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -2252,6 +2485,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -2268,6 +2505,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -2284,6 +2525,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -2300,6 +2545,10 @@
       },
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     }]
   },
@@ -2308,7 +2557,11 @@
       "id" : "AdultCheckModel",
       "path" : "AdultCheckModel",
       "short" : "成人預防保健(AdultCheck)之資料模型",
-      "definition" : "成人預防保健(AdultCheck)之資料模型"
+      "definition" : "成人預防保健(AdultCheck)之資料模型",
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "BundleAdultCheck"
+      }]
     },
     {
       "id" : "AdultCheckModel.caseNo",
@@ -2319,6 +2572,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "identifier"
       }]
     },
     {
@@ -2341,6 +2598,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.identifier:idCardNumber"
       }]
     },
     {
@@ -2352,6 +2613,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.identifier:medicalRecordNumber"
       }]
     },
     {
@@ -2363,6 +2628,10 @@
       "max" : "1",
       "type" : [{
         "code" : "HumanName"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.name:officialName"
       }]
     },
     {
@@ -2374,6 +2643,10 @@
       "max" : "1",
       "type" : [{
         "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.gender:gender"
       }]
     },
     {
@@ -2385,6 +2658,10 @@
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.birthDate:birthdate"
       }]
     },
     {
@@ -2396,6 +2673,10 @@
       "max" : "1",
       "type" : [{
         "code" : "ContactPoint"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.telecom:phone"
       }]
     },
     {
@@ -2407,6 +2688,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:patient.address.city"
       }]
     },
     {
@@ -2429,6 +2714,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:organization.identifier"
       }]
     },
     {
@@ -2440,6 +2729,10 @@
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:encounter.statusHistory.period"
       }]
     },
     {
@@ -2451,6 +2744,10 @@
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:encounter.statusHistory.period"
       }]
     },
     {
@@ -2462,6 +2759,10 @@
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.effectiveDateTime"
       }]
     },
     {
@@ -2473,6 +2774,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.code"
       }]
     },
     {
@@ -2495,6 +2800,10 @@
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -2506,6 +2815,10 @@
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -2517,6 +2830,10 @@
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -2528,6 +2845,10 @@
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -2539,6 +2860,10 @@
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -2550,6 +2875,10 @@
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:condition.code"
       }]
     },
     {
@@ -2571,7 +2900,11 @@
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2582,7 +2915,11 @@
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2593,7 +2930,11 @@
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2604,7 +2945,11 @@
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2627,6 +2972,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationDepress.component.valueString"
       }]
     },
     {
@@ -2638,6 +2987,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationDepress.component.valueString"
       }]
     },
     {
@@ -2660,6 +3013,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationHeight.valueQuantity"
       }]
     },
     {
@@ -2671,6 +3028,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationWeight.valueQuantity"
       }]
     },
     {
@@ -2682,6 +3043,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationPressure.component.valueQuantity"
       }]
     },
     {
@@ -2693,6 +3058,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationPressure.component.valueQuantity"
       }]
     },
     {
@@ -2704,6 +3073,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationWaist.valueQuantity"
       }]
     },
     {
@@ -2715,6 +3088,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationBMI.valueQuantity"
       }]
     },
     {
@@ -2737,6 +3114,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2748,6 +3129,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:lobservationLab.valueQuantity"
       }]
     },
     {
@@ -2759,6 +3144,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2770,6 +3159,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2781,6 +3174,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2792,6 +3189,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2803,6 +3204,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2814,6 +3219,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2825,6 +3234,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2836,6 +3249,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2847,6 +3264,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2858,6 +3279,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationLab.valueQuantity"
       }]
     },
     {
@@ -2880,6 +3305,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2891,6 +3320,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2902,6 +3335,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2913,6 +3350,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2924,6 +3365,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2935,6 +3380,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2946,6 +3395,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2957,6 +3410,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:observationSocial.valueString"
       }]
     },
     {
@@ -2979,6 +3436,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -2990,6 +3451,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -3001,6 +3466,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -3012,6 +3481,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -3023,6 +3496,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -3034,6 +3511,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -3045,6 +3526,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -3056,6 +3541,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     },
     {
@@ -3067,6 +3556,10 @@
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "AdultCheck",
+        "map" : "entry:disgnostic.conclusion"
       }]
     }]
   }

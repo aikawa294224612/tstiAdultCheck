@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 118, info = 8
-IG Publisher Version: 1.4.8 Out of date - current version is 1.4.15
-Generated Mon Oct 16 16:35:52 CST 2023. FHIR version 4.0.1 for tw.tsti.adultcheck#0.1.0 (canonical = https://tstifhir.azurehealthcareapis.com)
+IG Publisher Version: 1.4.8 Out of date - current version is 1.4.16
+Generated Tue Oct 17 10:27:15 CST 2023. FHIR version 4.0.1 for tw.tsti.adultcheck#0.1.0 (canonical = https://tstifhir.azurehealthcareapis.com)
  Build Errors : 0 / 4 / 0
  C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\Bundle-bundle-example : 0 / 103 / 76
  C:\Users\polly.peng\Downloads\adultCheck\AdultCheckIG\fsh-generated\resources\CapabilityStatement-ServerCapabilityStatement : 0 / 1 / 1
