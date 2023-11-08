@@ -3,11 +3,11 @@
   "name" : "AdultCheckIG",
   "package-id" : "tw.tsti.adultcheck",
   "ig-ver" : "0.1.0",
-  "date" : "Tue, 17 Oct, 2023 10:22:38 +0800",
+  "date" : "Wed, 08 Nov, 2023 11:45:10 +0800",
   "errs" : 0,
-  "warnings" : 118,
-  "hints" : 8,
+  "warnings" : 177,
+  "hints" : 10,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 3636693296
+  "maxMemory" : 3429017472
 }

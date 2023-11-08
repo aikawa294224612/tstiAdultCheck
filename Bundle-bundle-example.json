@@ -294,6 +294,175 @@
         }]
       },
       {
+        "title" : "生活史-吸煙",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "35090-0",
+            "display" : "Patient history"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-smoke-example"
+        }]
+      },
+      {
+        "title" : "生活史-喝酒",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "35090-0",
+            "display" : "Patient history"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-alcohol-example"
+        }]
+      },
+      {
+        "title" : "生活史-嚼檳榔",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "35090-0",
+            "display" : "Patient history"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-nut-example"
+        }]
+      },
+      {
+        "title" : "生活史-運動",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "35090-0",
+            "display" : "Patient history"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-exercise-example"
+        }]
+      },
+      {
+        "title" : "健康諮詢：戒煙",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8677-7",
+            "display" : "History of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-consmoke-example"
+        }]
+      },
+      {
+        "title" : "健康諮詢：節酒",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8677-7",
+            "display" : "History of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-conliquor-example"
+        }]
+      },
+      {
+        "title" : "健康諮詢：戒檳榔",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8677-7",
+            "display" : "History of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-connut-example"
+        }]
+      },
+      {
+        "title" : "健康諮詢：規律運動",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8677-7",
+            "display" : "History of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-conexercise-example"
+        }]
+      },
+      {
+        "title" : "健康諮詢：維持正常體重",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8677-7",
+            "display" : "History of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-conweight-example"
+        }]
+      },
+      {
+        "title" : "健康諮詢：健康飲食",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8677-7",
+            "display" : "History of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-condiet-example"
+        }]
+      },
+      {
+        "title" : "健康諮詢：事故傷害預防",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8677-7",
+            "display" : "History of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-conaccident-example"
+        }]
+      },
+      {
+        "title" : "健康諮詢：口腔保健",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8677-7",
+            "display" : "History of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-conoral-example"
+        }]
+      },
+      {
+        "title" : "曾於成人預防保健服時接受過 B、C 型肝炎檢查",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8677-7",
+            "display" : "History of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-checkbc-example"
+        }]
+      },
+      {
         "title" : "腎功能檢查結果判讀",
         "code" : {
           "coding" : [{
@@ -378,7 +547,7 @@
     }
   },
   {
-    "fullUrl" : "urn:uuid:9a652678-4616-475d-af88-aca21cfbe06d",
+    "fullUrl" : "urn:uuid:571e62c4-a82e-4d16-94bc-6e59fbc6947e",
     "resource" : {
       "resourceType" : "Organization",
       "id" : "org-hosp-example",
@@ -652,7 +821,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-protein-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-protein-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 尿蛋白 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#06003C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 58 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>30 mg/dl</td><td>300 mg/dl</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-protein-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-protein-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: 尿蛋白 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#06003C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 58 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>30 mg/dl</td><td>300 mg/dl</td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -666,6 +835,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -697,7 +873,7 @@
     }
   },
   {
-    "fullUrl" : "urn:uuid:ae8f1033-c524-409a-afed-0dc2285e7c5a",
+    "fullUrl" : "urn:uuid:4d1b11e5-582b-4691-b60d-b895b6b54efa",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-lab-sugar-example",
@@ -706,7 +882,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-sugar-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-sugar-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血液及體液葡萄糖 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09005C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 15 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>80 mg/dl</td><td>120 mg/dl</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-sugar-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-sugar-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: 血液及體液葡萄糖 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09005C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 15 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>80 mg/dl</td><td>120 mg/dl</td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -720,6 +896,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -751,7 +934,7 @@
     }
   },
   {
-    "fullUrl" : "urn:uuid:dfc17f3f-bd3c-4c2a-9f7b-89151e1f8dca",
+    "fullUrl" : "urn:uuid:315b8899-174b-484c-a5b3-d52986b1f4e8",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-lab-tcholestero-example",
@@ -760,7 +943,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-tcholestero-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-tcholestero-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 總膽固醇 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09001C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 309 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>120 mg/dl</td><td>200 mg/dl</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-tcholestero-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-tcholestero-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: 總膽固醇 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09001C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 309 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>120 mg/dl</td><td>200 mg/dl</td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -774,6 +957,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -805,7 +995,7 @@
     }
   },
   {
-    "fullUrl" : "urn:uuid:6b274268-ef43-41a7-96b4-d941ba4a237a",
+    "fullUrl" : "urn:uuid:56e40c6b-2b0f-49bf-b211-75f3e239b0d6",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-lab-triglycerides-example",
@@ -814,7 +1004,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-triglycerides-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-triglycerides-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 三酸甘油脂 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09004C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 80 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>40 mg/dl</td><td>149 mg/dl</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-triglycerides-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-triglycerides-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: 三酸甘油脂 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09004C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 80 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>40 mg/dl</td><td>149 mg/dl</td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -828,6 +1018,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -868,7 +1065,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-lowcholestero-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-lowcholestero-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 低密度脂蛋白-膽固醇 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09044C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 100 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg/dl</td><td>130 mg/dl</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-lowcholestero-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-lowcholestero-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: 低密度脂蛋白-膽固醇 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09044C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 100 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg/dl</td><td>130 mg/dl</td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -882,6 +1079,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -922,7 +1126,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-highcholestero-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-highcholestero-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 高密度脂蛋白-膽固醇 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09043C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 80 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg/dl</td><td>130 mg/dl</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-highcholestero-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-highcholestero-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: 高密度脂蛋白-膽固醇 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09043C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 80 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg/dl</td><td>130 mg/dl</td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -936,6 +1140,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -976,7 +1187,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-got-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-got-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血清麩胺酸苯醋酸轉氨基脢 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09025C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 10 IU/l</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>10 IU/l</td><td>40 IU/l</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-got-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-got-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: 血清麩胺酸苯醋酸轉氨基脢 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09025C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 10 IU/l</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>10 IU/l</td><td>40 IU/l</td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -990,6 +1201,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -1030,7 +1248,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-gpt-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-gpt-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 血清麩胺酸丙酮酸轉氨基脢 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09026C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 10 IU/l</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>10 IU/l</td><td>40 IU/l</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-gpt-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-gpt-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: 血清麩胺酸丙酮酸轉氨基脢 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09026C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 10 IU/l</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>10 IU/l</td><td>40 IU/l</td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -1044,6 +1262,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -1084,7 +1309,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-creatinine-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-creatinine-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: 肌酸酐、血 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09015C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 0.6 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>0.6 mg/dl</td><td>1.4 mg/dl</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-creatinine-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-creatinine-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: 肌酸酐、血 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#09015C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 0.6 mg/dl</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>0.6 mg/dl</td><td>1.4 mg/dl</td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -1098,6 +1323,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -1138,7 +1370,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-b-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-b-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: B型肝炎表面抗原 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#14030C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 陰性</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-b-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-b-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: B型肝炎表面抗原 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#14030C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 陰性</p></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -1152,6 +1384,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -1179,7 +1418,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-c-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-c-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>code</b>: C型肝炎病毒抗體檢查 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#14051C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 陰性</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-lab-c-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-lab-c-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-adultcheck.html\">Observation Lab - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: C型肝炎病毒抗體檢查 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medical-service-payment-tw.html\">臺灣醫療服務給付項目</a>#14051C)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 陰性</p></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -1193,6 +1432,13 @@
         "value" : "000120230721"
       }],
       "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
       "code" : {
         "coding" : [{
           "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
@@ -1208,6 +1454,678 @@
         "reference" : "Organization/org-test-example"
       }],
       "valueString" : "陰性"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:889b50bb-e564-4787-a7be-a7818c24ff95",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-smoke-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-smoke-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-smoke-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 吸煙 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#230056004)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 朋友敬菸或應酬才吸菸</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "230056004"
+        }],
+        "text" : "吸煙"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "朋友敬菸或應酬才吸菸"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:0123f405-10c5-4c1c-81ad-bb8ab59774d9",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-alcohol-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-alcohol-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-alcohol-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 喝酒 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#160573003)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 偶爾喝酒或應酬才喝</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "160573003"
+        }],
+        "text" : "喝酒"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "偶爾喝酒或應酬才喝"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:bff95591-53f0-483c-a5e2-6c73eb3906a9",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-nut-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-nut-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-nut-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 嚼檳榔 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#227491007)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 不嚼檳榔</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "227491007"
+        }],
+        "text" : "嚼檳榔"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "不嚼檳榔"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:3855644c-a3e8-4887-9b1f-72414ded5c48",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-exercise-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-exercise-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-exercise-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 運動 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#128976003)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 有，但未達每週 150 分鐘以上（2.5 小時）</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "128976003"
+        }],
+        "text" : "運動"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "有，但未達每週 150 分鐘以上（2.5 小時）"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:539975f5-50bb-4a2b-845f-c2952359f7df",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-consmoke-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-consmoke-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-consmoke-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 健康諮詢：戒菸 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#225324006)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 是</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "225324006"
+        }],
+        "text" : "健康諮詢：戒菸"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "是"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:7fae5855-10e7-4192-af02-8ff659d13223",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-conliquor-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-conliquor-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-conliquor-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 健康諮詢：節酒 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#413473000)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "413473000"
+        }],
+        "text" : "健康諮詢：節酒"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "否"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:51e63331-1dc1-4585-a20e-2a3ba9e41f29",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-connut-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-connut-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-connut-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 健康諮詢：戒檳榔 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#51011006)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "51011006"
+        }],
+        "text" : "健康諮詢：戒檳榔"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "否"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:90d7a03b-4793-444b-a9c1-2002c871aa39",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-conexercise-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-conexercise-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-conexercise-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 健康諮詢：規律運動 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410289001)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "410289001"
+        }],
+        "text" : "健康諮詢：規律運動"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "否"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:00548f4a-c7a8-4744-879c-936d79352eff",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-conweight-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-conweight-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-conweight-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 健康諮詢：維持正常體重 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#388970003)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "388970003"
+        }],
+        "text" : "健康諮詢：維持正常體重"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "否"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:25f6b1a1-e15f-4090-a240-cf9e25655788",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-conweight-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-conweight-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-conweight-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 健康諮詢：維持正常體重 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#388970003)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "388970003"
+        }],
+        "text" : "健康諮詢：維持正常體重"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "否"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:231c4848-425a-4b60-85a4-e19b79bec7e5",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-condiet-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-condiet-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-condiet-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 健康諮詢：健康飲食 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410293007)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "410293007"
+        }],
+        "text" : "健康諮詢：健康飲食"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "否"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f369040e-0748-4d16-a1d9-5304c0e6ca97",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-conaccident-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-conaccident-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-conaccident-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 健康諮詢：事故傷害預防 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#409059003)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "409059003"
+        }],
+        "text" : "健康諮詢：事故傷害預防"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "否"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:787718b6-ee96-446f-9dd1-9791736164a2",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-conoral-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-conoral-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-conoral-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 健康諮詢：口腔保健 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410263001)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "410263001"
+        }],
+        "text" : "健康諮詢：口腔保健"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "否"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:cc982caf-e39e-4a94-9100-8046031378a2",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-checkbc-example",
+      "meta" : {
+        "profile" : ["https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-checkbc-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-checkbc-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSocial-adultcheck.html\">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 曾於成人預防保健服時接受過 B、C 型肝炎檢查 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#444266007)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-example\">See above (Patient/patient-example)</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MRT"
+          }]
+        },
+        "system" : "https://tsti.hospital.com",
+        "value" : "000120230721"
+      }],
+      "status" : "preliminary",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "444266007"
+        }],
+        "text" : "曾於成人預防保健服時接受過 B、C 型肝炎檢查"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example"
+      },
+      "effectiveDateTime" : "2022-08-01T17:00:14-05:00",
+      "performer" : [{
+        "reference" : "Organization/org-test-example"
+      }],
+      "valueString" : "否"
     }
   },
   {

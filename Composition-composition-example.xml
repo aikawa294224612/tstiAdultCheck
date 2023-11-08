@@ -273,6 +273,175 @@
     </entry>
   </section>
   <section>
+    <title value="生活史-吸煙"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="35090-0"/>
+        <display value="Patient history"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-smoke-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="生活史-喝酒"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="35090-0"/>
+        <display value="Patient history"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-alcohol-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="生活史-嚼檳榔"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="35090-0"/>
+        <display value="Patient history"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-nut-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="生活史-運動"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="35090-0"/>
+        <display value="Patient history"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-exercise-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：戒煙"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8677-7"/>
+        <display value="History of Medication use"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consmoke-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：節酒"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8677-7"/>
+        <display value="History of Medication use"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-conliquor-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：戒檳榔"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8677-7"/>
+        <display value="History of Medication use"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-connut-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：規律運動"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8677-7"/>
+        <display value="History of Medication use"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-conexercise-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：維持正常體重"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8677-7"/>
+        <display value="History of Medication use"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-conweight-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：健康飲食"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8677-7"/>
+        <display value="History of Medication use"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-condiet-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：事故傷害預防"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8677-7"/>
+        <display value="History of Medication use"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-conaccident-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：口腔保健"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8677-7"/>
+        <display value="History of Medication use"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-conoral-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="曾於成人預防保健服時接受過 B、C 型肝炎檢查"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8677-7"/>
+        <display value="History of Medication use"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-checkbc-example"/>
+    </entry>
+  </section>
+  <section>
     <title value="腎功能檢查結果判讀"/>
     <code>
       <coding>

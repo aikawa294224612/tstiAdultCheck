@@ -273,6 +273,175 @@
     }]
   },
   {
+    "title" : "生活史-吸煙",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "35090-0",
+        "display" : "Patient history"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-smoke-example"
+    }]
+  },
+  {
+    "title" : "生活史-喝酒",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "35090-0",
+        "display" : "Patient history"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-alcohol-example"
+    }]
+  },
+  {
+    "title" : "生活史-嚼檳榔",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "35090-0",
+        "display" : "Patient history"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-nut-example"
+    }]
+  },
+  {
+    "title" : "生活史-運動",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "35090-0",
+        "display" : "Patient history"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-exercise-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：戒煙",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-consmoke-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：節酒",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-conliquor-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：戒檳榔",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-connut-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：規律運動",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-conexercise-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：維持正常體重",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-conweight-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：健康飲食",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-condiet-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：事故傷害預防",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-conaccident-example"
+    }]
+  },
+  {
+    "title" : "健康諮詢：口腔保健",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-conoral-example"
+    }]
+  },
+  {
+    "title" : "曾於成人預防保健服時接受過 B、C 型肝炎檢查",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8677-7",
+        "display" : "History of Medication use"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-checkbc-example"
+    }]
+  },
+  {
     "title" : "腎功能檢查結果判讀",
     "code" : {
       "coding" : [{
