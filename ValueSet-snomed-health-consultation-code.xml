@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="snomed-health-consultation-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet snomed-health-consultation-code</b></p><a name="snomed-health-consultation-code"> </a><a name="hcsnomed-health-consultation-code"> </a><a name="snomed-health-consultation-code-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/225323000">225323000</a></td><td>Smoking cessation education</td></tr><tr><td><a href="http://snomed.info/id/281078001">281078001</a></td><td>Education about alcohol consumption</td></tr><tr><td><a href="http://snomed.info/id/51011006">51011006</a></td><td>Nutritional counseling for control of dental disease</td></tr><tr><td><a href="http://snomed.info/id/410289001">410289001</a></td><td>Exercises education, guidance, and counseling</td></tr><tr><td><a href="http://snomed.info/id/388970003">388970003</a></td><td>Weight maintenance consultation</td></tr><tr><td><a href="http://snomed.info/id/424753004">424753004</a></td><td>Dietary management education, guidance, and counseling</td></tr><tr><td><a href="http://snomed.info/id/710737001">710737001</a></td><td>Education about risk reduction technique</td></tr><tr><td><a href="http://snomed.info/id/58707002">58707002</a></td><td>Oral hygiene education</td></tr><tr><td><a href="http://snomed.info/id/720510004">720510004</a></td><td>Education about chronic kidney disease</td></tr><tr><td><a href="http://snomed.info/id/423167009">423167009</a></td><td>Chronic disease process education</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://etatunghpa.com/ValueSet/snomed-health-consultation-code"/>
+  <version value="0.2.0"/>
+  <name value="SNOMEDHealthConsultation"/>
+  <title value="成人預防保健健康諮詢SNOMED Health Consultation代碼集值"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-04-18T15:37:31+08:00"/>
+  <publisher value="大世科 tsti"/>
+  <contact>
+    <name value="大世科 tsti"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.etatung.com/"/>
+    </telecom>
+  </contact>
+  <description value="成人預防保健健康行為SNOMED Health Consultation代碼集值。代碼更新日期：2025-04-18。"/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="225323000"/>
+        <display value="Smoking cessation education"/>
+      </concept>
+      <concept>
+        <code value="281078001"/>
+        <display value="Education about alcohol consumption"/>
+      </concept>
+      <concept>
+        <code value="51011006"/>
+        <display value="Nutritional counseling for control of dental disease"/>
+      </concept>
+      <concept>
+        <code value="410289001"/>
+        <display value="Exercises education, guidance, and counseling"/>
+      </concept>
+      <concept>
+        <code value="388970003"/>
+        <display value="Weight maintenance consultation"/>
+      </concept>
+      <concept>
+        <code value="424753004"/>
+        <display value="Dietary management education, guidance, and counseling"/>
+      </concept>
+      <concept>
+        <code value="710737001"/>
+        <display value="Education about risk reduction technique"/>
+      </concept>
+      <concept>
+        <code value="58707002"/>
+        <display value="Oral hygiene education"/>
+      </concept>
+      <concept>
+        <code value="720510004"/>
+        <display value="Education about chronic kidney disease"/>
+      </concept>
+      <concept>
+        <code value="423167009"/>
+        <display value="Chronic disease process education"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,358 @@
+HPAIG : Validation Results
+=========================================
+
+err = 0, warn = 241, info = 14
+$--
+Generated $--. FHIR version $-- for tw.etatung.hpa#$-- (canonical = https://etatunghpa.com)
+ Build Errors : 0 / 7 / 0
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\CapabilityStatement-CapabilityStatementHPAServer : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Condition-condition-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\DiagnosticReport-diagnosticreport-bloodpressure-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Encounter-encounter-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\ImplementationGuide-tw.etatung.hpa : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-bmi-example : 0 / 1 / 2
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-checkbc-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-consult-smoke-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-depress-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-height-example : 0 / 1 / 2
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-kidneystage-example : 0 / 1 / 2
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-lab-hepatitisb-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-lab-protein-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-nut-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-pressure-example : 0 / 1 / 2
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-smokingstatus-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-waist-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Observation-observation-weight-example : 0 / 1 / 2
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Organization-org-hosp-example : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Organization-org-test-example : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Patient-patient-example : 0 / 2 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Practitioner-practitioner-first-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\RiskAssessment-riskassessment-cad-example : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-Condition-HPA : 0 / 0 / 3
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-DiagnosticReport-HPA : 0 / 1 / 2
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-Encounter-HPA : 0 / 3 / 2
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-HPA-Model : 0 / 207 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationBMI-HPA : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationDepression-HPA : 0 / 0 / 3
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationHealthBehavior-HPA : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationHealthConsultation-HPA : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationHeight-HPA : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationKidneyStage-HPA : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationLab-HPA : 0 / 0 / 4
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationPressure-HPA : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationSmokingStatus-HPA : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationWaist-HPA : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-ObservationWeight-HPA : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-Organization-HPA : 0 / 1 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-Patient-HPA : 0 / 1 / 5
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-Practitioner-HPA : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\StructureDefinition-RiskAssessment-HPA : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\ValueSet-loinc-diagnostic-code : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\ValueSet-snomed-health-behavior-code : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\ValueSet-snomed-health-consultation-code : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\ValueSet-snomed-medical-history-code : 0 / 0 / 1
+ C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\ValueSet-snomed-risk-assessment-code : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observation-height-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observation-smokingstatus-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated\resources\CapabilityStatement-CapabilityStatementHPAServer.json ==
+== fsh-generated\resources\Condition-condition-example.json ==
+WARNING: Condition/condition-example: Condition.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\DiagnosticReport-diagnosticreport-bloodpressure-example.json ==
+WARNING: DiagnosticReport/diagnosticreport-bloodpressure-example: DiagnosticReport.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Encounter-encounter-example.json ==
+WARNING: Encounter/encounter-example: Encounter.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\ImplementationGuide-tw.etatung.hpa.json ==
+== fsh-generated\resources\Observation-observation-bmi-example.json ==
+WARNING: Observation/observation-bmi-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-checkbc-example.json ==
+WARNING: Observation/observation-checkbc-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-consult-smoke-example.json ==
+WARNING: Observation/observation-consult-smoke-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-depress-example.json ==
+WARNING: Observation/observation-depress-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-height-example.json ==
+WARNING: Observation/observation-height-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-kidneystage-example.json ==
+INFORMATION: Observation/observation-kidneystage-example: Observation.category[0]: This element does not match any known slice defined in the profile https://etatunghpa.com/StructureDefinition/ObservationKidneyStage-HPA|0.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Observation/observation-kidneystage-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-lab-hepatitisb-example.json ==
+WARNING: Observation/observation-lab-hepatitisb-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-lab-protein-example.json ==
+WARNING: Observation/observation-lab-protein-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-nut-example.json ==
+WARNING: Observation/observation-nut-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-pressure-example.json ==
+WARNING: Observation/observation-pressure-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-smokingstatus-example.json ==
+WARNING: Observation/observation-smokingstatus-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-waist-example.json ==
+WARNING: Observation/observation-waist-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Observation-observation-weight-example.json ==
+WARNING: Observation/observation-weight-example: Observation.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\Organization-org-hosp-example.json ==
+== fsh-generated\resources\Organization-org-test-example.json ==
+== fsh-generated\resources\Patient-patient-example.json ==
+WARNING: Patient/patient-example: Patient.identifier[0].system: URL value 'http://www.moi.gov.tw' does not resolve
+WARNING: Patient/patient-example: Patient.identifier[1].system: URL value 'https://www.tph.mohw.gov.tw' does not resolve
+== fsh-generated\resources\Practitioner-practitioner-first-example.json ==
+WARNING: Practitioner/practitioner-first-example: Practitioner.identifier[0].system: URL value 'https://www.tph.mohw.gov.tw' does not resolve
+== fsh-generated\resources\RiskAssessment-riskassessment-cad-example.json ==
+WARNING: RiskAssessment/riskassessment-cad-example: RiskAssessment.identifier[0].system: URL value 'https://etatung.com/idenitifer' does not resolve
+== fsh-generated\resources\StructureDefinition-Condition-HPA.json ==
+INFORMATION: StructureDefinition/Condition-HPA: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+INFORMATION: StructureDefinition/Condition-HPA: StructureDefinition.snapshot.element[25].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated\resources\StructureDefinition-DiagnosticReport-HPA.json ==
+WARNING: 成人預防保健-檢查結果與建議.coding.DiagnosticReport.code.coding: Unable to check if https://etatunghpa.com/ValueSet/loinc-diagnostic-code is a proper subset of https://twcore.mohw.gov.tw/ig/twcore/ValueSet/loinc-observation-code - value set is too large to check
+INFORMATION: StructureDefinition/DiagnosticReport-HPA: StructureDefinition.snapshot.element[24].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated\resources\StructureDefinition-Encounter-HPA.json ==
+WARNING: StructureDefinition/Encounter-HPA: StructureDefinition.snapshot.element[25].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'
+WARNING: StructureDefinition/Encounter-HPA: StructureDefinition.snapshot.element[30].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'
+WARNING: StructureDefinition/Encounter-HPA: StructureDefinition.snapshot.element[62].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActPriority'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActPriority' to 'http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0'
+INFORMATION: StructureDefinition/Encounter-HPA: StructureDefinition.snapshot.element[36].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated\resources\StructureDefinition-HPA-Model.json ==
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.mapping[0].uri: URL value 'hl7.org/fhir/r4' does not resolve
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[11]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[12]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[13]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[14]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[15]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[16]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[17]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[18]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[19]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[20]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[21]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[22]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[23]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[24]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[25]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[26]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[27]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[28]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[29]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[30]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[32]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[33]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[34]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[35]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[36]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[37]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[38]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[39]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[40]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[41]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[42]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[43]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[44]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[45]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[46]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[47]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[48]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[49]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[50]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[51]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[52]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[53]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[54]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[55]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[56]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[57]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[58]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[59]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[60]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[61]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[62]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[63]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[64]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[65]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[66]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[67]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[68]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[69]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[70]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[71]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[72]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[73]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[74]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[75]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[76]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[77]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[78]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[79]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[80]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[81]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[82]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[83]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[84]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[85]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[86]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[87]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[88]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[89]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[90]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[91]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[92]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[93]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[94]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[95]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[96]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[97]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[98]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[99]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[100]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[101]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[102]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[103]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[104]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[105]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[106]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[107]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[108]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[109]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[110]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[111]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[112]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[113]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[114]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[115]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[116]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[117]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[118]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[119]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.snapshot.element[120]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[11]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[12]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[13]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[14]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[15]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[16]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[17]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[18]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[19]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[20]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[21]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[22]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[23]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[24]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[25]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[26]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[27]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[28]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[29]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[30]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[32]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[33]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[34]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[35]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[36]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[37]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[38]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[39]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[40]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[41]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[42]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[43]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[44]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[45]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[46]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[47]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[48]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[49]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[50]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[51]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[52]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[53]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[54]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[55]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[56]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[57]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[58]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[59]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[60]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[61]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[62]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[63]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[64]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[65]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[66]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[67]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[68]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[69]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[70]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[71]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[72]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[73]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[74]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[75]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[76]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[77]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[78]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[79]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[80]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[81]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[82]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[83]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/HPA-Model: StructureDefinition.differential.element[84]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated\resources\StructureDefinition-ObservationBMI-HPA.json ==
+== fsh-generated\resources\StructureDefinition-ObservationDepression-HPA.json ==
+INFORMATION: StructureDefinition/ObservationDepression-HPA: StructureDefinition.differential.element[15].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/ObservationDepression-HPA: StructureDefinition.snapshot.element[61].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated\resources\StructureDefinition-ObservationHealthBehavior-HPA.json ==
+== fsh-generated\resources\StructureDefinition-ObservationHealthConsultation-HPA.json ==
+== fsh-generated\resources\StructureDefinition-ObservationHeight-HPA.json ==
+== fsh-generated\resources\StructureDefinition-ObservationKidneyStage-HPA.json ==
+== fsh-generated\resources\StructureDefinition-ObservationLab-HPA.json ==
+INFORMATION: StructureDefinition/ObservationLab-HPA: StructureDefinition.snapshot.element[21].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/ObservationLab-HPA: StructureDefinition.snapshot.element[26].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/ObservationLab-HPA: StructureDefinition.snapshot.element[77].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated\resources\StructureDefinition-ObservationPressure-HPA.json ==
+== fsh-generated\resources\StructureDefinition-ObservationSmokingStatus-HPA.json ==
+WARNING: StructureDefinition/ObservationSmokingStatus-HPA: StructureDefinition.snapshot.element[43].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive' to 'http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive|3.0.0'
+== fsh-generated\resources\StructureDefinition-ObservationWaist-HPA.json ==
+== fsh-generated\resources\StructureDefinition-ObservationWeight-HPA.json ==
+== fsh-generated\resources\StructureDefinition-Organization-HPA.json ==
+WARNING: StructureDefinition.where(url = 'https://etatunghpa.com/StructureDefinition/Organization-HPA'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-Patient-HPA.json ==
+WARNING: StructureDefinition/Patient-HPA: StructureDefinition.snapshot.element[9].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-nationality'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-nationality' to 'http://hl7.org/fhir/StructureDefinition/patient-nationality|5.2.0'
+INFORMATION: StructureDefinition/Patient-HPA: StructureDefinition.snapshot.element[28].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
+INFORMATION: StructureDefinition/Patient-HPA: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/Patient-HPA: StructureDefinition.snapshot.element[97].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/Patient-HPA: StructureDefinition.snapshot.element[138].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated\resources\StructureDefinition-Practitioner-HPA.json ==
+== fsh-generated\resources\StructureDefinition-RiskAssessment-HPA.json ==
+== fsh-generated\resources\ValueSet-loinc-diagnostic-code.json ==
+== fsh-generated\resources\ValueSet-snomed-health-behavior-code.json ==
+== fsh-generated\resources\ValueSet-snomed-health-consultation-code.json ==
+== fsh-generated\resources\ValueSet-snomed-medical-history-code.json ==
+== fsh-generated\resources\ValueSet-snomed-risk-assessment-code.json ==

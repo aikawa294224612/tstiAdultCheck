@@ -1,77 +1,95 @@
 {
-  "package": "tw.tsti.adultcheck",
-  "version": "0.1.0",
+  "package": "tw.etatung.hpa",
+  "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
-    "Bundle": [
-      {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Bundle-adultcheck",
-        "title": "Bundle - AdultCheck"
-      }
-    ],
-    "Composition": [
-      {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Composition-adultcheck",
-        "title": "Composition - AdultCheck"
-      }
-    ],
     "Condition": [
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Condition-adultcheck",
-        "title": "Condition - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/Condition-HPA",
+        "title": "成人預防保健-受檢民眾疾病史"
       }
     ],
     "DiagnosticReport": [
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/DiagnosticReport-adultcheck",
-        "title": "DiagnosticReport - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA",
+        "title": "成人預防保健-檢查結果與建議"
       }
     ],
     "Encounter": [
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Encounter-adultcheck",
-        "title": "Encounter - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/Encounter-HPA",
+        "title": "成人預防保健-就醫紀錄"
       }
     ],
     "Observation": [
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck",
-        "title": "Observation BMI - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationBMI-HPA",
+        "title": "成人預防保健-身體檢查-身體質量指數(BMI)"
       },
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationDepression-adultcheck",
-        "title": "Observation Depression - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationDepression-HPA",
+        "title": "成人預防保健-憂鬱檢測"
       },
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationHeight-adultcheck",
-        "title": "Observation Height - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA",
+        "title": "成人預防保健-健康行為"
       },
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationLab-adultcheck",
-        "title": "Observation Lab - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationHealthConsultation-HPA",
+        "title": "成人預防保健-健康諮詢"
       },
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationPressure-adultcheck",
-        "title": "Observation Pressure - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationHeight-HPA",
+        "title": "成人預防保健-身體檢查-身高"
       },
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck",
-        "title": "Observation Social - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationKidneyStage-HPA",
+        "title": "成人預防保健-腎功能檢查期別"
       },
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWaist-adultcheck",
-        "title": "Observation Waist - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationLab-HPA",
+        "title": "成人預防保健-實驗室檢查"
       },
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck",
-        "title": "Observation Weight - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationPressure-HPA",
+        "title": "成人預防保健-身體檢查-血壓"
+      },
+      {
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationSmokingStatus-HPA",
+        "title": "成人預防保健-健康行為-吸菸"
+      },
+      {
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationWaist-HPA",
+        "title": "成人預防保健-身體檢查-腰圍"
+      },
+      {
+        "url": "https://etatunghpa.com/StructureDefinition/ObservationWeight-HPA",
+        "title": "成人預防保健-身體檢查-體重"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://etatunghpa.com/StructureDefinition/Organization-HPA",
+        "title": "成人預防保健-醫事機構資訊"
       }
     ],
     "Patient": [
       {
-        "url": "https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck",
-        "title": "Patient - AdultCheck"
+        "url": "https://etatunghpa.com/StructureDefinition/Patient-HPA",
+        "title": "成人預防保健-受檢民眾基本資料"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://etatunghpa.com/StructureDefinition/Practitioner-HPA",
+        "title": "成人預防保健-服務診治醫師"
+      }
+    ],
+    "RiskAssessment": [
+      {
+        "url": "https://etatunghpa.com/StructureDefinition/RiskAssessment-HPA",
+        "title": "成人預防保健-慢性疾病風險"
       }
     ]
   },
@@ -89,10 +107,6 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
-      "StructureDefinition.differential.element.binding",
-      "StructureDefinition.snapshot.element.binding"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
       "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -115,17 +129,11 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -143,9 +151,12 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
     "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/identifier-suffix": [
-      "Bundle.entry.resource.identifier.type.coding.code",
-      "Patient.identifier.type.coding.code"
+      "Patient.identifier.type.coding.code",
+      "Practitioner.identifier.type.coding.code"
     ],
     "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/person-age": [
       "Patient"

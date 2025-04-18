@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://etatunghpa.com/DiagnosticReport/diagnosticreport-bloodpressure-example> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "diagnosticreport-bloodpressure-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA"^^xsd:anyURI ;
+       fhir:link <https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport diagnosticreport-bloodpressure-example</b></p><a name=\"diagnosticreport-bloodpressure-example\"> </a><a name=\"hcdiagnosticreport-bloodpressure-example\"> </a><a name=\"diagnosticreport-bloodpressure-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReport-HPA.html\">成人預防保健-檢查結果與建議</a></p></div><h2><span title=\"Codes:{http://loinc.org 85354-9}\">血壓檢查結果與建議</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 PHY}\">Physician (Hx. Dx, admission note, etc.)</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</td></tr><tr><td>When For</td><td>2022-08-01 17:00:14-0500</td></tr><tr><td>Reported</td><td>2022-08-14 13:28:17+0200</td></tr><tr><td>Performer</td><td> <a href=\"Organization-org-hosp-example.html\">Organization 衛生福利部臺北醫院</a></td></tr><tr><td>Identifier</td><td> <code>https://etatung.com/idenitifer</code>/000120230721</td></tr></table><p><b>Report Details</b></p><p>異常：建議:進一步檢查</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "registered"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PHY" ] ;
+       fhir:display [ fhir:v "Physician (Hx. Dx, admission note, etc.)" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85354-9" ] ;
+       fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+     ] ) ;
+     fhir:text [ fhir:v "血壓檢查結果與建議" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://etatunghpa.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://etatunghpa.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://etatunghpa.com/Organization/org-hosp-example> ;
+     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "異常：建議:進一步檢查"] . # 
+
+# -------------------------------------------------------------------------------------
+

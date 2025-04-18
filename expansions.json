@@ -1,29 +1,43 @@
 {
   "resourceType" : "Bundle",
-  "id" : "20b3e708-008a-4eaa-aff1-ad7e34304707",
+  "id" : "5af97740-6ddc-43f9-9b95-20bffa9d1775",
   "meta" : {
-    "lastUpdated" : "2023-11-08T11:45:10.461+08:00"
+    "lastUpdated" : "2025-04-18T10:44:35.462+08:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code",
+    "fullUrl" : "https://etatunghpa.com/ValueSet/loinc-diagnostic-code",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-1月 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Inactive</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-161501007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/161501007\">161501007</a></td><td>http://snomed.info/sct</td><td>H/O: hypertension</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-161445009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/161445009\">161445009</a></td><td>http://snomed.info/sct</td><td>H/O: diabetes mellitus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-3744001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/3744001\">3744001</a></td><td>http://snomed.info/sct</td><td>Hyperlipoproteinemia</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-275544003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/275544003\">275544003</a></td><td>http://snomed.info/sct</td><td>H/O: heart disorder</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-275527002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/275527002\">275527002</a></td><td>http://snomed.info/sct</td><td>H/O: stroke</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-275552000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/275552000\">275552000</a></td><td>http://snomed.info/sct</td><td>H/O: kidney disease</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.80</p><p>This value set contains 9 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-85354-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/85354-9/\">85354-9</a></td><td>http://loinc.org</td><td>Blood pressure panel with all children optional</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-2339-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/2339-0/\">2339-0</a></td><td>http://loinc.org</td><td>Glucose [Mass/volume] in Blood</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-100898-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/100898-6/\">100898-6</a></td><td>http://loinc.org</td><td>Lipid panel - Serum or Plasma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-24362-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/24362-6/\">24362-6</a></td><td>http://loinc.org</td><td>Renal function 2000 panel - Serum or Plasma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-24325-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/24325-3/\">24325-3</a></td><td>http://loinc.org</td><td>Hepatic function 2000 panel - Serum or Plasma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-24323-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/24323-8/\">24323-8</a></td><td>http://loinc.org</td><td>Comprehensive metabolic 2000 panel - Serum or Plasma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-5196-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/5196-1/\">5196-1</a></td><td>http://loinc.org</td><td>Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-13955-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/13955-0/\">13955-0</a></td><td>http://loinc.org</td><td>Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-55757-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/55757-9/\">55757-9</a></td><td>http://loinc.org</td><td>Patient Health Questionnaire 2 item (PHQ-2) [Reported]</td></tr></table></div>"
       },
-      "url" : "https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code",
-      "version" : "0.1.0",
-      "name" : "ValueSet-adultcheck-code",
-      "title" : "成人預防保健疾病史代碼集值",
-      "status" : "draft",
-      "date" : "2023-11-08T11:45:10+08:00",
+      "url" : "https://etatunghpa.com/ValueSet/loinc-diagnostic-code",
+      "version" : "0.2.0",
+      "name" : "LoincDiagnostic",
+      "title" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-04-18T15:37:31+08:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ee707e22-0148-4b0e-8126-b6300ecbb77a",
-        "timestamp" : "2023-11-08T11:47:23+08:00",
-        "total" : 6,
+        "identifier" : "urn:uuid:de232033-ca90-4fcd-a560-d7551dc54460",
+        "timestamp" : "2025-04-18T10:46:53+08:00",
+        "total" : 9,
+        "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
           "name" : "excludeNested",
           "valueBoolean" : false
         },
@@ -32,12 +46,281 @@
           "valueUri" : "null"
         },
         {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.80"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+          "valueUri" : "http://loinc.org|2.80"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "85354-9",
+          "display" : "Blood pressure panel with all children optional"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "2339-0",
+          "display" : "Glucose [Mass/volume] in Blood"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "100898-6",
+          "display" : "Lipid panel - Serum or Plasma"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "24362-6",
+          "display" : "Renal function 2000 panel - Serum or Plasma"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "24325-3",
+          "display" : "Hepatic function 2000 panel - Serum or Plasma"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "24323-8",
+          "display" : "Comprehensive metabolic 2000 panel - Serum or Plasma"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "5196-1",
+          "display" : "Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "13955-0",
+          "display" : "Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "55757-9",
+          "display" : "Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://etatunghpa.com/ValueSet/snomed-health-behavior-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-2月 2025</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Inactive</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-160573003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/160573003\">160573003</a></td><td>http://snomed.info/sct</td><td>Alcohol intake</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-227491007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/227491007\">227491007</a></td><td>http://snomed.info/sct</td><td>Betel nuts</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-128976003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/128976003\">128976003</a></td><td>http://snomed.info/sct</td><td>Exercise state</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-444266007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/444266007\">444266007</a></td><td>http://snomed.info/sct</td><td>Measurement of Hepatitis B surface antibody and Hepatitis C antibody (procedure)</td><td/></tr></table></div>"
+      },
+      "url" : "https://etatunghpa.com/ValueSet/snomed-health-behavior-code",
+      "version" : "0.2.0",
+      "name" : "SNOMEDHealthBehavior",
+      "title" : "成人預防保健健康行為SNOMED Health Behavior代碼集值",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-04-18T15:37:31+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:c6830ea1-ecf0-4093-b5ee-e4e16bcbc39c",
+        "timestamp" : "2025-04-18T10:46:55+08:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "inactive" : true,
+          "code" : "160573003",
+          "display" : "Alcohol intake"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "227491007",
+          "display" : "Betel nuts"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "128976003",
+          "display" : "Exercise state"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "444266007",
+          "display" : "Measurement of Hepatitis B surface antibody and Hepatitis C antibody (procedure)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://etatunghpa.com/ValueSet/snomed-health-consultation-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-2月 2025</p><p>This value set contains 10 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-225323000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/225323000\">225323000</a></td><td>http://snomed.info/sct</td><td>Smoking cessation advice</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-281078001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281078001\">281078001</a></td><td>http://snomed.info/sct</td><td>Advice relating to alcohol consumption</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-51011006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/51011006\">51011006</a></td><td>http://snomed.info/sct</td><td>Nutritional counseling for control of dental disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-410289001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/410289001\">410289001</a></td><td>http://snomed.info/sct</td><td>Exercises teaching, guidance, and counselling</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-388970003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/388970003\">388970003</a></td><td>http://snomed.info/sct</td><td>Weight maintenance consultation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-424753004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/424753004\">424753004</a></td><td>http://snomed.info/sct</td><td>Dietary management education, guidance, and counseling (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-710737001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/710737001\">710737001</a></td><td>http://snomed.info/sct</td><td>Education about risk reduction technique</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58707002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58707002\">58707002</a></td><td>http://snomed.info/sct</td><td>Oral hygiene instruction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-720510004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/720510004\">720510004</a></td><td>http://snomed.info/sct</td><td>Education about chronic kidney disease (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-423167009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/423167009\">423167009</a></td><td>http://snomed.info/sct</td><td>Chronic disease process education (procedure)</td></tr></table></div>"
+      },
+      "url" : "https://etatunghpa.com/ValueSet/snomed-health-consultation-code",
+      "version" : "0.2.0",
+      "name" : "SNOMEDHealthConsultation",
+      "title" : "成人預防保健健康諮詢SNOMED Health Consultation代碼集值",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-04-18T15:37:31+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:7bf41920-5613-4fb0-8176-b958208322a1",
+        "timestamp" : "2025-04-18T10:46:55+08:00",
+        "total" : 10,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "225323000",
+          "display" : "Smoking cessation advice"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "281078001",
+          "display" : "Advice relating to alcohol consumption"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "51011006",
+          "display" : "Nutritional counseling for control of dental disease"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "410289001",
+          "display" : "Exercises teaching, guidance, and counselling"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "388970003",
+          "display" : "Weight maintenance consultation"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "424753004",
+          "display" : "Dietary management education, guidance, and counseling (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "710737001",
+          "display" : "Education about risk reduction technique"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58707002",
+          "display" : "Oral hygiene instruction"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "720510004",
+          "display" : "Education about chronic kidney disease (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "423167009",
+          "display" : "Chronic disease process education (procedure)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://etatunghpa.com/ValueSet/snomed-medical-history-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-2月 2025</p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Inactive</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-161501007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/161501007\">161501007</a></td><td>http://snomed.info/sct</td><td>H/O: hypertension</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-161445009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/161445009\">161445009</a></td><td>http://snomed.info/sct</td><td>H/O: diabetes mellitus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-161450003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/161450003\">161450003</a></td><td>http://snomed.info/sct</td><td>H/O: raised blood lipids</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-275544003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/275544003\">275544003</a></td><td>http://snomed.info/sct</td><td>H/O: heart disorder</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-275527002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/275527002\">275527002</a></td><td>http://snomed.info/sct</td><td>H/O: stroke</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-275552000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/275552000\">275552000</a></td><td>http://snomed.info/sct</td><td>H/O: kidney disease</td><td/></tr></table></div>"
+      },
+      "url" : "https://etatunghpa.com/ValueSet/snomed-medical-history-code",
+      "version" : "0.2.0",
+      "name" : "SNOMEDMedicalHistory",
+      "title" : "成人預防保健疾病史SNOMED Medical History代碼集值",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-04-18T15:37:31+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:cb3630b9-ba7b-4603-8e12-5488e39df7a5",
+        "timestamp" : "2025-04-18T10:46:56+08:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -51,8 +334,8 @@
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "3744001",
-          "display" : "Hyperlipoproteinemia"
+          "code" : "161450003",
+          "display" : "H/O: raised blood lipids"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -74,24 +357,38 @@
     }
   },
   {
-    "fullUrl" : "https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-lifecode",
+    "fullUrl" : "https://etatunghpa.com/ValueSet/snomed-risk-assessment-code",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 13 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-1月 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Inactive</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-230056004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/230056004\">230056004</a></td><td>http://snomed.info/sct</td><td>Cigarette consumption</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160573003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/160573003\">160573003</a></td><td>http://snomed.info/sct</td><td>Alcohol intake</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227491007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/227491007\">227491007</a></td><td>http://snomed.info/sct</td><td>Betal nut</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-128976003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/128976003\">128976003</a></td><td>http://snomed.info/sct</td><td>Exercise state</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-225324006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/225324006\">225324006</a></td><td>http://snomed.info/sct</td><td>Advice on effects of smoking on health</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-413473000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/413473000\">413473000</a></td><td>http://snomed.info/sct</td><td>Alcohol consumption counseling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-51011006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/51011006\">51011006</a></td><td>http://snomed.info/sct</td><td>Nutritional counseling for control of dental disease</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-410289001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/410289001\">410289001</a></td><td>http://snomed.info/sct</td><td>Exercises education, guidance, and counseling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-388970003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/388970003\">388970003</a></td><td>http://snomed.info/sct</td><td>Weight maintenance consultation</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-410293007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/410293007\">410293007</a></td><td>http://snomed.info/sct</td><td>Food education, guidance, and counseling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-409059003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/409059003\">409059003</a></td><td>http://snomed.info/sct</td><td>Safety education, guidance, and counseling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-410263001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/410263001\">410263001</a></td><td>http://snomed.info/sct</td><td>Medical/dental care education, guidance, and counseling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-444266007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/444266007\">444266007</a></td><td>http://snomed.info/sct</td><td>Measurement of Hepatitis B surface antibody and Hepatitis C antibody </td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-2月 2025</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-53741008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/53741008\">53741008</a></td><td>http://snomed.info/sct</td><td>Coronary arteriosclerosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-73211009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/73211009\">73211009</a></td><td>http://snomed.info/sct</td><td>Diabetes mellitus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-38341003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/38341003\">38341003</a></td><td>http://snomed.info/sct</td><td>High blood pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-230690007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/230690007\">230690007</a></td><td>http://snomed.info/sct</td><td>CVA - Cerebrovascular accident</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-49601007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/49601007\">49601007</a></td><td>http://snomed.info/sct</td><td>Cardiovascular disorder</td></tr></table></div>"
       },
-      "url" : "https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-lifecode",
-      "version" : "0.1.0",
-      "name" : "ValueSet_adultcheck-lifecode",
-      "title" : "成人預防保健生活史代碼集值",
+      "url" : "https://etatunghpa.com/ValueSet/snomed-risk-assessment-code",
+      "version" : "0.2.0",
+      "name" : "SNOMEDRiskAssessment",
+      "title" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值",
       "status" : "active",
-      "date" : "2023-11-08T11:45:10+08:00",
+      "experimental" : false,
+      "date" : "2025-04-18T15:37:31+08:00",
       "expansion" : {
-        "identifier" : "urn:uuid:8eacfa93-f868-489e-bb01-af9fdd7e8818",
-        "timestamp" : "2023-11-08T11:47:23+08:00",
-        "total" : 13,
+        "identifier" : "urn:uuid:d49abcb9-2f99-4b17-b494-60129f338a9f",
+        "timestamp" : "2025-04-18T10:46:56+08:00",
+        "total" : 5,
+        "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
           "name" : "excludeNested",
           "valueBoolean" : false
         },
@@ -100,78 +397,37 @@
           "valueUri" : "null"
         },
         {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "230056004",
-          "display" : "Cigarette consumption"
+          "code" : "53741008",
+          "display" : "Coronary arteriosclerosis"
         },
         {
           "system" : "http://snomed.info/sct",
-          "inactive" : true,
-          "code" : "160573003",
-          "display" : "Alcohol intake"
+          "code" : "73211009",
+          "display" : "Diabetes mellitus"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "227491007",
-          "display" : "Betal nut"
+          "code" : "38341003",
+          "display" : "High blood pressure"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "128976003",
-          "display" : "Exercise state"
+          "code" : "230690007",
+          "display" : "CVA - Cerebrovascular accident"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "225324006",
-          "display" : "Advice on effects of smoking on health"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "413473000",
-          "display" : "Alcohol consumption counseling"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "51011006",
-          "display" : "Nutritional counseling for control of dental disease"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "410289001",
-          "display" : "Exercises education, guidance, and counseling"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "388970003",
-          "display" : "Weight maintenance consultation"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "410293007",
-          "display" : "Food education, guidance, and counseling"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "409059003",
-          "display" : "Safety education, guidance, and counseling"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "410263001",
-          "display" : "Medical/dental care education, guidance, and counseling"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "444266007",
-          "display" : "Measurement of Hepatitis B surface antibody and Hepatitis C antibody "
+          "code" : "49601007",
+          "display" : "Cardiovascular disorder"
         }]
       }
     }

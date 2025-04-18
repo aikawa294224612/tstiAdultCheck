@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://etatunghpa.com/ValueSet/loinc-diagnostic-code> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "loinc-diagnostic-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet loinc-diagnostic-code</b></p><a name=\"loinc-diagnostic-code\"> </a><a name=\"hcloinc-diagnostic-code\"> </a><a name=\"loinc-diagnostic-code-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/85354-9/\">85354-9</a></td><td>Blood pressure panel with all children optional</td></tr><tr><td><a href=\"https://loinc.org/2339-0/\">2339-0</a></td><td>Glucose [Mass/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/100898-6/\">100898-6</a></td><td>Lipid panel - Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/24362-6/\">24362-6</a></td><td>Renal function 2000 panel - Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/24325-3/\">24325-3</a></td><td>Hepatic function 2000 panel - Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/24323-8/\">24323-8</a></td><td>Comprehensive metabolic 2000 panel - Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/5196-1/\">5196-1</a></td><td>Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"https://loinc.org/13955-0/\">13955-0</a></td><td>Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"https://loinc.org/55757-9/\">55757-9</a></td><td>Patient Health Questionnaire 2 item (PHQ-2) [Reported]</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://etatunghpa.com/ValueSet/loinc-diagnostic-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "LoincDiagnostic"] ; # 
+  fhir:title [ fhir:v "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-04-18T15:37:31+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "大世科 tsti"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "大世科 tsti" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.etatung.com/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值。代碼更新日期：2025-04-18。"] ; # 
+  fhir:copyright [ fhir:v "This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "85354-9" ] ;
+         fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+       ] [
+         fhir:code [ fhir:v "2339-0" ] ;
+         fhir:display [ fhir:v "Glucose [Mass/volume] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "100898-6" ] ;
+         fhir:display [ fhir:v "Lipid panel - Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "24362-6" ] ;
+         fhir:display [ fhir:v "Renal function 2000 panel - Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "24325-3" ] ;
+         fhir:display [ fhir:v "Hepatic function 2000 panel - Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "24323-8" ] ;
+         fhir:display [ fhir:v "Comprehensive metabolic 2000 panel - Serum or Plasma" ]
+       ] [
+         fhir:code [ fhir:v "5196-1" ] ;
+         fhir:display [ fhir:v "Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay" ]
+       ] [
+         fhir:code [ fhir:v "13955-0" ] ;
+         fhir:display [ fhir:v "Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay" ]
+       ] [
+         fhir:code [ fhir:v "55757-9" ] ;
+         fhir:display [ fhir:v "Patient Health Questionnaire 2 item (PHQ-2) [Reported]" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

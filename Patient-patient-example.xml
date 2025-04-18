@@ -3,10 +3,10 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="patient-example"/>
   <meta>
-    <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/Patient-adultcheck"/>
+    <profile value="https://etatunghpa.com/StructureDefinition/Patient-HPA"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>陳加玲(OFFICIAL)</b> female, DoB: 1990-01-01 ( National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code: A123456789 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">Medical record number: 8862168 (use: OFFICIAL)</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 0911327999(MOBILE)</li><li>臺北市 (HOME)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <a href="Organization-org-hosp-example.html">Organization/org-hosp-example</a> &quot;佛教慈濟醫療財團法人花蓮慈濟醫院&quot;</li></ul></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient patient-example</b></p><a name="patient-example"> </a><a name="hcpatient-example"> </a><a name="patient-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Patient-HPA.html">成人預防保健-受檢民眾基本資料</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3">National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code/A123456789 (use: official, )</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 0911327999(Mobile)</li><li></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <a href="Organization-org-hosp-example.html">Organization 衛生福利部臺北醫院</a></li></ul></td></tr></table></div>
   </text>
   <identifier>
     <use value="official"/>
@@ -25,7 +25,7 @@
         </code>
       </coding>
     </type>
-    <system value="http://www.moi.gov.tw/"/>
+    <system value="http://www.moi.gov.tw"/>
     <value value="A123456789"/>
   </identifier>
   <identifier>
@@ -36,7 +36,7 @@
         <code value="MR"/>
       </coding>
     </type>
-    <system value="https://www.tph.mohw.gov.tw/"/>
+    <system value="https://www.tph.mohw.gov.tw"/>
     <value value="8862168"/>
   </identifier>
   <active value="true"/>
@@ -52,9 +52,7 @@
   <gender value="female"/>
   <birthDate value="1990-01-01"/>
   <address>
-    <use value="home"/>
-    <type value="both"/>
-    <city value="臺北市"/>
+    <district value="臺北市"/>
   </address>
   <managingOrganization>
     <reference value="Organization/org-hosp-example"/>

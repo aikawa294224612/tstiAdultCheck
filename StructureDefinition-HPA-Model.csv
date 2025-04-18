@@ -1,0 +1,339 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: HPA IG"
+"HPA-Model","HPA-Model","","","",0,*,"","","","null {[]} {[]}
+","成人預防保健(HPA)之資料模型","成人預防保健(HPA)之資料模型(Logical Model)","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"HPA-Model.caseNo","HPA-Model.caseNo","","","",1,1,"","","","Identifier {[]} {[]}
+","就醫序號","就醫序號","","","","","","","","","",,,,,"",,,,"HPA-Model.caseNo",1,1,"",""
+"HPA-Model.patientInformation","HPA-Model.patientInformation","","","",1,1,"","","","BackboneElement {[]} {[]}
+","受檢民眾基本資料","成人預防保健受檢民眾基本資料","","","","","","","","","",,,,,"",,,,"HPA-Model.patientInformation",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.patientInformation.id","HPA-Model.patientInformation.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.patientInformation.extension","HPA-Model.patientInformation.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.patientInformation.modifierExtension","HPA-Model.patientInformation.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.patientInformation.idCardNumber","HPA-Model.patientInformation.idCardNumber","","","",1,1,"","","","Identifier {[]} {[]}
+","身分證字號","身分證字號","","","","","","","","","",,,,,"",,,,"HPA-Model.patientInformation.idCardNumber",1,1,"","","身分證字號:Patient.identifier.value 使用 Patient.identifier.type 識別類型"
+"HPA-Model.patientInformation.medicalRecordid","HPA-Model.patientInformation.medicalRecordid","","","",0,1,"","","","Identifier {[]} {[]}
+","病歷號碼","病歷號碼","","","","","","","","","",,,,,"",,,,"HPA-Model.patientInformation.medicalRecordid",0,1,"","","病歷號碼:Patient.identifier.value 使用 Patient.identifier.type 識別類型"
+"HPA-Model.patientInformation.name","HPA-Model.patientInformation.name","","","",1,1,"","","","HumanName {[]} {[]}
+","姓名","姓名","","","","","","","","","",,,,,"",,,,"HPA-Model.patientInformation.name",1,1,"","","病人姓名:Patient.name"
+"HPA-Model.patientInformation.gender","HPA-Model.patientInformation.gender","","","",1,1,"","","","code {[]} {[]}
+","性別","性別","","","","","","","","","",,,,,"",,,,"HPA-Model.patientInformation.gender",1,1,"","","病人性別:Patient.gender"
+"HPA-Model.patientInformation.birthDate","HPA-Model.patientInformation.birthDate","","","",1,1,"","","","dateTime {[]} {[]}
+","出生日期","出生日期","","","","","","","","","",,,,,"",,,,"HPA-Model.patientInformation.birthDate",1,1,"","","出生日期:Patient.birthDate"
+"HPA-Model.patientInformation.telecom","HPA-Model.patientInformation.telecom","","","",1,1,"","","","ContactPoint {[]} {[]}
+","電話","電話","","","","","","","","","",,,,,"",,,,"HPA-Model.patientInformation.telecom",1,1,"","","聯絡電話:Patient.telecom.value 使用 Patient.telecom.system"
+"HPA-Model.patientInformation.city","HPA-Model.patientInformation.city","","","",1,1,"","","","string {[]} {[]}
+","戶籍地","居住地址(戶籍地)","","","","","","","","","",,,,,"",,,,"HPA-Model.patientInformation.city",1,1,"","","居住地址(戶籍地):Patient.address.city"
+"HPA-Model.organization","HPA-Model.organization","","","",1,1,"","","","BackboneElement {[]} {[]}
+","醫事機構","醫事機構","","","","","","","","","",,,,,"",,,,"HPA-Model.organization",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.organization.id","HPA-Model.organization.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.organization.extension","HPA-Model.organization.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.organization.modifierExtension","HPA-Model.organization.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.organization.identifier","HPA-Model.organization.identifier","","","",1,1,"","","","Identifier {[]} {[]}
+","醫事機構代碼","醫事機構代碼","","","","","","","","","",,,,,"",,,,"HPA-Model.organization.identifier",1,1,"","","醫事機構代碼:Organization.identifier.value 使用 Organization.identifier.type 識別類型"
+"HPA-Model.examOrganization","HPA-Model.examOrganization","","","",1,1,"","","","BackboneElement {[]} {[]}
+","委託代檢醫事檢驗機構","委託代檢醫事檢驗機構","","","","","","","","","",,,,,"",,,,"HPA-Model.examOrganization",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.examOrganization.id","HPA-Model.examOrganization.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.examOrganization.extension","HPA-Model.examOrganization.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.examOrganization.modifierExtension","HPA-Model.examOrganization.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.examOrganization.identifier","HPA-Model.examOrganization.identifier","","","",1,1,"","","","Identifier {[]} {[]}
+","委託代檢醫事檢驗機構代號","委託代檢醫事檢驗機構代號","","","","","","","","","",,,,,"",,,,"HPA-Model.examOrganization.identifier",1,1,"","","委託代檢醫事檢驗機構代號:Organization.identifier.value 使用 Organization.identifier.type 識別類型"
+"HPA-Model.practitioner","HPA-Model.practitioner","","","",1,2,"","","","BackboneElement {[]} {[]}
+","服務診治醫師","服務診治醫師(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.practitioner",1,2,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.practitioner.id","HPA-Model.practitioner.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.practitioner.extension","HPA-Model.practitioner.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.practitioner.modifierExtension","HPA-Model.practitioner.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.practitioner.firstStagePractitioner","HPA-Model.practitioner.firstStagePractitioner","","","",1,1,"","","","dateTime {[]} {[]}
+","第一階段服務診治醫師代號","第一階段服務診治醫師代號","","","","","","","","","",,,,,"",,,,"HPA-Model.practitioner.firstStagePractitioner",1,1,"","","第一階段服務診治醫師代號: Practitioner.identifier.value 使用 Practitioner.identifier.type 識別類型"
+"HPA-Model.practitioner.secondStagePractitioner","HPA-Model.practitioner.secondStagePractitioner","","","",0,1,"","","","dateTime {[]} {[]}
+","第二階段服務診治醫師代號","第二階段服務診治醫師代號","","","","","","","","","",,,,,"",,,,"HPA-Model.practitioner.secondStagePractitioner",0,1,"","","第二階段服務診治醫師代號: Practitioner.identifier.value 使用 Practitioner.identifier.type 識別類型"
+"HPA-Model.firstStageDate","HPA-Model.firstStageDate","","","",1,1,"","","","dateTime {[]} {[]}
+","第一階段檢查日期","第一階段檢查日期","","","","","","","","","",,,,,"",,,,"HPA-Model.firstStageDate",1,1,"","","第一階段檢查日期:Encounter.period.start"
+"HPA-Model.secondStageDate","HPA-Model.secondStageDate","","","",0,1,"","","","dateTime {[]} {[]}
+","第二階段檢查日期","第二階段檢查日期","","","","","","","","","",,,,,"",,,,"HPA-Model.secondStageDate",0,1,"","","第二階段檢查日期:Encounter.period.end"
+"HPA-Model.checkResultUploadDate","HPA-Model.checkResultUploadDate","","","",0,1,"","","","dateTime {[]} {[]}
+","檢查結果上傳日期","檢查結果上傳日期","","","","","","","","","",,,,,"",,,,"HPA-Model.checkResultUploadDate",0,1,"","","檢查結果上傳日期:Observation.issue"
+"HPA-Model.medicalHistory","HPA-Model.medicalHistory","","","",0,1,"","","","BackboneElement {[]} {[]}
+","疾病史","疾病史","","","","","","","","","",,,,,"",,,,"HPA-Model.medicalHistory",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.medicalHistory.id","HPA-Model.medicalHistory.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.medicalHistory.extension","HPA-Model.medicalHistory.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.medicalHistory.modifierExtension","HPA-Model.medicalHistory.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.medicalHistory.hypertension","HPA-Model.medicalHistory.hypertension","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","高血壓","疾病史:高血壓","","","","","","","","","",,,,,"",,,,"HPA-Model.medicalHistory.hypertension",0,1,"","","高血壓:Condition.code"
+"HPA-Model.medicalHistory.diabetes","HPA-Model.medicalHistory.diabetes","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","糖尿病","疾病史:糖尿病","","","","","","","","","",,,,,"",,,,"HPA-Model.medicalHistory.diabetes",0,1,"","","糖尿病:Condition.code"
+"HPA-Model.medicalHistory.hyperlipidemia","HPA-Model.medicalHistory.hyperlipidemia","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","高血脂症","疾病史:高血脂症","","","","","","","","","",,,,,"",,,,"HPA-Model.medicalHistory.hyperlipidemia",0,1,"","","高血脂症:Condition.code"
+"HPA-Model.medicalHistory.cvd","HPA-Model.medicalHistory.cvd","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","心臟病","疾病史:心臟病","","","","","","","","","",,,,,"",,,,"HPA-Model.medicalHistory.cvd",0,1,"","","心臟病:Condition.code"
+"HPA-Model.medicalHistory.stroke","HPA-Model.medicalHistory.stroke","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","腦中風","疾病史:腦中風","","","","","","","","","",,,,,"",,,,"HPA-Model.medicalHistory.stroke",0,1,"","","腦中風:Condition.code"
+"HPA-Model.medicalHistory.kidneyDisease","HPA-Model.medicalHistory.kidneyDisease","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","腎臟病","疾病史:腎臟病","","","","","","","","","",,,,,"",,,,"HPA-Model.medicalHistory.kidneyDisease",0,1,"","","腎臟病:Condition.code"
+"HPA-Model.lifestyleHistory","HPA-Model.lifestyleHistory","","","",0,1,"","","","BackboneElement {[]} {[]}
+","生活史","生活史與過往經歷記錄","","","","","","","","","",,,,,"",,,,"HPA-Model.lifestyleHistory",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.lifestyleHistory.id","HPA-Model.lifestyleHistory.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.lifestyleHistory.extension","HPA-Model.lifestyleHistory.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.lifestyleHistory.modifierExtension","HPA-Model.lifestyleHistory.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.lifestyleHistory.cigarette","HPA-Model.lifestyleHistory.cigarette","","","",0,1,"","","","string {[]} {[]}
+","吸菸","生活史:吸菸","","","","","","","","","",,,,,"",,,,"HPA-Model.lifestyleHistory.cigarette",0,1,"","","吸菸:Observation.valueString"
+"HPA-Model.lifestyleHistory.alcoholicDrink","HPA-Model.lifestyleHistory.alcoholicDrink","","","",0,1,"","","","string {[]} {[]}
+","喝酒","生活史:喝酒","","","","","","","","","",,,,,"",,,,"HPA-Model.lifestyleHistory.alcoholicDrink",0,1,"","","喝酒:Observation.valueString"
+"HPA-Model.lifestyleHistory.nuts","HPA-Model.lifestyleHistory.nuts","","","",0,1,"","","","string {[]} {[]}
+","嚼檳榔","生活史:嚼檳榔","","","","","","","","","",,,,,"",,,,"HPA-Model.lifestyleHistory.nuts",0,1,"","","嚼檳榔:Observation.valueString"
+"HPA-Model.lifestyleHistory.exercise","HPA-Model.lifestyleHistory.exercise","","","",0,1,"","","","string {[]} {[]}
+","運動","生活史:運動","","","","","","","","","",,,,,"",,,,"HPA-Model.lifestyleHistory.exercise",0,1,"","","運動:Observation.valueString"
+"HPA-Model.lifestyleHistory.hepatitisBC","HPA-Model.lifestyleHistory.hepatitisBC","","","",0,1,"","","","string {[]} {[]}
+","檢查過B、C型肝炎","曾於成人預防保健服務時接受過 B、C 型肝炎檢查","","","","","","","","","",,,,,"",,,,"HPA-Model.lifestyleHistory.hepatitisBC",0,1,"","","檢查過B、C型肝炎:Observation.valueString"
+"HPA-Model.depressionScreening","HPA-Model.depressionScreening","","","",0,1,"","","","BackboneElement {[]} {[]}
+","憂鬱檢測","憂鬱檢測","","","","","","","","","",,,,,"",,,,"HPA-Model.depressionScreening",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.depressionScreening.id","HPA-Model.depressionScreening.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.depressionScreening.extension","HPA-Model.depressionScreening.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.depressionScreening.modifierExtension","HPA-Model.depressionScreening.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.depressionScreening.feelingdepressed","HPA-Model.depressionScreening.feelingdepressed","","","",0,1,"","","","string {[]} {[]}
+","憂鬱檢測：感覺情緒低落沮喪","憂鬱檢測：第一題 感覺情緒低落沮喪","","","","","","","","","",,,,,"",,,,"HPA-Model.depressionScreening.feelingdepressed",0,1,"","","憂鬱檢測：感覺情緒低落沮喪:Observation.valueString"
+"HPA-Model.depressionScreening.loseinterest","HPA-Model.depressionScreening.loseinterest","","","",0,1,"","","","string {[]} {[]}
+","憂鬱檢測：做事情失去興趣","憂鬱檢測：第二題做事情失去興趣","","","","","","","","","",,,,,"",,,,"HPA-Model.depressionScreening.loseinterest",0,1,"","","憂鬱檢測：做事情失去興趣:Observation.valueString"
+"HPA-Model.vitalSign","HPA-Model.vitalSign","","","",0,6,"","","","BackboneElement {[]} {[]}
+","生理量測數值","生理量測數值","","","","","","","","","",,,,,"",,,,"HPA-Model.vitalSign",0,6,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.vitalSign.id","HPA-Model.vitalSign.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.vitalSign.extension","HPA-Model.vitalSign.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.vitalSign.modifierExtension","HPA-Model.vitalSign.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.vitalSign.height","HPA-Model.vitalSign.height","","","",0,1,"","","","Quantity {[]} {[]}
+","身高","身高","","","","","","","","","",,,,,"",,,,"HPA-Model.vitalSign.height",0,1,"","","身高:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.vitalSign.weight","HPA-Model.vitalSign.weight","","","",0,1,"","","","Quantity {[]} {[]}
+","體重","體重","","","","","","","","","",,,,,"",,,,"HPA-Model.vitalSign.weight",0,1,"","","體重:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.vitalSign.sbp","HPA-Model.vitalSign.sbp","","","",0,1,"","","","Quantity {[]} {[]}
+","血壓 -- 收縮壓","收縮壓","","","","","","","","","",,,,,"",,,,"HPA-Model.vitalSign.sbp",0,1,"","","收縮壓:Observation.component.valueQuantity 使用 Observation.code"
+"HPA-Model.vitalSign.dbp","HPA-Model.vitalSign.dbp","","","",0,1,"","","","Quantity {[]} {[]}
+","血壓 -- 舒張壓","舒張壓","","","","","","","","","",,,,,"",,,,"HPA-Model.vitalSign.dbp",0,1,"","","舒張壓:Observation.component.valueQuantity 使用 Observation.code"
+"HPA-Model.vitalSign.waistline","HPA-Model.vitalSign.waistline","","","",0,1,"","","","Quantity {[]} {[]}
+","腰圍","腰圍","","","","","","","","","",,,,,"",,,,"HPA-Model.vitalSign.waistline",0,1,"","","腰圍:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.vitalSign.bmi","HPA-Model.vitalSign.bmi","","","",0,1,"","","","Quantity {[]} {[]}
+","BMI","BMI","","","","","","","","","",,,,,"",,,,"HPA-Model.vitalSign.bmi",0,1,"","","BMI:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue","HPA-Model.labTestValue","","","",13,13,"","","","BackboneElement {[]} {[]}
+","檢驗檢查數值","檢驗檢查數值","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue",13,13,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.labTestValue.id","HPA-Model.labTestValue.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.labTestValue.extension","HPA-Model.labTestValue.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.labTestValue.modifierExtension","HPA-Model.labTestValue.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.labTestValue.urineProtein","HPA-Model.labTestValue.urineProtein","","","",1,1,"","","","Quantity {[]} {[]}
+","Protein 尿蛋白","Protein 尿蛋白","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.urineProtein",1,1,"","","Protein 尿蛋白:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.glucose","HPA-Model.labTestValue.glucose","","","",1,1,"","","","Quantity {[]} {[]}
+","血糖","血糖","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.glucose",1,1,"","","血糖:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.cholesterol","HPA-Model.labTestValue.cholesterol","","","",1,1,"","","","Quantity {[]} {[]}
+","膽固醇","膽固醇","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.cholesterol",1,1,"","","膽固醇:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.triglyceride","HPA-Model.labTestValue.triglyceride","","","",1,1,"","","","Quantity {[]} {[]}
+","三酸甘油脂","三酸甘油脂","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.triglyceride",1,1,"","","三酸甘油脂:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.ldl","HPA-Model.labTestValue.ldl","","","",1,1,"","","","Quantity {[]} {[]}
+","低密度脂蛋白膽固醇計算","低密度脂蛋白膽固醇計算","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.ldl",1,1,"","","低密度脂蛋白膽固醯醇計算:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.hdl","HPA-Model.labTestValue.hdl","","","",1,1,"","","","Quantity {[]} {[]}
+","高密度膽固醇","高密度膽固醇","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.hdl",1,1,"","","高密度膽固醇:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.got","HPA-Model.labTestValue.got","","","",1,1,"","","","Quantity {[]} {[]}
+","ＧＯＴ","ＧＯＴ","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.got",1,1,"","","ＧＯＴ:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.gpt","HPA-Model.labTestValue.gpt","","","",1,1,"","","","Quantity {[]} {[]}
+","ＧＰＴ","ＧＰＴ","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.gpt",1,1,"","","ＧＰＴ:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.creatinine","HPA-Model.labTestValue.creatinine","","","",1,1,"","","","Quantity {[]} {[]}
+","肌酸酐","肌酸酐","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.creatinine",1,1,"","","肌酸酐:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.egfr","HPA-Model.labTestValue.egfr","","","",1,1,"","","","Quantity {[]} {[]}
+","腎絲球過濾率計算","腎絲球過濾率計算","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.egfr",1,1,"","","腎絲球過濾率計算:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.hbsag","HPA-Model.labTestValue.hbsag","","","",1,1,"","","","Quantity {[]} {[]}
+","Ｂ型肝炎表面抗原","Ｂ型肝炎表面抗原","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.hbsag",1,1,"","","Ｂ型肝炎表面抗原:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.antiHCV","HPA-Model.labTestValue.antiHCV","","","",1,1,"","","","Quantity {[]} {[]}
+","Ｃ型肝炎病毒抗體","Ｃ型肝炎病毒抗體","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.antiHCV",1,1,"","","Ｃ型肝炎病毒抗體:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.labTestValue.uricAcid","HPA-Model.labTestValue.uricAcid","","","",1,1,"","","","Quantity {[]} {[]}
+","尿酸","尿酸(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.labTestValue.uricAcid",1,1,"","","尿酸:Observation.valueQuantity 使用 Observation.code"
+"HPA-Model.healthConsultation","HPA-Model.healthConsultation","","","",0,10,"","","","BackboneElement {[]} {[]}
+","健康諮詢","健康諮詢","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation",0,10,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.healthConsultation.id","HPA-Model.healthConsultation.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.healthConsultation.extension","HPA-Model.healthConsultation.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.healthConsultation.modifierExtension","HPA-Model.healthConsultation.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.healthConsultation.smoking","HPA-Model.healthConsultation.smoking","","","",0,1,"","","","string {[]} {[]}
+","健康諮詢：戒煙","健康諮詢：戒煙","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation.smoking",0,1,"","","健康諮詢：戒煙:Observation.valueString"
+"HPA-Model.healthConsultation.alcoholic","HPA-Model.healthConsultation.alcoholic","","","",0,1,"","","","string {[]} {[]}
+","健康諮詢：節酒","健康諮詢：節酒","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation.alcoholic",0,1,"","","健康諮詢：節酒:Observation.valueString"
+"HPA-Model.healthConsultation.nuts","HPA-Model.healthConsultation.nuts","","","",0,1,"","","","string {[]} {[]}
+","健康諮詢：戒檳榔","健康諮詢：戒檳榔","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation.nuts",0,1,"","","健康諮詢：戒檳榔:Observation.valueString"
+"HPA-Model.healthConsultation.exercise","HPA-Model.healthConsultation.exercise","","","",0,1,"","","","string {[]} {[]}
+","健康諮詢：規律運動","健康諮詢：規律運動","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation.exercise",0,1,"","","健康諮詢：規律運動:Observation.valueString"
+"HPA-Model.healthConsultation.weight","HPA-Model.healthConsultation.weight","","","",0,1,"","","","string {[]} {[]}
+","健康諮詢：維持正常體重","健康諮詢：維持正常體重","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation.weight",0,1,"","","健康諮詢：維持正常體重:Observation.valueString"
+"HPA-Model.healthConsultation.food","HPA-Model.healthConsultation.food","","","",0,1,"","","","string {[]} {[]}
+","健康諮詢：健康飲食","健康諮詢：健康飲食","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation.food",0,1,"","","健康諮詢：健康飲食:Observation.valueString"
+"HPA-Model.healthConsultation.accident","HPA-Model.healthConsultation.accident","","","",0,1,"","","","string {[]} {[]}
+","健康諮詢：事故傷害預防","健康諮詢：事故傷害預防","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation.accident",0,1,"","","健康諮詢：事故傷害預防:Observation.valueString"
+"HPA-Model.healthConsultation.oral","HPA-Model.healthConsultation.oral","","","",0,1,"","","","string {[]} {[]}
+","健康諮詢：口腔保健","健康諮詢：口腔保健","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation.oral",0,1,"","","健康諮詢：口腔保健:Observation.valueString"
+"HPA-Model.healthConsultation.kidney","HPA-Model.healthConsultation.kidney","","","",0,1,"","","","string {[]} {[]}
+","健康諮詢：腎病識能衛教指導","健康諮詢：腎病識能衛教指導(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation.kidney",0,1,"","","健康諮詢：腎病識能衛教指導:Observation.valueString"
+"HPA-Model.healthConsultation.chronic","HPA-Model.healthConsultation.chronic","","","",0,1,"","","","string {[]} {[]}
+","健康諮詢：慢性疾病風險評估","健康諮詢：慢性疾病風險評估(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.healthConsultation.chronic",0,1,"","","健康諮詢：慢性疾病風險評估:Observation.valueString"
+"HPA-Model.kidneyStage","HPA-Model.kidneyStage","","","",0,1,"","","","string {[]} {[]}
+","腎功能檢查期別","腎功能檢查期別(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.kidneyStage",0,1,"","","腎功能檢查期別:Observation.valueString"
+"HPA-Model.testResultsAndRecommendations","HPA-Model.testResultsAndRecommendations","","","",0,9,"","","","BackboneElement {[]} {[]}
+","檢查結果與建議","檢查結果與建議","","","","","","","","","",,,,,"",,,,"HPA-Model.testResultsAndRecommendations",0,9,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HPA-Model.testResultsAndRecommendations.id","HPA-Model.testResultsAndRecommendations.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.testResultsAndRecommendations.extension","HPA-Model.testResultsAndRecommendations.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.testResultsAndRecommendations.modifierExtension","HPA-Model.testResultsAndRecommendations.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.testResultsAndRecommendations.bloodPressure","HPA-Model.testResultsAndRecommendations.bloodPressure","","","",0,1,"","","","string {[]} {[]}
+","血壓檢查結果與建議","血壓檢查結果與建議","","","","","","","","","",,,,,"",,,,"HPA-Model.testResultsAndRecommendations.bloodPressure",0,1,"","","血壓檢查結果與建議:DiagnosticReport.conclusion"
+"HPA-Model.testResultsAndRecommendations.bloodGlucose","HPA-Model.testResultsAndRecommendations.bloodGlucose","","","",0,1,"","","","string {[]} {[]}
+","血糖檢查結果判讀","血糖檢查結果判讀","","","","","","","","","",,,,,"",,,,"HPA-Model.testResultsAndRecommendations.bloodGlucose",0,1,"","","血糖檢查結果判讀:DiagnosticReport.conclusion"
+"HPA-Model.testResultsAndRecommendations.bloodLipids","HPA-Model.testResultsAndRecommendations.bloodLipids","","","",0,1,"","","","string {[]} {[]}
+","血脂肪檢查結果判讀","血脂肪檢查結果判讀","","","","","","","","","",,,,,"",,,,"HPA-Model.testResultsAndRecommendations.bloodLipids",0,1,"","","血脂肪檢查結果判讀:DiagnosticReport.conclusion"
+"HPA-Model.testResultsAndRecommendations.kidneyFunction","HPA-Model.testResultsAndRecommendations.kidneyFunction","","","",0,1,"","","","string {[]} {[]}
+","腎功能檢查結果判讀","腎功能檢查結果判讀","","","","","","","","","",,,,,"",,,,"HPA-Model.testResultsAndRecommendations.kidneyFunction",0,1,"","","腎功能檢查結果判讀:DiagnosticReport.conclusion"
+"HPA-Model.testResultsAndRecommendations.liverFunction","HPA-Model.testResultsAndRecommendations.liverFunction","","","",0,1,"","","","string {[]} {[]}
+","肝功能檢查結果判讀","肝功能檢查結果判讀","","","","","","","","","",,,,,"",,,,"HPA-Model.testResultsAndRecommendations.liverFunction",0,1,"","","肝功能檢查結果判讀:DiagnosticReport.conclusion"
+"HPA-Model.testResultsAndRecommendations.metabolicSyndrome","HPA-Model.testResultsAndRecommendations.metabolicSyndrome","","","",0,1,"","","","string {[]} {[]}
+","代謝症候群檢查結果與建議","代謝症候群檢查結果與建議","","","","","","","","","",,,,,"",,,,"HPA-Model.testResultsAndRecommendations.metabolicSyndrome",0,1,"","","代謝症候群檢查結果與建議:DiagnosticReport.conclusion"
+"HPA-Model.testResultsAndRecommendations.hepatitisB","HPA-Model.testResultsAndRecommendations.hepatitisB","","","",0,1,"","","","string {[]} {[]}
+","B型肝炎檢查結果與建議","B型肝炎檢查結果與建議","","","","","","","","","",,,,,"",,,,"HPA-Model.testResultsAndRecommendations.hepatitisB",0,1,"","","B型肝炎檢查結果與建議:DiagnosticReport.conclusion"
+"HPA-Model.testResultsAndRecommendations.hepatitisC","HPA-Model.testResultsAndRecommendations.hepatitisC","","","",0,1,"","","","string {[]} {[]}
+","C型肝炎檢查結果與建議","C型肝炎檢查結果與建議","","","","","","","","","",,,,,"",,,,"HPA-Model.testResultsAndRecommendations.hepatitisC",0,1,"","","C型肝炎檢查結果與建議:DiagnosticReport.conclusion"
+"HPA-Model.testResultsAndRecommendations.depression","HPA-Model.testResultsAndRecommendations.depression","","","",0,1,"","","","string {[]} {[]}
+","憂鬱檢測結果與建議","憂鬱檢測結果與建議","","","","","","","","","",,,,,"",,,,"HPA-Model.testResultsAndRecommendations.depression",0,1,"","","憂鬱檢測結果與建議:DiagnosticReport.conclusion"
+"HPA-Model.riskAssessment","HPA-Model.riskAssessment","","","",0,5,"","","","BackboneElement {[]} {[]}
+","慢性病疾病風險","慢性疾病風險值(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.riskAssessment",0,5,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","慢性病疾病風險:RiskAssessment.prediction"
+"HPA-Model.riskAssessment.id","HPA-Model.riskAssessment.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HPA-Model.riskAssessment.extension","HPA-Model.riskAssessment.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.riskAssessment.modifierExtension","HPA-Model.riskAssessment.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HPA-Model.riskAssessment.acs","HPA-Model.riskAssessment.acs","","","",0,1,"","","","BackboneElement {[]} {[]}
+","慢性疾病風險值:冠心病","慢性疾病風險值:冠心病(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.riskAssessment.acs",0,1,"","","慢性疾病風險值:冠心病:RiskAssessment.prediction"
+"HPA-Model.riskAssessment.diabetes","HPA-Model.riskAssessment.diabetes","","","",0,1,"","","","BackboneElement {[]} {[]}
+","慢性疾病風險值:糖尿病","慢性疾病風險值:糖尿病(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.riskAssessment.diabetes",0,1,"","","慢性疾病風險值:糖尿病:RiskAssessment.prediction"
+"HPA-Model.riskAssessment.hypertension","HPA-Model.riskAssessment.hypertension","","","",0,1,"","","","BackboneElement {[]} {[]}
+","慢性疾病風險值:高血壓","慢性疾病風險值:高血壓(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.riskAssessment.hypertension",0,1,"","","慢性疾病風險值:高血壓:RiskAssessment.prediction"
+"HPA-Model.riskAssessment.stroke","HPA-Model.riskAssessment.stroke","","","",0,1,"","","","BackboneElement {[]} {[]}
+","慢性疾病風險值:腦中風","慢性疾病風險值:腦中風(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.riskAssessment.stroke",0,1,"","","慢性疾病風險值:腦中風:RiskAssessment.prediction"
+"HPA-Model.riskAssessment.mace","HPA-Model.riskAssessment.mace","","","",0,1,"","","","BackboneElement {[]} {[]}
+","慢性疾病風險值:心血管不良事件","慢性疾病風險值:心血管不良事件(114.1.1 更新)","","","","","","","","","",,,,,"",,,,"HPA-Model.riskAssessment.mace",0,1,"","","慢性疾病風險值:心血管不良事件:RiskAssessment.prediction"

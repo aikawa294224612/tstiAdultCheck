@@ -1,0 +1,1282 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
+      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
+      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticReportStatus",
+      "title" : "DiagnosticReportStatus",
+      "description" : "The status of the diagnostic report.",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.235"],
+      "sources" : ["2.16.840.1.113883.4.642.3.235"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticServiceSectionCodes",
+      "title" : "Diagnostic Service Section Codes",
+      "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+      "oids" : ["2.16.840.1.113883.4.642.3.234"],
+      "sources" : ["2.16.840.1.113883.4.642.3.234"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : "Encounter type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.248"],
+      "sources" : ["2.16.840.1.113883.4.642.3.248"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "VitalSigns",
+      "title" : "Vital Signs",
+      "description" : "This value set indicates the allowed vital sign result types.   The LOINC code for Vitals Signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4).",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.62"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PatientRelationshipType",
+      "title" : "Patient relationship type",
+      "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.449"],
+      "sources" : ["2.16.840.1.113883.4.642.3.449"],
+      "uses" : {
+      },
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/risk-probability",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RiskProbability",
+      "title" : "Risk Probability",
+      "description" : "Codes representing the likelihood of a particular outcome in a risk assessment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/risk-probability"],
+      "oids" : ["2.16.840.1.113883.4.642.3.450"],
+      "sources" : ["2.16.840.1.113883.4.642.3.450"],
+      "uses" : {
+      },
+      "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodylength",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodyLengthUnits",
+      "title" : "Body Length Units",
+      "description" : "UCUM units for recording body length measures such as height and head circumference",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.958"],
+      "sources" : ["2.16.840.1.113883.4.642.3.958"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodyweight",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodyWeightUnits",
+      "title" : "Body Weight Units",
+      "description" : "UCUM units for recording Body Weight",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.956"],
+      "sources" : ["2.16.840.1.113883.4.642.3.956"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "VitalSignsUnits",
+      "title" : "Vital Signs Units",
+      "description" : "Common UCUM units for recording Vital Signs",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.955"],
+      "sources" : ["2.16.840.1.113883.4.642.3.955"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "AbsentOrUnknownProblemsUvIps",
+      "title" : "Absent or Unknown Problems - IPS",
+      "description" : "Absent or Unknown Problems",
+      "systems" : [
+        "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "UnitsOfMeasureCaseSensitive",
+      "title" : "UnitsOfMeasureCaseSensitive",
+      "description" : "**Description:** All units of measure.",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.1.11.12839"],
+      "sources" : ["2.16.840.1.113883.1.11.12839"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸"
+    },
+    {
+      "url" : "https://etatunghpa.com/ValueSet/loinc-diagnostic-code",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "LoincDiagnostic",
+      "title" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值",
+      "description" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "https://etatunghpa.com/ValueSet/snomed-health-behavior-code",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "SNOMEDHealthBehavior",
+      "title" : "成人預防保健健康行為SNOMED Health Behavior代碼集值",
+      "description" : "成人預防保健健康行為SNOMED Health Behavior代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為"
+    },
+    {
+      "url" : "https://etatunghpa.com/ValueSet/snomed-health-consultation-code",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "SNOMEDHealthConsultation",
+      "title" : "成人預防保健健康諮詢SNOMED Health Consultation代碼集值",
+      "description" : "成人預防保健健康行為SNOMED Health Consultation代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢"
+    },
+    {
+      "url" : "https://etatunghpa.com/ValueSet/snomed-medical-history-code",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "SNOMEDMedicalHistory",
+      "title" : "成人預防保健疾病史SNOMED Medical History代碼集值",
+      "description" : "成人預防保健疾病史SNOMED Medical History代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "https://etatunghpa.com/ValueSet/snomed-risk-assessment-code",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "SNOMEDRiskAssessment",
+      "title" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值",
+      "description" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/condition-code-sct-tw",
+      "version" : "2022-07-31",
+      "status" : "active",
+      "name" : "TWConditionCodeSCT",
+      "title" : "SNOMED CT診斷代碼值集",
+      "description" : "SNOMED CT診斷代碼值集。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/health-professional-sct-tw",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "TWHealthProfessionalSCT",
+      "title" : "SNOMED CT + 臺灣醫事司醫事人員類別值集",
+      "description" : "SNOMED CT + 臺灣醫事司醫事人員類別值集。\n\n此值集優先採用國際標準碼，國際標準碼未能表述之概念則以普遍被使用的臺灣醫事司醫事人員類別標準碼表述，請實作者留意。",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/health-professional-tw",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/icd-10-cm-2014-tw",
+      "version" : "2017-07-19",
+      "status" : "active",
+      "name" : "TW2014ICD10CM",
+      "title" : "臺灣健保署2014年中文版ICD-10-CM值集",
+      "description" : "臺灣健保署2014年中文版ICD-10-CM值集。\n資料所屬單位：衛生福利部中央健康保險署。\n\n\n此值集所涵蓋代碼量較大會使載入頁面時間較長，為方便使用者瀏覽，此處(本頁、XML、JSON、TTL)僅擷取部分代碼，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2014-tw"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/icd-10-cm-2021-tw",
+      "version" : "2022-07-29",
+      "status" : "active",
+      "name" : "TW2021ICD10CM",
+      "title" : "臺灣健保署2021年中文版ICD-10-CM值集",
+      "description" : "臺灣健保署2021年中文版ICD-10-CM值集。\n資料所屬單位：衛生福利部中央健康保險署。\n\n此值集所涵蓋代碼量較大會使載入頁面時間較長，為方便使用者瀏覽，此處(本頁、XML、JSON、TTL)僅擷取部分代碼，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2021-tw"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/icd-10-cm-2023-tw",
+      "version" : "2024-11-18",
+      "status" : "active",
+      "name" : "TW2023ICD10CM",
+      "title" : "臺灣健保署2023年中文版ICD-10-CM值集",
+      "description" : "臺灣健保署2023年中文版ICD-10-CM值集。\n資料所屬單位：衛生福利部中央健康保險署。\n\n此值集所涵蓋代碼量較大會使載入頁面時間較長，為方便使用者瀏覽，此處(本頁、XML、JSON、TTL)僅擷取部分代碼，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/icd-10-pcs-2021-tw",
+      "version" : "2022-07-29",
+      "status" : "active",
+      "name" : "TW2021ICD10PCS",
+      "title" : "臺灣健保署2021年中文版ICD-10-PCS值集",
+      "description" : "臺灣健保署2021年中文版ICD-10-PCS值集。\n資料所屬單位：衛生福利部中央健康保險署。\n\n此值集所涵蓋代碼量較大會使載入頁面時間較長，為方便使用者瀏覽，此處(本頁、XML、JSON、TTL)僅擷取部分代碼，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2021-tw"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/icd-10-pcs-2023-tw",
+      "version" : "2024-11-18",
+      "status" : "active",
+      "name" : "TW2023ICD10PCS",
+      "title" : "臺灣健保署2023年中文版ICD-10-PCS值集",
+      "description" : "臺灣健保署2023年中文版ICD-10-PCS值集。\n資料所屬單位：衛生福利部中央健康保險署。\n\n此值集所涵蓋代碼量較大會使載入頁面時間較長，為方便使用者瀏覽，此處(本頁、XML、JSON、TTL)僅擷取部分代碼，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/icd-9-cm-2001-tw",
+      "version" : "2023-05-09",
+      "status" : "active",
+      "name" : "TW2001ICD9CM",
+      "title" : "臺灣健保署2001年中文版ICD-9-CM值集",
+      "description" : "臺灣健保署2001年中文版ICD-9-CM值集。\n資料所屬單位：衛生福利部中央健康保險署。\n\n\n此值集所涵蓋代碼量較大會使載入頁面時間較長，為方便使用者瀏覽，此處(本頁、XML、JSON、TTL)僅擷取部分代碼，完整代碼可至[全國專門術語服務平臺－臺灣健保署2001年中文版ICD-9-CM值集](https://fhir.mohw.gov.tw/ts/valuesetRead.jsp?id=icd-9-cm-2001-tw&status=active&version=2023-05-09&metaId=1&composeId=0&composeSystem=0&composeVersion=0&pageSet=preview)查閱",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-9-cm-2001-tw"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/identifier-type-tw",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "TWIdentifierType",
+      "title" : "IdentifierType + 臺灣衛福部資訊處識別碼類型值集",
+      "description" : "IdentifierType + 臺灣衛福部資訊處識別碼類型值集",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203",
+        "http://terminology.hl7.org/CodeSystem/v2-0203"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
+      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/laboratory-category-tw",
+      "version" : "2022-07-01",
+      "status" : "active",
+      "name" : "TWLaboratoryCategory",
+      "title" : "臺灣健保署醫療服務給付項目-檢驗值集",
+      "description" : "臺灣健保署醫療服務給付項目-檢驗值集。\n資料所屬單位：衛生福利部中央健康保險署。\n",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/loinc-observation-code",
+      "version" : "2.77",
+      "status" : "active",
+      "name" : "LOINCObservationCode",
+      "title" : "LOINC實驗室檢驗檢查值集",
+      "description" : "LOINC實驗室檢驗檢查值集。  \n代碼版本：2.77；代碼更新日期：2022-08-08；資料所屬單位：Regenstrief Institute。",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/medical-consultation-department-tw",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "TWMedicalConsultationDepartment",
+      "title" : "無法對應至SNOMED CT之臺灣健保署就醫科別值集",
+      "description" : "無法對應至SNOMED CT之臺灣健保署就醫科別值集。\n\n此值集優先採用國際標準碼，國際標準碼未能表述之概念則以普遍被使用的臺灣健保署標準碼表述，請實作者留意。\n",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-consultation-department-nhi-tw"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/medical-department-sct-tw",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "TWMedicalDepartmentSCT",
+      "title" : "對應至 SNOMED CT之就醫科別 + 診療科別值集",
+      "description" : "因就醫科別與診療科別對應到之國際標準碼 SNOMED CT有共通代碼，因此本值集將兩者的對應代碼整合於同一值集中。  \n\n另為便於使用者更清晰地辨識「[就醫科別](ValueSet-medical-department-sct-tw.html#就醫科別對應表)」及「[診療科別](ValueSet-medical-department-sct-tw.html#診療科別對應表)」的各別完整值集範圍，請參閱以下兩個表格，代碼使用原則為：若想表達的語意有國際代碼可表述，便採用國際代碼；若無對應的國際代碼可表述，則採用健保署編訂的代碼。\n\n",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/medical-treatment-department-tw",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "TWMedicalTreatmentDepartment",
+      "title" : "無法對應至SNOMED CT之臺灣健保署診療科別值集",
+      "description" : "無法對應至SNOMED CT之臺灣健保署診療科別值集。\n\n此值集優先採用國際標準碼，國際標準碼未能表述之概念則以普遍被使用的臺灣健保署標準碼表述，請實作者留意。\n",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-treatment-department-nhi-tw"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/observation-clinical-result-category",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "TWObservationClinicalResultCategory",
+      "title" : "臺灣衛福部資訊處Observation Clinical Result類型值集",
+      "description" : "臺灣衛福部資訊處Observation Clinical Result類型值集",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/organization-identifier-tw",
+      "version" : "2024-04-10",
+      "status" : "active",
+      "name" : "TWOrganizationIdentifier",
+      "title" : "臺灣醫事司醫事機構代碼值集",
+      "description" : "臺灣醫事司醫事機構代碼值集。 \n資料所屬單位：衛生福利部中央健康保險署。\n\n此值集所涵蓋代碼量較大會使載入頁面時間較長，為方便使用者瀏覽，此處(本頁、XML、JSON、TTL)僅擷取部分代碼，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱\n",
+      "systems" : [
+        "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/organization-identifier-tw"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/smoking-status-comprehensive-code",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "SmokingStatusComprehensiveCode",
+      "title" : "SNOMED CT 吸菸狀態綜合評估值集",
+      "description" : "SNOMED CT + HL7 NullFlavor 性傾向值集。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/smoking-status-type-code",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "SmokingStatusTypeCode",
+      "title" : "SNOMED CT + LOINC 吸菸狀態種類向值集",
+      "description" : "SNOMED CT + LOINC 吸菸狀態種類向值集。",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/vital-signs-tw",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "TWVitalSigns",
+      "title" : "LOINC生命體徵值集",
+      "description" : "LOINC生命體徵值集。",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Profiles and Extensions - 成人預防保健實作指引(Adult Check IG) v0.1.0</title>
+    <title>Profiles and Extensions - 成人預防保健實作指引(HPA-IG) v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,6 +18,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/myproject.css" rel="stylesheet"/>
 
@@ -39,11 +40,13 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"2"}
     h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
@@ -53,9 +56,9 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">成人預防保健實作指引(Adult Check IG)</span>
+          <p><span style="font-size:12pt;font-weight:bold">成人預防保健實作指引(HPA-IG)</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -88,22 +91,25 @@
   <li>
     <a href="toc.html">目錄</a>
   </li>
+  <li>
+    <a href="vmodel.html">視覺化邏輯模型</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">規範文件
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html#2">邏輯模型</a>
+        <a href="logical-model.html">邏輯模型</a>
       </li>
       <li>
-        <a href="artifacts.html#3">Profiles和Extensions</a>
+        <a href="profiles-and-extensions.html">Profiles和Extensions</a>
       </li>
       <li>
-        <a href="artifacts.html#4">專門術語</a>
+        <a href="terminology.html">專門術語</a>
       </li>
       <li>
-        <a href="artifacts.html#1">能力聲明</a>
+        <a href="capability-statements.html">能力聲明</a>
       </li>
     </ul>
   </li>
@@ -115,9 +121,6 @@
   </li>
   <li>
     <a href="downloads.html">定義與範例檔下載</a>
-  </li>
-  <li>
-    <a href="history.html">歷程</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -151,7 +154,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">成人預防保健實作指引(Adult Check IG) - Local Development build (v0.1.0). See the <a href="https://tstifhir.azurehealthcareapis.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">成人預防保健實作指引(HPA-IG) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://etatunghpa.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Profiles and Extensions</h2>
   
 
@@ -169,79 +172,98 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#bundle" id="markdown-toc-bundle">Bundle</a></li>
-  <li><a href="#composition" id="markdown-toc-composition">Composition</a></li>
-  <li><a href="#patient" id="markdown-toc-patient">Patient</a></li>
-  <li><a href="#encounter" id="markdown-toc-encounter">Encounter</a></li>
   <li><a href="#condition" id="markdown-toc-condition">Condition</a></li>
-  <li><a href="#observation" id="markdown-toc-observation">Observation</a></li>
   <li><a href="#diagnosticreport" id="markdown-toc-diagnosticreport">DiagnosticReport</a></li>
+  <li><a href="#encounter" id="markdown-toc-encounter">Encounter</a></li>
+  <li><a href="#observation" id="markdown-toc-observation">Observation</a></li>
+  <li><a href="#organization" id="markdown-toc-organization">Organization</a></li>
+  <li><a href="#patient" id="markdown-toc-patient">Patient</a></li>
+  <li><a href="#practitioner" id="markdown-toc-practitioner">Practitioner</a></li>
+  <li><a href="#riskassessment" id="markdown-toc-riskassessment">RiskAssessment</a></li>
 </ul>
 
 </div>
-<p>以下為成人預防保健實作指引所有Profiles。</p>
-
-<h3 id="bundle">Bundle</h3>
-
-<ul>
-  <li><a href="StructureDefinition-Bundle-adultcheck.html" title="StructureDefinition/Bundle-adultcheck">Bundle - AdultCheck</a>: 此Bundle AdultCheck Profile說明成人預防保健服務檢查單資料</li>
-</ul>
-
-<h3 id="composition">Composition</h3>
-<ul>
-  <li><a href="StructureDefinition-Composition-adultcheck.html" title="StructureDefinition/Composition-adultcheck">Composition - AdultCheck</a>: 此Composition AdultCheck Profile說明成人預防保健服務檢查單資料</li>
-</ul>
-
-<h3 id="patient">Patient</h3>
-<ul>
-  <li><a href="StructureDefinition-Patient-adultcheck.html" title="StructureDefinition/Patient-adultcheck">Patient - AdultCheck</a>: 此PatientAdultCheck Profile說明成人預防保健病患基本資料</li>
-</ul>
-
-<h3 id="encounter">Encounter</h3>
-<ul>
-  <li><a href="StructureDefinition-Encounter-adultcheck.html" title="StructureDefinition/Encounter-adultcheck">Encounter - AdultCheck</a>: 此Encounter AdultCheck Profile說明成人預防保健兩階段檢查就醫紀錄</li>
-</ul>
+<p>以下為成人預防保健實作指引（HPA IG）使用到的所有Profiles。</p>
 
 <h3 id="condition">Condition</h3>
 
 <ul>
-  <li><a href="StructureDefinition-Condition-adultcheck.html" title="StructureDefinition/Condition-adultcheck">Condition - AdultCheck</a>: 此ConditionAdultCheck Profile說明成人預防保健中疾病史之資料</li>
-</ul>
-
-<h3 id="observation">Observation</h3>
-<ul>
-  <li>
-    <p><a href="StructureDefinition-ObservationBMI-adultcheck.html" title="StructureDefinition/ObservationBMI-adultcheck">Observation BMI - AdultCheck</a>: 此Observation BMI AdultCheck Profile說明成人預防保健BMI紀錄</p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-ObservationDepression-adultcheck.html" title="StructureDefinition/ObservationDepression-adultcheck">Observation Depression - AdultCheck</a>: 此Observation Depression AdultCheck Profile說明成人預防保健憂鬱檢測資料</p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-ObservationHeight-adultcheck.html" title="StructureDefinition/ObservationHeight-adultcheck">Observation Height - AdultCheck</a>: 此ObservationHeight AdultCheck Profile說明成人預防保健身高紀錄</p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-ObservationLab-adultcheck.html" title="StructureDefinition/ObservationLab-adultcheck">Observation Lab - AdultCheck</a>: 此Observation Lab AdultCheck Profile說明成人預防保健檢驗資料</p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-ObservationSocial-adultcheck.html" title="StructureDefinition/ObservationSocial-adultcheck">Observation Social - AdultCheck</a>: 此Observation Social AdultCheck Profile說明成人預防保健生活史紀錄</p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-ObservationPressure-adultcheck.html" title="StructureDefinition/ObservationPressure-adultcheck">Observation Pressure - AdultCheck</a>: 此Observation Pressure AdultCheck Profile說明成人預防保健血壓紀錄</p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-ObservationWaist-adultcheck.html" title="StructureDefinition/ObservationWaist-adultcheck">Observation Waist - AdultCheck</a>: 此ObservationWaist AdultCheck Profile說明成人預防保健腰圍紀錄</p>
-  </li>
-  <li>
-    <p><a href="StructureDefinition-ObservationWeight-adultcheck.html" title="StructureDefinition/ObservationWeight-adultcheck">Observation Weight - AdultCheck</a>: 此ObservationWeight AdultCheck Profile說明成人預防保健體重紀錄</p>
-  </li>
+  <li><a href="StructureDefinition-Condition-HPA.html">成人預防保健-受檢民眾疾病史（Condition-HPA）</a></li>
 </ul>
 
 <h3 id="diagnosticreport">DiagnosticReport</h3>
 
 <ul>
-  <li><a href="StructureDefinition-DiagnosticReport-adultcheck.html" title="StructureDefinition/DiagnosticReport-adultcheck">DiagnosticReport - AdultCheck</a>: 此DiagnosticReport AdultCheck Profile說明成人預防保健檢查結果與建議資訊</li>
+  <li><a href="StructureDefinition-DiagnosticReport-HPA.html">成人預防保健-檢查結果與建議（DiagnosticReport-HPA）</a></li>
 </ul>
 
+<h3 id="encounter">Encounter</h3>
+
+<ul>
+  <li><a href="StructureDefinition-Encounter-HPA.html">成人預防保健-就醫紀錄（Encounter-HPA）</a></li>
+</ul>
+
+<h3 id="observation">Observation</h3>
+
+<ul>
+  <li>
+    <p><a href="StructureDefinition-ObservationHealthBehavior-HPA.html">成人預防保健-健康行為（ObservationHealthBehavior-HPA）</a></p>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-ObservationSmokingStatus-HPA.html">成人預防保健-健康行為-吸菸（ObservationSmokingStatus-HPA）</a></p>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢（ObservationHealthConsultation-HPA）</a></p>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-ObservationLab-HPA.html">成人預防保健-實驗室檢查（ObservationLab-HPA）</a></p>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-ObservationDepression-HPA.html">成人預防保健-憂鬱檢測（ObservationDepression-HPA）</a></p>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-ObservationKidneyStage-HPA.html">成人預防保健-腎功能檢查期別（ObservationKidneyStage-HPA）</a></p>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-ObservationWaist-HPA.html">成人預防保健-身體檢查-腰圍（ObservationWaist-HPA）</a></p>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-ObservationPressure-HPA.html">成人預防保健-身體檢查-血壓（ObservationPressure-HPA）</a></p>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-ObservationBMI-HPA.html">成人預防保健-身體檢查-身體質量指數(BMI)（ObservationBMI-HPA）</a></p>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-ObservationHeight-HPA.html">成人預防保健-身體檢查-身高（ObservationHeight-HPA）</a></p>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-ObservationWeight-HPA.html">成人預防保健-身體檢查-體重（ObservationWeight-HPA）</a></p>
+  </li>
+</ul>
+
+<h3 id="organization">Organization</h3>
+
+<ul>
+  <li><a href="StructureDefinition-Organization-HPA.html">成人預防保健-醫事機構資訊（Organization-HPA）</a></li>
+</ul>
+
+<h3 id="patient">Patient</h3>
+
+<ul>
+  <li><a href="StructureDefinition-Patient-HPA.html">成人預防保健-受檢民眾基本資料（Patient-HPA）</a></li>
+</ul>
+
+<h3 id="practitioner">Practitioner</h3>
+
+<ul>
+  <li><a href="StructureDefinition-Practitioner-HPA.html">成人預防保健-醫療人員（Practitioner-HPA）</a></li>
+</ul>
+
+<h3 id="riskassessment">RiskAssessment</h3>
+
+<ul>
+  <li><a href="StructureDefinition-RiskAssessment-HPA.html">成人預防保健-慢性疾病風險（RiskAssessment-HPA）</a></li>
+</ul>
 
 
 
@@ -254,20 +276,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.etatung.com/">大世科 tsti</a>.  Package tw.tsti.adultcheck#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 8, 2023 11:45+0800">2023-11-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.etatung.com/">大世科 tsti</a>.  Package tw.etatung.hpa#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 18, 2025 10:44+0800">2025-04-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -284,7 +300,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -294,16 +310,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
-  
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
   </body>

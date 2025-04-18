@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://etatunghpa.com/ValueSet/snomed-risk-assessment-code> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "snomed-risk-assessment-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet snomed-risk-assessment-code</b></p><a name=\"snomed-risk-assessment-code\"> </a><a name=\"hcsnomed-risk-assessment-code\"> </a><a name=\"snomed-risk-assessment-code-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/53741008\">53741008</a></td><td>Coronary arteriosclerosis</td></tr><tr><td><a href=\"http://snomed.info/id/73211009\">73211009</a></td><td>Diabetes mellitus</td></tr><tr><td><a href=\"http://snomed.info/id/38341003\">38341003</a></td><td>Hypertensive disorder</td></tr><tr><td><a href=\"http://snomed.info/id/230690007\">230690007</a></td><td>Cerebrovascular accident</td></tr><tr><td><a href=\"http://snomed.info/id/49601007\">49601007</a></td><td>Disorder of cardiovascular system</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://etatunghpa.com/ValueSet/snomed-risk-assessment-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "SNOMEDRiskAssessment"] ; # 
+  fhir:title [ fhir:v "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-04-18T15:37:31+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "大世科 tsti"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "大世科 tsti" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.etatung.com/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值。代碼更新日期：2025-04-18。"] ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "53741008" ] ;
+         fhir:display [ fhir:v "Coronary arteriosclerosis" ]
+       ] [
+         fhir:code [ fhir:v "73211009" ] ;
+         fhir:display [ fhir:v "Diabetes mellitus" ]
+       ] [
+         fhir:code [ fhir:v "38341003" ] ;
+         fhir:display [ fhir:v "Hypertensive disorder" ]
+       ] [
+         fhir:code [ fhir:v "230690007" ] ;
+         fhir:display [ fhir:v "Cerebrovascular accident" ]
+       ] [
+         fhir:code [ fhir:v "49601007" ] ;
+         fhir:display [ fhir:v "Disorder of cardiovascular system" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

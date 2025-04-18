@@ -3,27 +3,21 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="observation-weight-example"/>
   <meta>
-    <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationWeight-adultcheck"/>
+    <profile value="https://etatunghpa.com/StructureDefinition/ObservationWeight-HPA"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-weight-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-weight-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationWeight-adultcheck.html">Observation Weight - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 29463-7 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">Patient/patient-example</a> &quot;&quot;</p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 50 kg</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-weight-example</b></p><a name="observation-weight-example"> </a><a name="hcobservation-weight-example"> </a><a name="observation-weight-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationWeight-HPA.html">成人預防保健-身體檢查-體重</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 52.7 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p></div>
   </text>
   <identifier>
-    <use value="official"/>
-    <type>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="MRT"/>
-      </coding>
-    </type>
-    <system value="https://tsti.hospital.com"/>
+    <system value="https://etatung.com/idenitifer"/>
     <value value="000120230721"/>
   </identifier>
-  <status value="preliminary"/>
+  <status value="final"/>
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
       <code value="vital-signs"/>
+      <display value="Vital Signs"/>
     </coding>
   </category>
   <code>
@@ -35,12 +29,18 @@
   <subject>
     <reference value="Patient/patient-example"/>
   </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example"/>
+  </encounter>
   <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+  <issued value="2022-08-14T13:28:17.239+02:00"/>
   <performer>
-    <reference value="Organization/org-test-example"/>
+    <reference value="Practitioner/practitioner-first-example"/>
   </performer>
   <valueQuantity>
-    <value value="50"/>
+    <value value="52.7"/>
     <unit value="kg"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg"/>
   </valueQuantity>
 </Observation>

@@ -1,0 +1,104 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險"
+    },
+    {
+      "url" : "https://etatunghpa.com/ValueSet/loinc-diagnostic-code",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "LoincDiagnostic",
+      "title" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值",
+      "description" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "https://etatunghpa.com/ValueSet/snomed-health-behavior-code",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "SNOMEDHealthBehavior",
+      "title" : "成人預防保健健康行為SNOMED Health Behavior代碼集值",
+      "description" : "成人預防保健健康行為SNOMED Health Behavior代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為"
+    },
+    {
+      "url" : "https://etatunghpa.com/ValueSet/snomed-health-consultation-code",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "SNOMEDHealthConsultation",
+      "title" : "成人預防保健健康諮詢SNOMED Health Consultation代碼集值",
+      "description" : "成人預防保健健康行為SNOMED Health Consultation代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢"
+    },
+    {
+      "url" : "https://etatunghpa.com/ValueSet/snomed-medical-history-code",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "SNOMEDMedicalHistory",
+      "title" : "成人預防保健疾病史SNOMED Medical History代碼集值",
+      "description" : "成人預防保健疾病史SNOMED Medical History代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "https://etatunghpa.com/ValueSet/snomed-risk-assessment-code",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "SNOMEDRiskAssessment",
+      "title" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值",
+      "description" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/smoking-status-type-code",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "SmokingStatusTypeCode",
+      "title" : "SNOMED CT + LOINC 吸菸狀態種類向值集",
+      "description" : "SNOMED CT + LOINC 吸菸狀態種類向值集。",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸"
+    }
+  ]
+}

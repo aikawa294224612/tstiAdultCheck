@@ -3,23 +3,16 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="observation-checkbc-example"/>
   <meta>
-    <profile value="https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationSocial-adultcheck"/>
+    <profile value="https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-checkbc-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-checkbc-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationSocial-adultcheck.html">Observation Social - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Social History <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: 曾於成人預防保健服時接受過 B、C 型肝炎檢查 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#444266007)</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">Patient/patient-example</a> &quot;&quot;</p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href="Organization-org-test-example.html">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 否</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-checkbc-example</b></p><a name="observation-checkbc-example"> </a><a name="hcobservation-checkbc-example"> </a><a name="observation-checkbc-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthBehavior-HPA.html">成人預防保健-健康行為</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 444266007}">Measurement of Hepatitis B surface antibody and Hepatitis C antibody</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 否</p></div>
   </text>
   <identifier>
-    <use value="official"/>
-    <type>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="MRT"/>
-      </coding>
-    </type>
-    <system value="https://tsti.hospital.com"/>
+    <system value="https://etatung.com/idenitifer"/>
     <value value="000120230721"/>
   </identifier>
-  <status value="preliminary"/>
+  <status value="final"/>
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
@@ -31,15 +24,16 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="444266007"/>
+      <display value="Measurement of Hepatitis B surface antibody and Hepatitis C antibody"/>
     </coding>
-    <text value="曾於成人預防保健服時接受過 B、C 型肝炎檢查"/>
   </code>
   <subject>
     <reference value="Patient/patient-example"/>
   </subject>
   <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+  <issued value="2022-08-14T13:28:17.239+02:00"/>
   <performer>
-    <reference value="Organization/org-test-example"/>
+    <reference value="Practitioner/practitioner-first-example"/>
   </performer>
   <valueString value="否"/>
 </Observation>

@@ -1,61 +1,65 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<https://tstifhir.azurehealthcareapis.com/Observation/observation-bmi-example> a fhir:Observation ;
+<https://etatunghpa.com/Observation/observation-bmi-example> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "observation-bmi-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck"^^xsd:anyURI ;
-       fhir:link <https://tstifhir.azurehealthcareapis.com/StructureDefinition/ObservationBMI-adultcheck>
+       fhir:v "https://etatunghpa.com/StructureDefinition/ObservationBMI-HPA"^^xsd:anyURI ;
+       fhir:link <https://etatunghpa.com/StructureDefinition/ObservationBMI-HPA>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-bmi-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-bmi-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationBMI-adultcheck.html\">Observation BMI - AdultCheck</a></p></div><p><b>identifier</b>: Temporary Medical Record Number: 000120230721 (use: OFFICIAL)</p><p><b>status</b>: preliminary</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 39156-5 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#39156-5)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">Patient/patient-example</a> &quot;&quot;</p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>performer</b>: <a href=\"Organization-org-test-example.html\">Organization/org-test-example</a> &quot;聯合醫學檢驗所&quot;</p><p><b>value</b>: 18 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-bmi-example</b></p><a name=\"observation-bmi-example\"> </a><a name=\"hcobservation-bmi-example\"> </a><a name=\"observation-bmi-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationBMI-HPA.html\">成人預防保健-身體檢查-身體質量指數(BMI)</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 39156-5}\">Body mass index (BMI) [Ratio]</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 18.3 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg/m2 = 'kg/m2')</span></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "MRT" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://tsti.hospital.com"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "000120230721" ]
   ] ) ; # 
-  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "vital-signs" ]
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:39156-5 ;
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "39156-5" ]
+       fhir:code [ fhir:v "39156-5" ] ;
+       fhir:display [ fhir:v "Body mass index (BMI) [Ratio]" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Patient/patient-example> ;
+     fhir:link <https://etatunghpa.com/Patient/patient-example> ;
      fhir:reference [ fhir:v "Patient/patient-example" ]
   ] ; # 
-  fhir:effective [ fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:encounter [
+     fhir:link <https://etatunghpa.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://tstifhir.azurehealthcareapis.com/Organization/org-test-example> ;
-     fhir:reference [ fhir:v "Organization/org-test-example" ]
+     fhir:link <https://etatunghpa.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "18"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 18.3 ] ;
      fhir:unit [ fhir:v "kg/m2" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "kg/m2" ]

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="snomed-risk-assessment-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet snomed-risk-assessment-code</b></p><a name="snomed-risk-assessment-code"> </a><a name="hcsnomed-risk-assessment-code"> </a><a name="snomed-risk-assessment-code-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/53741008">53741008</a></td><td>Coronary arteriosclerosis</td></tr><tr><td><a href="http://snomed.info/id/73211009">73211009</a></td><td>Diabetes mellitus</td></tr><tr><td><a href="http://snomed.info/id/38341003">38341003</a></td><td>Hypertensive disorder</td></tr><tr><td><a href="http://snomed.info/id/230690007">230690007</a></td><td>Cerebrovascular accident</td></tr><tr><td><a href="http://snomed.info/id/49601007">49601007</a></td><td>Disorder of cardiovascular system</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://etatunghpa.com/ValueSet/snomed-risk-assessment-code"/>
+  <version value="0.2.0"/>
+  <name value="SNOMEDRiskAssessment"/>
+  <title value="成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-04-18T15:37:31+08:00"/>
+  <publisher value="大世科 tsti"/>
+  <contact>
+    <name value="大世科 tsti"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.etatung.com/"/>
+    </telecom>
+  </contact>
+  <description value="成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值。代碼更新日期：2025-04-18。"/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="53741008"/>
+        <display value="Coronary arteriosclerosis"/>
+      </concept>
+      <concept>
+        <code value="73211009"/>
+        <display value="Diabetes mellitus"/>
+      </concept>
+      <concept>
+        <code value="38341003"/>
+        <display value="Hypertensive disorder"/>
+      </concept>
+      <concept>
+        <code value="230690007"/>
+        <display value="Cerebrovascular accident"/>
+      </concept>
+      <concept>
+        <code value="49601007"/>
+        <display value="Disorder of cardiovascular system"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

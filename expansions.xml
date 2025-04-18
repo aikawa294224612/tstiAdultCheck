@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="20b3e708-008a-4eaa-aff1-ad7e34304707"/>
+  <id value="5af97740-6ddc-43f9-9b95-20bffa9d1775"/>
   <meta>
-    <lastUpdated value="2023-11-08T11:45:10.461+08:00"/>
+    <lastUpdated value="2025-04-18T10:44:35.462+08:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code"/>
+    <fullUrl value="https://etatunghpa.com/ValueSet/loinc-diagnostic-code"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-1月 2023</p>
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
+            <p>This value set contains 9 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -24,79 +27,108 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Inactive</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-161501007"> </a>  
-                  <a href="http://snomed.info/id/161501007">161501007</a>
+                  <a name="x-http://loinc.org-85354-9"> </a>  
+                  <a href="https://loinc.org/85354-9/">85354-9</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>H/O: hypertension</td>
-                <td/>
+                <td>http://loinc.org</td>
+                <td>Blood pressure panel with all children optional</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-161445009"> </a>  
-                  <a href="http://snomed.info/id/161445009">161445009</a>
+                  <a name="x-http://loinc.org-2339-0"> </a>  
+                  <a href="https://loinc.org/2339-0/">2339-0</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>H/O: diabetes mellitus</td>
-                <td/>
+                <td>http://loinc.org</td>
+                <td>Glucose [Mass/volume] in Blood</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-3744001"> </a>  
-                  <a href="http://snomed.info/id/3744001">3744001</a>
+                  <a name="x-http://loinc.org-100898-6"> </a>  
+                  <a href="https://loinc.org/100898-6/">100898-6</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Hyperlipoproteinemia</td>
-                <td/>
+                <td>http://loinc.org</td>
+                <td>Lipid panel - Serum or Plasma</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-275544003"> </a>  
-                  <a href="http://snomed.info/id/275544003">275544003</a>
+                  <a name="x-http://loinc.org-24362-6"> </a>  
+                  <a href="https://loinc.org/24362-6/">24362-6</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>H/O: heart disorder</td>
-                <td/>
+                <td>http://loinc.org</td>
+                <td>Renal function 2000 panel - Serum or Plasma</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-275527002"> </a>  
-                  <a href="http://snomed.info/id/275527002">275527002</a>
+                  <a name="x-http://loinc.org-24325-3"> </a>  
+                  <a href="https://loinc.org/24325-3/">24325-3</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>H/O: stroke</td>
-                <td>inactive</td>
+                <td>http://loinc.org</td>
+                <td>Hepatic function 2000 panel - Serum or Plasma</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-275552000"> </a>  
-                  <a href="http://snomed.info/id/275552000">275552000</a>
+                  <a name="x-http://loinc.org-24323-8"> </a>  
+                  <a href="https://loinc.org/24323-8/">24323-8</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>H/O: kidney disease</td>
-                <td/>
+                <td>http://loinc.org</td>
+                <td>Comprehensive metabolic 2000 panel - Serum or Plasma</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-5196-1"> </a>  
+                  <a href="https://loinc.org/5196-1/">5196-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-13955-0"> </a>  
+                  <a href="https://loinc.org/13955-0/">13955-0</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-55757-9"> </a>  
+                  <a href="https://loinc.org/55757-9/">55757-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Patient Health Questionnaire 2 item (PHQ-2) [Reported]</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-code"/>
-        <version value="0.1.0"/>
-        <name value="ValueSet-adultcheck-code"/>
-        <title value="成人預防保健疾病史代碼集值"/>
-        <status value="draft"/>
-        <date value="2023-11-08T11:45:10+08:00"/>
+        <url value="https://etatunghpa.com/ValueSet/loinc-diagnostic-code"/>
+        <version value="0.2.0"/>
+        <name value="LoincDiagnostic"/>
+        <title value="成人預防保健檢查結果與建議Loinc Diagnostic代碼集值"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-04-18T15:37:31+08:00"/>
         <expansion>
-          <identifier value="urn:uuid:ee707e22-0148-4b0e-8126-b6300ecbb77a"/>
-          <timestamp value="2023-11-08T11:47:23+08:00"/>
-          <total value="6"/>
+          <identifier value="urn:uuid:de232033-ca90-4fcd-a560-d7551dc54460"/>
+          <timestamp value="2025-04-18T10:46:53+08:00"/>
+          <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -106,12 +138,517 @@
             <valueUri value="null"/>
           </parameter>
           <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"/>
+            <valueUri value="http://loinc.org|2.80"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="85354-9"/>
+            <display value="Blood pressure panel with all children optional"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2339-0"/>
+            <display value="Glucose [Mass/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100898-6"/>
+            <display value="Lipid panel - Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="24362-6"/>
+            <display value="Renal function 2000 panel - Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="24325-3"/>
+            <display value="Hepatic function 2000 panel - Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="24323-8"/>
+            <display value="Comprehensive metabolic 2000 panel - Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="5196-1"/>
+            <display value="Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="13955-0"/>
+            <display value="Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="55757-9"/>
+            <display value="Patient Health Questionnaire 2 item (PHQ-2) [Reported]"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://etatunghpa.com/ValueSet/snomed-health-behavior-code"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-2月 2025</p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+                <td>
+                  <b>Inactive</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-160573003"> </a>  
+                  <a href="http://snomed.info/id/160573003">160573003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Alcohol intake</td>
+                <td>inactive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-227491007"> </a>  
+                  <a href="http://snomed.info/id/227491007">227491007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Betel nuts</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-128976003"> </a>  
+                  <a href="http://snomed.info/id/128976003">128976003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Exercise state</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-444266007"> </a>  
+                  <a href="http://snomed.info/id/444266007">444266007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Measurement of Hepatitis B surface antibody and Hepatitis C antibody (procedure)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://etatunghpa.com/ValueSet/snomed-health-behavior-code"/>
+        <version value="0.2.0"/>
+        <name value="SNOMEDHealthBehavior"/>
+        <title value="成人預防保健健康行為SNOMED Health Behavior代碼集值"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-04-18T15:37:31+08:00"/>
+        <expansion>
+          <identifier value="urn:uuid:c6830ea1-ecf0-4093-b5ee-e4e16bcbc39c"/>
+          <timestamp value="2025-04-18T10:46:55+08:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
+            <code value="160573003"/>
+            <display value="Alcohol intake"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227491007"/>
+            <display value="Betel nuts"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128976003"/>
+            <display value="Exercise state"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="444266007"/>
+            <display value="Measurement of Hepatitis B surface antibody and Hepatitis C antibody (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://etatunghpa.com/ValueSet/snomed-health-consultation-code"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-2月 2025</p>
+            <p>This value set contains 10 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-225323000"> </a>  
+                  <a href="http://snomed.info/id/225323000">225323000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Smoking cessation advice</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-281078001"> </a>  
+                  <a href="http://snomed.info/id/281078001">281078001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Advice relating to alcohol consumption</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-51011006"> </a>  
+                  <a href="http://snomed.info/id/51011006">51011006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Nutritional counseling for control of dental disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-410289001"> </a>  
+                  <a href="http://snomed.info/id/410289001">410289001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Exercises teaching, guidance, and counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-388970003"> </a>  
+                  <a href="http://snomed.info/id/388970003">388970003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Weight maintenance consultation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-424753004"> </a>  
+                  <a href="http://snomed.info/id/424753004">424753004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dietary management education, guidance, and counseling (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-710737001"> </a>  
+                  <a href="http://snomed.info/id/710737001">710737001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Education about risk reduction technique</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-58707002"> </a>  
+                  <a href="http://snomed.info/id/58707002">58707002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Oral hygiene instruction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-720510004"> </a>  
+                  <a href="http://snomed.info/id/720510004">720510004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Education about chronic kidney disease (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-423167009"> </a>  
+                  <a href="http://snomed.info/id/423167009">423167009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic disease process education (procedure)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://etatunghpa.com/ValueSet/snomed-health-consultation-code"/>
+        <version value="0.2.0"/>
+        <name value="SNOMEDHealthConsultation"/>
+        <title value="成人預防保健健康諮詢SNOMED Health Consultation代碼集值"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-04-18T15:37:31+08:00"/>
+        <expansion>
+          <identifier value="urn:uuid:7bf41920-5613-4fb0-8176-b958208322a1"/>
+          <timestamp value="2025-04-18T10:46:55+08:00"/>
+          <total value="10"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="225323000"/>
+            <display value="Smoking cessation advice"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281078001"/>
+            <display value="Advice relating to alcohol consumption"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="51011006"/>
+            <display value="Nutritional counseling for control of dental disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="410289001"/>
+            <display value="Exercises teaching, guidance, and counselling"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="388970003"/>
+            <display value="Weight maintenance consultation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="424753004"/>
+            <display value="Dietary management education, guidance, and counseling (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="710737001"/>
+            <display value="Education about risk reduction technique"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="58707002"/>
+            <display value="Oral hygiene instruction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="720510004"/>
+            <display value="Education about chronic kidney disease (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="423167009"/>
+            <display value="Chronic disease process education (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://etatunghpa.com/ValueSet/snomed-medical-history-code"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-2月 2025</p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+                <td>
+                  <b>Inactive</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-161501007"> </a>  
+                  <a href="http://snomed.info/id/161501007">161501007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>H/O: hypertension</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-161445009"> </a>  
+                  <a href="http://snomed.info/id/161445009">161445009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>H/O: diabetes mellitus</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-161450003"> </a>  
+                  <a href="http://snomed.info/id/161450003">161450003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>H/O: raised blood lipids</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-275544003"> </a>  
+                  <a href="http://snomed.info/id/275544003">275544003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>H/O: heart disorder</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-275527002"> </a>  
+                  <a href="http://snomed.info/id/275527002">275527002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>H/O: stroke</td>
+                <td>inactive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-275552000"> </a>  
+                  <a href="http://snomed.info/id/275552000">275552000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>H/O: kidney disease</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://etatunghpa.com/ValueSet/snomed-medical-history-code"/>
+        <version value="0.2.0"/>
+        <name value="SNOMEDMedicalHistory"/>
+        <title value="成人預防保健疾病史SNOMED Medical History代碼集值"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-04-18T15:37:31+08:00"/>
+        <expansion>
+          <identifier value="urn:uuid:cb3630b9-ba7b-4603-8e12-5488e39df7a5"/>
+          <timestamp value="2025-04-18T10:46:56+08:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -125,8 +662,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="3744001"/>
-            <display value="Hyperlipoproteinemia"/>
+            <code value="161450003"/>
+            <display value="H/O: raised blood lipids"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -149,14 +686,17 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-lifecode"/>
+    <fullUrl value="https://etatunghpa.com/ValueSet/snomed-risk-assessment-code"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 13 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-1月 2023</p>
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-2月 2025</p>
+            <p>This value set contains 5 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -166,142 +706,76 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Inactive</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-230056004"> </a>  
-                  <a href="http://snomed.info/id/230056004">230056004</a>
+                  <a name="x-http://snomed.info/sct-53741008"> </a>  
+                  <a href="http://snomed.info/id/53741008">53741008</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Cigarette consumption</td>
-                <td/>
+                <td>Coronary arteriosclerosis</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-160573003"> </a>  
-                  <a href="http://snomed.info/id/160573003">160573003</a>
+                  <a name="x-http://snomed.info/sct-73211009"> </a>  
+                  <a href="http://snomed.info/id/73211009">73211009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Alcohol intake</td>
-                <td>inactive</td>
+                <td>Diabetes mellitus</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-227491007"> </a>  
-                  <a href="http://snomed.info/id/227491007">227491007</a>
+                  <a name="x-http://snomed.info/sct-38341003"> </a>  
+                  <a href="http://snomed.info/id/38341003">38341003</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Betal nut</td>
-                <td/>
+                <td>High blood pressure</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-128976003"> </a>  
-                  <a href="http://snomed.info/id/128976003">128976003</a>
+                  <a name="x-http://snomed.info/sct-230690007"> </a>  
+                  <a href="http://snomed.info/id/230690007">230690007</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Exercise state</td>
-                <td/>
+                <td>CVA - Cerebrovascular accident</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-225324006"> </a>  
-                  <a href="http://snomed.info/id/225324006">225324006</a>
+                  <a name="x-http://snomed.info/sct-49601007"> </a>  
+                  <a href="http://snomed.info/id/49601007">49601007</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Advice on effects of smoking on health</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-413473000"> </a>  
-                  <a href="http://snomed.info/id/413473000">413473000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Alcohol consumption counseling</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-51011006"> </a>  
-                  <a href="http://snomed.info/id/51011006">51011006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Nutritional counseling for control of dental disease</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-410289001"> </a>  
-                  <a href="http://snomed.info/id/410289001">410289001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Exercises education, guidance, and counseling</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-388970003"> </a>  
-                  <a href="http://snomed.info/id/388970003">388970003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Weight maintenance consultation</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-410293007"> </a>  
-                  <a href="http://snomed.info/id/410293007">410293007</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Food education, guidance, and counseling</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-409059003"> </a>  
-                  <a href="http://snomed.info/id/409059003">409059003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Safety education, guidance, and counseling</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-410263001"> </a>  
-                  <a href="http://snomed.info/id/410263001">410263001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Medical/dental care education, guidance, and counseling</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444266007"> </a>  
-                  <a href="http://snomed.info/id/444266007">444266007</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Measurement of Hepatitis B surface antibody and Hepatitis C antibody </td>
-                <td/>
+                <td>Cardiovascular disorder</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://tstifhir.azurehealthcareapis.com/ValueSet/adultcheck-lifecode"/>
-        <version value="0.1.0"/>
-        <name value="ValueSet_adultcheck-lifecode"/>
-        <title value="成人預防保健生活史代碼集值"/>
+        <url value="https://etatunghpa.com/ValueSet/snomed-risk-assessment-code"/>
+        <version value="0.2.0"/>
+        <name value="SNOMEDRiskAssessment"/>
+        <title value="成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值"/>
         <status value="active"/>
-        <date value="2023-11-08T11:45:10+08:00"/>
+        <experimental value="false"/>
+        <date value="2025-04-18T15:37:31+08:00"/>
         <expansion>
-          <identifier value="urn:uuid:8eacfa93-f868-489e-bb01-af9fdd7e8818"/>
-          <timestamp value="2023-11-08T11:47:23+08:00"/>
-          <total value="13"/>
+          <identifier value="urn:uuid:d49abcb9-2f99-4b17-b494-60129f338a9f"/>
+          <timestamp value="2025-04-18T10:46:56+08:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -311,78 +785,37 @@
             <valueUri value="null"/>
           </parameter>
           <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="230056004"/>
-            <display value="Cigarette consumption"/>
+            <code value="53741008"/>
+            <display value="Coronary arteriosclerosis"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <inactive value="true"/>
-            <code value="160573003"/>
-            <display value="Alcohol intake"/>
+            <code value="73211009"/>
+            <display value="Diabetes mellitus"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="227491007"/>
-            <display value="Betal nut"/>
+            <code value="38341003"/>
+            <display value="High blood pressure"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="128976003"/>
-            <display value="Exercise state"/>
+            <code value="230690007"/>
+            <display value="CVA - Cerebrovascular accident"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="225324006"/>
-            <display value="Advice on effects of smoking on health"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="413473000"/>
-            <display value="Alcohol consumption counseling"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="51011006"/>
-            <display value="Nutritional counseling for control of dental disease"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="410289001"/>
-            <display value="Exercises education, guidance, and counseling"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="388970003"/>
-            <display value="Weight maintenance consultation"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="410293007"/>
-            <display value="Food education, guidance, and counseling"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="409059003"/>
-            <display value="Safety education, guidance, and counseling"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="410263001"/>
-            <display value="Medical/dental care education, guidance, and counseling"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444266007"/>
-            <display value="Measurement of Hepatitis B surface antibody and Hepatitis C antibody "/>
+            <code value="49601007"/>
+            <display value="Cardiovascular disorder"/>
           </contains>
         </expansion>
       </ValueSet>

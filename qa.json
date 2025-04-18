@@ -1,13 +1,19 @@
 {
-  "url" : "https://tstifhir.azurehealthcareapis.com/ImplementationGuide/tw.tsti.adultcheck",
-  "name" : "AdultCheckIG",
-  "package-id" : "tw.tsti.adultcheck",
-  "ig-ver" : "0.1.0",
-  "date" : "Wed, 08 Nov, 2023 11:45:10 +0800",
+  "url" : "https://etatunghpa.com/ImplementationGuide/tw.etatung.hpa",
+  "name" : "HPAIG",
+  "title" : "成人預防保健實作指引(HPA-IG)",
+  "description" : "成人預防保健實作指引(HPA-IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)0.1.1版本之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。",
+  "status" : "active",
+  "package-id" : "tw.etatung.hpa",
+  "ig-ver" : "0.2.0",
+  "date" : "Fri, 18 Apr, 2025 10:44:35 +0800",
+  "dateISO8601" : "2025-04-18T10:44:35+08:00",
   "errs" : 0,
-  "warnings" : 177,
-  "hints" : 10,
+  "warnings" : 241,
+  "hints" : 14,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 3429017472
+  "maxMemory" : 3499812120
 }
