@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "tw.etatung.hpa"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide tw.etatung.hpa</b></p><a name=\"tw.etatung.hpa\"> </a><a name=\"hctw.etatung.hpa\"> </a><a name=\"tw.etatung.hpa-en-US\"> </a><h2>HPAIG</h2><p>The official URL for this implementation guide is: </p><pre>https://etatunghpa.com/ImplementationGuide/tw.etatung.hpa</pre><div><p>成人預防保健實作指引(HPA-IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)0.1.1版本之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..<em>、1..1或1..</em>）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。</p>\n</div></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide tw.etatung.hpa</b></p><a name=\"tw.etatung.hpa\"> </a><a name=\"hctw.etatung.hpa\"> </a><a name=\"tw.etatung.hpa-en-US\"> </a><h2>HPA</h2><p>The official URL for this implementation guide is: </p><pre>https://etatunghpa.com/ImplementationGuide/tw.etatung.hpa</pre><div><p>成人預防保健實作指引(HPA-IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)0.1.1版本之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..<em>、1..1或1..</em>）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://etatunghpa.com/ImplementationGuide/tw.etatung.hpa"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
-  fhir:name [ fhir:v "HPAIG"] ; # 
+  fhir:name [ fhir:v "HPA"] ; # 
   fhir:title [ fhir:v "成人預防保健實作指引(HPA-IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-04-18T10:42:27+08:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-04-22T13:25:09+08:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "大世科 tsti"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "大世科 tsti" ] ;

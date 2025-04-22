@@ -1,4 +1,4 @@
-HPAIG : Validation Results
+HPA : Validation Results
 =========================================
 
 err = 0, warn = 241, info = 14

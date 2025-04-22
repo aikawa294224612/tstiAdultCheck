@@ -1,9 +1,9 @@
-HPAIG : Validation Results
+HPA : Validation Results
 =========================================
 
 err = 0, warn = 241, info = 14
 IG Publisher Version: 1.8.24
-Generated Fri Apr 18 10:50:27 CST 2025. FHIR version 4.0.1 for tw.etatung.hpa#0.2.0 (canonical = https://etatunghpa.com)
+Generated Tue Apr 22 13:35:58 CST 2025. FHIR version 4.0.1 for tw.etatung.hpa#0.2.0 (canonical = https://etatunghpa.com)
  Build Errors : 0 / 7 / 0
  C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\CapabilityStatement-CapabilityStatementHPAServer : 0 / 0 / 1
  C:\Users\polly.peng\Downloads\AdultCheckIG_v0.2.0_20250402\fsh-generated\resources\Condition-condition-example : 0 / 1 / 1
