@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-kidneystage-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/ObservationKidneyStage-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/ObservationKidneyStage-HPA"]
   },
   "text" : {
     "status" : "generated",

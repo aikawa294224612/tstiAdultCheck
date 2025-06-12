@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://etatunghpa.com/Patient/patient-example> a fhir:Patient ;
+<https://twhpa.tsti.com/Patient/patient-example> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "patient-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://etatunghpa.com/StructureDefinition/Patient-HPA"^^xsd:anyURI ;
-       fhir:link <https://etatunghpa.com/StructureDefinition/Patient-HPA>
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Patient-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Patient-HPA>
      ] )
   ] ; # 
   fhir:text [
@@ -75,7 +75,7 @@
      fhir:district [ fhir:v "臺北市" ]
   ] ) ; # 
   fhir:managingOrganization [
-     fhir:link <https://etatunghpa.com/Organization/org-hosp-example> ;
+     fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
      fhir:reference [ fhir:v "Organization/org-hosp-example" ]
   ] . # 
 

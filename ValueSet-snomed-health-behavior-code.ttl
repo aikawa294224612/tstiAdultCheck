@@ -6,15 +6,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://etatunghpa.com/ValueSet/snomed-health-behavior-code> a fhir:ValueSet ;
+<https://twhpa.tsti.com/ValueSet/snomed-health-behavior-code> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "snomed-health-behavior-code"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet snomed-health-behavior-code</b></p><a name=\"snomed-health-behavior-code\"> </a><a name=\"hcsnomed-health-behavior-code\"> </a><a name=\"snomed-health-behavior-code-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/160573003\">160573003</a></td><td>Alcohol intake</td></tr><tr><td><a href=\"http://snomed.info/id/227491007\">227491007</a></td><td>Betal nut</td></tr><tr><td><a href=\"http://snomed.info/id/128976003\">128976003</a></td><td>Exercise state</td></tr><tr><td><a href=\"http://snomed.info/id/444266007\">444266007</a></td><td>Measurement of Hepatitis B surface antibody and Hepatitis C antibody</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://etatunghpa.com/ValueSet/snomed-health-behavior-code"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:url [ fhir:v "https://twhpa.tsti.com/ValueSet/snomed-health-behavior-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
   fhir:name [ fhir:v "SNOMEDHealthBehavior"] ; # 
   fhir:title [ fhir:v "成人預防保健健康行為SNOMED Health Behavior代碼集值"] ; # 
   fhir:status [ fhir:v "active"] ; # 

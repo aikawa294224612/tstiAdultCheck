@@ -2,183 +2,197 @@
   {
     "id" : "CapabilityStatementHPAServer",
     "type" : "CapabilityStatement",
-    "url" : "https://etatunghpa.com/CapabilityStatement/CapabilityStatementHPAServer",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/CapabilityStatement/CapabilityStatementHPAServer",
+    "version" : "0.2.1",
     "name" : "CapabilityStatementHPAServer"
   },
   {
     "id" : "tw.etatung.hpa",
     "type" : "ImplementationGuide",
-    "url" : "https://etatunghpa.com/ImplementationGuide/tw.etatung.hpa",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/ImplementationGuide/tw.etatung.hpa",
+    "version" : "0.2.1",
     "name" : "HPA"
+  },
+  {
+    "id" : "Bundle-HPA",
+    "type" : "StructureDefinition",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/Bundle-HPA",
+    "version" : "0.2.1",
+    "name" : "BundleHPA"
+  },
+  {
+    "id" : "Composition-HPA",
+    "type" : "StructureDefinition",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/Composition-HPA",
+    "version" : "0.2.1",
+    "name" : "CompositionHPA"
   },
   {
     "id" : "Condition-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/Condition-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/Condition-HPA",
+    "version" : "0.2.1",
     "name" : "ConditionHPA"
   },
   {
     "id" : "DiagnosticReport-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA",
+    "version" : "0.2.1",
     "name" : "DiagnosticReportHPA"
   },
   {
     "id" : "Encounter-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/Encounter-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/Encounter-HPA",
+    "version" : "0.2.1",
     "name" : "EncounterHPA"
   },
   {
     "id" : "HPA-Model",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/HPA-Model",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/HPA-Model",
+    "version" : "0.2.1",
     "name" : "HPAModel"
   },
   {
     "id" : "ObservationBMI-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationBMI-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationBMI-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationBMIHPA"
   },
   {
     "id" : "ObservationDepression-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationDepression-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationDepression-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationDepressionHPA"
   },
   {
     "id" : "ObservationHealthBehavior-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationHealthBehaviorHPA"
   },
   {
     "id" : "ObservationHealthConsultation-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationHealthConsultation-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationHealthConsultationHPA"
   },
   {
     "id" : "ObservationHeight-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationHeight-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationHeight-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationHeightHPA"
   },
   {
     "id" : "ObservationKidneyStage-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationKidneyStage-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationKidneyStage-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationKidneyStageHPA"
   },
   {
     "id" : "ObservationLab-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationLab-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationLabHPA"
   },
   {
     "id" : "ObservationPressure-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationPressure-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationPressure-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationPressureHPA"
   },
   {
     "id" : "ObservationSmokingStatus-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationSmokingStatus-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationSmokingStatusHPA"
   },
   {
     "id" : "ObservationWaist-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationWaist-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationWaist-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationWaistHPA"
   },
   {
     "id" : "ObservationWeight-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/ObservationWeight-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/ObservationWeight-HPA",
+    "version" : "0.2.1",
     "name" : "ObservationWeightHPA"
   },
   {
     "id" : "Organization-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/Organization-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/Organization-HPA",
+    "version" : "0.2.1",
     "name" : "OrganizationHPA"
   },
   {
     "id" : "Patient-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/Patient-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/Patient-HPA",
+    "version" : "0.2.1",
     "name" : "PatientHPA"
   },
   {
     "id" : "Practitioner-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/Practitioner-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA",
+    "version" : "0.2.1",
     "name" : "PractitionerHPA"
   },
   {
     "id" : "RiskAssessment-HPA",
     "type" : "StructureDefinition",
-    "url" : "https://etatunghpa.com/StructureDefinition/RiskAssessment-HPA",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA",
+    "version" : "0.2.1",
     "name" : "RiskAssessmentHPA"
   },
   {
     "id" : "loinc-diagnostic-code",
     "type" : "ValueSet",
-    "url" : "https://etatunghpa.com/ValueSet/loinc-diagnostic-code",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/ValueSet/loinc-diagnostic-code",
+    "version" : "0.2.1",
     "name" : "LoincDiagnostic"
   },
   {
     "id" : "snomed-health-behavior-code",
     "type" : "ValueSet",
-    "url" : "https://etatunghpa.com/ValueSet/snomed-health-behavior-code",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/ValueSet/snomed-health-behavior-code",
+    "version" : "0.2.1",
     "name" : "SNOMEDHealthBehavior"
   },
   {
     "id" : "snomed-health-consultation-code",
     "type" : "ValueSet",
-    "url" : "https://etatunghpa.com/ValueSet/snomed-health-consultation-code",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/ValueSet/snomed-health-consultation-code",
+    "version" : "0.2.1",
     "name" : "SNOMEDHealthConsultation"
   },
   {
     "id" : "snomed-medical-history-code",
     "type" : "ValueSet",
-    "url" : "https://etatunghpa.com/ValueSet/snomed-medical-history-code",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/ValueSet/snomed-medical-history-code",
+    "version" : "0.2.1",
     "name" : "SNOMEDMedicalHistory"
   },
   {
     "id" : "snomed-risk-assessment-code",
     "type" : "ValueSet",
-    "url" : "https://etatunghpa.com/ValueSet/snomed-risk-assessment-code",
-    "version" : "0.2.0",
+    "url" : "https://twhpa.tsti.com/ValueSet/snomed-risk-assessment-code",
+    "version" : "0.2.1",
     "name" : "SNOMEDRiskAssessment"
   }
 ]

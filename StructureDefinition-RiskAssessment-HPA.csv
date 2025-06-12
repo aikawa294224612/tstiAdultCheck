@@ -72,12 +72,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Evaluation mechanism","The algorithm, process or mechanism used to evaluate the risk.","","The method can influence the results of the assessment.","","","","","","","",,"example","The mechanism or algorithm used to make the assessment; e.g. TIMI, PRISM, Cardiff Type 2 diabetes, etc.","","",,,,"RiskAssessment.method",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".methodCode","FiveWs.class"
 "RiskAssessment.code","RiskAssessment.code","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","評估類型","執行的風險評估類型。","","","","","","","","","",,"preferred","","https://etatunghpa.com/ValueSet/snomed-risk-assessment-code","",,,,"RiskAssessment.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","評估類型","執行的風險評估類型。","","","","","","","","","",,"preferred","","https://twhpa.tsti.com/ValueSet/snomed-risk-assessment-code","",,,,"RiskAssessment.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","FiveWs.what[x]"
-"RiskAssessment.subject","RiskAssessment.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://etatunghpa.com/StructureDefinition/Patient-HPA]]}
+"RiskAssessment.subject","RiskAssessment.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://twhpa.tsti.com/StructureDefinition/Patient-HPA]]}
 ","[受檢民眾]","此風險評估所適用的病人或群體。","","","","","","","","","",,,,,"",,,,"RiskAssessment.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject",".participation[typeCode=SBJ].role","Subject of Care","FiveWs.subject[x]","FiveWs.subject"
-"RiskAssessment.encounter","RiskAssessment.encounter","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://etatunghpa.com/StructureDefinition/Encounter-HPA]]}
+"RiskAssessment.encounter","RiskAssessment.encounter","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://twhpa.tsti.com/StructureDefinition/Encounter-HPA]]}
 ","執行評估的場域","執行風險評估時所處的就醫情境。","","","","","","","","","",,,,,"",,,,"RiskAssessment.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.encounter",".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]","FiveWs.context"
 "RiskAssessment.occurrence[x]","RiskAssessment.occurrence[x]","","","",1,1,"Y","","Y","dateTime {[]} {[]}
@@ -86,7 +86,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "RiskAssessment.condition","RiskAssessment.condition","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition]]}
 ","Condition assessed","For assessments or prognosis specific to a particular condition, indicates the condition being assessed.","","","","","","","","","",,,,,"",,,,"RiskAssessment.condition",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=SUBJ].target[classCode=OBS, moodCode=EVN]"
-"RiskAssessment.performer","RiskAssessment.performer","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://etatunghpa.com/StructureDefinition/Practitioner-HPA]]}
+"RiskAssessment.performer","RiskAssessment.performer","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA]]}
 ","執行評估者","執行該風險評估的醫療人員、角色或軟體系統。","","","","","","","","","",,,,,"",,,,"RiskAssessment.performer",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor",".participation[typeCode=PFM].role[classCode=ASSIGNED]","Information Provider","FiveWs.actor"
 "RiskAssessment.reasonCode","RiskAssessment.reasonCode","","","",0,*,"","","","CodeableConcept {[]} {[]}

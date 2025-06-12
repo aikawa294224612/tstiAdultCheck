@@ -7,13 +7,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://etatunghpa.com/Encounter/encounter-example> a fhir:Encounter ;
+<https://twhpa.tsti.com/Encounter/encounter-example> a fhir:Encounter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "encounter-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://etatunghpa.com/StructureDefinition/Encounter-HPA"^^xsd:anyURI ;
-       fhir:link <https://etatunghpa.com/StructureDefinition/Encounter-HPA>
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Encounter-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Encounter-HPA>
      ] )
   ] ; # 
   fhir:text [
@@ -38,7 +38,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://etatunghpa.com/Patient/patient-example> ;
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
      fhir:reference [ fhir:v "Patient/patient-example" ]
   ] ; # 
   fhir:participant ( [
@@ -49,7 +49,7 @@
        ] )
      ] ) ;
      fhir:individual [
-       fhir:link <https://etatunghpa.com/Practitioner/practitioner-first-example> ;
+       fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
        fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
      ]
   ] ) ; # 
@@ -58,7 +58,7 @@
      fhir:end [ fhir:v "2022-08-12T09:00:14+00:00"^^xsd:dateTime ]
   ] ; # 
   fhir:serviceProvider [
-     fhir:link <https://etatunghpa.com/Organization/org-hosp-example> ;
+     fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
      fhir:reference [ fhir:v "Organization/org-hosp-example" ]
   ] . # 
 

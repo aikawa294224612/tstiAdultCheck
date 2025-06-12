@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RiskAssessment xmlns="http://hl7.org/fhir">
+  <id value="riskassessment-hypertension-example"/>
+  <meta>
+    <profile value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RiskAssessment riskassessment-hypertension-example</b></p><a name="riskassessment-hypertension-example"> </a><a name="hcriskassessment-hypertension-example"> </a><a name="riskassessment-hypertension-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RiskAssessment-HPA.html">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 38341003}">Hypertensive disorder</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Probability[x]</b></td></tr><tr><td style="display: none">*</td><td>40</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://etatung.com/idenitifer"/>
+    <value value="000120230721"/>
+  </identifier>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="38341003"/>
+      <display value="Hypertensive disorder"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example"/>
+  </encounter>
+  <occurrenceDateTime value="2017-10-10"/>
+  <performer>
+    <reference value="Practitioner/practitioner-first-example"/>
+  </performer>
+  <prediction>
+    <probabilityDecimal value="40"/>
+  </prediction>
+</RiskAssessment>

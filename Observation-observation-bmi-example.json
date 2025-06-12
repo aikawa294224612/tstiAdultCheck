@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-bmi-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/ObservationBMI-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/ObservationBMI-HPA"]
   },
   "text" : {
     "status" : "generated",

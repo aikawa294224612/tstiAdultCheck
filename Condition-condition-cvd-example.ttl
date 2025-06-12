@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://twhpa.tsti.com/Condition/condition-cvd-example> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "condition-cvd-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Condition-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Condition-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-cvd-example</b></p><a name=\"condition-cvd-example\"> </a><a name=\"hccondition-cvd-example\"> </a><a name=\"condition-cvd-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-HPA.html\">成人預防保健-受檢民眾疾病史</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical remission}\">Remission</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 275544003}\">H/O: heart disorder</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>asserter</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "remission" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:275544003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "275544003" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:asserter [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

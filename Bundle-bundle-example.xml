@@ -1,0 +1,2054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-example"/>
+  <meta>
+    <profile value="https://twhpa.tsti.com/StructureDefinition/Bundle-HPA"/>
+  </meta>
+  <identifier>
+    <system value="https://etatung.com/idenitifer"/>
+    <value value="000120230721"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2025-01-04T13:01:56+08:00"/>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Composition/composition-example"/>
+    <resource>
+      <Composition>
+        <id value="composition-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/Composition-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Composition_composition-example"> </a><p class="res-header-id"><b>Generated Narrative: Composition composition-example</b></p><a name="composition-example"> </a><a name="hccomposition-example"> </a><a name="composition-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-HPA.html">成人預防保健服務檢查單-文件架構</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 101009-9}">Integrative medicine History and physical note</span></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>date</b>: 2023-01-04 13:01:56+0800</p><p><b>author</b>: </p><ul><li><a href="Organization-org-hosp-example.html">Organization 衛生福利部臺北醫院</a></li><li><a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></li></ul><p><b>title</b>: 成人預防保健服務檢查單</p><p><b>custodian</b>: <a href="Organization-org-hosp-example.html">Organization 衛生福利部臺北醫院</a></p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="101009-9"/>
+            <display value="Integrative medicine History and physical note"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <date value="2023-01-04T13:01:56+08:00"/>
+        <author>
+          <reference value="Organization/org-hosp-example"/>
+        </author>
+        <author>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </author>
+        <title value="成人預防保健服務檢查單"/>
+        <custodian>
+          <reference value="Organization/org-hosp-example"/>
+        </custodian>
+        <section>
+          <title value="疾病史：高血壓"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="161501007"/>
+              <display value="H/O: hypertension"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Condition/condition-hypertension-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="疾病史：心臟病"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="275544003"/>
+              <display value="H/O: heart disorder"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Condition/condition-cvd-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康行為：吸菸"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="72166-2"/>
+              <display value="Tobacco smoking status"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-smokingstatus-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康行為：喝酒"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="160573003"/>
+              <display value="Alcohol intake"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-alcohol-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康行為：嚼檳榔"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="227491007"/>
+              <display value="Betal nut"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-nut-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康行為：運動"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="128976003"/>
+              <display value="Exercise state"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-exercise-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="檢查過B、C型肝炎"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="444266007"/>
+              <display value="Measurement of Hepatitis B surface antibody and Hepatitis C antibody"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-checkbc-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康行為：憂鬱檢測"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="89210-9"/>
+              <display value="Beck Depression Inventory II [BDI]"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-depress-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="身高"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8302-2"/>
+              <display value="Body height"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-height-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="體重"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="29463-7"/>
+              <display value="Body weight"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-weight-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="血壓"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="85354-9"/>
+              <display value="Blood pressure panel with all children optional"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-pressure-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="腰圍"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="56117-5"/>
+              <display value="Waist Circumference by WHI"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-waist-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="BMI"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="39156-5"/>
+              <display value="Body mass index (BMI) [Ratio]"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-bmi-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="尿酸"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="3084-1"/>
+              <display value="Urate [Mass/volume] in Serum or Plasma"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-lab-urate-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="腎功能檢查期別"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="88240-7"/>
+              <display value="Chronic kidney disease education panel"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-kidneystage-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康諮詢：戒煙"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="225323000"/>
+              <display value="Smoking cessation education"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-consult-smoking-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康諮詢：節酒"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="281078001"/>
+              <display value="Education about alcohol consumption"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-consult-alcohol-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康諮詢：戒檳榔"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="51011006"/>
+              <display value="Nutritional counseling for control of dental disease"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-consult-nuts-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康諮詢：規律運動"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="410289001"/>
+              <display value="Exercises education, guidance, and counseling"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-consult-exercise-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康諮詢：維持正常體重"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="388970003"/>
+              <display value="Weight maintenance consultation"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-consult-weight-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康諮詢：健康飲食"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="424753004"/>
+              <display value="Dietary management education, guidance, and counseling"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-consult-food-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康諮詢：事故傷害預防"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="710737001"/>
+              <display value="Education about risk reduction technique"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-consult-accident-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康諮詢：口腔保健"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="58707002"/>
+              <display value="Oral hygiene education"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-consult-oral-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康諮詢：腎病識能衛教指導"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="720510004"/>
+              <display value="Education about chronic kidney disease"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-consult-ckd-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="健康諮詢：慢性疾病風險評估"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="423167009"/>
+              <display value="Chronic disease process education"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/observation-consult-chronic-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="血壓檢查結果與建議"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="55284-4"/>
+              <display value="Blood pressure systolic and diastolic"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="DiagnosticReport/diagnosticreport-bloodpressure-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="慢性疾病風險值：冠心病"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="53741008"/>
+              <display value="Coronary arteriosclerosis"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="RiskAssessment/riskassessment-cad-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="慢性疾病風險值：糖尿病"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="73211009"/>
+              <display value="Diabetes mellitus"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="RiskAssessment/riskassessment-diabetes-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="慢性疾病風險值：高血壓"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="38341003"/>
+              <display value="Hypertensive disorder"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="RiskAssessment/riskassessment-hypertension-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="慢性疾病風險值：腦中風"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="230690007"/>
+              <display value="Cerebrovascular accident"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="RiskAssessment/riskassessment-stroke-example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="慢性疾病風險值：心血管不良事件"/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="49601007"/>
+              <display value="Disorder of cardiovascular system"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="RiskAssessment/riskassessment-cvdevent-example"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Patient/patient-example"/>
+    <resource>
+      <Patient>
+        <id value="patient-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/Patient-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-example"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-example</b></p><a name="patient-example"> </a><a name="hcpatient-example"> </a><a name="patient-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Patient-HPA.html">成人預防保健-受檢民眾基本資料</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3">National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code/A123456789 (use: official, )</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 0911327999(Mobile)</li><li></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <a href="Organization-org-hosp-example.html">Organization 衛生福利部臺北醫院</a></li></ul></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NNxxx">
+                <extension url="https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/identifier-suffix">
+                  <extension url="suffix">
+                    <valueString value="TWN"/>
+                  </extension>
+                  <extension url="valueSet">
+                    <valueCanonical value="http://hl7.org/fhir/ValueSet/iso3166-1-3"/>
+                  </extension>
+                </extension>
+              </code>
+            </coding>
+          </type>
+          <system value="http://www.moi.gov.tw"/>
+          <value value="A123456789"/>
+        </identifier>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+            </coding>
+          </type>
+          <system value="https://www.tph.mohw.gov.tw"/>
+          <value value="8862168"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="陳加玲"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="0911327999"/>
+          <use value="mobile"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1990-01-01"/>
+        <address>
+          <district value="臺北市"/>
+        </address>
+        <managingOrganization>
+          <reference value="Organization/org-hosp-example"/>
+        </managingOrganization>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Practitioner/practitioner-first-example"/>
+    <resource>
+      <Practitioner>
+        <id value="practitioner-first-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_practitioner-first-example"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner practitioner-first-example</b></p><a name="practitioner-first-example"> </a><a name="hcpractitioner-first-example"> </a><a name="practitioner-first-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Practitioner-HPA.html">成人預防保健-服務診治醫師</a></p></div><p><b>identifier</b>: Medical License number/KP00017 (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: 王依昇(Official)</p><p><b>telecom</b>: ph: 0993277826(Mobile)</p><p><b>address</b>: 桃園市桃園區五福五街31號</p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1980-11-11</p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MD"/>
+            </coding>
+          </type>
+          <system value="https://www.tph.mohw.gov.tw"/>
+          <value value="KP00017"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="王依昇"/>
+          <family value="Wang"/>
+          <given value="Yi Sheng"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="0993277826"/>
+          <use value="mobile"/>
+        </telecom>
+        <address>
+          <text value="桃園市桃園區五福五街31號"/>
+        </address>
+        <gender value="male"/>
+        <birthDate value="1980-11-11"/>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Organization/org-hosp-example"/>
+    <resource>
+      <Organization>
+        <id value="org-hosp-example"/>
+        <meta>
+          <profile value="https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-hosp-twcore"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_org-hosp-example"> </a><p class="res-header-id"><b>Generated Narrative: Organization org-hosp-example</b></p><a name="org-hosp-example"> </a><a name="hcorg-hosp-example"> </a><a name="org-hosp-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://twcore.mohw.gov.tw/ig/twcore/0.3.2/StructureDefinition-Organization-hosp-twcore.html">TW Core Organization Hospital Department</a></p></div><p><b>identifier</b>: Provider number/0131060029 (use: official, )</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></p><p><b>name</b>: 衛生福利部臺北醫院</p><p><b>telecom</b>: ph: 0222765566</p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+            </coding>
+          </type>
+          <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/organization-identifier-tw"/>
+          <value value="0131060029"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <code value="prov"/>
+          </coding>
+        </type>
+        <name value="衛生福利部臺北醫院"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="0222765566"/>
+        </telecom>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Encounter/encounter-example"/>
+    <resource>
+      <Encounter>
+        <id value="encounter-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/Encounter-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-example"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example</b></p><a name="encounter-example"> </a><a name="hcencounter-example"> </a><a name="encounter-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Encounter-HPA.html">成人預防保健-就醫紀錄</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode AMB</a>: ambulatory</p><p><b>serviceType</b>: <span title="Codes:{http://snomed.info/sct 419772000}">Family practice</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}">primary performer</span></td><td><a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></td></tr></table><p><b>period</b>: 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</p><p><b>serviceProvider</b>: <a href="Organization-org-hosp-example.html">Organization 衛生福利部臺北醫院</a></p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="AMB"/>
+        </class>
+        <serviceType>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="419772000"/>
+            <display value="Family practice"/>
+          </coding>
+        </serviceType>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <participant>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+              <code value="PPRF"/>
+            </coding>
+          </type>
+          <individual>
+            <reference value="Practitioner/practitioner-first-example"/>
+          </individual>
+        </participant>
+        <period>
+          <start value="2022-08-01T17:00:14+08:00"/>
+          <end value="2022-08-12T09:00:14+00:00"/>
+        </period>
+        <serviceProvider>
+          <reference value="Organization/org-hosp-example"/>
+        </serviceProvider>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Condition/condition-hypertension-example"/>
+    <resource>
+      <Condition>
+        <id value="condition-hypertension-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/Condition-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-hypertension-example"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-hypertension-example</b></p><a name="condition-hypertension-example"> </a><a name="hccondition-hypertension-example"> </a><a name="condition-hypertension-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Condition-HPA.html">成人預防保健-受檢民眾疾病史</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical remission}">Remission</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 161501007}">H/O: hypertension</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>asserter</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="remission"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="161501007"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <asserter>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </asserter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Condition/condition-cvd-example"/>
+    <resource>
+      <Condition>
+        <id value="condition-cvd-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/Condition-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-cvd-example"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-cvd-example</b></p><a name="condition-cvd-example"> </a><a name="hccondition-cvd-example"> </a><a name="condition-cvd-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Condition-HPA.html">成人預防保健-受檢民眾疾病史</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical remission}">Remission</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 275544003}">H/O: heart disorder</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>asserter</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="remission"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="275544003"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <asserter>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </asserter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-smokingstatus-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-smokingstatus-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-smokingstatus-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-smokingstatus-example</b></p><a name="observation-smokingstatus-example"> </a><a name="hcobservation-smokingstatus-example"> </a><a name="observation-smokingstatus-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationSmokingStatus-HPA.html">成人預防保健-健康行為-吸菸</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 72166-2}">Tobacco smoking status</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 8392000}">Non-smoker</span></p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="72166-2"/>
+            <display value="Tobacco smoking status"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="8392000"/>
+            <display value="Non-smoker"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-alcohol-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-alcohol-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-alcohol-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-alcohol-example</b></p><a name="observation-alcohol-example"> </a><a name="hcobservation-alcohol-example"> </a><a name="observation-alcohol-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthBehavior-HPA.html">成人預防保健-健康行為</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 160573003}">Alcohol intake</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 偶爾喝酒或應酬才喝</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="160573003"/>
+            <display value="Alcohol intake"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="偶爾喝酒或應酬才喝"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-nut-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-nut-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-nut-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-nut-example</b></p><a name="observation-nut-example"> </a><a name="hcobservation-nut-example"> </a><a name="observation-nut-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthBehavior-HPA.html">成人預防保健-健康行為</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 227491007}">Betal nut</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 不嚼檳榔</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="227491007"/>
+            <display value="Betal nut"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="不嚼檳榔"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-exercise-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-exercise-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-exercise-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-exercise-example</b></p><a name="observation-exercise-example"> </a><a name="hcobservation-exercise-example"> </a><a name="observation-exercise-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthBehavior-HPA.html">成人預防保健-健康行為</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 128976003}">Exercise state</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 沒有</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="128976003"/>
+            <display value="Exercise state"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="沒有"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-checkbc-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-checkbc-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-checkbc-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-checkbc-example</b></p><a name="observation-checkbc-example"> </a><a name="hcobservation-checkbc-example"> </a><a name="observation-checkbc-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthBehavior-HPA.html">成人預防保健-健康行為</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 444266007}">Measurement of Hepatitis B surface antibody and Hepatitis C antibody</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 否</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444266007"/>
+            <display value="Measurement of Hepatitis B surface antibody and Hepatitis C antibody"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="否"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-depress-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-depress-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationDepression-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-depress-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-depress-example</b></p><a name="observation-depress-example"> </a><a name="hcobservation-depress-example"> </a><a name="observation-depress-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationDepression-HPA.html">成人預防保健-憂鬱檢測</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 89210-9}">Beck Depression Inventory II [BDI]</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 44255-8}">Feeling down, depressed, or hopeless in last 2 weeks</span></p><p><b>value</b>: 否</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 44250-9}">Little interest or pleasure in doing things in last 2 weeks</span></p><p><b>value</b>: 否</p></blockquote></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="89210-9"/>
+            <display value="Beck Depression Inventory II [BDI]"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="44255-8"/>
+              <display value="Feeling down, depressed, or hopeless in last 2 weeks"/>
+            </coding>
+          </code>
+          <valueString value="否"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="44250-9"/>
+              <display value="Little interest or pleasure in doing things in last 2 weeks"/>
+            </coding>
+          </code>
+          <valueString value="否"/>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-height-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-height-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHeight-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-height-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-height-example</b></p><a name="observation-height-example"> </a><a name="hcobservation-height-example"> </a><a name="observation-height-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHeight-HPA.html">成人預防保健-身體檢查-身高</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8302-2}">Body height</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 151.5 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8302-2"/>
+            <display value="Body height"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="151.5"/>
+          <unit value="cm"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-weight-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-weight-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationWeight-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-weight-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-weight-example</b></p><a name="observation-weight-example"> </a><a name="hcobservation-weight-example"> </a><a name="observation-weight-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationWeight-HPA.html">成人預防保健-身體檢查-體重</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 52.7 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="52.7"/>
+          <unit value="kg"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="kg"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-waist-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-waist-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationWaist-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-waist-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-waist-example</b></p><a name="observation-waist-example"> </a><a name="hcobservation-waist-example"> </a><a name="observation-waist-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationWaist-HPA.html">成人預防保健-身體檢查-腰圍</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 56117-5}">Waist Circumference by WHI</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 55.88 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="56117-5"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="55.88"/>
+          <unit value="cm"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-bmi-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-bmi-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationBMI-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-bmi-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-bmi-example</b></p><a name="observation-bmi-example"> </a><a name="hcobservation-bmi-example"> </a><a name="observation-bmi-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationBMI-HPA.html">成人預防保健-身體檢查-身體質量指數(BMI)</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 39156-5}">Body mass index (BMI) [Ratio]</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 18.3 kg/m2<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg/m2 = 'kg/m2')</span></p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="39156-5"/>
+            <display value="Body mass index (BMI) [Ratio]"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="18.3"/>
+          <unit value="kg/m2"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="kg/m2"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-pressure-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-pressure-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationPressure-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-pressure-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-pressure-example</b></p><a name="observation-pressure-example"> </a><a name="hcobservation-pressure-example"> </a><a name="observation-pressure-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationPressure-HPA.html">成人預防保健-身體檢查-血壓</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 85354-9}">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8480-6}">Systolic blood pressure</span></p><p><b>value</b>: 110 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8462-4}">Diastolic blood pressure</span></p><p><b>value</b>: 56 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="85354-9"/>
+            <display value="Blood pressure panel with all children optional"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8480-6"/>
+              <display value="Systolic blood pressure"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="110"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8462-4"/>
+              <display value="Diastolic blood pressure"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="56"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-lab-urate-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-lab-urate-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-lab-urate-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-lab-urate-example</b></p><a name="observation-lab-urate-example"> </a><a name="hcobservation-lab-urate-example"> </a><a name="observation-lab-urate-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLab-HPA.html">成人預防保健-實驗室檢查</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 3084-1}">尿酸</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 58.2 mg/dl<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/dl = 'mg/dl')</span></p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="3084-1"/>
+            <display value="Urate [Mass/volume] in Serum or Plasma"/>
+          </coding>
+          <text value="尿酸"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueQuantity>
+          <value value="58.2"/>
+          <unit value="mg/dl"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="mg/dl"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-kidneystage-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-kidneystage-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationKidneyStage-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-kidneystage-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-kidneystage-example</b></p><a name="observation-kidneystage-example"> </a><a name="hcobservation-kidneystage-example"> </a><a name="observation-kidneystage-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationKidneyStage-HPA.html">成人預防保健-腎功能檢查期別</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 88240-7}">Chronic kidney disease education panel</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 第1期</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="88240-7"/>
+            <display value="Chronic kidney disease education panel"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="第1期"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-consult-smoking-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-consult-smoking-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-consult-smoking-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-consult-smoking-example</b></p><a name="observation-consult-smoking-example"> </a><a name="hcobservation-consult-smoking-example"> </a><a name="observation-consult-smoking-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 225323000}">Smoking cessation education</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="225323000"/>
+            <display value="Smoking cessation education"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="是"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-consult-alcohol-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-consult-alcohol-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-consult-alcohol-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-consult-alcohol-example</b></p><a name="observation-consult-alcohol-example"> </a><a name="hcobservation-consult-alcohol-example"> </a><a name="observation-consult-alcohol-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 281078001}">Education about alcohol consumption</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="281078001"/>
+            <display value="Education about alcohol consumption"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="是"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-consult-nuts-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-consult-nuts-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-consult-nuts-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-consult-nuts-example</b></p><a name="observation-consult-nuts-example"> </a><a name="hcobservation-consult-nuts-example"> </a><a name="observation-consult-nuts-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 51011006}">Nutritional counseling for control of dental disease</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="51011006"/>
+            <display value="Nutritional counseling for control of dental disease"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="是"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-consult-exercise-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-consult-exercise-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-consult-exercise-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-consult-exercise-example</b></p><a name="observation-consult-exercise-example"> </a><a name="hcobservation-consult-exercise-example"> </a><a name="observation-consult-exercise-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 410289001}">Exercises teaching, guidance, and counselling</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="410289001"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="是"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-consult-weight-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-consult-weight-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-consult-weight-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-consult-weight-example</b></p><a name="observation-consult-weight-example"> </a><a name="hcobservation-consult-weight-example"> </a><a name="observation-consult-weight-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 388970003}">Weight maintenance consultation</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="388970003"/>
+            <display value="Weight maintenance consultation"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="是"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-consult-food-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-consult-food-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-consult-food-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-consult-food-example</b></p><a name="observation-consult-food-example"> </a><a name="hcobservation-consult-food-example"> </a><a name="observation-consult-food-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 424753004}">Dietary management education, guidance, and counseling (procedure)</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="424753004"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="是"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-consult-accident-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-consult-accident-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-consult-accident-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-consult-accident-example</b></p><a name="observation-consult-accident-example"> </a><a name="hcobservation-consult-accident-example"> </a><a name="observation-consult-accident-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 710737001}">Education about risk reduction technique</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="710737001"/>
+            <display value="Education about risk reduction technique"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="是"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-consult-oral-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-consult-oral-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-consult-oral-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-consult-oral-example</b></p><a name="observation-consult-oral-example"> </a><a name="hcobservation-consult-oral-example"> </a><a name="observation-consult-oral-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 58707002}">Oral hygiene education</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="58707002"/>
+            <display value="Oral hygiene education"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="是"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-consult-ckd-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-consult-ckd-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-consult-ckd-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-consult-ckd-example</b></p><a name="observation-consult-ckd-example"> </a><a name="hcobservation-consult-ckd-example"> </a><a name="observation-consult-ckd-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 720510004}">Education about chronic kidney disease</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="720510004"/>
+            <display value="Education about chronic kidney disease"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="是"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/Observation/observation-consult-chronic-example"/>
+    <resource>
+      <Observation>
+        <id value="observation-consult-chronic-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-consult-chronic-example"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-consult-chronic-example</b></p><a name="observation-consult-chronic-example"> </a><a name="hcobservation-consult-chronic-example"> </a><a name="observation-consult-chronic-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationHealthConsultation-HPA.html">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 423167009}">Chronic disease process education</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="423167009"/>
+            <display value="Chronic disease process education"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <valueString value="是"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/DiagnosticReport/diagnosticreport-bloodpressure-example"/>
+    <resource>
+      <DiagnosticReport>
+        <id value="diagnosticreport-bloodpressure-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DiagnosticReport_diagnosticreport-bloodpressure-example"> </a><p class="res-header-id"><b>Generated Narrative: DiagnosticReport diagnosticreport-bloodpressure-example</b></p><a name="diagnosticreport-bloodpressure-example"> </a><a name="hcdiagnosticreport-bloodpressure-example"> </a><a name="diagnosticreport-bloodpressure-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DiagnosticReport-HPA.html">成人預防保健-檢查結果與建議</a></p></div><h2><span title="Codes:{http://loinc.org 85354-9}">血壓檢查結果與建議</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 PHY}">Physician (Hx. Dx, admission note, etc.)</span>) </h2><table class="grid"><tr><td>Subject</td><td>陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</td></tr><tr><td>When For</td><td>2022-08-01 17:00:14-0500</td></tr><tr><td>Reported</td><td>2022-08-14 13:28:17+0200</td></tr><tr><td>Performer</td><td> <a href="Organization-org-hosp-example.html">Organization 衛生福利部臺北醫院</a></td></tr><tr><td>Identifier</td><td> <code>https://etatung.com/idenitifer</code>/000120230721</td></tr></table><p><b>Report Details</b></p><p>異常：建議:進一步檢查</p></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="registered"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="PHY"/>
+            <display value="Physician (Hx. Dx, admission note, etc.)"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="85354-9"/>
+            <display value="Blood pressure panel with all children optional"/>
+          </coding>
+          <text value="血壓檢查結果與建議"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <effectiveDateTime value="2022-08-01T17:00:14-05:00"/>
+        <issued value="2022-08-14T13:28:17.239+02:00"/>
+        <performer>
+          <reference value="Organization/org-hosp-example"/>
+        </performer>
+        <conclusion value="異常：建議:進一步檢查"/>
+      </DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-cad-example"/>
+    <resource>
+      <RiskAssessment>
+        <id value="riskassessment-cad-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RiskAssessment_riskassessment-cad-example"> </a><p class="res-header-id"><b>Generated Narrative: RiskAssessment riskassessment-cad-example</b></p><a name="riskassessment-cad-example"> </a><a name="hcriskassessment-cad-example"> </a><a name="riskassessment-cad-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RiskAssessment-HPA.html">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 53741008}">Coronary arteriosclerosis</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Probability[x]</b></td></tr><tr><td style="display: none">*</td><td>36</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53741008"/>
+            <display value="Coronary arteriosclerosis"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <occurrenceDateTime value="2017-10-10"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <prediction>
+          <probabilityDecimal value="36"/>
+        </prediction>
+      </RiskAssessment>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-diabetes-example"/>
+    <resource>
+      <RiskAssessment>
+        <id value="riskassessment-diabetes-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RiskAssessment_riskassessment-diabetes-example"> </a><p class="res-header-id"><b>Generated Narrative: RiskAssessment riskassessment-diabetes-example</b></p><a name="riskassessment-diabetes-example"> </a><a name="hcriskassessment-diabetes-example"> </a><a name="riskassessment-diabetes-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RiskAssessment-HPA.html">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 73211009}">Diabetes mellitus</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Probability[x]</b></td></tr><tr><td style="display: none">*</td><td>25</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="73211009"/>
+            <display value="Diabetes mellitus"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <occurrenceDateTime value="2017-10-10"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <prediction>
+          <probabilityDecimal value="25"/>
+        </prediction>
+      </RiskAssessment>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-hypertension-example"/>
+    <resource>
+      <RiskAssessment>
+        <id value="riskassessment-hypertension-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RiskAssessment_riskassessment-hypertension-example"> </a><p class="res-header-id"><b>Generated Narrative: RiskAssessment riskassessment-hypertension-example</b></p><a name="riskassessment-hypertension-example"> </a><a name="hcriskassessment-hypertension-example"> </a><a name="riskassessment-hypertension-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RiskAssessment-HPA.html">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 38341003}">Hypertensive disorder</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Probability[x]</b></td></tr><tr><td style="display: none">*</td><td>40</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="38341003"/>
+            <display value="Hypertensive disorder"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <occurrenceDateTime value="2017-10-10"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <prediction>
+          <probabilityDecimal value="40"/>
+        </prediction>
+      </RiskAssessment>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-stroke-example"/>
+    <resource>
+      <RiskAssessment>
+        <id value="riskassessment-stroke-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RiskAssessment_riskassessment-stroke-example"> </a><p class="res-header-id"><b>Generated Narrative: RiskAssessment riskassessment-stroke-example</b></p><a name="riskassessment-stroke-example"> </a><a name="hcriskassessment-stroke-example"> </a><a name="riskassessment-stroke-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RiskAssessment-HPA.html">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 230690007}">Cerebrovascular accident</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Probability[x]</b></td></tr><tr><td style="display: none">*</td><td>15</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="230690007"/>
+            <display value="Cerebrovascular accident"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <occurrenceDateTime value="2017-10-10"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <prediction>
+          <probabilityDecimal value="15"/>
+        </prediction>
+      </RiskAssessment>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-cvdevent-example"/>
+    <resource>
+      <RiskAssessment>
+        <id value="riskassessment-cvdevent-example"/>
+        <meta>
+          <profile value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RiskAssessment_riskassessment-cvdevent-example"> </a><p class="res-header-id"><b>Generated Narrative: RiskAssessment riskassessment-cvdevent-example</b></p><a name="riskassessment-cvdevent-example"> </a><a name="hcriskassessment-cvdevent-example"> </a><a name="riskassessment-cvdevent-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RiskAssessment-HPA.html">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 49601007}">Disorder of cardiovascular system</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Probability[x]</b></td></tr><tr><td style="display: none">*</td><td>20</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="https://etatung.com/idenitifer"/>
+          <value value="000120230721"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="49601007"/>
+            <display value="Disorder of cardiovascular system"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example"/>
+        </encounter>
+        <occurrenceDateTime value="2017-10-10"/>
+        <performer>
+          <reference value="Practitioner/practitioner-first-example"/>
+        </performer>
+        <prediction>
+          <probabilityDecimal value="20"/>
+        </prediction>
+      </RiskAssessment>
+    </resource>
+  </entry>
+</Bundle>

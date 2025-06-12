@@ -6,15 +6,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://etatunghpa.com/ValueSet/snomed-health-consultation-code> a fhir:ValueSet ;
+<https://twhpa.tsti.com/ValueSet/snomed-health-consultation-code> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "snomed-health-consultation-code"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet snomed-health-consultation-code</b></p><a name=\"snomed-health-consultation-code\"> </a><a name=\"hcsnomed-health-consultation-code\"> </a><a name=\"snomed-health-consultation-code-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/225323000\">225323000</a></td><td>Smoking cessation education</td></tr><tr><td><a href=\"http://snomed.info/id/281078001\">281078001</a></td><td>Education about alcohol consumption</td></tr><tr><td><a href=\"http://snomed.info/id/51011006\">51011006</a></td><td>Nutritional counseling for control of dental disease</td></tr><tr><td><a href=\"http://snomed.info/id/410289001\">410289001</a></td><td>Exercises education, guidance, and counseling</td></tr><tr><td><a href=\"http://snomed.info/id/388970003\">388970003</a></td><td>Weight maintenance consultation</td></tr><tr><td><a href=\"http://snomed.info/id/424753004\">424753004</a></td><td>Dietary management education, guidance, and counseling</td></tr><tr><td><a href=\"http://snomed.info/id/710737001\">710737001</a></td><td>Education about risk reduction technique</td></tr><tr><td><a href=\"http://snomed.info/id/58707002\">58707002</a></td><td>Oral hygiene education</td></tr><tr><td><a href=\"http://snomed.info/id/720510004\">720510004</a></td><td>Education about chronic kidney disease</td></tr><tr><td><a href=\"http://snomed.info/id/423167009\">423167009</a></td><td>Chronic disease process education</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://etatunghpa.com/ValueSet/snomed-health-consultation-code"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:url [ fhir:v "https://twhpa.tsti.com/ValueSet/snomed-health-consultation-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
   fhir:name [ fhir:v "SNOMEDHealthConsultation"] ; # 
   fhir:title [ fhir:v "成人預防保健健康諮詢SNOMED Health Consultation代碼集值"] ; # 
   fhir:status [ fhir:v "active"] ; # 

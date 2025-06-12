@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-pressure-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/ObservationPressure-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/ObservationPressure-HPA"]
   },
   "text" : {
     "status" : "generated",

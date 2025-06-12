@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-nut-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"]
   },
   "text" : {
     "status" : "generated",

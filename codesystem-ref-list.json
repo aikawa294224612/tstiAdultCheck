@@ -1,6 +1,18 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "oids" : ["2.16.840.1.113883.4.642.4.242"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/observation-status",
       "version" : "4.0.1",
       "status" : "active",
@@ -23,8 +35,8 @@
       "uses" : {
       },
       "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-smoking-status-type-code.html" : "SNOMED CT + LOINC 吸菸狀態種類向值集",
-      "ValueSet-loinc-diagnostic-code.html" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "ValueSet-loinc-diagnostic-code.html" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -36,8 +48,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-snomed-health-behavior-code.html" : "成人預防保健健康行為SNOMED Health Behavior代碼集值",
       "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-smoking-status-type-code.html" : "SNOMED CT + LOINC 吸菸狀態種類向值集",
+      "ValueSet-snomed-health-behavior-code.html" : "成人預防保健健康行為SNOMED Health Behavior代碼集值",
       "ValueSet-snomed-medical-history-code.html" : "成人預防保健疾病史SNOMED Medical History代碼集值",
       "ValueSet-snomed-risk-assessment-code.html" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值",
       "ValueSet-snomed-health-consultation-code.html" : "成人預防保健健康諮詢SNOMED Health Consultation代碼集值"

@@ -1,0 +1,491 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://twhpa.tsti.com/Composition/composition-example> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "composition-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Composition-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Composition-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition composition-example</b></p><a name=\"composition-example\"> </a><a name=\"hccomposition-example\"> </a><a name=\"composition-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-HPA.html\">成人預防保健服務檢查單-文件架構</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 101009-9}\">Integrative medicine History and physical note</span></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>date</b>: 2023-01-04 13:01:56+0800</p><p><b>author</b>: </p><ul><li><a href=\"Organization-org-hosp-example.html\">Organization 衛生福利部臺北醫院</a></li><li><a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></li></ul><p><b>title</b>: 成人預防保健服務檢查單</p><p><b>custodian</b>: <a href=\"Organization-org-hosp-example.html\">Organization 衛生福利部臺北醫院</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:101009-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "101009-9" ] ;
+       fhir:display [ fhir:v "Integrative medicine History and physical note" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:date [ fhir:v "2023-01-04T13:01:56+08:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
+     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+  ] [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "成人預防保健服務檢查單"] ; # 
+  fhir:custodian [
+     fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
+     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+  ] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "疾病史：高血壓" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:161501007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "161501007" ] ;
+         fhir:display [ fhir:v "H/O: hypertension" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Condition/condition-hypertension-example> ;
+       fhir:reference [ fhir:v "Condition/condition-hypertension-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "疾病史：心臟病" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:275544003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "275544003" ] ;
+         fhir:display [ fhir:v "H/O: heart disorder" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Condition/condition-cvd-example> ;
+       fhir:reference [ fhir:v "Condition/condition-cvd-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康行為：吸菸" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:72166-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "72166-2" ] ;
+         fhir:display [ fhir:v "Tobacco smoking status" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-smokingstatus-example> ;
+       fhir:reference [ fhir:v "Observation/observation-smokingstatus-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康行為：喝酒" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:160573003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "160573003" ] ;
+         fhir:display [ fhir:v "Alcohol intake" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-alcohol-example> ;
+       fhir:reference [ fhir:v "Observation/observation-alcohol-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康行為：嚼檳榔" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:227491007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "227491007" ] ;
+         fhir:display [ fhir:v "Betal nut" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-nut-example> ;
+       fhir:reference [ fhir:v "Observation/observation-nut-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康行為：運動" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:128976003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "128976003" ] ;
+         fhir:display [ fhir:v "Exercise state" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-exercise-example> ;
+       fhir:reference [ fhir:v "Observation/observation-exercise-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "檢查過B、C型肝炎" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:444266007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "444266007" ] ;
+         fhir:display [ fhir:v "Measurement of Hepatitis B surface antibody and Hepatitis C antibody" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-checkbc-example> ;
+       fhir:reference [ fhir:v "Observation/observation-checkbc-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康行為：憂鬱檢測" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:89210-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "89210-9" ] ;
+         fhir:display [ fhir:v "Beck Depression Inventory II [BDI]" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-depress-example> ;
+       fhir:reference [ fhir:v "Observation/observation-depress-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "身高" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8302-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8302-2" ] ;
+         fhir:display [ fhir:v "Body height" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-height-example> ;
+       fhir:reference [ fhir:v "Observation/observation-height-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "體重" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:29463-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "29463-7" ] ;
+         fhir:display [ fhir:v "Body weight" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-weight-example> ;
+       fhir:reference [ fhir:v "Observation/observation-weight-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "血壓" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:85354-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "85354-9" ] ;
+         fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-pressure-example> ;
+       fhir:reference [ fhir:v "Observation/observation-pressure-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "腰圍" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:56117-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "56117-5" ] ;
+         fhir:display [ fhir:v "Waist Circumference by WHI" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-waist-example> ;
+       fhir:reference [ fhir:v "Observation/observation-waist-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "BMI" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:39156-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "39156-5" ] ;
+         fhir:display [ fhir:v "Body mass index (BMI) [Ratio]" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-bmi-example> ;
+       fhir:reference [ fhir:v "Observation/observation-bmi-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "尿酸" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:3084-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3084-1" ] ;
+         fhir:display [ fhir:v "Urate [Mass/volume] in Serum or Plasma" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-lab-urate-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-urate-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "腎功能檢查期別" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:88240-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "88240-7" ] ;
+         fhir:display [ fhir:v "Chronic kidney disease education panel" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-kidneystage-example> ;
+       fhir:reference [ fhir:v "Observation/observation-kidneystage-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：戒煙" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:225323000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "225323000" ] ;
+         fhir:display [ fhir:v "Smoking cessation education" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-smoking-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-smoking-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：節酒" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:281078001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "281078001" ] ;
+         fhir:display [ fhir:v "Education about alcohol consumption" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-alcohol-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-alcohol-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：戒檳榔" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:51011006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "51011006" ] ;
+         fhir:display [ fhir:v "Nutritional counseling for control of dental disease" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-nuts-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-nuts-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：規律運動" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:410289001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "410289001" ] ;
+         fhir:display [ fhir:v "Exercises education, guidance, and counseling" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-exercise-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-exercise-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：維持正常體重" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:388970003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "388970003" ] ;
+         fhir:display [ fhir:v "Weight maintenance consultation" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-weight-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-weight-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：健康飲食" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:424753004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "424753004" ] ;
+         fhir:display [ fhir:v "Dietary management education, guidance, and counseling" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-food-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-food-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：事故傷害預防" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:710737001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "710737001" ] ;
+         fhir:display [ fhir:v "Education about risk reduction technique" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-accident-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-accident-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：口腔保健" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:58707002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "58707002" ] ;
+         fhir:display [ fhir:v "Oral hygiene education" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-oral-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-oral-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：腎病識能衛教指導" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:720510004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "720510004" ] ;
+         fhir:display [ fhir:v "Education about chronic kidney disease" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-ckd-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-ckd-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：慢性疾病風險評估" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:423167009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "423167009" ] ;
+         fhir:display [ fhir:v "Chronic disease process education" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-chronic-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-chronic-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "血壓檢查結果與建議" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:55284-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "55284-4" ] ;
+         fhir:display [ fhir:v "Blood pressure systolic and diastolic" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/DiagnosticReport/diagnosticreport-bloodpressure-example> ;
+       fhir:reference [ fhir:v "DiagnosticReport/diagnosticreport-bloodpressure-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "慢性疾病風險值：冠心病" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:53741008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "53741008" ] ;
+         fhir:display [ fhir:v "Coronary arteriosclerosis" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-cad-example> ;
+       fhir:reference [ fhir:v "RiskAssessment/riskassessment-cad-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "慢性疾病風險值：糖尿病" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:73211009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "73211009" ] ;
+         fhir:display [ fhir:v "Diabetes mellitus" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-diabetes-example> ;
+       fhir:reference [ fhir:v "RiskAssessment/riskassessment-diabetes-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "慢性疾病風險值：高血壓" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:38341003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "38341003" ] ;
+         fhir:display [ fhir:v "Hypertensive disorder" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-hypertension-example> ;
+       fhir:reference [ fhir:v "RiskAssessment/riskassessment-hypertension-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "慢性疾病風險值：腦中風" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:230690007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "230690007" ] ;
+         fhir:display [ fhir:v "Cerebrovascular accident" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-stroke-example> ;
+       fhir:reference [ fhir:v "RiskAssessment/riskassessment-stroke-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "慢性疾病風險值：心血管不良事件" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:49601007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "49601007" ] ;
+         fhir:display [ fhir:v "Disorder of cardiovascular system" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-cvdevent-example> ;
+       fhir:reference [ fhir:v "RiskAssessment/riskassessment-cvdevent-example" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

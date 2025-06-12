@@ -3,7 +3,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="practitioner-first-example"/>
   <meta>
-    <profile value="https://etatunghpa.com/StructureDefinition/Practitioner-HPA"/>
+    <profile value="https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner practitioner-first-example</b></p><a name="practitioner-first-example"> </a><a name="hcpractitioner-first-example"> </a><a name="practitioner-first-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Practitioner-HPA.html">成人預防保健-服務診治醫師</a></p></div><p><b>identifier</b>: Medical License number/KP00017 (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: 王依昇(Official)</p><p><b>telecom</b>: ph: 0993277826(Mobile)</p><p><b>address</b>: 桃園市桃園區五福五街31號</p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1980-11-11</p></div>

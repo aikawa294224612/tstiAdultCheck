@@ -1,8 +1,8 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://etatunghpa.com/ValueSet/loinc-diagnostic-code",
-      "version" : "0.2.0",
+      "url" : "https://twhpa.tsti.com/ValueSet/loinc-diagnostic-code",
+      "version" : "0.2.1",
       "status" : "active",
       "name" : "LoincDiagnostic",
       "title" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值",
@@ -10,8 +10,8 @@
       "systems" : ["http://loinc.org"]
     },
     {
-      "url" : "https://etatunghpa.com/ValueSet/snomed-health-behavior-code",
-      "version" : "0.2.0",
+      "url" : "https://twhpa.tsti.com/ValueSet/snomed-health-behavior-code",
+      "version" : "0.2.1",
       "status" : "active",
       "name" : "SNOMEDHealthBehavior",
       "title" : "成人預防保健健康行為SNOMED Health Behavior代碼集值",
@@ -19,8 +19,8 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://etatunghpa.com/ValueSet/snomed-health-consultation-code",
-      "version" : "0.2.0",
+      "url" : "https://twhpa.tsti.com/ValueSet/snomed-health-consultation-code",
+      "version" : "0.2.1",
       "status" : "active",
       "name" : "SNOMEDHealthConsultation",
       "title" : "成人預防保健健康諮詢SNOMED Health Consultation代碼集值",
@@ -28,8 +28,8 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://etatunghpa.com/ValueSet/snomed-medical-history-code",
-      "version" : "0.2.0",
+      "url" : "https://twhpa.tsti.com/ValueSet/snomed-medical-history-code",
+      "version" : "0.2.1",
       "status" : "active",
       "name" : "SNOMEDMedicalHistory",
       "title" : "成人預防保健疾病史SNOMED Medical History代碼集值",
@@ -37,8 +37,8 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://etatunghpa.com/ValueSet/snomed-risk-assessment-code",
-      "version" : "0.2.0",
+      "url" : "https://twhpa.tsti.com/ValueSet/snomed-risk-assessment-code",
+      "version" : "0.2.1",
       "status" : "active",
       "name" : "SNOMEDRiskAssessment",
       "title" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值",

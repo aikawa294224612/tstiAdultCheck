@@ -27,18 +27,32 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
       "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
       "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.620"],
+      "sources" : ["2.16.840.1.113883.4.642.3.620"],
+      "uses" : {
+      },
+      "StructureDefinition-Bundle-HPA.html" : "成人預防保健服務檢查單"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -53,6 +67,34 @@
       "uses" : {
       },
       "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionAttestationMode",
+      "title" : "CompositionAttestationMode",
+      "description" : "The way in which a person authenticated a composition.",
+      "systems" : ["http://hl7.org/fhir/composition-attestation-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.238"],
+      "sources" : ["2.16.840.1.113883.4.642.3.238"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -164,9 +206,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
       "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
-      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料",
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -180,9 +222,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
       "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
-      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料",
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -210,17 +252,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
       "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
       "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -263,6 +305,20 @@
       "uses" : {
       },
       "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.244"],
+      "sources" : ["2.16.840.1.113883.4.642.3.244"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
@@ -415,6 +471,20 @@
       "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : ["2.16.840.1.113883.4.642.3.624"],
+      "sources" : ["2.16.840.1.113883.4.642.3.624"],
+      "uses" : {
+      },
+      "StructureDefinition-Bundle-HPA.html" : "成人預防保健服務檢查單"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -426,21 +496,22 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
       "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
-      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄",
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
       "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險",
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議",
+      "StructureDefinition-Bundle-HPA.html" : "成人預防保健服務檢查單",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
       "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查"
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -454,24 +525,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
       "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
-      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
-      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄",
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄",
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
       "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險",
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議",
+      "StructureDefinition-Bundle-HPA.html" : "成人預防保健服務檢查單",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
       "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
-      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -485,24 +557,26 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
       "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
-      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
-      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄",
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
+      "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄",
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構",
+      "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
       "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險",
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議",
+      "StructureDefinition-Bundle-HPA.html" : "成人預防保健服務檢查單",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
       "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
-      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -517,6 +591,48 @@
       "uses" : {
       },
       "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-empty-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.322"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListMode",
+      "title" : "ListMode",
+      "description" : "The processing mode that applies to this list.",
+      "systems" : ["http://hl7.org/fhir/list-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.318"],
+      "sources" : ["2.16.840.1.113883.4.642.3.318"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-order",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of the items in a list resource.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-order"],
+      "oids" : ["2.16.840.1.113883.4.642.3.324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.324"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -592,17 +708,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
       "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
       "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -617,12 +733,12 @@
       "uses" : {
       },
       "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
-      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -638,17 +754,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
       "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
       "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -662,17 +778,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
       "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
       "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -686,18 +802,18 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
       "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
       "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
       "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
@@ -711,10 +827,10 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
       "uses" : {
       },
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
       "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重"
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -742,10 +858,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
       "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重"
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -762,17 +878,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
       "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
       "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -788,17 +904,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
       "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢",
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸",
       "StructureDefinition-ObservationKidneyStage-HPA.html" : "成人預防保健-腎功能檢查期別",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
-      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測",
       "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為",
-      "StructureDefinition-ObservationDepression-HPA.html" : "成人預防保健-憂鬱檢測"
+      "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
@@ -818,6 +934,20 @@
       "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/risk-probability",
       "version" : "4.0.1",
       "status" : "draft",
@@ -830,6 +960,20 @@
       "uses" : {
       },
       "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.622"],
+      "sources" : ["2.16.840.1.113883.4.642.3.622"],
+      "uses" : {
+      },
+      "StructureDefinition-Bundle-HPA.html" : "成人預防保健服務檢查單"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -885,11 +1029,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.955"],
       "uses" : {
       },
-      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍",
+      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重",
       "StructureDefinition-ObservationBMI-HPA.html" : "成人預防保健-身體檢查-身體質量指數(BMI)",
-      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
       "StructureDefinition-ObservationHeight-HPA.html" : "成人預防保健-身體檢查-身高",
-      "StructureDefinition-ObservationWeight-HPA.html" : "成人預防保健-身體檢查-體重"
+      "StructureDefinition-ObservationPressure-HPA.html" : "成人預防保健-身體檢查-血壓",
+      "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
     },
     {
       "url" : "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips",
@@ -920,6 +1064,18 @@
       "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
     },
     {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
       "version" : "3.0.0",
       "status" : "active",
@@ -948,6 +1104,20 @@
       "StructureDefinition-Encounter-HPA.html" : "成人預防保健-就醫紀錄"
     },
     {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
+      "version" : "2014-03-26",
+      "status" : "active",
+      "name" : "v3.ConfidentialityClassification",
+      "title" : "V3 Value SetConfidentialityClassification",
+      "description" : " Set of codes used to value Act.Confidentiality and Role.Confidentiality attribute in accordance with the definition for concept domain \"Confidentiality\".",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Confidentiality"],
+      "oids" : ["2.16.840.1.113883.1.11.10228"],
+      "sources" : ["2.16.840.1.113883.1.11.10228"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive",
       "version" : "3.0.0",
       "status" : "active",
@@ -960,66 +1130,6 @@
       "uses" : {
       },
       "StructureDefinition-ObservationSmokingStatus-HPA.html" : "成人預防保健-健康行為-吸菸"
-    },
-    {
-      "url" : "https://etatunghpa.com/ValueSet/loinc-diagnostic-code",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "LoincDiagnostic",
-      "title" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值",
-      "description" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值。代碼更新日期：2025-04-18。",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
-    },
-    {
-      "url" : "https://etatunghpa.com/ValueSet/snomed-health-behavior-code",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "SNOMEDHealthBehavior",
-      "title" : "成人預防保健健康行為SNOMED Health Behavior代碼集值",
-      "description" : "成人預防保健健康行為SNOMED Health Behavior代碼集值。代碼更新日期：2025-04-18。",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為"
-    },
-    {
-      "url" : "https://etatunghpa.com/ValueSet/snomed-health-consultation-code",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "SNOMEDHealthConsultation",
-      "title" : "成人預防保健健康諮詢SNOMED Health Consultation代碼集值",
-      "description" : "成人預防保健健康行為SNOMED Health Consultation代碼集值。代碼更新日期：2025-04-18。",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢"
-    },
-    {
-      "url" : "https://etatunghpa.com/ValueSet/snomed-medical-history-code",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "SNOMEDMedicalHistory",
-      "title" : "成人預防保健疾病史SNOMED Medical History代碼集值",
-      "description" : "成人預防保健疾病史SNOMED Medical History代碼集值。代碼更新日期：2025-04-18。",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
-    },
-    {
-      "url" : "https://etatunghpa.com/ValueSet/snomed-risk-assessment-code",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "SNOMEDRiskAssessment",
-      "title" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值",
-      "description" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值。代碼更新日期：2025-04-18。",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險"
     },
     {
       "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/condition-code-sct-tw",
@@ -1145,9 +1255,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊",
       "StructureDefinition-Practitioner-HPA.html" : "成人預防保健-服務診治醫師",
-      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料"
+      "StructureDefinition-Patient-HPA.html" : "成人預防保健-受檢民眾基本資料",
+      "StructureDefinition-Organization-HPA.html" : "成人預防保健-醫事機構資訊"
     },
     {
       "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/laboratory-category-tw",
@@ -1161,8 +1271,32 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議",
-      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查"
+      "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查",
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/loinc-doc-section-code",
+      "version" : "2.77",
+      "status" : "active",
+      "name" : "LOINCDocumentSection",
+      "title" : "LOINC Code Document Section值集",
+      "description" : "LOINC Code Document Section值集。\n代碼版本：2.77；代碼更新日期：2024-06-14；資料所屬單位：Regenstrief Institute。",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/loinc-document-classcodes",
+      "version" : "2.77",
+      "status" : "active",
+      "name" : "LOINCDocumentClass",
+      "title" : "LOINC Document Class值集",
+      "description" : "LOINC Document Class值集。\n代碼版本：2.77；代碼更新日期：2024-06-14；資料所屬單位：Regenstrief Institute。",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
     },
     {
       "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/loinc-observation-code",
@@ -1175,6 +1309,18 @@
       "uses" : {
       },
       "StructureDefinition-ObservationLab-HPA.html" : "成人預防保健-實驗室檢查"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/loinc-type-doc-code",
+      "version" : "2.77",
+      "status" : "active",
+      "name" : "LOINCDocumentType",
+      "title" : "LOINC Code Document Type值集",
+      "description" : "LOINC Code Document Type值集。  \n代碼版本：2.77；代碼更新日期：2024-06-14；資料所屬單位：Regenstrief Institute。",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-HPA.html" : "成人預防保健服務檢查單-文件架構"
     },
     {
       "url" : "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/medical-consultation-department-tw",
@@ -1277,6 +1423,66 @@
       "uses" : {
       },
       "StructureDefinition-ObservationWaist-HPA.html" : "成人預防保健-身體檢查-腰圍"
+    },
+    {
+      "url" : "https://twhpa.tsti.com/ValueSet/loinc-diagnostic-code",
+      "version" : "0.2.1",
+      "status" : "active",
+      "name" : "LoincDiagnostic",
+      "title" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值",
+      "description" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticReport-HPA.html" : "成人預防保健-檢查結果與建議"
+    },
+    {
+      "url" : "https://twhpa.tsti.com/ValueSet/snomed-health-behavior-code",
+      "version" : "0.2.1",
+      "status" : "active",
+      "name" : "SNOMEDHealthBehavior",
+      "title" : "成人預防保健健康行為SNOMED Health Behavior代碼集值",
+      "description" : "成人預防保健健康行為SNOMED Health Behavior代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHealthBehavior-HPA.html" : "成人預防保健-健康行為"
+    },
+    {
+      "url" : "https://twhpa.tsti.com/ValueSet/snomed-health-consultation-code",
+      "version" : "0.2.1",
+      "status" : "active",
+      "name" : "SNOMEDHealthConsultation",
+      "title" : "成人預防保健健康諮詢SNOMED Health Consultation代碼集值",
+      "description" : "成人預防保健健康行為SNOMED Health Consultation代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationHealthConsultation-HPA.html" : "成人預防保健-健康諮詢"
+    },
+    {
+      "url" : "https://twhpa.tsti.com/ValueSet/snomed-medical-history-code",
+      "version" : "0.2.1",
+      "status" : "active",
+      "name" : "SNOMEDMedicalHistory",
+      "title" : "成人預防保健疾病史SNOMED Medical History代碼集值",
+      "description" : "成人預防保健疾病史SNOMED Medical History代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-HPA.html" : "成人預防保健-受檢民眾疾病史"
+    },
+    {
+      "url" : "https://twhpa.tsti.com/ValueSet/snomed-risk-assessment-code",
+      "version" : "0.2.1",
+      "status" : "active",
+      "name" : "SNOMEDRiskAssessment",
+      "title" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值",
+      "description" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值。代碼更新日期：2025-04-18。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-RiskAssessment-HPA.html" : "成人預防保健-慢性疾病風險"
     }
   ]
 }

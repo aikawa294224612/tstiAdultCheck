@@ -2,7 +2,7 @@
   "resourceType" : "Encounter",
   "id" : "encounter-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/Encounter-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/Encounter-HPA"]
   },
   "text" : {
     "status" : "generated",

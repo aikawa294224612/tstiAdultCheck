@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-lab-protein-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/ObservationLab-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA"]
   },
   "text" : {
     "status" : "generated",

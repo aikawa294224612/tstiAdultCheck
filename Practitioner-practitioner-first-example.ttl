@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://etatunghpa.com/Practitioner/practitioner-first-example> a fhir:Practitioner ;
+<https://twhpa.tsti.com/Practitioner/practitioner-first-example> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "practitioner-first-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://etatunghpa.com/StructureDefinition/Practitioner-HPA"^^xsd:anyURI ;
-       fhir:link <https://etatunghpa.com/StructureDefinition/Practitioner-HPA>
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA>
      ] )
   ] ; # 
   fhir:text [

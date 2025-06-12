@@ -2,7 +2,7 @@
   "resourceType" : "DiagnosticReport",
   "id" : "diagnosticreport-bloodpressure-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA"]
   },
   "text" : {
     "status" : "generated",

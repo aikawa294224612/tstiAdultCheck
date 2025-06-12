@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="composition-example"/>
+  <meta>
+    <profile value="https://twhpa.tsti.com/StructureDefinition/Composition-HPA"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition composition-example</b></p><a name="composition-example"> </a><a name="hccomposition-example"> </a><a name="composition-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-HPA.html">成人預防保健服務檢查單-文件架構</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 101009-9}">Integrative medicine History and physical note</span></p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>date</b>: 2023-01-04 13:01:56+0800</p><p><b>author</b>: </p><ul><li><a href="Organization-org-hosp-example.html">Organization 衛生福利部臺北醫院</a></li><li><a href="Practitioner-practitioner-first-example.html">Practitioner 王依昇(official)</a></li></ul><p><b>title</b>: 成人預防保健服務檢查單</p><p><b>custodian</b>: <a href="Organization-org-hosp-example.html">Organization 衛生福利部臺北醫院</a></p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="101009-9"/>
+      <display value="Integrative medicine History and physical note"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/patient-example"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example"/>
+  </encounter>
+  <date value="2023-01-04T13:01:56+08:00"/>
+  <author>
+    <reference value="Organization/org-hosp-example"/>
+  </author>
+  <author>
+    <reference value="Practitioner/practitioner-first-example"/>
+  </author>
+  <title value="成人預防保健服務檢查單"/>
+  <custodian>
+    <reference value="Organization/org-hosp-example"/>
+  </custodian>
+  <section>
+    <title value="疾病史：高血壓"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="161501007"/>
+        <display value="H/O: hypertension"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Condition/condition-hypertension-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="疾病史：心臟病"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="275544003"/>
+        <display value="H/O: heart disorder"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Condition/condition-cvd-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康行為：吸菸"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-smokingstatus-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康行為：喝酒"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="160573003"/>
+        <display value="Alcohol intake"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-alcohol-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康行為：嚼檳榔"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="227491007"/>
+        <display value="Betal nut"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-nut-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康行為：運動"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="128976003"/>
+        <display value="Exercise state"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-exercise-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="檢查過B、C型肝炎"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="444266007"/>
+        <display value="Measurement of Hepatitis B surface antibody and Hepatitis C antibody"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-checkbc-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康行為：憂鬱檢測"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="89210-9"/>
+        <display value="Beck Depression Inventory II [BDI]"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-depress-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="身高"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="Body height"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-height-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="體重"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29463-7"/>
+        <display value="Body weight"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-weight-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="血壓"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="85354-9"/>
+        <display value="Blood pressure panel with all children optional"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-pressure-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="腰圍"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="56117-5"/>
+        <display value="Waist Circumference by WHI"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-waist-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="BMI"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="Body mass index (BMI) [Ratio]"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-bmi-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="尿酸"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3084-1"/>
+        <display value="Urate [Mass/volume] in Serum or Plasma"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-lab-urate-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="腎功能檢查期別"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="88240-7"/>
+        <display value="Chronic kidney disease education panel"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-kidneystage-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：戒煙"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="225323000"/>
+        <display value="Smoking cessation education"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consult-smoking-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：節酒"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="281078001"/>
+        <display value="Education about alcohol consumption"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consult-alcohol-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：戒檳榔"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="51011006"/>
+        <display value="Nutritional counseling for control of dental disease"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consult-nuts-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：規律運動"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="410289001"/>
+        <display value="Exercises education, guidance, and counseling"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consult-exercise-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：維持正常體重"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="388970003"/>
+        <display value="Weight maintenance consultation"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consult-weight-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：健康飲食"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="424753004"/>
+        <display value="Dietary management education, guidance, and counseling"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consult-food-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：事故傷害預防"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="710737001"/>
+        <display value="Education about risk reduction technique"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consult-accident-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：口腔保健"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="58707002"/>
+        <display value="Oral hygiene education"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consult-oral-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：腎病識能衛教指導"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="720510004"/>
+        <display value="Education about chronic kidney disease"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consult-ckd-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="健康諮詢：慢性疾病風險評估"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="423167009"/>
+        <display value="Chronic disease process education"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/observation-consult-chronic-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="血壓檢查結果與建議"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="55284-4"/>
+        <display value="Blood pressure systolic and diastolic"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="DiagnosticReport/diagnosticreport-bloodpressure-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="慢性疾病風險值：冠心病"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="53741008"/>
+        <display value="Coronary arteriosclerosis"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="RiskAssessment/riskassessment-cad-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="慢性疾病風險值：糖尿病"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="73211009"/>
+        <display value="Diabetes mellitus"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="RiskAssessment/riskassessment-diabetes-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="慢性疾病風險值：高血壓"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="38341003"/>
+        <display value="Hypertensive disorder"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="RiskAssessment/riskassessment-hypertension-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="慢性疾病風險值：腦中風"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="230690007"/>
+        <display value="Cerebrovascular accident"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="RiskAssessment/riskassessment-stroke-example"/>
+    </entry>
+  </section>
+  <section>
+    <title value="慢性疾病風險值：心血管不良事件"/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="49601007"/>
+        <display value="Disorder of cardiovascular system"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="RiskAssessment/riskassessment-cvdevent-example"/>
+    </entry>
+  </section>
+</Composition>

@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-waist-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/ObservationWaist-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/ObservationWaist-HPA"]
   },
   "text" : {
     "status" : "generated",

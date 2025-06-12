@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - 成人預防保健實作指引(HPA-IG) v0.2.0</title>
+    <title>Artifacts Summary - 成人預防保健實作指引(HPA-IG) v0.2.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">成人預防保健實作指引(HPA-IG)</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - ci-build
+            <span style="display:inline-block;">0.2.1 - ci-build
 
 
             </span>
@@ -154,7 +154,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">成人預防保健實作指引(HPA-IG) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://etatunghpa.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">成人預防保健實作指引(HPA-IG) - Local Development build (v0.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://twhpa.tsti.com/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -388,6 +388,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>此Profile繼承於臺灣核心-醫事機構（TW Core Organization Hospital Department），用於紀錄成人預防保健服務檢查紀錄醫事機構與委託代檢醫事檢驗機構之機構資訊。</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Bundle-HPA.html"
+                  title="StructureDefinition/Bundle-HPA">成人預防保健服務檢查單</a>
+            </td>
+            <td>
+<p>此Profiles用於打包成人預防保健服務檢查單所有相關資料，利用此Bundle時請使用document方式將資料進行打包，Bundle所包含之Resource應與Composition涵蓋數量保持一致，且所有的Resource必須符合出院病摘各資料規範，其相關規範(Structure Definition)與範例(Example)可分別於Bundle內entry的url連結或是在Composition進行查閱。</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Composition-HPA.html"
+                  title="StructureDefinition/Composition-HPA">成人預防保健服務檢查單-文件架構</a>
+            </td>
+            <td>
+<p>此Profile用於紀錄成人預防保健服務檢查單文件架構。</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="4"> </a>
@@ -451,8 +469,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Condition-condition-example.html"
-                  title="Condition/condition-example">condition-example</a>
+               <a href="Bundle-bundle-example.html" title="Bundle/bundle-example">bundle-example</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-cvd-example.html"
+                  title="Condition/condition-cvd-example">condition-cvd-example</a>
+            </td>
+            <td>
+<p>成人預防保健疾病史-心臟病範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-hypertension-example.html"
+                  title="Condition/condition-hypertension-example">condition-hypertension-example</a>
             </td>
             <td>
 <p>成人預防保健疾病史-高血壓範例</p>
@@ -478,6 +513,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-observation-alcohol-example.html"
+                  title="Observation/observation-alcohol-example">observation-alcohol-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康行為喝酒範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-observation-bmi-example.html"
                   title="Observation/observation-bmi-example">observation-bmi-example</a>
             </td>
@@ -496,11 +540,92 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-observation-consult-smoke-example.html"
-                  title="Observation/observation-consult-smoke-example">observation-consult-smoke-example</a>
+               <a href="Observation-observation-consult-accident-example.html"
+                  title="Observation/observation-consult-accident-example">observation-consult-accident-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康行為事故傷害預防諮詢範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-consult-alcohol-example.html"
+                  title="Observation/observation-consult-alcohol-example">observation-consult-alcohol-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康行為節酒諮詢範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-consult-chronic-example.html"
+                  title="Observation/observation-consult-chronic-example">observation-consult-chronic-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康慢性疾病風險評估諮詢範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-consult-ckd-example.html"
+                  title="Observation/observation-consult-ckd-example">observation-consult-ckd-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康腎病識能衛教指導諮詢範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-consult-exercise-example.html"
+                  title="Observation/observation-consult-exercise-example">observation-consult-exercise-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康行為規律運動諮詢範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-consult-food-example.html"
+                  title="Observation/observation-consult-food-example">observation-consult-food-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康飲食諮詢範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-consult-nuts-example.html"
+                  title="Observation/observation-consult-nuts-example">observation-consult-nuts-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康行為戒檳榔諮詢範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-consult-oral-example.html"
+                  title="Observation/observation-consult-oral-example">observation-consult-oral-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康口腔保健諮詢範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-consult-smoking-example.html"
+                  title="Observation/observation-consult-smoking-example">observation-consult-smoking-example</a>
             </td>
             <td>
 <p>成人預防保健健康行為戒菸諮詢範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-consult-weight-example.html"
+                  title="Observation/observation-consult-weight-example">observation-consult-weight-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康行為維持正常體重諮詢範例</p>
 </td>
          </tr>
          <tr>
@@ -510,6 +635,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>成人預防保健-憂鬱檢測範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-exercise-example.html"
+                  title="Observation/observation-exercise-example">observation-exercise-example</a>
+            </td>
+            <td>
+<p>成人預防保健健康行為運動範例</p>
 </td>
          </tr>
          <tr>
@@ -546,6 +680,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>成人預防保健實驗室檢查尿蛋白</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-lab-urate-example.html"
+                  title="Observation/observation-lab-urate-example">observation-lab-urate-example</a>
+            </td>
+            <td>
+<p>成人預防保健實驗室檢查尿酸</p>
 </td>
          </tr>
          <tr>
@@ -637,6 +780,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>成人預防保慢性疾病風險值:冠心病範例</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-riskassessment-cvdevent-example.html"
+                  title="RiskAssessment/riskassessment-cvdevent-example">riskassessment-cvdevent-example</a>
+            </td>
+            <td>
+<p>成人預防保慢性疾病風險值:心血管不良事件範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-riskassessment-diabetes-example.html"
+                  title="RiskAssessment/riskassessment-diabetes-example">riskassessment-diabetes-example</a>
+            </td>
+            <td>
+<p>成人預防保慢性疾病風險值:糖尿病範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-riskassessment-hypertension-example.html"
+                  title="RiskAssessment/riskassessment-hypertension-example">riskassessment-hypertension-example</a>
+            </td>
+            <td>
+<p>成人預防保慢性疾病風險值:高血壓範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-riskassessment-stroke-example.html"
+                  title="RiskAssessment/riskassessment-stroke-example">riskassessment-stroke-example</a>
+            </td>
+            <td>
+<p>成人預防保慢性疾病風險值:腦中風範例</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-composition-example.html"
+                  title="Composition/composition-example">成人預防保健服務檢查單</a>
+            </td>
+            <td>
+<p>成人預防保健文件架構範例</p>
+</td>
+         </tr>
       </tbody>
    </table>
 </div>
@@ -657,7 +845,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.etatung.com/">大世科 tsti</a>.  Package tw.etatung.hpa#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 22, 2025 13:29+0800">2025-04-22</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.etatung.com/">大世科 tsti</a>.  Package tw.etatung.hpa#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 11, 2025 16:51+0800">2025-06-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

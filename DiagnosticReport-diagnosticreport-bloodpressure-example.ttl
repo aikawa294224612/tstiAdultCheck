@@ -7,13 +7,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://etatunghpa.com/DiagnosticReport/diagnosticreport-bloodpressure-example> a fhir:DiagnosticReport ;
+<https://twhpa.tsti.com/DiagnosticReport/diagnosticreport-bloodpressure-example> a fhir:DiagnosticReport ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "diagnosticreport-bloodpressure-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA"^^xsd:anyURI ;
-       fhir:link <https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA>
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA>
      ] )
   ] ; # 
   fhir:text [
@@ -42,11 +42,11 @@
      fhir:text [ fhir:v "血壓檢查結果與建議" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://etatunghpa.com/Patient/patient-example> ;
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
      fhir:reference [ fhir:v "Patient/patient-example" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <https://etatunghpa.com/Encounter/encounter-example> ;
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
      fhir:reference [ fhir:v "Encounter/encounter-example" ]
   ] ; # 
   fhir:effective [
@@ -55,7 +55,7 @@
   ] ; # 
   fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://etatunghpa.com/Organization/org-hosp-example> ;
+     fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
      fhir:reference [ fhir:v "Organization/org-hosp-example" ]
   ] ) ; # 
   fhir:conclusion [ fhir:v "異常：建議:進一步檢查"] . # 

@@ -1,6 +1,6 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-https://etatunghpa.com/ValueSet/loinc-diagnostic-code,0.2.0,active,,LoincDiagnostic,成人預防保健檢查結果與建議Loinc Diagnostic代碼集值,"成人預防保健檢查結果與建議Loinc Diagnostic代碼集值。代碼更新日期：2025-04-18。",,"LOINC"
-https://etatunghpa.com/ValueSet/snomed-health-behavior-code,0.2.0,active,,SNOMEDHealthBehavior,成人預防保健健康行為SNOMED Health Behavior代碼集值,"成人預防保健健康行為SNOMED Health Behavior代碼集值。代碼更新日期：2025-04-18。",,"SCT"
-https://etatunghpa.com/ValueSet/snomed-health-consultation-code,0.2.0,active,,SNOMEDHealthConsultation,成人預防保健健康諮詢SNOMED Health Consultation代碼集值,"成人預防保健健康行為SNOMED Health Consultation代碼集值。代碼更新日期：2025-04-18。",,"SCT"
-https://etatunghpa.com/ValueSet/snomed-medical-history-code,0.2.0,active,,SNOMEDMedicalHistory,成人預防保健疾病史SNOMED Medical History代碼集值,"成人預防保健疾病史SNOMED Medical History代碼集值。代碼更新日期：2025-04-18。",,"SCT"
-https://etatunghpa.com/ValueSet/snomed-risk-assessment-code,0.2.0,active,,SNOMEDRiskAssessment,成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值,"成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值。代碼更新日期：2025-04-18。",,"SCT"
+https://twhpa.tsti.com/ValueSet/loinc-diagnostic-code,0.2.1,active,,LoincDiagnostic,成人預防保健檢查結果與建議Loinc Diagnostic代碼集值,"成人預防保健檢查結果與建議Loinc Diagnostic代碼集值。代碼更新日期：2025-04-18。",,"LOINC"
+https://twhpa.tsti.com/ValueSet/snomed-health-behavior-code,0.2.1,active,,SNOMEDHealthBehavior,成人預防保健健康行為SNOMED Health Behavior代碼集值,"成人預防保健健康行為SNOMED Health Behavior代碼集值。代碼更新日期：2025-04-18。",,"SCT"
+https://twhpa.tsti.com/ValueSet/snomed-health-consultation-code,0.2.1,active,,SNOMEDHealthConsultation,成人預防保健健康諮詢SNOMED Health Consultation代碼集值,"成人預防保健健康行為SNOMED Health Consultation代碼集值。代碼更新日期：2025-04-18。",,"SCT"
+https://twhpa.tsti.com/ValueSet/snomed-medical-history-code,0.2.1,active,,SNOMEDMedicalHistory,成人預防保健疾病史SNOMED Medical History代碼集值,"成人預防保健疾病史SNOMED Medical History代碼集值。代碼更新日期：2025-04-18。",,"SCT"
+https://twhpa.tsti.com/ValueSet/snomed-risk-assessment-code,0.2.1,active,,SNOMEDRiskAssessment,成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值,"成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值。代碼更新日期：2025-04-18。",,"SCT"

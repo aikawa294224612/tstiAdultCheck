@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://etatunghpa.com/Organization/org-test-example> a fhir:Organization ;
+<https://twhpa.tsti.com/Organization/org-test-example> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "org-test-example"] ; # 
   fhir:meta [

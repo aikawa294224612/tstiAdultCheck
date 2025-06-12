@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="tw.etatung.hpa"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide tw.etatung.hpa</b></p><a name="tw.etatung.hpa"> </a><a name="hctw.etatung.hpa"> </a><a name="tw.etatung.hpa-en-US"> </a><h2>HPA</h2><p>The official URL for this implementation guide is: </p><pre>https://etatunghpa.com/ImplementationGuide/tw.etatung.hpa</pre><div><p>成人預防保健實作指引(HPA-IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)0.1.1版本之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..<em>、1..1或1..</em>）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide tw.etatung.hpa</b></p><a name="tw.etatung.hpa"> </a><a name="hctw.etatung.hpa"> </a><a name="tw.etatung.hpa-en-US"> </a><h2>HPA</h2><p>The official URL for this implementation guide is: </p><pre>https://twhpa.tsti.com/ImplementationGuide/tw.etatung.hpa</pre><div><p>成人預防保健實作指引(HPA-IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)0.1.1版本之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..<em>、1..1或1..</em>）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。</p>
 </div></div>
   </text>
-  <url value="https://etatunghpa.com/ImplementationGuide/tw.etatung.hpa"/>
-  <version value="0.2.0"/>
+  <url value="https://twhpa.tsti.com/ImplementationGuide/tw.etatung.hpa"/>
+  <version value="0.2.1"/>
   <name value="HPA"/>
   <title value="成人預防保健實作指引(HPA-IG)"/>
   <status value="active"/>
-  <date value="2025-04-22T13:25:09+08:00"/>
+  <date value="2025-06-11T16:49:32+08:00"/>
   <publisher value="大世科 tsti"/>
   <contact>
     <name value="大世科 tsti"/>
@@ -30,7 +30,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.2.0"/>
+    <version value="6.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -123,7 +123,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://etatunghpa.com/history.html"/>
+        <valueString value="https://twhpa.tsti.com/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -326,7 +326,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://etatunghpa.com/history.html"/>
+        <valueString value="https://twhpa.tsti.com/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -451,14 +451,35 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example"/>
+      </reference>
+      <name value="bundle-example"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/Bundle-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/condition-example"/>
+        <reference value="Condition/condition-cvd-example"/>
       </reference>
-      <name value="condition-example"/>
+      <name value="condition-cvd-example"/>
+      <description value="成人預防保健疾病史-心臟病範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/Condition-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-hypertension-example"/>
+      </reference>
+      <name value="condition-hypertension-example"/>
       <description value="成人預防保健疾病史-高血壓範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/Condition-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/Condition-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -469,7 +490,7 @@
       </reference>
       <name value="diagnosticreport-bloodpressure-example"/>
       <description value="成人預防保血壓檢查結果與建議範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -480,7 +501,18 @@
       </reference>
       <name value="encounter-example"/>
       <description value="成人預防保健就醫紀錄範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/Encounter-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/Encounter-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-alcohol-example"/>
+      </reference>
+      <name value="observation-alcohol-example"/>
+      <description value="成人預防保健健康行為喝酒範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -491,7 +523,7 @@
       </reference>
       <name value="observation-bmi-example"/>
       <description value="成人預防保健身體質量指數(BMI)紀錄範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationBMI-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationBMI-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -502,18 +534,117 @@
       </reference>
       <name value="observation-checkbc-example"/>
       <description value="成人預防保健健康行為接受過B、C 型肝炎檢查範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/observation-consult-smoke-example"/>
+        <reference value="Observation/observation-consult-accident-example"/>
       </reference>
-      <name value="observation-consult-smoke-example"/>
+      <name value="observation-consult-accident-example"/>
+      <description value="成人預防保健健康行為事故傷害預防諮詢範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-consult-alcohol-example"/>
+      </reference>
+      <name value="observation-consult-alcohol-example"/>
+      <description value="成人預防保健健康行為節酒諮詢範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-consult-chronic-example"/>
+      </reference>
+      <name value="observation-consult-chronic-example"/>
+      <description value="成人預防保健健康慢性疾病風險評估諮詢範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-consult-ckd-example"/>
+      </reference>
+      <name value="observation-consult-ckd-example"/>
+      <description value="成人預防保健健康腎病識能衛教指導諮詢範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-consult-exercise-example"/>
+      </reference>
+      <name value="observation-consult-exercise-example"/>
+      <description value="成人預防保健健康行為規律運動諮詢範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-consult-food-example"/>
+      </reference>
+      <name value="observation-consult-food-example"/>
+      <description value="成人預防保健健康飲食諮詢範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-consult-nuts-example"/>
+      </reference>
+      <name value="observation-consult-nuts-example"/>
+      <description value="成人預防保健健康行為戒檳榔諮詢範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-consult-oral-example"/>
+      </reference>
+      <name value="observation-consult-oral-example"/>
+      <description value="成人預防保健健康口腔保健諮詢範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-consult-smoking-example"/>
+      </reference>
+      <name value="observation-consult-smoking-example"/>
       <description value="成人預防保健健康行為戒菸諮詢範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-consult-weight-example"/>
+      </reference>
+      <name value="observation-consult-weight-example"/>
+      <description value="成人預防保健健康行為維持正常體重諮詢範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -524,7 +655,18 @@
       </reference>
       <name value="observation-depress-example"/>
       <description value="成人預防保健-憂鬱檢測範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationDepression-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationDepression-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-exercise-example"/>
+      </reference>
+      <name value="observation-exercise-example"/>
+      <description value="成人預防保健健康行為運動範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -534,7 +676,7 @@
         <reference value="Observation/observation-height-example"/>
       </reference>
       <name value="observation-height-example"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationHeight-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHeight-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -545,7 +687,7 @@
       </reference>
       <name value="observation-kidneystage-example"/>
       <description value="成人預防保健腎功能檢查期別範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationKidneyStage-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationKidneyStage-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -556,7 +698,7 @@
       </reference>
       <name value="observation-lab-hepatitisb-example"/>
       <description value="成人預防保健檢驗資訊範例-B型肝炎表面抗原"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationLab-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -567,7 +709,18 @@
       </reference>
       <name value="observation-lab-protein-example"/>
       <description value="成人預防保健實驗室檢查尿蛋白"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationLab-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-lab-urate-example"/>
+      </reference>
+      <name value="observation-lab-urate-example"/>
+      <description value="成人預防保健實驗室檢查尿酸"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -578,7 +731,7 @@
       </reference>
       <name value="observation-nut-example"/>
       <description value="成人預防保健健康行為嚼檳榔範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -589,7 +742,7 @@
       </reference>
       <name value="observation-pressure-example"/>
       <description value="成人預防保健血壓紀錄範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationPressure-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationPressure-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -599,7 +752,7 @@
         <reference value="Observation/observation-smokingstatus-example"/>
       </reference>
       <name value="observation-smokingstatus-example"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationSmokingStatus-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -610,7 +763,7 @@
       </reference>
       <name value="observation-waist-example"/>
       <description value="成人預防保健腰圍紀錄範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationWaist-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationWaist-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -621,7 +774,7 @@
       </reference>
       <name value="observation-weight-example"/>
       <description value="成人預防保健體重紀錄範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/ObservationWeight-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/ObservationWeight-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -654,7 +807,7 @@
       </reference>
       <name value="patient-example"/>
       <description value="成人預防保健受檢民眾基本資料範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/Patient-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/Patient-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -665,7 +818,7 @@
       </reference>
       <name value="practitioner-first-example"/>
       <description value="成人預防保健第一階段服務診治醫師範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/Practitioner-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -676,7 +829,51 @@
       </reference>
       <name value="riskassessment-cad-example"/>
       <description value="成人預防保慢性疾病風險值:冠心病範例"/>
-      <exampleCanonical value="https://etatunghpa.com/StructureDefinition/RiskAssessment-HPA"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RiskAssessment"/>
+      </extension>
+      <reference>
+        <reference value="RiskAssessment/riskassessment-cvdevent-example"/>
+      </reference>
+      <name value="riskassessment-cvdevent-example"/>
+      <description value="成人預防保慢性疾病風險值:心血管不良事件範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RiskAssessment"/>
+      </extension>
+      <reference>
+        <reference value="RiskAssessment/riskassessment-diabetes-example"/>
+      </reference>
+      <name value="riskassessment-diabetes-example"/>
+      <description value="成人預防保慢性疾病風險值:糖尿病範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RiskAssessment"/>
+      </extension>
+      <reference>
+        <reference value="RiskAssessment/riskassessment-hypertension-example"/>
+      </reference>
+      <name value="riskassessment-hypertension-example"/>
+      <description value="成人預防保慢性疾病風險值:高血壓範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RiskAssessment"/>
+      </extension>
+      <reference>
+        <reference value="RiskAssessment/riskassessment-stroke-example"/>
+      </reference>
+      <name value="riskassessment-stroke-example"/>
+      <description value="成人預防保慢性疾病風險值:腦中風範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -929,6 +1126,39 @@
       </reference>
       <name value="成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值"/>
       <description value="成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值。代碼更新日期：2025-04-18。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Bundle-HPA"/>
+      </reference>
+      <name value="成人預防保健服務檢查單"/>
+      <description value="此Profiles用於打包成人預防保健服務檢查單所有相關資料，利用此Bundle時請使用document方式將資料進行打包，Bundle所包含之Resource應與Composition涵蓋數量保持一致，且所有的Resource必須符合出院病摘各資料規範，其相關規範(Structure Definition)與範例(Example)可分別於Bundle內entry的url連結或是在Composition進行查閱。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/composition-example"/>
+      </reference>
+      <name value="成人預防保健服務檢查單"/>
+      <description value="成人預防保健文件架構範例"/>
+      <exampleCanonical value="https://twhpa.tsti.com/StructureDefinition/Composition-HPA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Composition-HPA"/>
+      </reference>
+      <name value="成人預防保健服務檢查單-文件架構"/>
+      <description value="此Profile用於紀錄成人預防保健服務檢查單文件架構。"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

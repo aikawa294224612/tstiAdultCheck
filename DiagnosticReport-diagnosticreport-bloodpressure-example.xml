@@ -3,7 +3,7 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="diagnosticreport-bloodpressure-example"/>
   <meta>
-    <profile value="https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA"/>
+    <profile value="https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport diagnosticreport-bloodpressure-example</b></p><a name="diagnosticreport-bloodpressure-example"> </a><a name="hcdiagnosticreport-bloodpressure-example"> </a><a name="diagnosticreport-bloodpressure-example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DiagnosticReport-HPA.html">成人預防保健-檢查結果與建議</a></p></div><h2><span title="Codes:{http://loinc.org 85354-9}">血壓檢查結果與建議</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 PHY}">Physician (Hx. Dx, admission note, etc.)</span>) </h2><table class="grid"><tr><td>Subject</td><td>陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</td></tr><tr><td>When For</td><td>2022-08-01 17:00:14-0500</td></tr><tr><td>Reported</td><td>2022-08-14 13:28:17+0200</td></tr><tr><td>Performer</td><td> <a href="Organization-org-hosp-example.html">Organization 衛生福利部臺北醫院</a></td></tr><tr><td>Identifier</td><td> <code>https://etatung.com/idenitifer</code>/000120230721</td></tr></table><p><b>Report Details</b></p><p>異常：建議:進一步檢查</p></div>

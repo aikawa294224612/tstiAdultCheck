@@ -13,6 +13,42 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
+      "url" : "http://hl7.org/fhir/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "oids" : ["2.16.840.1.113883.4.642.4.621"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/composition-attestation-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionAttestationMode",
+      "title" : "CompositionAttestationMode",
+      "description" : "The way in which a person authenticated a composition.",
+      "oids" : ["2.16.840.1.113883.4.642.4.239"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html" : "CompositionAttestationMode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "oids" : ["2.16.840.1.113883.4.642.4.242"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/contact-point-system",
       "version" : "4.0.1",
       "status" : "active",
@@ -49,6 +85,18 @@
       "http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "oids" : ["2.16.840.1.113883.4.642.4.245"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
+    },
+    {
       "url" : "http://hl7.org/fhir/encounter-location-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -73,6 +121,18 @@
       "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "oids" : ["2.16.840.1.113883.4.642.4.625"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+    },
+    {
       "url" : "http://hl7.org/fhir/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -95,6 +155,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/list-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListMode",
+      "title" : "ListMode",
+      "description" : "The processing mode that applies to this list.",
+      "oids" : ["2.16.840.1.113883.4.642.4.319"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
     },
     {
       "url" : "http://hl7.org/fhir/name-use",
@@ -133,6 +205,29 @@
       "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
     },
     {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "oids" : ["2.16.840.1.113883.4.642.4.623"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+    },
+    {
       "url" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
       "version" : "1.1.0",
       "status" : "active",
@@ -153,12 +248,15 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs",
-      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-vital-signs-tw.html" : "LOINC生命體徵值集",
       "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-smoking-status-type-code.html" : "SNOMED CT + LOINC 吸菸狀態種類向值集",
-      "ValueSet-loinc-diagnostic-code.html" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值",
+      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-loinc-doc-section-code.html" : "LOINC Code Document Section值集",
+      "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs",
+      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-loinc-document-classcodes.html" : "LOINC Document Class值集",
       "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-loinc-observation-code.html" : "LOINC實驗室檢驗檢查值集"
+      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-loinc-type-doc-code.html" : "LOINC Code Document Type值集",
+      "ValueSet-loinc-diagnostic-code.html" : "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值",
+      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-loinc-observation-code.html" : "LOINC實驗室檢驗檢查值集",
+      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-vital-signs-tw.html" : "LOINC生命體徵值集"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -170,25 +268,25 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-smoking-status-type-code.html" : "SNOMED CT + LOINC 吸菸狀態種類向值集",
       "ValueSet-snomed-health-behavior-code.html" : "成人預防保健健康行為SNOMED Health Behavior代碼集值",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "ValueSet-snomed-medical-history-code.html" : "成人預防保健疾病史SNOMED Medical History代碼集值",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "ValueSet-snomed-risk-assessment-code.html" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值",
+      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-medical-department-sct-tw.html" : "對應至 SNOMED CT之就醫科別 + 診療科別值集",
       "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-condition-code-sct-tw.html" : "SNOMED CT診斷代碼值集",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-smoking-status-comprehensive-code.html" : "SNOMED CT 吸菸狀態綜合評估值集",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-health-professional-sct-tw.html" : "SNOMED CT + 臺灣醫事司醫事人員類別值集",
       "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "ValueSet-snomed-medical-history-code.html" : "成人預防保健疾病史SNOMED Medical History代碼集值",
-      "ValueSet-snomed-risk-assessment-code.html" : "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-smoking-status-comprehensive-code.html" : "SNOMED CT 吸菸狀態綜合評估值集",
-      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-smoking-status-type-code.html" : "SNOMED CT + LOINC 吸菸狀態種類向值集",
-      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-condition-code-sct-tw.html" : "SNOMED CT診斷代碼值集",
-      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-medical-department-sct-tw.html" : "對應至 SNOMED CT之就醫科別 + 診療科別值集",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "ValueSet-snomed-health-consultation-code.html" : "成人預防保健健康諮詢SNOMED Health Consultation代碼集值"
+      "ValueSet-snomed-health-consultation-code.html" : "成人預防保健健康諮詢SNOMED Health Consultation代碼集值",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -323,6 +421,30 @@
       "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-list-empty-reason.html" : "List Empty Reasons"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of the items in a list resource.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-list-order.html" : "List Order Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
       "version" : "2.0.1",
       "status" : "active",
@@ -344,8 +466,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1125"],
       "uses" : {
       },
-      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-observation-clinical-result-category.html" : "臺灣衛福部資訊處Observation Clinical Result類型值集",
-      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes",
+      "https://twcore.mohw.gov.tw/ig/twcore/0.3.2/ValueSet-observation-clinical-result-category.html" : "臺灣衛福部資訊處Observation Clinical Result類型值集"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
@@ -466,6 +588,7 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
+      "http://terminology.hl7.org/6.1.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
       "http://terminology.hl7.org/6.1.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
     },
     {
@@ -479,6 +602,18 @@
       "uses" : {
       },
       "http://terminology.hl7.org/6.1.0/ValueSet-v3-ActPriority.html" : "ActPriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "Confidentiality",
+      "title" : "Confidentiality",
+      "description" : "A set of codes specifying the security classification of acts and roles in accordance with the definition for concept domain \"Confidentiality\".",
+      "oids" : ["2.16.840.1.113883.5.25"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
@@ -514,8 +649,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -564,8 +699,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units",
-      "http://terminology.hl7.org/6.1.0/ValueSet-v3-UnitsOfMeasureCaseSensitive.html" : "UnitsOfMeasureCaseSensitive",
       "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units",
+      "http://terminology.hl7.org/6.1.0/ValueSet-v3-UnitsOfMeasureCaseSensitive.html" : "UnitsOfMeasureCaseSensitive",
       "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units"
     },
     {

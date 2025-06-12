@@ -136,7 +136,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.code.text","Observation.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
-"Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://etatunghpa.com/StructureDefinition/Patient-HPA]]}
+"Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://twhpa.tsti.com/StructureDefinition/Patient-HPA]]}
 ","檢驗檢查有關的對象及（或）事物","此檢驗檢查是關於一位病人、一群病人、地點、或設備。如果檢驗檢查的實際焦點與對象（或其樣本、其部分或其區域）不同，則焦點資料項目或代碼本身會具體說明檢驗檢查的實際焦點。","人們期望這個資料項目的cardinality為1...1。唯一可能缺少對象的情況是當檢驗檢查是由一個不認識病人的設備進行的。在這種情況下，應透過一些情境／通道對應（context／channel matching）技術將檢驗檢查與病人對應，此時，應更新檢驗檢查資訊。","如果你不知道他們是誰或關於什麼，檢驗檢查不會有值。","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3","participation[typeCode=RTGT]","FiveWs.subject[x]","FiveWs.subject"
 "Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -154,7 +154,7 @@ vs-1:if Observation.effective[x] is dateTime and has a value then that value sha
 "Observation.issued","Observation.issued","","","",0,1,"Y","","Y","instant {[]} {[]}
 ","此版本檢驗檢查完成的日期或時間","此版本發布的日期/時間。[檢查結果上傳日期]","對於不需要審查和核實的檢驗檢查值，發佈日期時間可能與resource本身的最後更新日期時間相同。對於需要對某些更新進行審查和核實的檢驗檢查，若為非臨床上的重要更新則不需要對新版本進行再次審查和驗證，所以發佈日期時間可能與resource本身的最後更新日期時間不一樣。","","","","","","","","",,,,,"",,,,"Observation.issued",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBR.22 (or MSH.7), or perhaps OBX-19 (depends on who observation made)","participation[typeCode=AUT].time","FiveWs.recorded"
-"Observation.performer","Observation.performer","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[https://etatunghpa.com/StructureDefinition/Organization-HPA], CanonicalType[https://etatunghpa.com/StructureDefinition/Practitioner-HPA]]}
+"Observation.performer","Observation.performer","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[https://twhpa.tsti.com/StructureDefinition/Organization-HPA], CanonicalType[https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA]]}
 ","誰負責這項檢驗檢查","誰負責宣告檢驗檢查結果值為「真的」","","可以對此檢驗檢查有一定程度的信任，並指出後續問題的方向。","","","","","","","",,,,,"",,,,"Observation.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor","OBX.15 / (Practitioner)  OBX-16,  PRT-5:PRT-4='RO' /  (Device)  OBX-18 , PRT-10:PRT-4='EQUIP' / (Organization)  OBX-23,  PRT-8:PRT-4='PO'","participation[typeCode=PRF]","FiveWs.actor"
 "Observation.value[x]","Observation.value[x]","","","",0,1,"Y","","Y","Quantity {[]} {[]}

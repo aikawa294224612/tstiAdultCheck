@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-smokingstatus-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/ObservationSmokingStatus-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA"]
   },
   "text" : {
     "status" : "generated",

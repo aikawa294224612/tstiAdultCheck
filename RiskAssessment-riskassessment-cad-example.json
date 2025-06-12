@@ -2,7 +2,7 @@
   "resourceType" : "RiskAssessment",
   "id" : "riskassessment-cad-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/RiskAssessment-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"]
   },
   "text" : {
     "status" : "generated",

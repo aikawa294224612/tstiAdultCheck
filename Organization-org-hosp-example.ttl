@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://etatunghpa.com/Organization/org-hosp-example> a fhir:Organization ;
+<https://twhpa.tsti.com/Organization/org-hosp-example> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "org-hosp-example"] ; # 
   fhir:meta [

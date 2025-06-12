@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>範例 - 成人預防保健實作指引(HPA-IG) v0.2.0</title>
+    <title>範例 - 成人預防保健實作指引(HPA-IG) v0.2.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">成人預防保健實作指引(HPA-IG)</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - ci-build
+            <span style="display:inline-block;">0.2.1 - ci-build
 
 
             </span>
@@ -154,7 +154,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">成人預防保健實作指引(HPA-IG) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://etatunghpa.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">成人預防保健實作指引(HPA-IG) - Local Development build (v0.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://twhpa.tsti.com/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>範例</h2>
   
 
@@ -172,6 +172,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#bundle" id="markdown-toc-bundle">Bundle</a></li>
+  <li><a href="#composition" id="markdown-toc-composition">Composition</a></li>
   <li><a href="#condition" id="markdown-toc-condition">Condition</a></li>
   <li><a href="#diagnosticreport" id="markdown-toc-diagnosticreport">DiagnosticReport</a></li>
   <li><a href="#encounter" id="markdown-toc-encounter">Encounter</a></li>
@@ -183,47 +185,65 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>以下為成人預防保健實作指引所有Profiles的範例。</p>
+<p>以下為成人預防保健實作指引所有 Profiles 的範例。</p>
+
+<h3 id="bundle">Bundle</h3>
+
+<ul>
+  <li><a href="Bundle-bundle-example.html">成人預防保健服務檢查單範例</a>: 依據成人預防保健服務檢查單（Bundle-HPA）Profile 呈現成人預防保健服務檢查單範例</li>
+</ul>
+
+<h3 id="composition">Composition</h3>
+
+<ul>
+  <li><a href="Composition-composition-example.html">成人預防保健服務檢查單文件架構範例</a>: 成人預防保健服務檢查單文件架構（Composition-HPA）Profile 呈現成人預防保健服務檢查單文件架構範例</li>
+</ul>
 
 <h3 id="condition">Condition</h3>
+
 <ul>
-  <li><a href="Condition-condition-example.html">受檢民眾疾病史範例</a>: 依據成人預防保健-受檢民眾疾病史（Condition-HPA）Profile呈現受檢民眾疾病史範例</li>
+  <li><a href="Condition-condition-hypertension-example.html">受檢民眾疾病史(高血壓)範例</a>: 依據成人預防保健-受檢民眾疾病史（Condition-HPA）Profile 呈現受檢民眾疾病史(高血壓)範例</li>
 </ul>
 
 <h3 id="diagnosticreport">DiagnosticReport</h3>
+
 <ul>
-  <li><a href="DiagnosticReport-diagnosticreport-bloodpressure-example.html">成人預防保血壓檢查結果與建議範例</a>: 依據成人預防保健-檢查結果與建議（DiagnosticReport-HPA）Profile呈現成人預防保血壓檢查結果與建議範例</li>
+  <li><a href="DiagnosticReport-diagnosticreport-bloodpressure-example.html">成人預防保血壓檢查結果與建議範例</a>: 依據成人預防保健-檢查結果與建議（DiagnosticReport-HPA）Profile 呈現成人預防保血壓檢查結果與建議範例</li>
 </ul>
 
 <h3 id="encounter">Encounter</h3>
+
 <ul>
-  <li><a href="Encounter-encounter-example.html">就醫紀錄範例</a>: 依據成人預防保健-就醫紀錄（Encounter-HPA）Profile呈現就醫紀錄範例</li>
+  <li><a href="Encounter-encounter-example.html">就醫紀錄範例</a>: 依據成人預防保健-就醫紀錄（Encounter-HPA）Profile 呈現就醫紀錄範例</li>
 </ul>
 
 <h3 id="observation">Observation</h3>
+
 <ul>
-  <li><a href="Observation-observation-bmi-example.html">身體檢查-身體質量指數(BMI)範例</a>: 依據成人預防保健-身體檢查-身體質量指數(BMI)（ObservationBMI-HPA）Profile呈現身體檢查-身體質量指數範例</li>
-  <li><a href="Observation-observation-depress-example.html">憂鬱檢測範例</a>: 依據成人預防保健-憂鬱檢測（ObservationDepression-HPA）Profile呈現憂鬱檢測範例</li>
-  <li><a href="Observation-observation-checkbc-example.html">健康行為範例</a>: 依據成人預防保健-健康行為（ObservationHealthBehavior-HPA）Profile呈現健康行為範例</li>
-  <li><a href="Observation-observation-consult-smoke-example.html">健康諮詢範例</a>: 依據成人預防保健-健康諮詢（ObservationHealthConsultation-HPA）Profile呈現健康諮詢範例</li>
-  <li><a href="Observation-observation-kidneystage-example.html">腎功能檢查期別</a>: 依據成人預防保健-腎功能檢查期別（ObservationKidneyStage-HPA）Profile呈現腎功能檢查期別範例</li>
-  <li><a href="Observation-observation-height-example.html">身體檢查-身高範例</a>: 依據成人預防保健-身體檢查-身高（ObservationHeight-HPA）Profile呈現身體檢查-身高範例</li>
-  <li><a href="Observation-observation-lab-hepatitisb-example.html">實驗室檢查範例</a>: 依據成人預防保健-實驗室檢查（ObservationLab-HPA）Profile呈現實驗室檢查範例</li>
-  <li><a href="Observation-observation-pressure-example.html">身體檢查-血壓範例</a>: 依據成人預防保健-身體檢查-血壓（ObservationPressure-HPA）Profile呈現身體檢查-血壓範例</li>
-  <li><a href="Observation-observation-smokingstatus-example.html">健康行為-吸菸範例</a>: 依據成人預防保健-健康行為-吸菸（ObservationSmokingStatus-HPA）Profile呈現健康行為-吸菸範例</li>
-  <li><a href="Observation-observation-waist-example.html">身體檢查-腰圍範例</a>: 依據成人預防保健-身體檢查-腰圍（ObservationWaist-HPA）Profile呈現身體檢查-腰圍範例</li>
-  <li><a href="Observation-observation-weight-example.html">身體檢查-體重範例</a>: 依據成人預防保健-身體檢查-體重（ObservationWeight-HPA）Profile呈現身體檢查-體重範例</li>
+  <li><a href="Observation-observation-bmi-example.html">身體檢查-身體質量指數(BMI)範例</a>: 依據成人預防保健-身體檢查-身體質量指數(BMI)（ObservationBMI-HPA）Profile 呈現身體檢查-身體質量指數範例</li>
+  <li><a href="Observation-observation-depress-example.html">憂鬱檢測範例</a>: 依據成人預防保健-憂鬱檢測（ObservationDepression-HPA）Profile 呈現憂鬱檢測範例</li>
+  <li><a href="Observation-observation-checkbc-example.html">健康行為範例</a>: 依據成人預防保健-健康行為（ObservationHealthBehavior-HPA）Profile 呈現健康行為範例</li>
+  <li><a href="Observation-observation-consult-smoking-example.html">健康諮詢範例</a>: 依據成人預防保健-健康諮詢（ObservationHealthConsultation-HPA）Profile 呈現健康諮詢範例</li>
+  <li><a href="Observation-observation-kidneystage-example.html">腎功能檢查期別</a>: 依據成人預防保健-腎功能檢查期別（ObservationKidneyStage-HPA）Profile 呈現腎功能檢查期別範例</li>
+  <li><a href="Observation-observation-height-example.html">身體檢查-身高範例</a>: 依據成人預防保健-身體檢查-身高（ObservationHeight-HPA）Profile 呈現身體檢查-身高範例</li>
+  <li><a href="Observation-observation-lab-hepatitisb-example.html">實驗室檢查範例</a>: 依據成人預防保健-實驗室檢查（ObservationLab-HPA）Profile 呈現實驗室檢查範例</li>
+  <li><a href="Observation-observation-pressure-example.html">身體檢查-血壓範例</a>: 依據成人預防保健-身體檢查-血壓（ObservationPressure-HPA）Profile 呈現身體檢查-血壓範例</li>
+  <li><a href="Observation-observation-smokingstatus-example.html">健康行為-吸菸範例</a>: 依據成人預防保健-健康行為-吸菸（ObservationSmokingStatus-HPA）Profile 呈現健康行為-吸菸範例</li>
+  <li><a href="Observation-observation-waist-example.html">身體檢查-腰圍範例</a>: 依據成人預防保健-身體檢查-腰圍（ObservationWaist-HPA）Profile 呈現身體檢查-腰圍範例</li>
+  <li><a href="Observation-observation-weight-example.html">身體檢查-體重範例</a>: 依據成人預防保健-身體檢查-體重（ObservationWeight-HPA）Profile 呈現身體檢查-體重範例</li>
 </ul>
 
 <h3 id="organization">Organization</h3>
+
 <ul>
-  <li><a href="Organization-org-hosp-example.html">醫事機構資訊範例</a>: 依據成人預防保健-醫事機構資訊（Organization-HPA）Profile呈現醫事機構資訊範例</li>
-  <li><a href="Organization-org-test-example.html">委託代檢醫事檢驗機構範例</a>: 依據成人預防保健-醫事機構資訊（Organization-HPA）Profile呈現委託代檢醫事檢驗機構範例</li>
+  <li><a href="Organization-org-hosp-example.html">醫事機構資訊範例</a>: 依據成人預防保健-醫事機構資訊（Organization-HPA）Profile 呈現醫事機構資訊範例</li>
+  <li><a href="Organization-org-test-example.html">委託代檢醫事檢驗機構範例</a>: 依據成人預防保健-醫事機構資訊（Organization-HPA）Profile 呈現委託代檢醫事檢驗機構範例</li>
 </ul>
 
 <h3 id="patient">Patient</h3>
+
 <ul>
-  <li><a href="Patient-patient-example.html">受檢民眾基本資料範例</a>: 依據成人預防保健-受檢民眾基本資料（Patient-HPA）Profile呈現受檢民眾基本資料範例</li>
+  <li><a href="Patient-patient-example.html">受檢民眾基本資料範例</a>: 依據成人預防保健-受檢民眾基本資料（Patient-HPA）Profile 呈現受檢民眾基本資料範例</li>
 </ul>
 
 <h3 id="practitioner">Practitioner</h3>
@@ -257,7 +277,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.etatung.com/">大世科 tsti</a>.  Package tw.etatung.hpa#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 22, 2025 13:29+0800">2025-04-22</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.etatung.com/">大世科 tsti</a>.  Package tw.etatung.hpa#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 11, 2025 16:51+0800">2025-06-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

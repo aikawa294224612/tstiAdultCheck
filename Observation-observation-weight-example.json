@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-weight-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/ObservationWeight-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/ObservationWeight-HPA"]
   },
   "text" : {
     "status" : "generated",

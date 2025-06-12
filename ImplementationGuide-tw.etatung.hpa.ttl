@@ -6,19 +6,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://etatunghpa.com/ImplementationGuide/tw.etatung.hpa> a fhir:ImplementationGuide ;
+<https://twhpa.tsti.com/ImplementationGuide/tw.etatung.hpa> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "tw.etatung.hpa"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide tw.etatung.hpa</b></p><a name=\"tw.etatung.hpa\"> </a><a name=\"hctw.etatung.hpa\"> </a><a name=\"tw.etatung.hpa-en-US\"> </a><h2>HPA</h2><p>The official URL for this implementation guide is: </p><pre>https://etatunghpa.com/ImplementationGuide/tw.etatung.hpa</pre><div><p>成人預防保健實作指引(HPA-IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)0.1.1版本之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..<em>、1..1或1..</em>）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。</p>\n</div></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide tw.etatung.hpa</b></p><a name=\"tw.etatung.hpa\"> </a><a name=\"hctw.etatung.hpa\"> </a><a name=\"tw.etatung.hpa-en-US\"> </a><h2>HPA</h2><p>The official URL for this implementation guide is: </p><pre>https://twhpa.tsti.com/ImplementationGuide/tw.etatung.hpa</pre><div><p>成人預防保健實作指引(HPA-IG)依據【國民健康署成人預防保健服務檢查單】與【國民健康署成人預防保健服務檢查紀錄結果表單資料電子檔申報格式】，採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1和臺灣核心實作指引(TW Core IG)0.1.1版本之標準基礎上，進一步定義適用於健康照護資料交換需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..<em>、1..1或1..</em>）及資料類型（文字、日期時間、代碼等）等，旨在提供健康照護資訊系統開發與實作者以成人健檢實作指引為基礎，再進一步訂定其實務專案所需之資料交換格式以應用於專案中。</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://etatunghpa.com/ImplementationGuide/tw.etatung.hpa"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:url [ fhir:v "https://twhpa.tsti.com/ImplementationGuide/tw.etatung.hpa"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
   fhir:name [ fhir:v "HPA"] ; # 
   fhir:title [ fhir:v "成人預防保健實作指引(HPA-IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-04-22T13:25:09+08:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-11T16:49:32+08:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "大世科 tsti"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "大世科 tsti" ] ;
@@ -45,7 +45,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.2.0" ]
+     fhir:version [ fhir:v "6.4.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -217,7 +217,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "https://etatunghpa.com/history.html"
+           fhir:v "https://twhpa.tsti.com/history.html"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -598,7 +598,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "https://etatunghpa.com/history.html"
+           fhir:v "https://twhpa.tsti.com/history.html"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -833,19 +833,56 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Bundle/bundle-example> ;
+         fhir:reference [ fhir:v "Bundle/bundle-example" ]
+       ] ;
+       fhir:name [ fhir:v "bundle-example" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/Bundle-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Bundle-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Condition"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Condition/condition-example> ;
-         fhir:reference [ fhir:v "Condition/condition-example" ]
+         fhir:link <https://twhpa.tsti.com/Condition/condition-cvd-example> ;
+         fhir:reference [ fhir:v "Condition/condition-cvd-example" ]
        ] ;
-       fhir:name [ fhir:v "condition-example" ] ;
+       fhir:name [ fhir:v "condition-cvd-example" ] ;
+       fhir:description [ fhir:v "成人預防保健疾病史-心臟病範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/Condition-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Condition-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Condition/condition-hypertension-example> ;
+         fhir:reference [ fhir:v "Condition/condition-hypertension-example" ]
+       ] ;
+       fhir:name [ fhir:v "condition-hypertension-example" ] ;
        fhir:description [ fhir:v "成人預防保健疾病史-高血壓範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/Condition-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/Condition-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/Condition-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Condition-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -856,15 +893,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/DiagnosticReport/diagnosticreport-bloodpressure-example> ;
+         fhir:link <https://twhpa.tsti.com/DiagnosticReport/diagnosticreport-bloodpressure-example> ;
          fhir:reference [ fhir:v "DiagnosticReport/diagnosticreport-bloodpressure-example" ]
        ] ;
        fhir:name [ fhir:v "diagnosticreport-bloodpressure-example" ] ;
        fhir:description [ fhir:v "成人預防保血壓檢查結果與建議範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -875,15 +912,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Encounter/encounter-example> ;
+         fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
          fhir:reference [ fhir:v "Encounter/encounter-example" ]
        ] ;
        fhir:name [ fhir:v "encounter-example" ] ;
        fhir:description [ fhir:v "成人預防保健就醫紀錄範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/Encounter-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/Encounter-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/Encounter-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Encounter-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -894,15 +931,34 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-bmi-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-alcohol-example> ;
+         fhir:reference [ fhir:v "Observation/observation-alcohol-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-alcohol-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康行為喝酒範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-bmi-example> ;
          fhir:reference [ fhir:v "Observation/observation-bmi-example" ]
        ] ;
        fhir:name [ fhir:v "observation-bmi-example" ] ;
        fhir:description [ fhir:v "成人預防保健身體質量指數(BMI)紀錄範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationBMI-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationBMI-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationBMI-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationBMI-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -913,15 +969,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-checkbc-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-checkbc-example> ;
          fhir:reference [ fhir:v "Observation/observation-checkbc-example" ]
        ] ;
        fhir:name [ fhir:v "observation-checkbc-example" ] ;
        fhir:description [ fhir:v "成人預防保健健康行為接受過B、C 型肝炎檢查範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -932,15 +988,167 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-consult-smoke-example> ;
-         fhir:reference [ fhir:v "Observation/observation-consult-smoke-example" ]
+         fhir:link <https://twhpa.tsti.com/Observation/observation-consult-accident-example> ;
+         fhir:reference [ fhir:v "Observation/observation-consult-accident-example" ]
        ] ;
-       fhir:name [ fhir:v "observation-consult-smoke-example" ] ;
+       fhir:name [ fhir:v "observation-consult-accident-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康行為事故傷害預防諮詢範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-consult-alcohol-example> ;
+         fhir:reference [ fhir:v "Observation/observation-consult-alcohol-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-consult-alcohol-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康行為節酒諮詢範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-consult-chronic-example> ;
+         fhir:reference [ fhir:v "Observation/observation-consult-chronic-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-consult-chronic-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康慢性疾病風險評估諮詢範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-consult-ckd-example> ;
+         fhir:reference [ fhir:v "Observation/observation-consult-ckd-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-consult-ckd-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康腎病識能衛教指導諮詢範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-consult-exercise-example> ;
+         fhir:reference [ fhir:v "Observation/observation-consult-exercise-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-consult-exercise-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康行為規律運動諮詢範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-consult-food-example> ;
+         fhir:reference [ fhir:v "Observation/observation-consult-food-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-consult-food-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康飲食諮詢範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-consult-nuts-example> ;
+         fhir:reference [ fhir:v "Observation/observation-consult-nuts-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-consult-nuts-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康行為戒檳榔諮詢範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-consult-oral-example> ;
+         fhir:reference [ fhir:v "Observation/observation-consult-oral-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-consult-oral-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康口腔保健諮詢範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-consult-smoking-example> ;
+         fhir:reference [ fhir:v "Observation/observation-consult-smoking-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-consult-smoking-example" ] ;
        fhir:description [ fhir:v "成人預防保健健康行為戒菸諮詢範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationHealthConsultation-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -951,15 +1159,34 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-depress-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-consult-weight-example> ;
+         fhir:reference [ fhir:v "Observation/observation-consult-weight-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-consult-weight-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康行為維持正常體重諮詢範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-depress-example> ;
          fhir:reference [ fhir:v "Observation/observation-depress-example" ]
        ] ;
        fhir:name [ fhir:v "observation-depress-example" ] ;
        fhir:description [ fhir:v "成人預防保健-憂鬱檢測範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationDepression-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationDepression-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationDepression-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationDepression-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -970,14 +1197,33 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-height-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-exercise-example> ;
+         fhir:reference [ fhir:v "Observation/observation-exercise-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-exercise-example" ] ;
+       fhir:description [ fhir:v "成人預防保健健康行為運動範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-height-example> ;
          fhir:reference [ fhir:v "Observation/observation-height-example" ]
        ] ;
        fhir:name [ fhir:v "observation-height-example" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationHeight-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationHeight-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHeight-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHeight-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -988,15 +1234,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-kidneystage-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-kidneystage-example> ;
          fhir:reference [ fhir:v "Observation/observation-kidneystage-example" ]
        ] ;
        fhir:name [ fhir:v "observation-kidneystage-example" ] ;
        fhir:description [ fhir:v "成人預防保健腎功能檢查期別範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationKidneyStage-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationKidneyStage-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationKidneyStage-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationKidneyStage-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1007,15 +1253,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-lab-hepatitisb-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-lab-hepatitisb-example> ;
          fhir:reference [ fhir:v "Observation/observation-lab-hepatitisb-example" ]
        ] ;
        fhir:name [ fhir:v "observation-lab-hepatitisb-example" ] ;
        fhir:description [ fhir:v "成人預防保健檢驗資訊範例-B型肝炎表面抗原" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationLab-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationLab-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1026,15 +1272,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-lab-protein-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-lab-protein-example> ;
          fhir:reference [ fhir:v "Observation/observation-lab-protein-example" ]
        ] ;
        fhir:name [ fhir:v "observation-lab-protein-example" ] ;
        fhir:description [ fhir:v "成人預防保健實驗室檢查尿蛋白" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationLab-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationLab-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1045,15 +1291,34 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-nut-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-lab-urate-example> ;
+         fhir:reference [ fhir:v "Observation/observation-lab-urate-example" ]
+       ] ;
+       fhir:name [ fhir:v "observation-lab-urate-example" ] ;
+       fhir:description [ fhir:v "成人預防保健實驗室檢查尿酸" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Observation/observation-nut-example> ;
          fhir:reference [ fhir:v "Observation/observation-nut-example" ]
        ] ;
        fhir:name [ fhir:v "observation-nut-example" ] ;
        fhir:description [ fhir:v "成人預防保健健康行為嚼檳榔範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1064,15 +1329,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-pressure-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-pressure-example> ;
          fhir:reference [ fhir:v "Observation/observation-pressure-example" ]
        ] ;
        fhir:name [ fhir:v "observation-pressure-example" ] ;
        fhir:description [ fhir:v "成人預防保健血壓紀錄範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationPressure-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationPressure-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationPressure-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationPressure-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1083,14 +1348,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-smokingstatus-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-smokingstatus-example> ;
          fhir:reference [ fhir:v "Observation/observation-smokingstatus-example" ]
        ] ;
        fhir:name [ fhir:v "observation-smokingstatus-example" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationSmokingStatus-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationSmokingStatus-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1101,15 +1366,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-waist-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-waist-example> ;
          fhir:reference [ fhir:v "Observation/observation-waist-example" ]
        ] ;
        fhir:name [ fhir:v "observation-waist-example" ] ;
        fhir:description [ fhir:v "成人預防保健腰圍紀錄範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationWaist-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationWaist-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationWaist-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationWaist-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1120,15 +1385,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Observation/observation-weight-example> ;
+         fhir:link <https://twhpa.tsti.com/Observation/observation-weight-example> ;
          fhir:reference [ fhir:v "Observation/observation-weight-example" ]
        ] ;
        fhir:name [ fhir:v "observation-weight-example" ] ;
        fhir:description [ fhir:v "成人預防保健體重紀錄範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/ObservationWeight-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationWeight-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationWeight-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationWeight-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1139,7 +1404,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Organization/org-hosp-example> ;
+         fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
          fhir:reference [ fhir:v "Organization/org-hosp-example" ]
        ] ;
        fhir:name [ fhir:v "org-hosp-example" ] ;
@@ -1157,7 +1422,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Organization/org-test-example> ;
+         fhir:link <https://twhpa.tsti.com/Organization/org-test-example> ;
          fhir:reference [ fhir:v "Organization/org-test-example" ]
        ] ;
        fhir:name [ fhir:v "org-test-example" ] ;
@@ -1175,15 +1440,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Patient/patient-example> ;
+         fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
          fhir:reference [ fhir:v "Patient/patient-example" ]
        ] ;
        fhir:name [ fhir:v "patient-example" ] ;
        fhir:description [ fhir:v "成人預防保健受檢民眾基本資料範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/Patient-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/Patient-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/Patient-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Patient-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1194,15 +1459,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/Practitioner/practitioner-first-example> ;
+         fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
          fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
        ] ;
        fhir:name [ fhir:v "practitioner-first-example" ] ;
        fhir:description [ fhir:v "成人預防保健第一階段服務診治醫師範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/Practitioner-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/Practitioner-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1213,15 +1478,91 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/RiskAssessment/riskassessment-cad-example> ;
+         fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-cad-example> ;
          fhir:reference [ fhir:v "RiskAssessment/riskassessment-cad-example" ]
        ] ;
        fhir:name [ fhir:v "riskassessment-cad-example" ] ;
        fhir:description [ fhir:v "成人預防保慢性疾病風險值:冠心病範例" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://etatunghpa.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
-         fhir:link <https://etatunghpa.com/StructureDefinition/RiskAssessment-HPA>
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "RiskAssessment"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-cvdevent-example> ;
+         fhir:reference [ fhir:v "RiskAssessment/riskassessment-cvdevent-example" ]
+       ] ;
+       fhir:name [ fhir:v "riskassessment-cvdevent-example" ] ;
+       fhir:description [ fhir:v "成人預防保慢性疾病風險值:心血管不良事件範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "RiskAssessment"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-diabetes-example> ;
+         fhir:reference [ fhir:v "RiskAssessment/riskassessment-diabetes-example" ]
+       ] ;
+       fhir:name [ fhir:v "riskassessment-diabetes-example" ] ;
+       fhir:description [ fhir:v "成人預防保慢性疾病風險值:糖尿病範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "RiskAssessment"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-hypertension-example> ;
+         fhir:reference [ fhir:v "RiskAssessment/riskassessment-hypertension-example" ]
+       ] ;
+       fhir:name [ fhir:v "riskassessment-hypertension-example" ] ;
+       fhir:description [ fhir:v "成人預防保慢性疾病風險值:高血壓範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "RiskAssessment"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-stroke-example> ;
+         fhir:reference [ fhir:v "RiskAssessment/riskassessment-stroke-example" ]
+       ] ;
+       fhir:name [ fhir:v "riskassessment-stroke-example" ] ;
+       fhir:description [ fhir:v "成人預防保慢性疾病風險值:腦中風範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA>
        ]
      ] [
        fhir:extension ( [
@@ -1232,7 +1573,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/HPA-Model> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/HPA-Model> ;
          fhir:reference [ fhir:v "StructureDefinition/HPA-Model" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健(HPA)之資料模型" ] ;
@@ -1250,7 +1591,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/CapabilityStatement/CapabilityStatementHPAServer> ;
+         fhir:link <https://twhpa.tsti.com/CapabilityStatement/CapabilityStatementHPAServer> ;
          fhir:reference [ fhir:v "CapabilityStatement/CapabilityStatementHPAServer" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-伺服端（TW Core Server）" ] ;
@@ -1268,7 +1609,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationHealthBehavior-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationHealthBehavior-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-健康行為" ] ;
@@ -1286,7 +1627,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationSmokingStatus-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationSmokingStatus-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-健康行為-吸菸" ] ;
@@ -1304,7 +1645,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationHealthConsultation-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationHealthConsultation-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-健康諮詢" ] ;
@@ -1322,7 +1663,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/Patient-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Patient-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/Patient-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-受檢民眾基本資料" ] ;
@@ -1340,7 +1681,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/Condition-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Condition-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/Condition-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-受檢民眾疾病史" ] ;
@@ -1358,7 +1699,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationLab-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationLab-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-實驗室檢查" ] ;
@@ -1376,7 +1717,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/Encounter-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Encounter-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/Encounter-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-就醫紀錄" ] ;
@@ -1394,7 +1735,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/RiskAssessment-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/RiskAssessment-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-慢性疾病風險" ] ;
@@ -1412,7 +1753,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationDepression-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationDepression-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationDepression-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-憂鬱檢測" ] ;
@@ -1430,7 +1771,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/Practitioner-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/Practitioner-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-服務診治醫師" ] ;
@@ -1448,7 +1789,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/DiagnosticReport-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/DiagnosticReport-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-檢查結果與建議" ] ;
@@ -1466,7 +1807,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationKidneyStage-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationKidneyStage-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationKidneyStage-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-腎功能檢查期別" ] ;
@@ -1484,7 +1825,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationWaist-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationWaist-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationWaist-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-身體檢查-腰圍" ] ;
@@ -1502,7 +1843,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationPressure-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationPressure-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationPressure-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-身體檢查-血壓" ] ;
@@ -1520,7 +1861,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationBMI-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationBMI-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationBMI-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-身體檢查-身體質量指數(BMI)" ] ;
@@ -1538,7 +1879,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationHeight-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHeight-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationHeight-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-身體檢查-身高" ] ;
@@ -1556,7 +1897,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/ObservationWeight-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationWeight-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationWeight-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-身體檢查-體重" ] ;
@@ -1574,7 +1915,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/StructureDefinition/Organization-HPA> ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Organization-HPA> ;
          fhir:reference [ fhir:v "StructureDefinition/Organization-HPA" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健-醫事機構資訊" ] ;
@@ -1592,7 +1933,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/ValueSet/snomed-health-behavior-code> ;
+         fhir:link <https://twhpa.tsti.com/ValueSet/snomed-health-behavior-code> ;
          fhir:reference [ fhir:v "ValueSet/snomed-health-behavior-code" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健健康行為SNOMED Health Behavior代碼集值" ] ;
@@ -1610,7 +1951,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/ValueSet/snomed-health-consultation-code> ;
+         fhir:link <https://twhpa.tsti.com/ValueSet/snomed-health-consultation-code> ;
          fhir:reference [ fhir:v "ValueSet/snomed-health-consultation-code" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健健康諮詢SNOMED Health Consultation代碼集值" ] ;
@@ -1628,7 +1969,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/ValueSet/snomed-risk-assessment-code> ;
+         fhir:link <https://twhpa.tsti.com/ValueSet/snomed-risk-assessment-code> ;
          fhir:reference [ fhir:v "ValueSet/snomed-risk-assessment-code" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健慢性疾病風險SNOMED Risk Assessment代碼集值" ] ;
@@ -1642,11 +1983,66 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Bundle-HPA> ;
+         fhir:reference [ fhir:v "StructureDefinition/Bundle-HPA" ]
+       ] ;
+       fhir:name [ fhir:v "成人預防保健服務檢查單" ] ;
+       fhir:description [ fhir:v "此Profiles用於打包成人預防保健服務檢查單所有相關資料，利用此Bundle時請使用document方式將資料進行打包，Bundle所包含之Resource應與Composition涵蓋數量保持一致，且所有的Resource必須符合出院病摘各資料規範，其相關規範(Structure Definition)與範例(Example)可分別於Bundle內entry的url連結或是在Composition進行查閱。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Composition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/Composition/composition-example> ;
+         fhir:reference [ fhir:v "Composition/composition-example" ]
+       ] ;
+       fhir:name [ fhir:v "成人預防保健服務檢查單" ] ;
+       fhir:description [ fhir:v "成人預防保健文件架構範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://twhpa.tsti.com/StructureDefinition/Composition-HPA"^^xsd:anyURI ;
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Composition-HPA>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://twhpa.tsti.com/StructureDefinition/Composition-HPA> ;
+         fhir:reference [ fhir:v "StructureDefinition/Composition-HPA" ]
+       ] ;
+       fhir:name [ fhir:v "成人預防保健服務檢查單-文件架構" ] ;
+       fhir:description [ fhir:v "此Profile用於紀錄成人預防保健服務檢查單文件架構。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/ValueSet/loinc-diagnostic-code> ;
+         fhir:link <https://twhpa.tsti.com/ValueSet/loinc-diagnostic-code> ;
          fhir:reference [ fhir:v "ValueSet/loinc-diagnostic-code" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健檢查結果與建議Loinc Diagnostic代碼集值" ] ;
@@ -1664,7 +2060,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://etatunghpa.com/ValueSet/snomed-medical-history-code> ;
+         fhir:link <https://twhpa.tsti.com/ValueSet/snomed-medical-history-code> ;
          fhir:reference [ fhir:v "ValueSet/snomed-medical-history-code" ]
        ] ;
        fhir:name [ fhir:v "成人預防保健疾病史SNOMED Medical History代碼集值" ] ;

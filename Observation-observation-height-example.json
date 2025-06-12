@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-height-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/ObservationHeight-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/ObservationHeight-HPA"]
   },
   "text" : {
     "status" : "generated",

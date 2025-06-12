@@ -2,7 +2,7 @@
   "resourceType" : "Practitioner",
   "id" : "practitioner-first-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/Practitioner-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA"]
   },
   "text" : {
     "status" : "generated",

@@ -89,7 +89,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
 "DiagnosticReport.code.coding:LOINCObservationCode","DiagnosticReport.code.coding","LOINCObservationCode","","",0,1,"Y","","","Coding {[CanonicalType[https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Coding-tw]]} {[]}
-","LOINC®為Regenstrief Institute, Inc.維護的檢驗事件描述代碼，可免費使用，可優先選用此代碼。","由專門術語系統（terminology system）所定義之代碼的參照","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，例如：SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許代碼系統中的替代編碼，以及翻譯到其他編碼系統。","","","","","","","",,"required","","https://etatunghpa.com/ValueSet/loinc-diagnostic-code","",,,,"CodeableConcept.coding",0,*,"ele-1
+","LOINC®為Regenstrief Institute, Inc.維護的檢驗事件描述代碼，可免費使用，可優先選用此代碼。","由專門術語系統（terminology system）所定義之代碼的參照","代碼可以在列舉清單（enumerations）或代碼清單（code lists）中非常隨意地定義，直至有非常正式的定義，例如：SNOMED CT—更多資訊見HL7 v3核心原則（Core Principles ）。編碼的排序是未定義的因而 **必須沒有（SHALL NOT）** 被用來推斷意義。一般來說，最多只有一個編碼值（coding values）會被標記為UserSelected = true。","允許代碼系統中的替代編碼，以及翻譯到其他編碼系統。","","","","","","","",,"required","","https://twhpa.tsti.com/ValueSet/loinc-diagnostic-code","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
 "DiagnosticReport.code.coding:LOINCObservationCode.id","DiagnosticReport.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -192,11 +192,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","概念的文字表示法","輸入資料的使用者所見／所選／所說的人類可讀文字表述，和（或）其代表使用者的預期含義。","很多時候，此文字表述與其中一個代碼的顯示名稱相同。","專門術語中的代碼並不總是能捕捉人類使用的細微差別的正確意義，或者根本就沒有合適的代碼；這些情況下，文字表述被用來捕捉來源的全部意義。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
 "DiagnosticReport.subject","DiagnosticReport.subject","","Patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://etatunghpa.com/StructureDefinition/Patient-HPA]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://twhpa.tsti.com/StructureDefinition/Patient-HPA]]}
 ","報告的對象—通常但不總是病人","報告的對象體，通常但不總是病人。然而，診斷服務也對從其他各種來源收集的檢體進行分析。",""," **必須（SHALL）** 知道對象的背景","","","","","","","",,,,,"",,,,"DiagnosticReport.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3 (no HL7 v2 mapping for Group or Device)","participation[typeCode=SBJ]","FiveWs.subject[x]","FiveWs.subject"
 "DiagnosticReport.encounter","DiagnosticReport.encounter","","Context
-","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://etatunghpa.com/StructureDefinition/Encounter-HPA]]}
+","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://twhpa.tsti.com/StructureDefinition/Encounter-HPA]]}
 ","請求檢驗時的健康照護事件","此DiagnosticReport所涉及的健康照護事件（例如：病人和健康照護服務提供者的互動）。","這通常是事件發生的就醫，但有些事件可能是在就醫完成之前或之後開始，但仍與就醫的情境有關（如住院前的實驗室檢驗）。","將此服務請求連接就醫（Encounter）情境","","","","","","","",,,,,"",,,,"DiagnosticReport.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.encounter","PV1-19","inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]","FiveWs.context"
 "DiagnosticReport.effective[x]","DiagnosticReport.effective[x]","","Observation time
@@ -208,7 +208,7 @@ Date IssuedDate Verified","",0,1,"Y","","Y","instant {[]} {[]}
 ","此版本完成的日期時間","此版本發布的日期/時間。[檢查結果上傳日期]","可能與resource本身的更新時間不同，因為那是紀錄的狀態（可能是第二個副本），而不是發報告的實際時間。","臨床醫師需要確認報告的發布日期","","","","","","","",,,,,"",,,,"DiagnosticReport.issued",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBR-22","participation[typeCode=VRF or AUT].time","FiveWs.recorded"
 "DiagnosticReport.performer","DiagnosticReport.performer","","Laboratory
-ServicePractitionerDepartmentCompanyAuthorized byDirector","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[https://etatunghpa.com/StructureDefinition/Organization-HPA]]}
+ServicePractitionerDepartmentCompanyAuthorized byDirector","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[https://twhpa.tsti.com/StructureDefinition/Organization-HPA]]}
 ","對診斷服務負責者[醫事機構]","負責發此報告的診斷服務","這不一定是一些混合的不可被中斷的一個或一系列資料項目的來源或解釋結果的實體，它是對臨床報告負責的實體。","如果對結果有疑問，需要知道應與誰聯絡；還可能需要追蹤次級資料分析的報告來源。","","","","","","","",,,,,"",,,,"DiagnosticReport.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor","PRT-8 (where this PRT-4-Participation = ""PO"")",".participation[typeCode=PRF]","FiveWs.actor"
 "DiagnosticReport.resultsInterpreter","DiagnosticReport.resultsInterpreter","","Analyzed by

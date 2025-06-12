@@ -8,13 +8,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://etatunghpa.com/Observation/observation-smokingstatus-example> a fhir:Observation ;
+<https://twhpa.tsti.com/Observation/observation-smokingstatus-example> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "observation-smokingstatus-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://etatunghpa.com/StructureDefinition/ObservationSmokingStatus-HPA"^^xsd:anyURI ;
-       fhir:link <https://etatunghpa.com/StructureDefinition/ObservationSmokingStatus-HPA>
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA>
      ] )
   ] ; # 
   fhir:text [
@@ -42,11 +42,11 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://etatunghpa.com/Patient/patient-example> ;
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
      fhir:reference [ fhir:v "Patient/patient-example" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <https://etatunghpa.com/Encounter/encounter-example> ;
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
      fhir:reference [ fhir:v "Encounter/encounter-example" ]
   ] ; # 
   fhir:effective [
@@ -55,7 +55,7 @@
   ] ; # 
   fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <https://etatunghpa.com/Practitioner/practitioner-first-example> ;
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
      fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
   ] ) ; # 
   fhir:value [

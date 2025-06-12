@@ -2,7 +2,7 @@
   "resourceType" : "Patient",
   "id" : "patient-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/Patient-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/Patient-HPA"]
   },
   "text" : {
     "status" : "generated",

@@ -1,0 +1,2464 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://twhpa.tsti.com/Bundle/bundle-example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bundle-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Bundle-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Bundle-HPA>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2025-01-04T13:01:56+08:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Composition/composition-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Composition/composition-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Patient/patient-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Patient/patient-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Practitioner/practitioner-first-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Practitioner/practitioner-first-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Organization/org-hosp-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Organization/org-hosp-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Encounter/encounter-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Encounter/encounter-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Condition/condition-hypertension-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Condition/condition-hypertension-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Condition/condition-cvd-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Condition/condition-cvd-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-smokingstatus-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-smokingstatus-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-alcohol-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-alcohol-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-nut-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-nut-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-exercise-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-exercise-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-checkbc-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-checkbc-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-depress-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-depress-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-height-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-height-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-weight-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-weight-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-waist-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-waist-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-bmi-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-bmi-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-pressure-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-pressure-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-lab-urate-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-lab-urate-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-kidneystage-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-kidneystage-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-consult-smoking-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-consult-smoking-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-consult-alcohol-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-consult-alcohol-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-consult-nuts-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-consult-nuts-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-consult-exercise-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-consult-exercise-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-consult-weight-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-consult-weight-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-consult-food-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-consult-food-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-consult-accident-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-consult-accident-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-consult-oral-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-consult-oral-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-consult-ckd-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-consult-ckd-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/Observation/observation-consult-chronic-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/Observation/observation-consult-chronic-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/DiagnosticReport/diagnosticreport-bloodpressure-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/DiagnosticReport/diagnosticreport-bloodpressure-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-cad-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-cad-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-diabetes-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-diabetes-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-hypertension-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-hypertension-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-stroke-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-stroke-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-cvdevent-example"^^xsd:anyURI ] ;
+     fhir:resource ( <https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-cvdevent-example> )
+  ] ) . # 
+
+<https://twhpa.tsti.com/fhir/Composition/composition-example> a fhir:Composition ;
+  fhir:id [ fhir:v "composition-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Composition-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Composition-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_composition-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition composition-example</b></p><a name=\"composition-example\"> </a><a name=\"hccomposition-example\"> </a><a name=\"composition-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-HPA.html\">成人預防保健服務檢查單-文件架構</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 101009-9}\">Integrative medicine History and physical note</span></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>date</b>: 2023-01-04 13:01:56+0800</p><p><b>author</b>: </p><ul><li><a href=\"Organization-org-hosp-example.html\">Organization 衛生福利部臺北醫院</a></li><li><a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></li></ul><p><b>title</b>: 成人預防保健服務檢查單</p><p><b>custodian</b>: <a href=\"Organization-org-hosp-example.html\">Organization 衛生福利部臺北醫院</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:101009-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "101009-9" ] ;
+       fhir:display [ fhir:v "Integrative medicine History and physical note" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:date [ fhir:v "2023-01-04T13:01:56+08:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
+     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+  ] [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "成人預防保健服務檢查單"] ; # 
+  fhir:custodian [
+     fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
+     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+  ] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "疾病史：高血壓" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:161501007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "161501007" ] ;
+         fhir:display [ fhir:v "H/O: hypertension" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Condition/condition-hypertension-example> ;
+       fhir:reference [ fhir:v "Condition/condition-hypertension-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "疾病史：心臟病" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:275544003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "275544003" ] ;
+         fhir:display [ fhir:v "H/O: heart disorder" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Condition/condition-cvd-example> ;
+       fhir:reference [ fhir:v "Condition/condition-cvd-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康行為：吸菸" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:72166-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "72166-2" ] ;
+         fhir:display [ fhir:v "Tobacco smoking status" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-smokingstatus-example> ;
+       fhir:reference [ fhir:v "Observation/observation-smokingstatus-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康行為：喝酒" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:160573003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "160573003" ] ;
+         fhir:display [ fhir:v "Alcohol intake" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-alcohol-example> ;
+       fhir:reference [ fhir:v "Observation/observation-alcohol-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康行為：嚼檳榔" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:227491007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "227491007" ] ;
+         fhir:display [ fhir:v "Betal nut" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-nut-example> ;
+       fhir:reference [ fhir:v "Observation/observation-nut-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康行為：運動" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:128976003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "128976003" ] ;
+         fhir:display [ fhir:v "Exercise state" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-exercise-example> ;
+       fhir:reference [ fhir:v "Observation/observation-exercise-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "檢查過B、C型肝炎" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:444266007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "444266007" ] ;
+         fhir:display [ fhir:v "Measurement of Hepatitis B surface antibody and Hepatitis C antibody" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-checkbc-example> ;
+       fhir:reference [ fhir:v "Observation/observation-checkbc-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康行為：憂鬱檢測" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:89210-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "89210-9" ] ;
+         fhir:display [ fhir:v "Beck Depression Inventory II [BDI]" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-depress-example> ;
+       fhir:reference [ fhir:v "Observation/observation-depress-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "身高" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8302-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8302-2" ] ;
+         fhir:display [ fhir:v "Body height" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-height-example> ;
+       fhir:reference [ fhir:v "Observation/observation-height-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "體重" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:29463-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "29463-7" ] ;
+         fhir:display [ fhir:v "Body weight" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-weight-example> ;
+       fhir:reference [ fhir:v "Observation/observation-weight-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "血壓" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:85354-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "85354-9" ] ;
+         fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-pressure-example> ;
+       fhir:reference [ fhir:v "Observation/observation-pressure-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "腰圍" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:56117-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "56117-5" ] ;
+         fhir:display [ fhir:v "Waist Circumference by WHI" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-waist-example> ;
+       fhir:reference [ fhir:v "Observation/observation-waist-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "BMI" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:39156-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "39156-5" ] ;
+         fhir:display [ fhir:v "Body mass index (BMI) [Ratio]" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-bmi-example> ;
+       fhir:reference [ fhir:v "Observation/observation-bmi-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "尿酸" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:3084-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3084-1" ] ;
+         fhir:display [ fhir:v "Urate [Mass/volume] in Serum or Plasma" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-lab-urate-example> ;
+       fhir:reference [ fhir:v "Observation/observation-lab-urate-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "腎功能檢查期別" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:88240-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "88240-7" ] ;
+         fhir:display [ fhir:v "Chronic kidney disease education panel" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-kidneystage-example> ;
+       fhir:reference [ fhir:v "Observation/observation-kidneystage-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：戒煙" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:225323000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "225323000" ] ;
+         fhir:display [ fhir:v "Smoking cessation education" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-smoking-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-smoking-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：節酒" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:281078001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "281078001" ] ;
+         fhir:display [ fhir:v "Education about alcohol consumption" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-alcohol-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-alcohol-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：戒檳榔" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:51011006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "51011006" ] ;
+         fhir:display [ fhir:v "Nutritional counseling for control of dental disease" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-nuts-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-nuts-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：規律運動" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:410289001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "410289001" ] ;
+         fhir:display [ fhir:v "Exercises education, guidance, and counseling" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-exercise-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-exercise-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：維持正常體重" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:388970003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "388970003" ] ;
+         fhir:display [ fhir:v "Weight maintenance consultation" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-weight-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-weight-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：健康飲食" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:424753004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "424753004" ] ;
+         fhir:display [ fhir:v "Dietary management education, guidance, and counseling" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-food-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-food-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：事故傷害預防" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:710737001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "710737001" ] ;
+         fhir:display [ fhir:v "Education about risk reduction technique" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-accident-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-accident-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：口腔保健" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:58707002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "58707002" ] ;
+         fhir:display [ fhir:v "Oral hygiene education" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-oral-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-oral-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：腎病識能衛教指導" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:720510004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "720510004" ] ;
+         fhir:display [ fhir:v "Education about chronic kidney disease" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-ckd-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-ckd-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "健康諮詢：慢性疾病風險評估" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:423167009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "423167009" ] ;
+         fhir:display [ fhir:v "Chronic disease process education" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/Observation/observation-consult-chronic-example> ;
+       fhir:reference [ fhir:v "Observation/observation-consult-chronic-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "血壓檢查結果與建議" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:55284-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "55284-4" ] ;
+         fhir:display [ fhir:v "Blood pressure systolic and diastolic" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/DiagnosticReport/diagnosticreport-bloodpressure-example> ;
+       fhir:reference [ fhir:v "DiagnosticReport/diagnosticreport-bloodpressure-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "慢性疾病風險值：冠心病" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:53741008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "53741008" ] ;
+         fhir:display [ fhir:v "Coronary arteriosclerosis" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-cad-example> ;
+       fhir:reference [ fhir:v "RiskAssessment/riskassessment-cad-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "慢性疾病風險值：糖尿病" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:73211009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "73211009" ] ;
+         fhir:display [ fhir:v "Diabetes mellitus" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-diabetes-example> ;
+       fhir:reference [ fhir:v "RiskAssessment/riskassessment-diabetes-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "慢性疾病風險值：高血壓" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:38341003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "38341003" ] ;
+         fhir:display [ fhir:v "Hypertensive disorder" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-hypertension-example> ;
+       fhir:reference [ fhir:v "RiskAssessment/riskassessment-hypertension-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "慢性疾病風險值：腦中風" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:230690007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "230690007" ] ;
+         fhir:display [ fhir:v "Cerebrovascular accident" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-stroke-example> ;
+       fhir:reference [ fhir:v "RiskAssessment/riskassessment-stroke-example" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "慢性疾病風險值：心血管不良事件" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:49601007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "49601007" ] ;
+         fhir:display [ fhir:v "Disorder of cardiovascular system" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://twhpa.tsti.com/RiskAssessment/riskassessment-cvdevent-example> ;
+       fhir:reference [ fhir:v "RiskAssessment/riskassessment-cvdevent-example" ]
+     ] )
+  ] ) . # 
+
+<https://twhpa.tsti.com/fhir/Patient/patient-example> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Patient-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Patient-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-example</b></p><a name=\"patient-example\"> </a><a name=\"hcpatient-example\"> </a><a name=\"patient-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-HPA.html\">成人預防保健-受檢民眾基本資料</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code/A123456789 (use: official, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 0911327999(Mobile)</li><li></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-org-hosp-example.html\">Organization 衛生福利部臺北醫院</a></li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "NNxxx" ;
+           fhir:extension ( [
+             fhir:extension ( [
+               fhir:url [ fhir:v "suffix"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:string ;
+                 fhir:v "TWN"
+               ]
+             ] [
+               fhir:url [ fhir:v "valueSet"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:canonical ;
+                 fhir:v "http://hl7.org/fhir/ValueSet/iso3166-1-3"^^xsd:anyURI ;
+                 fhir:link <http://hl7.org/fhir/ValueSet/iso3166-1-3>
+               ]
+             ] ) ;
+             fhir:url [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/identifier-suffix"^^xsd:anyURI ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://www.moi.gov.tw"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "A123456789" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://www.tph.mohw.gov.tw"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "8862168" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "陳加玲" ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0911327999" ] ;
+     fhir:use [ fhir:v "mobile" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1990-01-01"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:district [ fhir:v "臺北市" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
+     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Practitioner/practitioner-first-example> a fhir:Practitioner ;
+  fhir:id [ fhir:v "practitioner-first-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Practitioner-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_practitioner-first-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-first-example</b></p><a name=\"practitioner-first-example\"> </a><a name=\"hcpractitioner-first-example\"> </a><a name=\"practitioner-first-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Practitioner-HPA.html\">成人預防保健-服務診治醫師</a></p></div><p><b>identifier</b>: Medical License number/KP00017 (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: 王依昇(Official)</p><p><b>telecom</b>: ph: 0993277826(Mobile)</p><p><b>address</b>: 桃園市桃園區五福五街31號</p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1980-11-11</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MD" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://www.tph.mohw.gov.tw"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "KP00017" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "王依昇" ] ;
+     fhir:family [ fhir:v "Wang" ] ;
+     fhir:given ( [ fhir:v "Yi Sheng" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0993277826" ] ;
+     fhir:use [ fhir:v "mobile" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:text [ fhir:v "桃園市桃園區五福五街31號" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1980-11-11"^^xsd:date] . # 
+
+<https://twhpa.tsti.com/fhir/Organization/org-hosp-example> a fhir:Organization ;
+  fhir:id [ fhir:v "org-hosp-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-hosp-twcore"^^xsd:anyURI ;
+       fhir:link <https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-hosp-twcore>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-hosp-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-hosp-example</b></p><a name=\"org-hosp-example\"> </a><a name=\"hcorg-hosp-example\"> </a><a name=\"org-hosp-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/StructureDefinition-Organization-hosp-twcore.html\">TW Core Organization Hospital Department</a></p></div><p><b>identifier</b>: Provider number/0131060029 (use: official, )</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: 衛生福利部臺北醫院</p><p><b>telecom</b>: ph: 0222765566</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PRN" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/organization-identifier-tw"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0131060029" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "prov" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "衛生福利部臺北醫院"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0222765566" ]
+  ] ) . # 
+
+<https://twhpa.tsti.com/fhir/Encounter/encounter-example> a fhir:Encounter ;
+  fhir:id [ fhir:v "encounter-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Encounter-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Encounter-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounter-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-example</b></p><a name=\"encounter-example\"> </a><a name=\"hcencounter-example\"> </a><a name=\"encounter-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter-HPA.html\">成人預防保健-就醫紀錄</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>serviceType</b>: <span title=\"Codes:{http://snomed.info/sct 419772000}\">Family practice</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}\">primary performer</span></td><td><a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></td></tr></table><p><b>period</b>: 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</p><p><b>serviceProvider</b>: <a href=\"Organization-org-hosp-example.html\">Organization 衛生福利部臺北醫院</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ]
+  ] ; # 
+  fhir:serviceType [
+     fhir:coding ( [
+       a sct:419772000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "419772000" ] ;
+       fhir:display [ fhir:v "Family practice" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPRF" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-08-01T17:00:14+08:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2022-08-12T09:00:14+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:serviceProvider [
+     fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
+     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Condition/condition-hypertension-example> a fhir:Condition ;
+  fhir:id [ fhir:v "condition-hypertension-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Condition-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Condition-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_condition-hypertension-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-hypertension-example</b></p><a name=\"condition-hypertension-example\"> </a><a name=\"hccondition-hypertension-example\"> </a><a name=\"condition-hypertension-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-HPA.html\">成人預防保健-受檢民眾疾病史</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical remission}\">Remission</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 161501007}\">H/O: hypertension</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>asserter</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "remission" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:161501007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "161501007" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:asserter [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Condition/condition-cvd-example> a fhir:Condition ;
+  fhir:id [ fhir:v "condition-cvd-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/Condition-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/Condition-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_condition-cvd-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-cvd-example</b></p><a name=\"condition-cvd-example\"> </a><a name=\"hccondition-cvd-example\"> </a><a name=\"condition-cvd-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-HPA.html\">成人預防保健-受檢民眾疾病史</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical remission}\">Remission</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 275544003}\">H/O: heart disorder</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>asserter</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "remission" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:275544003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "275544003" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:asserter [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-smokingstatus-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-smokingstatus-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationSmokingStatus-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-smokingstatus-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-smokingstatus-example</b></p><a name=\"observation-smokingstatus-example\"> </a><a name=\"hcobservation-smokingstatus-example\"> </a><a name=\"observation-smokingstatus-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationSmokingStatus-HPA.html\">成人預防保健-健康行為-吸菸</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 72166-2}\">Tobacco smoking status</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 8392000}\">Non-smoker</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:72166-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "72166-2" ] ;
+       fhir:display [ fhir:v "Tobacco smoking status" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:8392000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8392000" ] ;
+       fhir:display [ fhir:v "Non-smoker" ]
+     ] )
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-alcohol-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-alcohol-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-alcohol-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-alcohol-example</b></p><a name=\"observation-alcohol-example\"> </a><a name=\"hcobservation-alcohol-example\"> </a><a name=\"observation-alcohol-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthBehavior-HPA.html\">成人預防保健-健康行為</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 160573003}\">Alcohol intake</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 偶爾喝酒或應酬才喝</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:160573003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "160573003" ] ;
+       fhir:display [ fhir:v "Alcohol intake" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "偶爾喝酒或應酬才喝"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-nut-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-nut-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-nut-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-nut-example</b></p><a name=\"observation-nut-example\"> </a><a name=\"hcobservation-nut-example\"> </a><a name=\"observation-nut-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthBehavior-HPA.html\">成人預防保健-健康行為</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 227491007}\">Betal nut</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 不嚼檳榔</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:227491007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "227491007" ] ;
+       fhir:display [ fhir:v "Betal nut" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "不嚼檳榔"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-exercise-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-exercise-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-exercise-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-exercise-example</b></p><a name=\"observation-exercise-example\"> </a><a name=\"hcobservation-exercise-example\"> </a><a name=\"observation-exercise-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthBehavior-HPA.html\">成人預防保健-健康行為</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 128976003}\">Exercise state</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 沒有</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:128976003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "128976003" ] ;
+       fhir:display [ fhir:v "Exercise state" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "沒有"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-checkbc-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-checkbc-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthBehavior-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-checkbc-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-checkbc-example</b></p><a name=\"observation-checkbc-example\"> </a><a name=\"hcobservation-checkbc-example\"> </a><a name=\"observation-checkbc-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthBehavior-HPA.html\">成人預防保健-健康行為</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 444266007}\">Measurement of Hepatitis B surface antibody and Hepatitis C antibody</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 否</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:444266007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "444266007" ] ;
+       fhir:display [ fhir:v "Measurement of Hepatitis B surface antibody and Hepatitis C antibody" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "否"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-depress-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-depress-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationDepression-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationDepression-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-depress-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-depress-example</b></p><a name=\"observation-depress-example\"> </a><a name=\"hcobservation-depress-example\"> </a><a name=\"observation-depress-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationDepression-HPA.html\">成人預防保健-憂鬱檢測</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 89210-9}\">Beck Depression Inventory II [BDI]</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 44255-8}\">Feeling down, depressed, or hopeless in last 2 weeks</span></p><p><b>value</b>: 否</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 44250-9}\">Little interest or pleasure in doing things in last 2 weeks</span></p><p><b>value</b>: 否</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "survey" ] ;
+       fhir:display [ fhir:v "Survey" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:89210-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "89210-9" ] ;
+       fhir:display [ fhir:v "Beck Depression Inventory II [BDI]" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:44255-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "44255-8" ] ;
+         fhir:display [ fhir:v "Feeling down, depressed, or hopeless in last 2 weeks" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "否"
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:44250-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "44250-9" ] ;
+         fhir:display [ fhir:v "Little interest or pleasure in doing things in last 2 weeks" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "否"
+     ]
+  ] ) . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-height-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-height-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHeight-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHeight-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-height-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-height-example</b></p><a name=\"observation-height-example\"> </a><a name=\"hcobservation-height-example\"> </a><a name=\"observation-height-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHeight-HPA.html\">成人預防保健-身體檢查-身高</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8302-2}\">Body height</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 151.5 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8302-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8302-2" ] ;
+       fhir:display [ fhir:v "Body height" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 151.5 ] ;
+     fhir:unit [ fhir:v "cm" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "cm" ]
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-weight-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-weight-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationWeight-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationWeight-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-weight-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-weight-example</b></p><a name=\"observation-weight-example\"> </a><a name=\"hcobservation-weight-example\"> </a><a name=\"observation-weight-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationWeight-HPA.html\">成人預防保健-身體檢查-體重</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 52.7 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:29463-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "29463-7" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 52.7 ] ;
+     fhir:unit [ fhir:v "kg" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "kg" ]
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-waist-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-waist-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationWaist-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationWaist-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-waist-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-waist-example</b></p><a name=\"observation-waist-example\"> </a><a name=\"hcobservation-waist-example\"> </a><a name=\"observation-waist-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationWaist-HPA.html\">成人預防保健-身體檢查-腰圍</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 56117-5}\">Waist Circumference by WHI</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 55.88 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:56117-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "56117-5" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 55.88 ] ;
+     fhir:unit [ fhir:v "cm" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "cm" ]
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-bmi-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-bmi-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationBMI-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationBMI-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-bmi-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-bmi-example</b></p><a name=\"observation-bmi-example\"> </a><a name=\"hcobservation-bmi-example\"> </a><a name=\"observation-bmi-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationBMI-HPA.html\">成人預防保健-身體檢查-身體質量指數(BMI)</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 39156-5}\">Body mass index (BMI) [Ratio]</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 18.3 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg/m2 = 'kg/m2')</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:39156-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "39156-5" ] ;
+       fhir:display [ fhir:v "Body mass index (BMI) [Ratio]" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 18.3 ] ;
+     fhir:unit [ fhir:v "kg/m2" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "kg/m2" ]
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-pressure-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-pressure-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationPressure-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationPressure-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-pressure-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-pressure-example</b></p><a name=\"observation-pressure-example\"> </a><a name=\"hcobservation-pressure-example\"> </a><a name=\"observation-pressure-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationPressure-HPA.html\">成人預防保健-身體檢查-血壓</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 110 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 56 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85354-9" ] ;
+       fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8480-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8480-6" ] ;
+         fhir:display [ fhir:v "Systolic blood pressure" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "110"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8462-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8462-4" ] ;
+         fhir:display [ fhir:v "Diastolic blood pressure" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "56"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] ) . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-lab-urate-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-lab-urate-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationLab-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-lab-urate-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-lab-urate-example</b></p><a name=\"observation-lab-urate-example\"> </a><a name=\"hcobservation-lab-urate-example\"> </a><a name=\"observation-lab-urate-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLab-HPA.html\">成人預防保健-實驗室檢查</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 3084-1}\">尿酸</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 58.2 mg/dl<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dl = 'mg/dl')</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:3084-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3084-1" ] ;
+       fhir:display [ fhir:v "Urate [Mass/volume] in Serum or Plasma" ]
+     ] ) ;
+     fhir:text [ fhir:v "尿酸" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 58.2 ] ;
+     fhir:unit [ fhir:v "mg/dl" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mg/dl" ]
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-kidneystage-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-kidneystage-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationKidneyStage-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationKidneyStage-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-kidneystage-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-kidneystage-example</b></p><a name=\"observation-kidneystage-example\"> </a><a name=\"hcobservation-kidneystage-example\"> </a><a name=\"observation-kidneystage-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationKidneyStage-HPA.html\">成人預防保健-腎功能檢查期別</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 88240-7}\">Chronic kidney disease education panel</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 第1期</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:88240-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "88240-7" ] ;
+       fhir:display [ fhir:v "Chronic kidney disease education panel" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "第1期"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-consult-smoking-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-consult-smoking-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-consult-smoking-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-consult-smoking-example</b></p><a name=\"observation-consult-smoking-example\"> </a><a name=\"hcobservation-consult-smoking-example\"> </a><a name=\"observation-consult-smoking-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthConsultation-HPA.html\">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 225323000}\">Smoking cessation education</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:225323000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "225323000" ] ;
+       fhir:display [ fhir:v "Smoking cessation education" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "是"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-consult-alcohol-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-consult-alcohol-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-consult-alcohol-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-consult-alcohol-example</b></p><a name=\"observation-consult-alcohol-example\"> </a><a name=\"hcobservation-consult-alcohol-example\"> </a><a name=\"observation-consult-alcohol-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthConsultation-HPA.html\">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 281078001}\">Education about alcohol consumption</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:281078001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "281078001" ] ;
+       fhir:display [ fhir:v "Education about alcohol consumption" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "是"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-consult-nuts-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-consult-nuts-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-consult-nuts-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-consult-nuts-example</b></p><a name=\"observation-consult-nuts-example\"> </a><a name=\"hcobservation-consult-nuts-example\"> </a><a name=\"observation-consult-nuts-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthConsultation-HPA.html\">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 51011006}\">Nutritional counseling for control of dental disease</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:51011006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "51011006" ] ;
+       fhir:display [ fhir:v "Nutritional counseling for control of dental disease" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "是"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-consult-exercise-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-consult-exercise-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-consult-exercise-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-consult-exercise-example</b></p><a name=\"observation-consult-exercise-example\"> </a><a name=\"hcobservation-consult-exercise-example\"> </a><a name=\"observation-consult-exercise-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthConsultation-HPA.html\">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 410289001}\">Exercises teaching, guidance, and counselling</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:410289001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "410289001" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "是"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-consult-weight-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-consult-weight-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-consult-weight-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-consult-weight-example</b></p><a name=\"observation-consult-weight-example\"> </a><a name=\"hcobservation-consult-weight-example\"> </a><a name=\"observation-consult-weight-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthConsultation-HPA.html\">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 388970003}\">Weight maintenance consultation</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:388970003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "388970003" ] ;
+       fhir:display [ fhir:v "Weight maintenance consultation" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "是"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-consult-food-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-consult-food-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-consult-food-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-consult-food-example</b></p><a name=\"observation-consult-food-example\"> </a><a name=\"hcobservation-consult-food-example\"> </a><a name=\"observation-consult-food-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthConsultation-HPA.html\">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 424753004}\">Dietary management education, guidance, and counseling (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:424753004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "424753004" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "是"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-consult-accident-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-consult-accident-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-consult-accident-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-consult-accident-example</b></p><a name=\"observation-consult-accident-example\"> </a><a name=\"hcobservation-consult-accident-example\"> </a><a name=\"observation-consult-accident-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthConsultation-HPA.html\">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 710737001}\">Education about risk reduction technique</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:710737001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "710737001" ] ;
+       fhir:display [ fhir:v "Education about risk reduction technique" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "是"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-consult-oral-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-consult-oral-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-consult-oral-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-consult-oral-example</b></p><a name=\"observation-consult-oral-example\"> </a><a name=\"hcobservation-consult-oral-example\"> </a><a name=\"observation-consult-oral-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthConsultation-HPA.html\">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 58707002}\">Oral hygiene education</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:58707002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "58707002" ] ;
+       fhir:display [ fhir:v "Oral hygiene education" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "是"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-consult-ckd-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-consult-ckd-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-consult-ckd-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-consult-ckd-example</b></p><a name=\"observation-consult-ckd-example\"> </a><a name=\"hcobservation-consult-ckd-example\"> </a><a name=\"observation-consult-ckd-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthConsultation-HPA.html\">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 720510004}\">Education about chronic kidney disease</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:720510004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "720510004" ] ;
+       fhir:display [ fhir:v "Education about chronic kidney disease" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "是"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/Observation/observation-consult-chronic-example> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-consult-chronic-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/ObservationHealthConsultation-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-consult-chronic-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-consult-chronic-example</b></p><a name=\"observation-consult-chronic-example\"> </a><a name=\"hcobservation-consult-chronic-example\"> </a><a name=\"observation-consult-chronic-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationHealthConsultation-HPA.html\">成人預防保健-健康諮詢</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 423167009}\">Chronic disease process education</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>effective</b>: 2022-08-01 17:00:14-0500</p><p><b>issued</b>: 2022-08-14 13:28:17+0200</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><p><b>value</b>: 是</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:423167009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "423167009" ] ;
+       fhir:display [ fhir:v "Chronic disease process education" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "是"
+  ] . # 
+
+<https://twhpa.tsti.com/fhir/DiagnosticReport/diagnosticreport-bloodpressure-example> a fhir:DiagnosticReport ;
+  fhir:id [ fhir:v "diagnosticreport-bloodpressure-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/DiagnosticReport-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_diagnosticreport-bloodpressure-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport diagnosticreport-bloodpressure-example</b></p><a name=\"diagnosticreport-bloodpressure-example\"> </a><a name=\"hcdiagnosticreport-bloodpressure-example\"> </a><a name=\"diagnosticreport-bloodpressure-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReport-HPA.html\">成人預防保健-檢查結果與建議</a></p></div><h2><span title=\"Codes:{http://loinc.org 85354-9}\">血壓檢查結果與建議</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 PHY}\">Physician (Hx. Dx, admission note, etc.)</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</td></tr><tr><td>When For</td><td>2022-08-01 17:00:14-0500</td></tr><tr><td>Reported</td><td>2022-08-14 13:28:17+0200</td></tr><tr><td>Performer</td><td> <a href=\"Organization-org-hosp-example.html\">Organization 衛生福利部臺北醫院</a></td></tr><tr><td>Identifier</td><td> <code>https://etatung.com/idenitifer</code>/000120230721</td></tr></table><p><b>Report Details</b></p><p>異常：建議:進一步檢查</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "registered"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PHY" ] ;
+       fhir:display [ fhir:v "Physician (Hx. Dx, admission note, etc.)" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85354-9" ] ;
+       fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+     ] ) ;
+     fhir:text [ fhir:v "血壓檢查結果與建議" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-08-01T17:00:14-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-14T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://twhpa.tsti.com/Organization/org-hosp-example> ;
+     fhir:reference [ fhir:v "Organization/org-hosp-example" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "異常：建議:進一步檢查"] . # 
+
+<https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-cad-example> a fhir:RiskAssessment ;
+  fhir:id [ fhir:v "riskassessment-cad-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RiskAssessment_riskassessment-cad-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RiskAssessment riskassessment-cad-example</b></p><a name=\"riskassessment-cad-example\"> </a><a name=\"hcriskassessment-cad-example\"> </a><a name=\"riskassessment-cad-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RiskAssessment-HPA.html\">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 53741008}\">Coronary arteriosclerosis</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Probability[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>36</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:53741008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "53741008" ] ;
+       fhir:display [ fhir:v "Coronary arteriosclerosis" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2017-10-10"^^xsd:date
+  ] ; # 
+  fhir:performer [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ; # 
+  fhir:prediction ( [
+     fhir:probability [
+       a fhir:decimal ;
+       fhir:v "36"^^xsd:decimal
+     ]
+  ] ) . # 
+
+<https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-diabetes-example> a fhir:RiskAssessment ;
+  fhir:id [ fhir:v "riskassessment-diabetes-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RiskAssessment_riskassessment-diabetes-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RiskAssessment riskassessment-diabetes-example</b></p><a name=\"riskassessment-diabetes-example\"> </a><a name=\"hcriskassessment-diabetes-example\"> </a><a name=\"riskassessment-diabetes-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RiskAssessment-HPA.html\">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 73211009}\">Diabetes mellitus</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Probability[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>25</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:73211009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73211009" ] ;
+       fhir:display [ fhir:v "Diabetes mellitus" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2017-10-10"^^xsd:date
+  ] ; # 
+  fhir:performer [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ; # 
+  fhir:prediction ( [
+     fhir:probability [
+       a fhir:decimal ;
+       fhir:v "25"^^xsd:decimal
+     ]
+  ] ) . # 
+
+<https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-hypertension-example> a fhir:RiskAssessment ;
+  fhir:id [ fhir:v "riskassessment-hypertension-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RiskAssessment_riskassessment-hypertension-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RiskAssessment riskassessment-hypertension-example</b></p><a name=\"riskassessment-hypertension-example\"> </a><a name=\"hcriskassessment-hypertension-example\"> </a><a name=\"riskassessment-hypertension-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RiskAssessment-HPA.html\">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 38341003}\">Hypertensive disorder</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Probability[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>40</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:38341003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "38341003" ] ;
+       fhir:display [ fhir:v "Hypertensive disorder" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2017-10-10"^^xsd:date
+  ] ; # 
+  fhir:performer [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ; # 
+  fhir:prediction ( [
+     fhir:probability [
+       a fhir:decimal ;
+       fhir:v "40"^^xsd:decimal
+     ]
+  ] ) . # 
+
+<https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-stroke-example> a fhir:RiskAssessment ;
+  fhir:id [ fhir:v "riskassessment-stroke-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RiskAssessment_riskassessment-stroke-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RiskAssessment riskassessment-stroke-example</b></p><a name=\"riskassessment-stroke-example\"> </a><a name=\"hcriskassessment-stroke-example\"> </a><a name=\"riskassessment-stroke-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RiskAssessment-HPA.html\">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 230690007}\">Cerebrovascular accident</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Probability[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>15</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:230690007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "230690007" ] ;
+       fhir:display [ fhir:v "Cerebrovascular accident" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2017-10-10"^^xsd:date
+  ] ; # 
+  fhir:performer [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ; # 
+  fhir:prediction ( [
+     fhir:probability [
+       a fhir:decimal ;
+       fhir:v "15"^^xsd:decimal
+     ]
+  ] ) . # 
+
+<https://twhpa.tsti.com/fhir/RiskAssessment/riskassessment-cvdevent-example> a fhir:RiskAssessment ;
+  fhir:id [ fhir:v "riskassessment-cvdevent-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA"^^xsd:anyURI ;
+       fhir:link <https://twhpa.tsti.com/StructureDefinition/RiskAssessment-HPA>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RiskAssessment_riskassessment-cvdevent-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RiskAssessment riskassessment-cvdevent-example</b></p><a name=\"riskassessment-cvdevent-example\"> </a><a name=\"hcriskassessment-cvdevent-example\"> </a><a name=\"riskassessment-cvdevent-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RiskAssessment-HPA.html\">成人預防保健-慢性疾病風險</a></p></div><p><b>identifier</b>: <code>https://etatung.com/idenitifer</code>/000120230721</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 49601007}\">Disorder of cardiovascular system</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">陳加玲(official) Female, DoB: 1990-01-01 ( Medical record number (use: official, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter: identifier = https://etatung.com/idenitifer#000120230721; status = finished; class = ambulatory (ActCode#AMB); serviceType = Family practice; period = 2022-08-01 17:00:14+0800 --&gt; 2022-08-12 09:00:14+0000</a></p><p><b>occurrence</b>: 2017-10-10</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-first-example.html\">Practitioner 王依昇(official)</a></p><h3>Predictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Probability[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>20</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://etatung.com/idenitifer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000120230721" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:49601007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "49601007" ] ;
+       fhir:display [ fhir:v "Disorder of cardiovascular system" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://twhpa.tsti.com/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://twhpa.tsti.com/Encounter/encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/encounter-example" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2017-10-10"^^xsd:date
+  ] ; # 
+  fhir:performer [
+     fhir:link <https://twhpa.tsti.com/Practitioner/practitioner-first-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-first-example" ]
+  ] ; # 
+  fhir:prediction ( [
+     fhir:probability [
+       a fhir:decimal ;
+       fhir:v "20"^^xsd:decimal
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

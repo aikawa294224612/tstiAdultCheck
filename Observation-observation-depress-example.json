@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-depress-example",
   "meta" : {
-    "profile" : ["https://etatunghpa.com/StructureDefinition/ObservationDepression-HPA"]
+    "profile" : ["https://twhpa.tsti.com/StructureDefinition/ObservationDepression-HPA"]
   },
   "text" : {
     "status" : "generated",
